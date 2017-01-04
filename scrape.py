@@ -76,7 +76,7 @@ def get_scripts(tutorial):
 	title = str(soup.title).split('/')[2]
 	directory = os.path.join('Scripts', course)
 	if not os.path.exists(directory):
-		os.mkdir(directory)
+		os.makedirs(directory)
 	file = os.path.join(directory, title + '.txt')
 	print('\tWriting to file:', file)
 	if not os.path.exists(file):
