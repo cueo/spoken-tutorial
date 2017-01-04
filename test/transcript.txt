@@ -1,0 +1,51 @@
+Formatting of borders can be done on a particular cell or a block of cells.
+
+For example, let us format the cells with the headings “Serial Number”, “Item”, “Cost”, “Spent”, ”Received”, ”Date” and ”Account”.
+
+So, let us first click on the cell with the heading Serial Number, denoted by “SN”.
+
+Now, hold down the left mouse button and drag it along the cells containing the headings.
+
+After selecting the entire horizontal row containing the headings, click on the “Borders” icon on the Formatting toolbar.
+
+A drop down box opens up containing several border styles.
+
+Click on one of the styles you want to apply on the borders.
+
+I will click on the last option.
+
+We see that the borders get formatted according to  our selected style.
+
+Let us undo this change.
+
+The selected cells are still highlighted. Right-click on the selection and choose “Format Cells” option.
+
+Now click on the “Borders” tab.
+
+You will see the options for “Line arrangement”, “Line”, “Spacing to contents” and “Shadow style”.
+
+Displayed in each of these are the default settings of Calc.
+
+But one can change any of these to suit our requirement.
+
+Under “User-defined”, you can see a small preview window which displays the selection.
+
+I will choose the third option under “Default” and you can see that it is reflected in the preview window.
+
+I will also change the “Style”, “Width” and “Color”.
+
+Again, notice the change in the preview window.
+
+Spacing to contents has the “Synchronize” option checked.
+
+This means that the same spacing is applied to all the margins.
+
+One can uncheck it and change the margin spacing as per the requirement.
+
+I will change “Top” and “Bottom” margins to 1.4pt.
+
+I will leave you to explore the various Shadow styles, on your own.
+
+Click on OK.
+
+This will apply the chosen style to the selected cells.

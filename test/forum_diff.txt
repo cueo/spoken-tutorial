@@ -1,0 +1,7 @@
+Libreoffice 3.6.0 always crash after install. Why? [closed]
+
+It has been suggested numerous times here that deleting the user profile is a solution to this problem. See a description on how to do this here: http://wiki.documentfoundation.org/UserProfile
+
+For those considering the solution of deleting the user profile, I'd like to add that in my case it was sufficient to delete the "extensions" subdirectory of the user profile. This might be handy information for people who want to keep most of their user profile and still update.
+
+If you don't care about the user profile (you may need to set some settings again the way you want them), you can safely delete it though.

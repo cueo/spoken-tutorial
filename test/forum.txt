@@ -1,0 +1,3 @@
+How to apply a border format to the borders of all selected cells? [closed]
+
+Select the cells by using any method like mouse or keyboard. Go to Format>Cells>Borders>Line arrangement>Default. Click on the first box below that. It will remove all old border of the selected cells. Then click on the further boxes which you would like to add. The preview is shown below in 'User-Defined'. If you want custom borders you may directly click in the 'User-defined' area at various places and border will appear there. To select the style, width and color of the border, just see adjoining heading 'Line'. Click ok when finished.
