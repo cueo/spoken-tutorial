@@ -74,7 +74,7 @@ def get_scripts(tutorial):
 	page = urlopen(script_url)
 	soup = BeautifulSoup(page, 'lxml')
 	title = str(soup.title).split('/')[2]
-	directory = os.path.join('Scripts', course)
+	directory = os.path.join('scripts', course)
 	if not os.path.exists(directory):
 		os.makedirs(directory)
 	file = os.path.join(directory, title + '.txt')
