@@ -1,6 +1,4 @@
-# from lxml import html
-# import requests
-from urllib.request import urlopen
+from urllib2 import urlopen
 from bs4 import BeautifulSoup
 import os
 import re
@@ -9,7 +7,7 @@ url = 'http://spoken-tutorial.org/tutorial-search/'
 course = ''
 
 def get_courses():
-	print('Looking up:', url)
+	print 'Looking up:', url
 	page = urlopen(url)
 	'''
 	# Avoid downloading the page again and again
@@ -39,7 +37,7 @@ def get_courses():
 
 def get_tutorials(course, language):
 	course_url = 'http://spoken-tutorial.org/tutorial-search/?search_foss=' + course.replace(' ', '+') + '&search_language=' + language
-	print('Querying:', course_url)
+	print 'Querying:', course_url
 	page = urlopen(course_url)
 	soup = BeautifulSoup(page, 'lxml')
 	'''
@@ -56,7 +54,7 @@ def get_tutorials(course, language):
 	return tutorials
 
 def get_scripts(tutorial):
-	print('Downloading script for tutorial:', tutorial)
+	print 'Downloading script for tutorial:', tutorial
 	page = urlopen(tutorial)
 	soup = BeautifulSoup(page, 'lxml')
 	# Get the link for the timed script.
@@ -78,7 +76,7 @@ def get_scripts(tutorial):
 	if not os.path.exists(directory):
 		os.makedirs(directory)
 	file = os.path.join(directory, title + '.txt')
-	print('\tWriting to file:', file)
+	print '\tWriting to file:', file
 	if not os.path.exists(file):
 		content = soup.table.text
 		content = re.sub('\n\n', '\n', content)
