@@ -14,7 +14,7 @@ class Similarity():
 	stop_words = stopwords.words('english')
 	stop_words.extend([])
 
-	def __init__(self, files):
+	def __init__(self, documents):
 		self.documents = [open(f).read() for f in files]
 		self.clean()
 		self.vectorizer = TfidfVectorizer(tokenizer=self.normalize, stop_words='english')
@@ -57,7 +57,8 @@ class Similarity():
 
 if __name__ == '__main__':
 	files = ['test/transcript.txt', 'test/forum.txt', 'test/forum_diff.txt']
-	sim = Similarity(files)
+	documents = [open(f).read() for f in files]
+	sim = Similarity(documents)
 	sim.word2vec()
 	print 'Cosine Similarity:'
 	print sim.cosine_sim()
