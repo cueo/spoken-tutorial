@@ -7,22 +7,12 @@ import re
 
 url = 'http://spoken-tutorial.org/tutorial-search/'
 course = ''
+# R => maximum number of results per page + 1
+R = 21
 
 def get_courses():
 	print('Looking up:', url)
 	page = urlopen(url)
-	'''
-	# Avoid downloading the page again and again
-	search_file = 'search.html'
-	if os.path.exists(search_file):
-		with open(search_file, 'rb') as f:
-			page = urlopen(os.path.join(os.getcwd(), search_file))
-	else:
-		page = urlopen(url)
-		page_content = page.read()
-		with open(search_file, 'wb') as f:
-			f.write(page_content)
-	'''
 	soup = BeautifulSoup(page, 'lxml')
 	'''
 	# It is the first select tag that contains all the courses.
@@ -33,26 +23,36 @@ def get_courses():
 	options = select.find_all('option')
 	for option in options:
 		value = option['value']
+		text = option.text
+		# courses = LibreOffice
+		'''
 		if 'Libre' in value:
 			courses.append(value)
+		'''
+		# courses = Advanced C, C and CPP, Bash
+		condition = (value == 'Advance C' or value == 'BASH' or value == 'C and Cpp')
+		if condition:
+			courses.append(text)
 	return courses
 
-def get_tutorials(course, language):
+def get_tutorials(course, pages, language):
 	course_url = 'http://spoken-tutorial.org/tutorial-search/?search_foss=' + course.replace(' ', '+') + '&search_language=' + language
-	print('Querying:', course_url)
-	page = urlopen(course_url)
-	soup = BeautifulSoup(page, 'lxml')
 	'''
 	# Extract the names of the tutorials available for the queried course.
-	# Note: the tutorials might span more than one page.
+	# Note: the tutorials might span more than one page. (handled in this release!)
 	# Also, search might return 0 results.
 	# Need to handle these, not doing it right now.
 	'''
 	tutorials = []
-	# Get the divs which contain the required results
-	results = soup.find_all('div', {'class': 'result-record'})
-	for div in results:
-		tutorials.append('http://spoken-tutorial.org/' + div.a['href'])
+	for p in range(pages):
+		new_url = course_url + '&page=' + str(p+1)
+		print('Querying:', new_url)
+		page = urlopen(new_url)
+		soup = BeautifulSoup(page, 'lxml')
+		# Get the divs which contain the required results
+		results = soup.find_all('div', {'class': 'result-record'})
+		for div in results:
+			tutorials.append('http://spoken-tutorial.org/' + div.a['href'])
 	return tutorials
 
 def get_scripts(tutorial):
@@ -89,7 +89,9 @@ if __name__ == '__main__':
 	courses = get_courses()
 	languages = ['English']
 	for _course in courses:
-		course = _course
-		tutorials = get_tutorials(course, languages[0])
+		re_match = re.search('(.*) \((\d+)\)', _course)
+		course = re_match.group(1)
+		pages = int(re_match.group(2)) // R + 1
+		tutorials = get_tutorials(course, pages, languages[0])
 		for tutorial in tutorials:
 			script = get_scripts(tutorial)
