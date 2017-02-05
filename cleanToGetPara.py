@@ -1,7 +1,7 @@
 import os
 import re
 from nltk.corpus import stopwords
-
+  
 if not os.path.exists('Cleaned scripts'):
 	os.mkdir('Cleaned scripts')
 for root, directory, files in os.walk('./scripts'):
