@@ -1,0 +1,274 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Math.
+
+00:04
+In this tutorial, we will learn how to:
+
+00:07
+* Write Set operations
+
+00:10
+* Write Factorials and
+
+00:12
+* Cross reference equations by numbering.
+
+00:16
+For this, let us first open our example 'Writer' document that we created in our previous tutorials "MathExample1.odt".
+
+00:29
+Here, let us go to the end of the document and press Control, Enter to go to a new page.
+
+00:37
+And type “Set Operations: ” and press  Enter twice.
+
+00:42
+Now, let us call Math.
+
+00:45
+Before we go ahead, let us increase the Font-size to 18 point.
+
+00:51
+Change the Alignment to the Left.
+
+00:54
+Let us now learn how to write Set operations.
+
+01:00
+Math has separate mark up to represent Sets which are collections of distinct elements.
+
+01:07
+Let us write four (4) example sets, in the Formula Editor window, as shown on the screen:
+
+01:14
+Set A with 5 elements,
+
+01:18
+ Set B,
+
+01:19
+ Set C,
+
+01:21
+and Set D with elements each.
+
+01:26
+Notice that to write the brackets for sets, we can use the mark up: lbrace and rbrace.
+
+01:35
+Now, we can write set operations such as unions and intersections.
+
+01:42
+First, let us write a union operation.
+
+01:46
+The mark-up for B union C is the same as we read it;
+
+01:51
+and the resulting set is 1, 2, 6, 4 and 5 which includes all the distinct elements in both sets.
+
+02:04
+The markup for an intersection operation is again the same as we read it.
+
+02:10
+The intersection includes only the common elements from both the sets.
+
+02:16
+So, the result of B intersection D is 6.
+
+02:23
+And we can also write: set C is a subset of set A, as every element in 'C' is in set A.
+
+02:35
+The mark up for this is C subset A.
+
+02:42
+You can learn to write more set operations by exploring the Elements window, by clicking on the third icon there.
+
+02:51
+Go to View > Elements > Set Operations.
+
+02:59
+Let us save our work now.
+
+03:02
+Click on File > Save.
+
+03:06
+Now, let us write Factorial functions.
+
+03:11
+We will designate numbers 1 to 3 for the three formulae we are going to write shortly.
+
+03:19
+These will help to cross reference them anywhere within the Writer document.
+
+03:25
+Let us go to a new page by clicking three times slowly, outside the Writer gray box.
+
+03:33
+Press Control, Enter.
+
+03:36
+Type: “Factorial Function: ” and press Enter twice.
+
+03:42
+Now, we know how to call Math.
+
+03:45
+But, there is another way to bring up the Math object into the Writer.
+
+03:51
+For this, simply write ‘f n’ on the Writer document and press F3.
+
+03:59
+We are now seeing a new Math object that says E is equal to m c squared
+
+04:07
+and along with that the number one (1), within parentheses, on the right.
+
+04:14
+Meaning- we can cross reference this formula with the number 1, anywhere in this document.
+
+04:22
+We will learn the details of how to do this later.
+
+04:27
+For now, let us double-click on the Math object.
+
+04:32
+And do the formatting. Font size 18 and 'Left' Alignment.
+
+04:40
+Okay, let us now write an example for Factorial.
+
+04:44
+The mark up ‘fact’ represents the factorial symbol.
+
+04:50
+So, let us overwrite the existing formula with ours:
+
+04:55
+5 Factorial = 5 into 4 into 3 into 2 into 1 = 120.
+
+05:07
+Notice the mark up here.
+
+05:09
+Let us write our next formula in a new Math object here.
+
+05:14
+For this, let us first click outside this Writer gray box three times slowly.
+
+05:23
+Press the down-arrow key two or three times to go to the end of this page.
+
+05:30
+And type ‘f n’ and press F3 to bring up the second Math object.
+
+05:37
+Again, we will repeat the formatting
+
+05:46
+and overwrite the existing formula with the factorial definition:
+
+05:52
+n factorial is equal to prod from k = 1 to n of k.
+
+06:01
+Notice the mark-up ‘prod’ which denotes product, similar to sigma for summation.
+
+06:10
+Now, let us introduce a third Math object just like the first two
+
+06:20
+and rewrite the factorial definition as two conditional formulae, as shown on the screen.
+
+06:30
+Notice the mark up ‘binom’ which displays a vertical stack of two elements and helps with better alignment.
+
+06:42
+Let us now see how we can cross reference these formulae.
+
+06:47
+For this, let us go to a new page
+
+06:51
+and type: "An example of factorial is provided here:"
+
+06:59
+Now, let us click on the Insert menu and on Cross reference.
+
+07:06
+In the new pop-up, let us select Text in the Type list.
+
+07:12
+Then choose the first item in the Selection list denoting the first factorial formula we wrote.
+
+07.21
+Now choose Reference in the ‘Insert reference to’ list and click on Insert once and close.
+
+07.31
+So, the number one (1) in parentheses has appeared next to our text. And we are done.
+
+07.39
+Let us test it by simply clicking on this number
+
+07.43
+and notice that the cursor has jumped to the location where we wrote the first formula.
+
+07.51
+So, this is how we can cross reference Math formulae anywhere within the Writer document.
+
+07.58
+Let us save our work.
+
+08.01
+Here are some reference links for Math:
+
+08:06
+Download Guide at 'libreoffice.org documentation' link.
+
+08:14
+You can also visit the following website for more information on Math.
+
+08:20
+And finally, here is an assignment for you. Use the Writer document.
+
+08:25
+Using the example Sets in this tutorial: check if A union ( B union C) is equal to (A union B) union C.
+
+08:40
+Write the results of A minus B
+
+08:43
+and cross reference the second and third factorial formulae in the Writer document.
+
+08:51
+This brings us to the end of this tutorial on Sets, Factorials and Cross Referencing in LibreOffice Math.
+
+08:59
+To summarize, we learned how to:
+
+09:03
+* Write Set operations
+
+09:05
+* Write Factorials and
+
+09:08
+* Cross reference equations by numbering.
+
+09:11
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:23
+This project is coordinated by http://spoken-tutorial.org.
+
+09:27
+More information on the same is available at the following link.
+
+09:32
+This script has been contributed by Priya Suresh, Desicrew Solutions. And this is Saundarya, desicrew solutions,  signing off.
+Thanks for joining.
+

@@ -1,0 +1,241 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Math.
+
+00:04
+In this tutorial, we will cover the following topics:
+
+00:08
+* Using Greek characters like alpha, beta, theta and pi.
+
+00:15
+* Using Brackets. * Writing steps to solve a quadratic equation.
+
+00:21
+Let us learn how to write Greek characters using Math.
+
+00:26
+For this, let us first open the example Writer document that we created in the last tutorial i.e. "MathExample1.odt".
+
+00:41
+Double-click on the Gray-box that has the formulae we wrote.
+
+00:47
+This brings up the Math Formula Editor and the Elements window.
+
+00:54
+Let us click on the Formula Editor border and drag and drop to the right to make it float.
+
+01:02
+This maximizes the Writer window for better visibility.
+
+01:07
+Now, Greek characters- for example: alpha, beta, theta and pi are common in mathematical formulae.
+
+01:16
+But, we won’t find these characters in the Elements window.
+
+01:21
+We can write them directly by using the percentage sign followed by the name of the character in English.
+
+01:30
+For example- to write pi, we simply type "%pi" in the Formula Editor.
+
+01:40
+To write a lowercase character, type the name of the character in lowercase.
+
+01:47
+For example- to write alpha in lower case, type "%alpha" or "%beta".
+
+01:59
+To write an uppercase character, type the name of the character in uppercase.
+
+02:06
+For example- to write gamma in upper case, type "%GAMMA" or "%THETA".
+
+02:17
+Another way to enter Greek characters is by using the Catalog from the Tools menu.
+
+02:26
+Under the Symbol set, select Greek
+
+02:31
+and double-click on a Greek letter from the list.
+
+02:35
+Notice the mark up for the Greek letter as alpha which is displayed below the list.
+
+02:43
+So, this is how we can introduce Greek characters in a formula.
+
+02:49
+Explore the Symbols Catalog to know the mark up for other Greek characters.
+
+02:56
+Let us now learn how to use Brackets in our formulae.
+
+03:02
+'Math' does not know about order of operation in a formula.
+
+03:07
+So, we have to use brackets to state the order of operation.
+
+03:13
+For example, how do we write: First add x and y, then divide 5 by the result?
+
+03:22
+We can type: "5 over x + y".
+
+03:28
+Now, is this really what we wanted to write?
+
+03:32
+No. We want to add x and y first and we can do this by introducing curly brackets around x and y.
+
+03:44
+And the mark up looks like: 5 over x+y in curly brackets.
+
+03:52
+So, using brackets can help set the order of operation in a formula.
+
+03:58
+Let us save our work by using the File menu at the top and choosing Save.
+
+04:08
+Let us now write the steps to solve a quadratic equation.
+
+04:13
+We will go to new page in the Writer document by pressing Control + Enter.
+
+04:21
+Let us type: "Solving a Quadratic Equation"
+
+04:25
+and call Math from the Insert > Object > Formula menu.
+
+04:33
+I have already typed the quadratic equations. I will cut and paste them so as to save time.
+
+04:42
+So, here is the quadratic equation we will solve: x squared - 7 x + 3 = 0
+
+04:53
+To solve it, we can use the quadratic formula shown on the screen.
+
+04:59
+Here, ‘a’ is the coefficient of the 'x' squared term, ‘b’ is the coefficient of the 'x' term and ‘c’ is the constant.
+
+05:11
+And we can solve the equation by substituting 1 for a, -7 for b, and 3 for c, in the formula.
+
+05:23
+So, first let us write the mark up for the quadratic equation that we want to solve.
+
+05:30
+First, we will call Math from the Insert > Object > Formula menu.
+
+05:39
+In the Format Editor window, let us type the mark up as follows:
+
+05:46
+x squared minus 7 x plus 3 = 0.
+
+05:53
+Let us write two newlines for entering blank lines for better readability.
+
+06:01
+Press Enter  and type: "Quadratic Formula:". Press Enter.
+
+06:07
+It is always a good practice to break down a complex formula by starting with the inner most elements of the formula, first.
+
+06:16
+And then we can work our way around these elements.
+
+06:21
+So, we will first write the inner most square root function.
+
+06:27
+And the mark up is square root of b squared - 4ac in curly brackets.
+
+06:37
+Next, we will add the minus b plus or minus to the above expression and put them inside curly brackets.
+
+06:48
+We will make the above expression a numerator by adding another set of curly brackets
+
+06:57
+and add ‘over 2a’ to the expression.
+
+07:02
+And, finally add x equals to the beginning
+
+07:08
+with two long gaps surrounding the equal to symbol.
+
+07:13
+And, there is the quadratic formula.
+
+07:16
+This is how we can break down complex formulae and build them part by part.
+
+07:22
+Next, let us type the rest of the text as follows in the Formula Editor window
+
+07:29
+Where ‘a’ is the coefficient of the 'x' squared term, 'b' is the coefficient of the 'x' term, 'c' is the constant followed by a newline.
+
+07:43
+And type: "We can solve the equation by substituting 1 for a, -7 for b, 3 for c’ followed by two newlines.
+
+07:59
+So, the mark up after the substitution is as shown on the screen.
+
+08:05
+So, we have substituted the numbers using parentheses in the equation.
+
+08:12
+Okay, here is an assignment for you:
+
+08:15
+Complete the remaining steps for solving the  quadratic equation.
+
+08:20
+Display the two results separately.
+
+08:23
+Format the steps by changing alignments and spacing.
+
+08:28
+Add long gaps and newlines wherever necessary.
+
+08:33
+Write the following formula:  pi is similar or equal to 3.14159.
+
+08:43
+This brings us to the end of this tutorial on Greek Characters, Brackets and Equations in LibreOffice Math.
+
+08:52
+To summarize, we learned the following topics:
+
+08:56
+* Using Greek characters like alpha, beta, theta and pi.
+
+09:01
+* Using Brackets * Writing steps to solve a Quadratic Equation.
+
+09:07
+Spoken Tutorial project is a part of the Talk to a Teacher project,
+
+09:12
+supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:19
+This project is coordinated by http://spoken-tutorial.org.
+
+09:24
+More information on the same is available at the following link.
+
+09:29
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

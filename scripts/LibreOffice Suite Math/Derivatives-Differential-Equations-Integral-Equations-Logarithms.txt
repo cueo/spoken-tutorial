@@ -1,0 +1,254 @@
+00:01
+Welcome to the Spoken tutorial on LibreOffice Math.
+
+00:05
+In this tutorial, we will learn how to write:
+ Derivatives and Differential equations
+ Integral equations and 
+ Formulae with Logarithms.
+
+
+00:17
+For this, let us first open our example Writer document that we created in our previous tutorials- "MathExample1.odt".
+
+00:29
+Here, let us scroll to the last page of the document and press Control, Enter to go to a new page.
+
+00:37
+Now, type: “Derivatives and Differential Equations: ” and press the Enter key twice.
+
+00:45
+Now, let us call Math by clicking Insert menu, then Object and then Formula.
+
+00:54
+Before we go ahead, let us increase the font-size to 18 point.
+
+01:00
+Change the Alignment to the Left
+
+01:03
+and add newlines and blank lines in between each of our examples for better readability.
+
+01:11
+Let us now learn how to write derivatives and differential equations.
+
+01:19
+Math provides a very easy way of writing these formulae or equations.
+
+01:25
+We just have to treat them like a fraction and use the mark up over.
+
+01:33
+For example- to write a total derivative, df by dx, the mark up is "df over dx" in the Formula Editor Window.
+
+01:50
+Next, for a partial derivative, we can use the word ‘partial’ and the markup looks like: del f over del x.
+
+02:02
+We have to use the curly brackets when we use the mark-up ‘partial’.
+
+02:08
+Notice the 'del' symbol for partial derivatives in the Writer gray box.
+
+02:14
+Here is another example: Newton's second law of motion
+
+02:21
+which describes the relationship between acceleration and force
+
+02:26
+F is equal to m a.
+
+02:30
+This can be written as an ordinary differential equation as: F of t is equal to m into d squared x over d t squared.
+
+02:45
+Notice that we have used various sets of curly brackets to state the order of operation
+
+02:56
+and the equation looks like as shown on the screen.
+
+03:01
+Here is another example of a differential equation.
+
+03:05
+Newton’s law of cooling.
+
+03:08
+If theta of t is the temperature of an object at time t, then we can write a differential equation:
+
+03:18
+d of theta over d of t  is equal to minus k into theta minus S
+
+03:30
+where 'S' is the temperature of the surrounding environment.
+
+03:35
+Notice the equation in the Writer gray box.
+
+03:39
+Let us save our work now. Go to File and click on Save.
+
+03:45
+Now, let us see how to write Integral equations.
+
+03:50
+And let us go to a new page by clicking three times slowly, outside the Writer gray box
+
+03:58
+and then press Control, Enter.
+
+04:03
+Type: “Integral Equations: ”
+
+04:06
+and press Enter twice.
+
+04:11
+Now, let us call Math from the Insert > Object menu;
+
+04:17
+increase the Font size to 18 point
+
+04:22
+and change the Alignment to the Left.
+
+04:25
+To write an integral symbol, we just need to use the mark-up “int” in the Formula Editor Window.
+
+04:35
+So, given a function 'f' of a real variable 'x' and an interval 'a, b' of the real line on the x-axis, the definite integral is written as Integral from a to b f of x dx.
+
+04:58
+We have used the mark-up ‘int’ to denote the integral symbol.
+
+05:04
+To specify the limits- 'a' and 'b', we have used the mark-up ‘from’ and ‘to’.
+
+05:13
+Notice the formula in the Writer gray box.
+
+05:17
+Next, let us write an example double integral formula to calculate the volume of a cuboid.
+
+05:26
+And the formula is as shown on the screen.
+
+05:30
+As we can see, the mark-up for a double integral is ‘i i n t’. Simple..
+
+05:38
+Similarly, we can also use a triple integral to find the volume of a cuboid.
+
+05:46
+And the mark up for a triple integral is ‘i i i n t’.
+
+05:52
+We can also use the subscript mark up to specify Limits of an integral.
+
+06:00
+Using the subscript, Math places the character to the bottom right of the integral.
+
+06:06
+So, these are the ways we can write integral formulae and equations in Math.
+
+06:13
+Now, let us see how to write formulae containing logarithms.
+
+06:19
+Let us write these in a fresh Math gray box or Math object.
+
+06:24
+Type "Logarithms: " and press Enter twice.
+
+06:29
+Call Math again;
+
+06:35
+and change the Font to 18 point
+
+06:39
+and align them to the Left.
+
+06:42
+A simple formula using logarithm is log 1000 to the base 10 is equal to 3.
+
+06:52
+Notice the mark up here.
+
+06:55
+Here is another example: log 64 to the base 2 is equal to 6.
+
+07:03
+Let us now write the integral representation of the natural logarithm.
+
+07:10
+The natural logarithm of t is equal to the integral of 1 by x dx from 1 to t.
+
+07:20
+And the mark up looks like as shown on the screen.
+
+07:25
+Let us save our examples.
+
+07:29
+Here is an assignment for you:
+
+07:31
+Write the following derivative formula:
+
+07:35
+d squared y by d x squared is equal to d by dx of ( dy by dx).
+
+07:47
+Use scalable brackets.
+
+07:51
+Write the following integral:
+
+07:53
+Integral with limits 0 to 1 of {square root of x } dx.
+
+08:04
+Next, write a double integral as follows:
+
+08:09
+Double integral from T of { 2 Sin x – 3 y cubed + 5 } dx dy.
+
+08:23
+And using the formula:
+
+08:25
+log x to the power of p to the base b is equal to p into log x to the base b
+
+08:35
+solve log 1024 to the base 2.
+
+08:41
+Format your formulae.
+
+08:43
+This brings us to the end of this tutorial on writing Differential and Integral equations and logarithms in LibreOffice Math.
+
+08:52
+To summarize, we learned how to write:* Derivatives and Differential equations
+
+08:58
+* Integral equations and *Formulae with Logarithms.
+
+09:02
+Spoken Tutorial project is a part of the Talk to a Teacher project,
+
+09:06
+supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:13
+This project is coordinated by http://spoken-tutorial.org.
+
+09:18
+More information on the same is available at the following link.
+
+09:24
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions signing off.
+Thanks for joining.
+

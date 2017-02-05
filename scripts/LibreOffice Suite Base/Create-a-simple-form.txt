@@ -1,0 +1,247 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:03
+In this tutorial, we will cover Simple Forms in LibreOffice Base.
+
+00:09
+Here, we will learn the following:
+
+00:12
+* What is a form?
+
+00:14
+* How to create a form using the Wizard
+
+00:17
+Using LibreOffice Base, so far, we learnt about creating a database and creating tables where we store the data.
+
+00:27
+But, how do we enter data into the database tables?
+
+00:33
+One way is to directly type in data into the cells of the tables which we did in the last tutorial.
+
+00:42
+There is another way to enter data swiftly as well as with minimum errors.
+
+00:49
+And that is by using Forms. A form is a front-end or user interface for data entry and editing data.
+
+01:00
+For example, a simple form can consist of fields in a table.
+
+01:06
+Let us consider the "Library" database example that we created in the previous tutorials.
+
+01:15
+So, a simple form can consist of the fields in the Books table.
+
+01:21
+And this form, now, can be used to enter data into the Books table.
+
+01:27
+Now, let us learn how to create a form.
+
+01:33
+Let us first invoke the LibreOffice Base program.
+
+01:38
+If Base program is not opened, then we will click on the Start button at the bottom left and then click on All programs. Then click on LibreOffice Suite and then click on LibreOffice Base.
+
+01:57
+Let us now click on the 'open an existing database file' option.
+
+02:04
+In the 'Recently Used' drop-down box, our 'Library' database should be visible.
+
+02:11
+So now, let us select it and click on the Finish button.
+
+02:17
+If LibreOffice Base is already open
+
+02:21
+then we can open the 'Library' database file 'Library.odb' by clicking on the File menu on the top and then clicking on Open.
+
+02:36
+Alternately, click on Recent Documents in the File menu and choose 'Library.odb'.
+
+02:48
+Now, we are in the 'Library' Database.
+
+02:52
+Let us click on the Forms icon in the Database list on the left panel.
+
+03:01
+Notice that there are two ways to create a new form: "Create Form in Design View" and "Use Wizard to create form".
+
+03:12
+Let us click on the second option: Use Wizard to create form.
+
+03:19
+We now see a new window which is similar to the 'LibreOffice Writer' window.
+
+03:26
+And on top of it, we see a pop-up window that says 'Form Wizard'.
+
+03:33
+Let’s go through this Wizard to create our first form based on the Books table.
+
+03:40
+Notice the 8 steps that we will go through on the left hand side.
+
+03:46
+We are in step 1 which is 'Field Selection'.
+
+03:53
+And, on the right hand side let us choose Table:Books from the drop-down here that says Tables or queries.
+
+04:03
+Below this, we see a list of Available fields on the left hand side.
+
+04:09
+On the right hand side we see Fields on the form.
+
+04:14
+We will need to move only those fields which we need on the form.
+
+04:21
+For now, let us click on the button with double-arrow mark symbols.
+
+04:27
+Notice that we have moved all the fields from the left to the right.
+
+04:35
+Since we have set up 'BookId' field to auto-generate its own numbers, we don’t need it on the form.
+
+04:46
+So, let us move this field back to the left hand side.
+
+04:51
+Click on BookId on the right hand side and click on the button that has one 'Less than' symbol.
+
+05:02
+OK, let us go to the next step now by clicking on the Next button at the bottom.
+
+05:10
+Step 2. Since we are creating a simple form, let us skip this step for now and simply click on the Next button.
+
+05:21
+We are in Step 5. 'Arrange controls'.
+
+05:26
+Also notice that in the background window, we see the Books table in an orange background.
+
+05:35
+Let us click on the four icons below the label that says 'Arrangement of the main form'.
+
+05:44
+As we click through, we see the background window changing, in the arrangement of labels and text boxes saying title, author etc.
+
+05:57
+Let us use the first arrangement that says 'Columnar – Labels Left'  and click on the first icon.
+
+06:08
+Here the labels are to the left and the text boxes on the right, just like a typical paper form.
+
+06:17
+Now, let us click on the Next button to proceed.
+
+06:22
+We are on Step 6 that says 'Set Data Entry'.
+
+06:28
+We will skip this step for now, and go to the next step.
+
+06:33
+Step 7. 'Apply Styles'.
+
+06:36
+Notice that the window background colour changes as we click through each colour in the list box.
+
+06:45
+Let us choose Ice Blue by clicking on it.
+
+06:50
+Now, let us go to the final step.
+
+06:53
+Step 8. Let us now give a name to our form.
+
+06:59
+We can follow our own naming conventions.
+
+07:03
+But for now, let us type a descriptive name, 'Books Data Entry Form' in the text box that is below the label ‘Name of the form’.
+
+07:16
+Now, how do we want to proceed after creating the form?
+
+07:20
+Let us 'Work with the form' first.
+
+07:23
+Meaning- we will start using the form for data entry.
+
+07:29
+To change the form design, we can choose 'Modify the form' which we will see later.
+
+07:37
+For now, we are done. So, let us click on the Finish button at the bottom.
+
+07:44
+We have now created our first simple form that says 'Books Data Entry Form' on the window title.
+
+07:54
+Notice that the text boxes are filled with values that read 'An autobiography', 'Jawaharlal Nehru' etc.
+
+08:05
+Where did these values come from?
+
+08:08
+We typed-in these values directly into the Books table in the previous part of the Base tutorial.
+
+08:17
+Now this form is ready to use for data entry.
+
+08:22
+Let us click on the tab keys to go through each value.
+
+08:27
+Notice that the form shows the second book's information and the title is now 'Conquest of self'.
+
+08:37
+We can also go to each book's information, otherwise called 'record', by clicking on the black triangle icon that points to the right, in the Forms Navigation toolbar at the bottom.
+
+08:54
+Notice that the record number 3 of 5 is displayed here.
+
+09:01
+Notice that Base shows tool tips when we point our cursor on these black arrow icons:
+
+09:09
+First Record, Previous Record, Next Record and Last Record.
+
+09:16
+We also can use these to traverse through the records.
+
+09:22
+This brings us to the end of this tutorial on Simple Forms in LibreOffice Base.
+
+09:27
+To summarize, we learned: What a form is? How to create a form using the Wizard.
+
+09:35
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:47
+This project is coordinated by http://spoken-tutorial.org.
+
+09:52
+More information on the same is available at the following link.
+
+09:56
+This script has been contributed by Priya Suresh DesiCrew solutions. And this is Soundharya, DesiCrew solutions, signing off.
+Thanks for joining.
+

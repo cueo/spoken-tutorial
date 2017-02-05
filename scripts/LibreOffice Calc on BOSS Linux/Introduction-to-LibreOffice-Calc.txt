@@ -1,0 +1,406 @@
+00:00
+Welcome to the Spoken tutorial on Introduction to LibreOffice Calc.
+
+00:06
+In this tutorial, we will learn about:
+
+00:09
+* Introduction to LibreOffice Calc.
+
+00:12
+* Various toolbars in LibreOffice Calc.
+
+00:16
+* How to open a new document in Calc.
+
+00:18
+* How to open an existing document.
+
+00:21
+* How to save and Close a document in Calc.
+
+00:26
+LibreOffice Calc is the spreadsheet component of the LibreOffice Suite.
+
+00:32
+Just like Writer deals largely with text information, spreadsheet deals largely with numeric information.
+
+00:40
+It can be said to be a software for the language of numbers.
+
+00:44
+It is the equivalent of Microsoft Excel in Microsoft Office Suite.
+
+00:49
+It is a free and open source software. So it can be copied, reused and distributed free of cost.
+
+00:57
+To get started with LibreOffice suite, you can use either Microsoft Windows 2000 and its higher versions like MS Windows XP or MS Windows 7 or you can use GNU/Linux as your Operating System.
+
+01:14
+Here we are using GNU/Linux as our operating system and LibreOffice Suite version 3.3.4.
+
+01:26
+If you do not have LibreOffice Suite installed, Calc can be installed by using Synaptic Package Manager.
+
+01:34
+For more information on 'Synaptic Package Manager', please refer to the GNU/Linux Tutorials on this website and download LibreOffice Suite by following the instructions on this website.
+
+01:49
+Detailed instructions are available in the first tutorial of LibreOffice Suite.
+
+01:55
+Remember, when installing use the “Complete” installation for Calc.
+
+02:00
+If you have already installed LibreOffice Suite, you will find 'LibreOffice Calc' by clicking on the Applications option at the top left of your screen and then clicking on Office and then on LibreOffice option.
+
+02:16
+A new dialog box opens up with various LibreOffice components.
+
+02:21
+In order to access LibreOffice Calc, click on the Spreadsheet component in the new dialog-box.
+
+02:29
+This will open an empty document in the main Calc window.
+
+02:34
+Now, let us learn about the main components of the Calc window.
+
+02:38
+The document in Calc is called a workbook. A workbook contains many sheets called as spreadsheets.
+
+02:47
+Each spreadsheet consists of cells arranged in rows and columns. Each row is identified by a number and each column by an alphabet.
+
+02:57
+A particular cell which refers to an intersection of a row and a column is identified by its relevant row number and column alphabet.
+
+03:08
+Cells can hold information like text, numbers, formulas and many more data elements for display and manipulation.
+
+03:17
+Each spreadsheet can have many sheets and each sheet can have little more than one million rows and one thousand columns which gives us more than one billion or hundred crore cells in a single sheet.
+
+03:32
+The Calc window has various toolbars like the title bar, the menu bar, the standard toolbar, the formatting bar, the formula bar and the status bar.
+
+03:44
+Apart from these toolbars, there are two additional fields namely Input line and Name box at the top.
+
+03:53
+The toolbars contain the most commonly used options which we will learn about as the tutorials progress.
+
+04:01
+Now you can see three sheet tabs at the bottom left corner of the spreadsheet namely, “Sheet1”, “Sheet 2” and “Sheet 3”.
+
+04:11
+These tabs enable access to each individual sheet with the visible sheet having a white tab.
+
+04:20
+Clicking on another sheet tab displays that particular sheet and its tab turns white.
+
+04:27
+The main section of the spreadsheet where the data is entered, contains various cells in the form of a grid.  Each cell is at the intersection of a column and a row.
+
+04:40
+At the top of the columns and at the left end of the rows are a series of gray boxes containing letters and numbers. These are the column and row headers.
+
+04:52
+The columns start at “A” and go on to the right and the rows start at “1” and go down.
+
+04:59
+These column and row headers form the cell reference that appears in the Name Box field.
+
+05:07
+After learning about the various components in Calc, we will now learn how to open a new document in LibreOffice Calc.
+
+05:15
+You can open a new document by clicking on the New icon in the standard toolbar or by clicking on the File option in the Menu bar and then clicking on the New option and then finally clicking on the Spreadsheet option.
+
+05:32
+You see that a new Calc window opens up in both the cases.
+
+05:37
+Now we will learn how to build a “Personal Finance Tracker” in the spreadsheet.
+
+05:43
+Let us see how to enter data in a few of the cells in a spreadsheet.
+
+05:49
+So, click on the cell referenced as A1 in the first sheet of the spreadsheet.
+
+05:54
+Let us type the heading as “SN” which denotes the serial number of the items, which we will represent in the spreadsheet.
+
+06:03
+Now click on the cell referenced as B1 and type another heading as “Items”.
+
+06:09
+All the item names which we will use in the spreadsheet will be under this heading.
+
+06:16
+Similarly, click on the cells C1, D1, E1, F1 and G1 one after the other and write the headings as “Cost”, “Spent”, “Received”, “Date” and “Account” respectively.
+
+06:32
+We will insert the data under each of these columns later.
+
+06:37
+Once done writing your spreadsheet, you should save it for future use.
+
+06:42
+To save this file, click on File in the Menu bar and then click on the Save As option.
+
+06:50
+A dialog-box appears on the screen where you are required to enter the name of your file under the Name field.
+
+06:58
+So, enter the name of the file as “Personal Finance Tracker”.
+
+07:03
+Below the Name field, you have the Save in folder field where you are required to enter the folder name which will contain your saved file.
+
+07:13
+So, click on the down-arrow in the Save in folder field.
+
+07:17
+A list of folder options appears. Here, we can choose the folder where we want our file to be saved.
+
+07:24
+We click on the Desktop option.
+
+07:27
+So, the file will be saved on the desktop.
+
+07:32
+Now, click on the File type option in the dialog-box.
+
+07:36
+It shows you a list of File Type options or file extensions under which you can save your file.
+
+07:44
+The default file-type in LibreOffice Calc is the “ODF Spreadsheet” which provides the extension dot ods.
+
+07:53
+ODF stands for Open Document Format which is an open standard.
+
+07:59
+Besides saving in dot ods format which can be opened in LibreOffice Calc, you can also save your file in dot xml, dot xlsx and in dot xls format which can be opened in the MS Office Excel program.
+
+08:20
+Another popular file extension which opens in most programs is dot csv.
+
+08:26
+This is often used to store spreadsheet data in a text file format which reduces the file size hugely and is easily portable.
+
+08:37
+We will click on the ODF Spreadsheet option.
+
+08:41
+You see that the file type- ODF Spreadsheet and within brackets dot ods gets displayed next to the File type option.
+
+08:52
+Click on the Save button.
+
+08:54
+This takes you back to the Calc window with the filename and extension of your choice on the title bar.
+
+09:02
+In addition to the above formats discussed, the spreadsheet can also be saved in dot html format which is a web-page format.
+
+09:12
+This is done in the same way as explained before.
+
+09:16
+So, click on the File option in the Menu bar and then click on the Save As option.
+
+09:23
+Now, click on the File Type option and then click on the “HTML Document" and within braces "OpenOffice dot org Calc” option.
+
+09:35
+This option gives the “dot html” extension to the document.
+
+09:40
+Click on the Save button.
+
+09:43
+Now put a check on the “Ask when not saving in ODF format” option in the dialog-box.
+
+09:49
+Finally click on the “Keep Current Format” option.
+
+09:53
+You see that the document gets saved with dot html extension.
+
+09:58
+This format is used when we want to show our spreadsheet as a web-page that can be opened by a web browser program.
+
+10:07
+The document can also be exported to PDF format by simply clicking on the “Export Directly as PDF” option in the standard tool bar.
+
+10:17
+As before,  choose the location where you wish to save.
+
+10:22
+Alternately, you can do so by clicking on the File option in the Menu bar and then clicking on the “Export as pdf” option.
+
+10:32
+In the dialog-box which appears, click on the Export option and then click on the Save button.
+
+10:39
+A 'pdf file' will be created.
+
+10:42
+Let's close this document by clicking on File and then Close.
+
+10:48
+Next, we will learn how to open an existing document in LibreOffice Calc.
+
+10:54
+To open an existing document, click on the File menu in the menu bar at the top and then click on the Open option.
+
+11:04
+A dialog-box appears on the screen.
+
+11:08
+Here, find the folder where you saved your document.
+
+11:12
+So, click on the small pencil button at the top left corner of the dialog box. It has the name- “Type a file name”.
+
+11:21
+This opens a “Location” Bar field.
+
+11:24
+Here, type the name of the file you are looking for.
+
+11:28
+So, we type the name of the file as “Personal Finance Tracker”.
+
+11:33
+Now in the list of file names that appears, choose “Personal Finance Tracker dot ods”.
+
+11:41
+Now, click on the Open button.
+
+11:44
+You see that the file Personal Finance Tracker.ods opens.
+
+11:50
+Alternately, you can open an existing file by clicking on the Open icon in the toolbar, at the top, and doing the further process in the same manner.
+
+12:01
+You can also open files with dot xls and dot xlsx extensions which are used by Microsoft Excel in Calc.
+
+12:11
+Next, you will see how to modify a file and save it under the same file name.
+
+12:18
+So, let us modify the file by making the headings bold and increasing their font size.
+
+12:25
+So, first click on the cell referenced as A1. Select the headings “SN”, “Cost”, “Spent”, “Received”,  “Date” and “Account” by clicking on the left mouse button and then dragging it along all the headings.
+
+12:41
+This will select the text and highlight it. Now, release the left mouse button. The text should still be highlighted. Now click on the Bold icon in the standard toolbar.
+
+12:55
+The headings thus become bold.
+
+12:58
+Now, let us increase the font size of the headings.
+
+13:02
+So, let's select the headings and then click on the “Font Size” field in the toolbar.
+
+13:07
+In the drop-down menu, let us choose “14”.
+
+13:11
+So, you see that the font size of the headings increases.
+
+13:16
+Now, let us change the font style we are using.
+
+13:20
+So, click on the down-arrow in the Font Name field and then select “Bitstream Charter” as the font name.
+
+13:29
+After making the required modifications, click on the Save icon.
+
+13:35
+Once you have saved your document and you wish to close it, just click on the File menu in the menu bar and click on the Close option.
+
+13:45
+This closes your file.
+
+13:48
+This brings us to the end of the Spoken Tutorial on LibreOffice Calc.
+
+13:53
+To summarize, we learned about:
+
+13:56
+* Introduction to LibreOffice Calc.
+
+13:59
+* Various toolbars in LibreOffice Calc.
+
+14:02
+* How to open a new document in Calc.
+
+14:05
+* How to open an existing document and
+
+14:08
+* How to save and Close a document in Calc.
+
+14:13
+COMPREHENSIVE ASSIGNMENT: Open a new document in Calc.
+
+14:18
+ Save it under the name “Spreadsheet Practice.ods”.
+
+14:23
+Write the headings as “Serial number”, “Name”, “Department” and “Salary”.
+
+14:29
+Underline the headings. Increase the font size of the headings to 16. Close the file.
+
+14:37
+Watch the video available at the following link.
+
+14:40
+It summarizes the Spoken Tutorial project.
+
+14:45
+If you do not have good bandwidth, you can download and watch it.
+
+14:48
+The Spoken Tutorial Project tTeam:
+
+14:52
+* Conducts workshops using spoken tutorials.
+
+14:54
+* Gives certificates for those who pass an online test.
+
+14:57
+For more details, please write to- contact at spoken hyphen tutorial dot org.
+
+15:04
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+15:08
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+15:16
+More information on this mission is available at:
+
+15:21
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+15:27
+This tutorial has been contributed by Desi Crew Solutions Pvt. Ltd.
+Thanks for joining.
+

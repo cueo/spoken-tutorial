@@ -1,0 +1,260 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:04
+In this tutorial, we will learn how to
+
+00:07
+create a Subform.
+
+00:09
+For this, let us continue with our familiar Library database example.
+
+00:15
+And we will consider the following case:
+
+00:18
+* How can we list all the members of the library?
+
+00:22
+* And for each member, how can we see only those books that have not yet been returned by that member?
+
+00:31
+One way is to create a form listing all the members in the library.
+
+00:36
+And then creating a subform below it, to list those books that have not yet been returned by the member.
+
+00:44
+Once we design this form, we will be able to update the form.
+
+00:49
+For example, when a member returns a book, we can update this information.
+
+00:55
+And, here is a sample screenshot of the form we will design.
+
+01:01
+Notice, it also shows a subform at the bottom.
+
+01:06
+Let's open our Library database.
+
+01:09
+In our previous tutorials, we created the ‘History of Books Issued to Members’ query.
+
+01:17
+Now we will use this query and the Members table as the base for creating our new form.
+
+01:25
+Let us first copy this query by right-clicking on the query name and then let us click on Paste.
+
+01:34
+In the pop-up window for query name, let us type in a new name: ‘Books Not Returned’
+
+01:42
+Let us now open the ‘Books Not Returned’ query in edit mode.
+
+01:48
+In the Query Design window, let us add a criterion to show only those books that are not checked-in.
+
+01:58
+For this, let us type ‘equals 0’ in the Criterion column, under CheckedIn.
+
+02:06
+And press Enter.
+
+02:09
+Let us now save the query and close the window.
+
+02:13
+In the main Base window, let us click on the Forms icon on the left panel.
+
+02:20
+And then click on the ‘Use Wizard to create Form’ option.
+
+02:25
+Now we see the familiar Form wizard.
+
+02:28
+Let us go through the 8 steps on the left to create our form.
+
+02:34
+In step 1. field selection, let us choose Table: Members.
+
+02:40
+Then let us move all the fields to the right side.
+
+02:46
+And let us click on the Next button.
+
+02:49
+We are in Step 2. Setup a subform.
+
+02:54
+So here, let us check the ‘Add subform’ check-box
+
+02:59
+and click on the option: ‘Subform based on manual selection of fields’.
+
+03:07
+Let us go to Step 3. Add subform fields.
+
+03:11
+Here we will call our new query which we designed a few minutes ago.
+
+03:18
+So, let us choose ‘Query: Books Not Returned’ from the Tables or Queries drop-down.
+
+03:26
+And we will move selected fields from the available list to the right side as shown on the screen. <pause>
+
+03:37
+Click on Next.
+
+03:39
+Step 4. Get joined fields.
+
+03:43
+Here we will choose the MemberId field from the top two drop-downs, as this is the only relating field.
+
+03:53
+And click on the Next button.
+
+03:57
+Step 5. Arrange Controls.
+
+04:00
+Here, we will choose the third option- Data sheet, for both the form and the subform.
+
+04:08
+And click on the Next button.
+
+04:11
+Step 6. Set data entry.
+
+04:15
+Here, we will leave the options as they are and click on Next.
+
+04:22
+Step 7. Apply Styles.
+
+04:26
+Let us choose Grey as the form background.
+
+04:29
+And go to the final step.
+
+04:32
+Step 8. Set Name.
+
+04:36
+Here, let us give a descriptive name to our form: ‘Members Who Need to Return Books’.
+
+04:45
+And let us click on the Modify form option, as we are going to do some more changes.
+
+04:53
+Now let's click on the Finish button.
+
+04:56
+In the Form Design window, notice that there are two tabular data sheet areas.
+
+05:04
+The one above is called the form and the one below is called the subform.
+
+05:11
+Now, let us add a label above the form.
+
+05:15
+We will click on the Label icon in the Form Controls toolbar at the top and draw it on the form.
+
+05:25
+Double clicking on the label, brings up its properties.
+
+05:31
+Here we will type ‘Members of the Library’ against label
+
+05:37
+and change the font style to Arial, Bold and Size 12. <pause>
+
+05:47
+Similarly, let us add a second label above the subform as shown on the screen
+
+05:55
+and call it ‘List of Books to be returned by the member’. <pause>
+
+06:00
+Next, let us shorten the form’s length as shown on the screen.
+
+06:07
+And then let us increase the length of the Name field in the form. <pause>
+
+06:13
+Similarly, let us lengthen the Book title field in the subform.
+<pause>
+
+06:21
+Let us change the fonts here to Arial, Bold and Size 8.
+
+06:28
+And change the background color to white for the form and Blue 8 for the subform. <pause>
+
+06:37
+Next, let us hide the MemberId column by right-clicking on it and choosing the Hide column option.
+
+06:47
+Okay, we are done. So, let us save the form design and test it.
+
+06:54
+In the main Base window, let us open the ‘Members Who Need to Return Books’ form by double-clicking on it.
+
+07:03
+There is the form.
+
+07:05
+Let us browse through the members by either using the up or down arrow keys,
+
+07:12
+or by simply clicking on the various member names.
+
+07:16
+Notice that the subform below refreshes and shows books to be returned.
+
+07:23
+In the subform, let us choose any record
+
+07:27
+and let us type in ‘12/7/11’ in the actual return date field and check the CheckedIn field
+
+07:41
+and press Enter.
+
+07:45
+Let us now refresh the form by clicking on the Refresh icon in the Form Navigation toolbar at the bottom.
+
+07:56
+Notice that the record we just edited is no longer listed here
+
+08:02
+which means the book has been returned or checked-in.
+
+08:07
+So, there is our form with a subform.
+
+08:11
+This brings us to the end of this tutorial on Subforms in LibreOffice Base.
+
+08:17
+To summarize, we learned how to:
+
+08:20
+create a Subform.
+
+08:23
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India. This project is coordinated by http://spoken-tutorial.org. More information on the same is available at the following link.
+
+08:44
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

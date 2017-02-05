@@ -1,0 +1,354 @@
+00:00
+Welcome to the tutorial on LibreOffice Impress - Inserting Pictures and Objects.
+
+00:06
+In this tutorial, we will learn how to: * Insert pictures and objects into a presentation.
+
+00:12
+Format the pictures and pbjects
+
+00:15
+Hyperlink within and outside the presentation and insert Tables.
+
+00:20
+Here, we are using:
+Ubuntu Linux 10.04 and
+LibreOffice Suite version 3.3.4.
+
+00:29
+In a web-browser address bar, type the URL shown on the screen.
+
+00:34
+This will display an image.
+
+00:37
+Now, right-click on the image and choose the Save Image As option.
+
+00:41
+A dialog-box will open.
+
+00:43
+In the Name field, ‘open source -bart.png’ is already displayed.
+
+00:51
+I will choose the location as Desktop and click on the Save button.
+
+00:59
+Let's open our presentation ‘Sample-Impress’ which we had saved earlier.
+
+01:04
+We will now see how to add a picture into this presentation.
+
+01:09
+Click on Insert from the Main menu and then click on Picture.
+
+01:14
+Now, click on From File option.
+
+01:17
+A dialog-box will open.
+
+01:19
+Choose the folder from which you want to insert a picture.
+
+01:23
+I will choose the Desktop folder.
+
+01:26
+Now, choose the picture we want to insert and click on the Open button.
+
+01:31
+The picture gets inserted into the slide.
+
+01:35
+Let's undo the changes.
+
+01:37
+Let me demonstrate another way to insert pictures.
+
+01:41
+Insert a new slide after the slide titled ‘Overview’ by clicking on Insert and Slide.
+
+01:50
+Click on the Title text-box and change the title to ‘OpenSource Funny’.
+
+01:56
+Notice a small box with 4 icons in the centre.  This is the Insert toolbar.
+
+02:03
+From the Insert toolbar, click on the Insert Picture icon.
+
+02:08
+Choose a picture and click on the Open button.
+
+02:12
+Notice that the inserted picture covers almost the whole slide.
+
+02:17
+You can change the shape and size of the image by first clicking on it and manipulating the control points.
+
+02:27
+In a similar manner we can also insert other objects like charts and movie-clips into our presentation.
+
+02:35
+Explore all these possibilities.
+
+02:38
+Now let's learn how to hyperlink.
+
+02:41
+Hyperlinking allows you to easily move from slide to slide or open a web-page or a document from the presentation.
+
+02:49
+First, we will look at how to hyperlink within a presentation.
+
+02:54
+Insert a new slide after the slide titled "Overview".
+
+03:02
+Click on the title and type: "Table of Contents".
+
+03:07
+Click on the Body text-box and type the titles of the succeeding slides as follows:
+
+03:13
+"Open Source Funny"
+"The Present Situation"
+"Development up to present" 
+"Potential Alternatives"  
+"Recommendation".
+
+03:24
+Select the line of text "Development up to present".
+
+03:28
+Click on Insert and Hyperlink.
+
+03:31
+This will open the hyperlink dialog-box.
+
+03:34
+On the left pane, select Document. Then click on the button to the right of the field ‘Target in document’.
+
+03:48
+The list of slides present in this presentation opens up.
+
+03:53
+Select the slide titled "Development up to present" from the list.
+
+03:58
+Click on the Apply button and then click on the Close button in this list.
+
+04:04
+Again, click on the Apply button and then click on the Close button in the Hyperlink dialog-box.
+
+04:12
+Click anywhere in the slide.
+
+04:14
+Now, when you hover your cursor over the text, the cursor turns into a pointing finger.
+
+04:20
+This means that the hyperlinking was successful!
+
+04:24
+Clicking on the hyperlinked text takes you to the relevant slide.
+
+04:29
+To hyperlink to another document, let's go back to the "Table of Contents" slide.
+
+04:35
+Now, add another line item: "External Document".
+
+04:40
+Select the line of text and click on Insert and then on Hyperlink.
+
+04:45
+In the left pane, select Document.
+
+04:48
+Click on the folder icon to the right of the 'Document Path' field.
+
+04:55
+Select the document which you want to hyperlink.
+
+04:58
+We will choose 'resume.odt' which we created in the Writer series and click on the Open button.
+
+05:07
+Click on the Apply button and then click on the Close button in the Hyperlink dialog-box.
+
+05:14
+Click anywhere on the slide.
+
+05:17
+Now, when you hover your cursor over the text, the cursor turns into a pointing finger.
+
+05:22
+This means that the hyperlinking was successful!
+
+05:26
+Now, clicking on the hyperlinked text takes you to the relevant document.
+
+05:31
+In our case, it takes us to "resume.odt". <PAUSE>
+
+05:36
+Hyperlinking to a web-page is similar.
+
+05:40
+Insert a new slide at the end of the presentation.
+
+05:43
+Change the title to "Essential Open Source Software".
+
+05:48
+In the Body text-box, type: "Ubuntu Libre Office".
+
+05:53
+Select the second line of text and click on Insert and then on Hyperlink.
+
+06:00
+On the left pane, select Internet.
+
+06:03
+In the Hyperlink type, select Web.
+
+06:07
+In the Target field, type: ‘www.libreoffice.org’.
+
+06:16
+Click on the Apply button and then click on the Close button in the Hyperlink dialog-box.
+
+06:23
+Click anywhere on the slide.
+
+06:26
+Now, when you hover your cursor over the text, the cursor turns into a pointing finger.
+
+06:32
+This means that the hyperlinking was successful!
+
+06:37
+Now, clicking on the hyperlinked text takes you to the relevant web page.
+
+06:44
+Lastly, tables are used to organize data into columns and rows.
+
+06:49
+Let’s now learn how to add a table in LibreOffice Impress.
+
+06:54
+Select the slide entitled "Development up to the present", from the Slides pane.
+
+07:00
+From the Layout section on the Tasks pane, select Title and 2 Content icon.
+
+07:07
+Select the text in the left side text-box
+
+07:14
+and reduce the font size to 26.
+
+07:17
+In the right side text-box, click on the icon Insert Table from the Insert toolbar in the centre.
+
+07:25
+By default, Number of columns is displayed as 5 and Number of rows is displayed as 2.
+
+07:33
+We will change the Number of columns to 2 and the Number of rows to 5.
+
+07:41
+Click on the OK button.
+
+07:44
+Let's elongate the table so that the text is readable.
+
+07:49
+Enter data into the table as shown-
+
+07:51
+"Implementation Year and % "
+
+07:56
+"2006"  "10%"
+
+07:59
+"2007"  "20%"
+
+08:02
+"2008"  "30%"
+
+08:05
+"2009	  "40%"
+
+08:08
+Now, let's change the font of the header row to bold and center the text.
+
+08:17
+To change the color of the table, first select all the text.
+
+08:22
+Then from the Table Design section, on the Tasks pane, select a Table Style.  I will select this one.
+
+08:30
+See how the Table looks now.
+
+08:33
+This brings us to the end of this tutorial.
+
+08:37
+To summarize- in this tutorial, we learnt how to: * Insert Pictures and format them
+
+08:43
+Hyperlink within and outside the presentation and insert Tables.
+
+08:49
+Try this comprehension test assignment.
+
+08:53
+Create new presentation.
+
+08:55
+Insert a picture on the 3rd slide.
+
+08:58
+On the 4th slide, create a table of 2 rows and three columns.
+
+09:03
+In row 2, column 2 of the table, type: ‘slide 3’. Hyperlink this text to the 3rd slide.
+
+09:14
+Watch the video available at the following link.
+
+09:17
+It summarizes the Spoken Tutorial project.
+
+09:20
+If you do not have good bandwidth, you can download and watch it.
+
+09:25
+The Spoken Tutorial Project team:  Conducts workshops using spoken tutorials.
+
+09:30
+Gives certificates for those who pass an online test.
+
+09:34
+For more details, please write to:
+contact at spoken hyphen tutorial dot org.
+
+09:41
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+09:46
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:53
+More information on this mission is available at:
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+10:05
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

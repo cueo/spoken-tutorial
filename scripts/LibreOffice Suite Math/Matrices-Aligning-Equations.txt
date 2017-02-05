@@ -1,0 +1,241 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Math.
+
+00:04
+In this tutorial, we will learn how to: * Write a matrix and
+
+00:08
+* Align equations on a particular character.
+
+00:12
+For this, let us first open our example Writer document that we created in our previous tutorials- "MathExample1.odt".
+
+00:25
+Notice all the previous example formulae which we wrote using Math.
+
+00:30
+Now, let us scroll to the last page of the document and press Control, Enter to go to a new page.
+
+00:39
+Let us call Math by clicking Insert menu, then Object and then Formula.
+
+0049:
+In mathematics, a matrix is a rectangular array of numbers or symbols which are called elements.
+
+00:59
+'Math' has separate mark up to represent a matrix and its rows and columns of elements.
+
+01:08
+I have the examples written already so as to save time. I will copy and paste them. Now, we’ll learn how to write a 2 by 3 matrix.
+
+01:24
+This matrix has 2 rows and 3 columns.
+
+01:29
+We will use the markup matrix and include all its elements within curly brackets, in the Formula Editor window.
+
+01:40
+Notice that the elements in a row are separated by one hash symbol
+
+01:48
+and the rows are separated by two hash symbols.
+
+01:55
+Use parentheses to enclose the matrix in brackets.
+
+02:01
+Now, notice that the brackets are short and do not cover all the elements in the matrix entirely.
+
+02:12
+They are of the same size as each element and hence are not scalable to the size of the matrix.
+
+02:22
+To solve this, we can use the words ‘Left’ and ‘Right’.
+
+02:28
+i.e. 'Left', just before open bracket and 'Right', before close bracket to make the brackets scalable.
+
+02:41
+Let me copy and paste the next example.
+
+02:46
+So, a 4 by 1 matrix will look like as shown on the screen.
+
+02:52
+Notice the scalable brackets in the Writer gray box.
+
+02:57
+The markup for the matrix is as shown on the screen.
+
+03:03
+Here, we can also use square brackets instead of parentheses.
+
+03:09
+So, using the matrix mark up, we can write matrices of any dimensions.
+
+03:17
+Now, let us write an example for matrix addition.
+
+03:23
+Let us go to a new line in the Formula Editor window.
+
+03:28
+We can press the Enter key twice to add two blank lines.
+
+03:36
+First, let us write two example 2 by 3 matrices, side by side, as shown on the screen.
+
+03:46
+Next, let us add a plus symbol in between these two matrices to denote addition.
+
+03:54
+To do this, we can simply click between the gap of these two matrices in the Writer Gray box.
+
+04:03
+Notice that the cursor in the Formula Editor Window is placed roughly between the two matrix mark ups here.
+
+04:12
+Type plus (+) in between these two matrices.
+
+04:17
+So, there is the plus symbol (+).
+
+04:20
+Next, let us add an equal to symbol (=) at the end with long gaps.
+
+04:28
+And then, the third matrix on the right, denoting the addition.
+
+04:35
+Notice that we have used Greek characters in our example.
+
+04:42
+So, there is the result of the addition of two matrices.
+
+04:47
+Let us save our work.
+
+04:50
+Next, let us see an example of multiplying a matrix by a number.
+
+04:58
+We will write a 2 by 3 matrix and multiply it by 4.
+
+05:04
+We will first write 4 times, followed by the matrix.
+
+05:10
+Let me copy the matrix and paste it in FEW.
+
+05:17
+Next, let us write the equal to (=) symbol at the end with long gaps
+
+05:24
+followed by the matrix product. I am copying and pasting the mark up for the matrix product.
+
+05:33
+So, there is the product of multiplying a 2 by 3 matrix by a number.
+
+05:40
+Now, we can format matrices by clicking on the Format menu and choosing the Fonts, Font Size, Alignment or the Spacing.
+
+05:51
+For example, let us choose Spacing.
+
+05:55
+In the Category drop-down, on the right, let us choose Matrices
+
+06:02
+and change the Line spacing to 20 percent and column spacing to 50 percent. Click OK.
+
+06:17
+Notice, how the matrices and their elements are well spaced out.
+
+06:23
+Let us save our work now by clicking on File and Save.
+
+06:29
+Now, we can also use matrices to write two or three equations and then align them on a particular character.
+
+06:37
+For example, we can write simultaneous equations and align them on the equal to character.
+
+06:46
+Let us write a set of simultaneous equations now, as shown on the screen.
+
+06:52
+Notice that they are not perfectly aligned on the equal to character.
+
+06:58
+So, here we can use the matrix mark-up to align them.
+
+07:03
+We can separate each part in the equation and treat the parts as elements of a matrix.
+
+07:10
+Here, '2x' is a part, 'y' is a part, equal to character is a part and so on.
+
+07:20
+Press Enter twice. Copy and paste the mark up.
+
+07:26
+And, thus the new mark up looks like as shown on the screen.
+
+07:31
+Here, we have used the matrix mark up, treated each part of the equation as an element and separated them by # (hash) symbols.
+
+07:43
+We have used the double hash symbols to separate the two equations.
+
+07:50
+So, there is a perfectly aligned set of equations.
+
+07:56
+Let us write another set of equations.
+
+07:59
+Here, let us suppose that we don’t have equal number of parts on the left and the right of the equal to character.
+
+08:09
+Notice the equations on the screen and they are not aligned on the equal to character.
+
+08:16
+Let us rewrite the mark up to align them. Press Enter twice. I am copying and pasting the markup.
+
+08:25
+So here, we have used alignr and alignl to align the parts to the right and the left of the equal to character.
+
+08:36
+And, there is our perfectly aligned set of equations.
+
+08:41
+Here is an assignment for you:
+
+08:43
+Write steps for multiplying a 2x3 matrix by a 3x1 matrix. Use formatting to change the font sizes and the spacing.
+
+08:56
+Write a set of three equations. Align the equations at the equal to (=) character.
+
+09:04
+This brings us to the end of this tutorial on Matrix and Aligning equations in LibreOffice Math.
+
+09:11
+To summarize, we learned the following topics:
+
+09:15
+* Write a Matrix and * Align equations on a particular character.
+
+09:20
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:32
+This project is coordinated by http://spoken-tutorial.org.
+
+09:37
+More information on the same is available at the following link.
+
+09:40
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

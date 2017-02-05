@@ -1,0 +1,306 @@
+00:01
+ Welcome to the Spoken Tutorial about Setting Preferences in LibreOffice Draw.
+
+00:06
+In this tutorial, you will learn how to set the following preferences:
+ Properties
+ Create Versions
+ View in color/grayscale/black-and-white.
+
+
+00:18
+Here, we are using:
+ Ubuntu Linux version 10.04 as our operating system and
+ LibreOffice Suite version 3.3.4.
+
+
+00:29
+Let us open the file "3D ObjectsChart" that we had saved earlier. And go to page 1.
+
+ 00:40
+Suppose we want to add descriptions to this file for later reference.
+
+00:45
+To do so, from the Main menu, select File and click  Properties.
+
+00:50
+You will see the Properties dialog-box.
+
+00:56
+Click the General tab. All the information that is relevant to the file is listed here.
+
+ 01:02
+Please note:  we can only view the file details here. You cannot make any changes.
+
+01:09
+Next, click on the Description tab.
+
+01:13
+Here, we can enter the Title, Subject, Keywords and Comments as per your requirement.
+
+01:20
+This information can be used as reference later.
+
+01:25
+In the Title field, let us type: "3D Objects Chart".
+
+01:30
+In the Subject field, we will type: "3D Objects Comparisons".
+
+01:37
+In Keywords, we’ll type: "3D and 3D Effects".
+
+01:42
+Finally, in the Comments field, let us type: "Learning about File Properties".
+
+ 01:48
+It is a good practice to type information that is relevant to the Draw file.
+
+01:54
+In addition to the properties present in the Description tab, you may want to set your own properties.
+
+02:00
+For example, you may want to know: the date on which the document was prepared,
+
+02:05
+the editor of the document,
+
+02:07
+the client for whom the document was prepared etc.
+
+02:11
+Draw has the features that help you customize this information.
+
+02:17
+In the Properties dialog-box, click Custom Properties.
+
+
+02:23
+Here, you will see three fields: Name, Type and Value.
+
+02:30
+Let’s click the Add button at the bottom-right.
+
+02:33
+You will now see drop-down boxes under each field.
+
+02:40
+Let us click on the Name drop-down and select the option Date Completed.
+
+02:46
+In the Type drop-down, we will select Date Time.
+
+02:51
+The Value field, will now indicate date and time.
+
+02:55
+Let us not change the date.
+
+02:57
+In the Time field, let us enter 10:30:33.
+
+03:05
+Now you know the date on which the document was prepared.
+
+03:09
+Let us add another field now. Click Add.
+
+03:14
+You will see a second list of drop-down boxes.
+
+03:21
+In the Name drop-down, let us select Checked by.
+
+03:25
+For the Type field, let us select Text.
+
+03:29
+In Value, type the text “ABC”.
+
+03:33
+Click OK. That’s how you add your own properties to a Draw file.
+
+ 03:39
+Now, let’s learn how to delete a property that we created.
+
+03:44
+Go to the Main menu, click on File and select Properties.
+
+03:51
+In the Properties dialog-box, click Custom Properties.
+
+03:55
+Let us delete the first property Checked by.
+
+04:01
+Click the Remove Property button on the right. The property is deleted.
+
+04:07
+Click OK.
+
+04:11
+You can save multiple versions of the Draw file too!
+This feature is called Versions.
+
+04:17
+For example, You may add objects on the first day and save it.
+
+04:22
+The next day you may modify the drawing.
+
+04:24
+You may want to have a copy of both the original drawing and the modified drawing.
+
+04:31
+Let us save the file using the Versions option.
+
+04:33
+From the Main menu, go to File and click Versions.
+
+ 04:39
+You will see the Versions dialog-box.
+
+ 04:42
+Click on the Save New Version button.
+
+04:47
+You will see the Insert Version Comment dialog-box.
+
+04:51
+Let’s type the comment "Version One".
+
+04:55
+Click on OK and then click on Close.
+
+05:00
+Now, let us change the text in the title- "Geometry in Two D Shapes and Three D Shapes".
+
+05:07
+Let’s change the colour of the text to blue.
+
+ 05:18
+Let us save the file using the Versions option.
+
+05:22
+From the Main menu, go to File and click on Versions.
+
+05:26
+Click on the Save New Version button.
+
+05:30
+The Insert Version Comment dialog appears.
+
+05:34
+Type the comment "Version Two".
+
+05:36
+Click OK.
+
+05:40
+There are now two versions listed here  - "Version One" and "Version Two".
+
+05:46
+We know that Version One is the file with the black coloured title font.
+
+05:51
+And Version Two is the file with the blue coloured title font.
+
+05:54
+Let us select Version One and click on Open.
+
+06:00
+We can see the version with the black coloured title font.
+
+ 06:05
+You can enable automatic saving of versions, every time you close a Draw file.
+
+06:11
+To do so, click on File and then click on Versions.
+
+06:15
+Now, a check-box option  says "Always save a version on closing".
+
+06:23
+Check this box.
+
+06:24
+This will ensure that every time you close the Draw file, a new version will be saved. Click Close.
+
+06:34
+You can also set the viewing preferences for your Draw file.
+
+06:38
+You can view your drawing in Color, Gray scale or Black and White.
+
+06:44
+By default, we view the Draw file in colour.
+
+06:48
+Let us change the view to Gray Scale.
+
+06:53
+Click on View, click Color/Grayscale and select Gray Scale.
+
+ 06:59
+You will see that the objects are now displayed in grey.
+
+ 07:03
+Now, let’s change the view to Black and White.
+
+07:08
+From the Main Menu, select View, click Color/Grayscale and select Black and White.
+
+ 07:17
+You will see that the objects are now displayed in black-and-white.
+
+ 07:25
+You can switch the view back to colour again.
+
+07:29
+To do so, click on View, click Color/Grayscale and select Color.
+
+ 07:36
+The drawing is again displayed in colour.
+
+07:43
+This brings us to the end of this tutorial.
+
+07:45
+In this tutorial, we have learnt to set the following preferences in Draw:
+ Properties of a Draw file
+ Create versions of a Draw file
+ View the drawing in color/grayscale/black-and-white.
+
+
+07:59
+Watch the video available at the following link.
+
+08:02
+It summarizes the Spoken Tutorial project.
+
+08:06
+If you do not have good bandwidth, you can download and watch it.
+
+08:11
+The Spoken Tutorial Project team:
+ Conducts workshops using spoken tutorials. 
+ Gives certificates to those who pass an online test. 
+
+
+08:21
+For more details, please write to:
+contact at spoken hyphen tutorial dot org. 
+
+08:29
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+08:33
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+08:40
+More information on this mission is available at:
+htpp://spoken-tutorial.org/NMEICT-Intro
+
+08:54
+ This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.

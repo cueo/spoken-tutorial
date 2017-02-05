@@ -1,0 +1,549 @@
+00:00
+ Welcome to the Spoken Tutorial on Fill Objects with Color in LibreOffice Draw.
+
+00:06
+ In this tutorial, you will learn how to:
+
+00:09
+
+ Fill objects with color, gradients, hatching and bitmaps
+
+
+00:15
+
+ Set page backgrounds
+
+
+00:17
+
+ Create new colors. 
+
+
+00:20
+ Let us begin by opening the file WaterCycle.
+
+00:24
+ You can fill objects with:* Colors* Gradients
+
+ 00:29
+
+ Line patterns or hatching and * Pictures.
+
+
+ 00:33
+ Here, we are using:
+ Ubuntu Linux version 10.04 and 
+ LibreOffice Suite version 3.3.4.
+
+
+00:42
+ Let us color the WaterCycle diagram.
+
+ 00:46
+ Let’s begin by coloring the two clouds next to the sun. We shall fill them with white.
+
+ 00:54
+ Select the cloud next to the sun.
+
+ 00:56
+Right-click to view the context menu and click Area.
+
+ 01:01
+ The Area dialog-box is displayed.
+
+01:05
+Click the Area tab and under the Fill option, select Color.
+
+01:13
+Scroll down and click on White.
+
+01:16
+Click OK.
+
+01:19
+ In the same way, we will colour the other cloud too.
+
+01:24
+Right-click under Area, Color and White.
+
+01:30
+ Coloring each cloud will take a long time.
+
+01:33
+An easier way to do this is to group them.
+
+01:38
+ Let’s color the other two clouds  in gray as they are rain-bearing clouds.
+
+01:46
+ First let’s group them.
+
+01:48
+Press the Shift key and click the first cloud and then click on the second.
+
+01:54
+ Right-click for the context menu and click Group.
+
+01:58
+The clouds are now grouped.
+
+02:00
+ Again, right-click for the context menu and click Area.
+
+02:07
+ In the Area dialog-box, click the Area tab. Under the Fill option, select Color and scroll down and click on the colour Gray 70%.
+
+02:23
+Click OK.
+
+ 02:25
+ Let’s color the triangle brown 3 in the same way.
+
+02:37
+Now, let’s color the rectangle in brown 4 in the same way, again.
+
+02:48
+ Similarly, let's colour the sun yellow.
+
+ 02:58
+ Next, let’s color the other triangle and curve that represents water with the colour turquoise 1.
+
+03:05
+As they require the same formatting, let’s group them if they are not already grouped.
+
+03:12
+ To color them, let’s follow the same steps as in the previous ones - right-click, Area -> Area tab -> Fill -> color -> turquoise 1.
+
+ 03:27
+ Observe that in the object water, the outlines of the triangle and the curve are  displayed.
+
+03:35
+Let’s make these outlines invisible so that the picture looks better.
+
+03:41
+ Select the object, right-click to view the context menu and click Line.
+
+ 03:48
+  The Line dialog-box is displayed.
+
+ 03:52
+Click the Line tab .
+
+03:55
+ In Line properties, click on the Style drop-down box and select Invisible.
+
+04:03
+Click OK.
+
+04:05
+The outline of water object becomes invisible.
+
+ 04:09
+ Now, let us color the trees.
+
+04:14
+ Let us select the left-most tree.
+
+04:16
+Right-click to view the context-menu and click on Enter Group.
+
+04:23
+Now, let’s edit the tree.
+
+04:26
+ Select the leaves on the right.
+
+04:30
+Right-click for the context menu and click Area.
+
+04:36
+In the  Area dialog-box,
+
+04:38
+click the Area tab.
+
+ 04:40
+Under Fill, select Color.
+
+04:44
+Scroll down and click on Green 5.
+
+ 04:47
+Click OK.
+
+ 04:49
+Let us do the same for the leaves on the left.
+
+04:57
+ Let’s color the trunk of the tree next.
+
+05:05
+ Select the Y-shaped arrow, right-click for the context menu and click Area.
+
+05:08
+Notice that all the previous selections are retained in the Area dialog-box.
+
+05:15
+So, let's  select Color.
+
+05:18
+Scroll down and click on Brown 1.
+
+05:21
+Click OK.
+
+05:23
+We have colored the tree!
+
+05:26
+ To exit the group, right-click and select Exit Group.
+
+05:31
+ We can color the other trees in the same way.
+
+05:36
+ We can also delete the other trees, copy-paste the colored tree and move it to the desired location.
+
+05:44
+It is much easier this way, isn’t it?
+
+05:49
+Now, let us add a shadow to the cloud next  to the Sun.
+
+ 05:55
+ Let’s click Select from the Drawing toolbar to select and then group them.
+
+06:03
+ Select the white cloud group and right-click for the context menu and click Area.
+
+06:10
+ In the Area dialog-box, click the Shadow tab.
+
+06:15
+In Properties, check the Use Shadow box.
+
+06:20
+The other fields now become active.
+
+06:24
+ In Position, click the bottom-right corner option.
+
+06:29
+“Position” defines where the shadow will appear.
+
+06:33
+ In the Color field, select Gray.
+
+06;36
+Click OK.
+
+06:39
+ A shadow is displayed behind each white cloud.
+
+ 06:44
+ Now, let’s make the clouds look more realistic.
+
+06:48
+ Select the gray cloud group and right-click to view the context menu and select Area.
+
+ 06:55
+ In the “Area” dialog-box, select Area tab. Under Fill, click Gradient.
+
+07:02
+Now select Gradient1.
+
+07:04
+Click OK.
+
+07:06
+The cloud now has a more realistic shade of gray!
+
+07:11
+ Select a shape - say a cloud group.  Right-click for the context menu and click Area.
+
+07:19
+The Area tab options are visible.
+
+07:23
+Under Fill, you will see the 4 options -
+
+07:27
+Color, Gradient, Hatching and Bitmap.
+
+07:32
+ Notice that there is a corresponding tab in the dialog-box for each of these options.
+
+ 07:39
+ These tabs allow us to create and save new styles.
+
+07:43
+ Let’s click on the Colors tab.
+
+ 07:46
+ Under Properties, let’s select Red 3 from the Color drop-down.
+
+ 07:53
+ Then, select RGB and enter the values for 'R', 'G' and 'B' as shown.
+
+ 08:01
+R, G and B stand for the proportion of Red, Green and Blue in any color.
+
+08:08
+ We will enter 200 for R, 100 for G and 50 for B.
+
+08:16
+ Here we are changing the proportion of red, green and blue to change the color.
+
+08:22
+ Look at the preview box, above the RGB field.
+
+08:28
+ The first preview box displays the original color.
+
+ 08:31
+ The second preview box, next to the Color field, shows the changes that we made.
+
+08:37
+ Let’s type a name for this, in the Name field.
+
+08:41
+Let’s enter the name New red.
+
+08:44
+Click on the Add button.
+
+08:46
+The new color is added to the list.
+
+08:49
+ Click OK.
+
+08:51
+We have created a new color!
+
+08:54
+ Let’s undo this action by pressing Ctrl and Z.
+
+08:59
+The colour of the cloud reverts to white, again.
+
+09:03
+ You can create your own gradients and hatching too, using the tabs in the Area dialog-box.
+
+09:10
+ Gradients are shades that blend from one color to the other.
+
+09:14
+ For example, the color shade moves from blue to green.
+
+09:18
+ Hatching is a shading or texture in drawing that is created using fine parallel lines.
+
+ 09:24
+ Now, let’s learn how to import a bitmap into Draw.
+
+09:28
+ From the Main menu, select Format and click Area.
+
+ 09:33
+ As seen earlier, the Area dialog-box opens. Click on the Bitmaps tab.
+
+09:39
+ Now, click on the Import button.
+
+09:42
+ The Import dialog-box appears.
+
+09:45
+ Browse and select a bitmap.
+
+09:48
+ Click on the  Open button.
+
+09:50
+ Draw prompts you to enter a name for the Bitmap.
+
+ 09:55
+ Let’s enter the name NewBitmap.
+
+09:58
+ Click OK.
+
+10:00
+ The Bitmap now appears in the drop-down list.
+
+10:04
+ Click OK to exit.
+
+10:07
+ Observe the clouds now.
+
+10:10
+ Let’s undo this by pressing Ctrl and Z keys.
+
+10:14
+ Let us use bitmaps to fill the object “water”.
+
+ 10:19
+ Now, let us make the water look more realistic.
+
+10:22
+ To do this, select the grouped triangle and curve.
+
+ 10:26
+ Right-click for the context menu and select Area.
+
+10:31
+ In the Area dialog-box, click the Bitmaps tab.
+
+ 10:36
+ Scroll down the list of bitmaps and select Water.
+
+10:41
+ Click OK.
+
+10:43
+ The water looks more realistic now!
+
+10:46
+ Pause this tutorial and do this assignment.
+
+ 10:50
+ Draw objects and fill them with color, gradients, hatching and bitmaps.
+
+10:57
+ Use the Transparency tab and see its effects on the objects.
+
+ 11:02
+ Let’s color the sky now. This is simple!
+
+11:06
+ We just apply a background to the whole page.
+
+11:10
+ Click the cursor on the page to ensure no objects are selected.
+
+11:15
+ Right-click for the context menu.
+
+11:21
+ Click Page and select Page setup. The Page setup  dialog-box is displayed.
+
+11:25
+ Click the Background tab and under Fill,  select Color.
+
+11:30
+ Let’s scroll down  and select the color Blue 8.
+
+11:34
+ Click OK.
+
+11:36
+ Draw asks you if this background setting should be for all pages.
+
+11:41
+ Click NO.
+
+11:44
+ Now only the selected page has a background color.
+
+11:48
+ You can also choose not to fill the object with any color.
+
+11:52
+ Let us select the mountain.
+
+11:55
+ Right-click for the context menu and select Area.
+
+11:59
+ In the Area dialog-box, select the Area tab.
+
+12:04
+ Under Fill, select None.
+
+12:06
+ Click OK.
+
+ 12:08
+ The object is not filled with any color and only the outline is seen against the background.
+
+12:15
+ To undo the action, press Ctrl+Z keys.
+
+12:20
+ You can also access all these options from the Format menu.
+
+12:25
+ Remember to save your file by pressing Ctrl+S keys together, every time you make a change.
+
+ 12:34
+ Alternately, set the Automatic Save option so that the changes are saved automatically.
+
+12:41
+ Here is another assignment for you.
+
+12:43
+Color this picture you created.
+
+12:45
+Give a background to the page.
+
+12:47
+Create some new colors.
+
+12:50
+ This brings us to the end of this tutorial on LibreOffice Draw.
+
+12:54
+In this tutorial, we have learnt how to use color, gradients, hatching and bitmaps to:
+
+13:01
+
+ Fill objects
+
+
+13:03
+
+ Create backgrounds and
+
+
+ 13:05
+
+ Create new styles.
+
+
+13:07
+Watch the video available at the following link:
+http://spoken-tutorial.org/What_is_a_Spoken_Tutorial
+
+13:10
+It summarizes the Spoken Tutorial project.
+
+13:13
+If you do not have good bandwidth, you can download and watch it.
+
+13:18
+The Spoken Tutorial Project team:
+
+13:20
+Conducts workshops using spoken tutorials.
+
+13:23
+Gives certificates for those who pass an online test.
+
+13:27
+For more details, please write to:contact at spoken hyphen tutorial dot org.
+
+13:33
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+13:38
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+13:45
+More information on this mission is available at:spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+13:56
+This tutorial has been contributed by Desi Crew Solution Pvt. Ltd.Thanks for joining.
+

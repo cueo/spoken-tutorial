@@ -1,0 +1,265 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:03
+In this tutorial, we will learn the following topics:
+ Indexes
+ Table Filter
+ And the SQL Command window.
+
+
+00:14
+Let us first learn about Indexes.
+
+00:16
+What is an Index?
+
+00:18
+An Index is a way to find and sort records within a database table faster.
+
+00:26
+We can choose one field or multiple fields in a table on which the records need to be indexed.
+
+00:36
+The Index stores the location of records based on the chosen field or fields.
+
+00:43
+So, to retrieve data, Base can move to the location of the data directly by using the index.
+
+00:51
+And so, it is considerably faster than scanning through all of the records to find the data.
+
+00:59
+The primary key of a table is automatically indexed.
+
+01:03
+Now, let us create an index in our example Library database.
+
+01:09
+We will create an index on the Title column in the Books table that will speed up searching on book titles.
+
+01:18
+Let us first open our 'Library' database, if not already opened.
+
+01:34
+And open the Books table in Edit mode.
+
+01:39
+In the Table Design window, let us go to the Tools menu and choose Index Design.
+
+01:48
+In the Indexes window, notice that Base already has included the Primary Key as a Unique Index.
+
+01:57
+Let us click on the left most icon, New Index, to create our index.
+
+02:05
+And choose Title in the drop-down list under the Index field on the right.
+
+02:14
+We can also choose the Ascending or Descending order here
+
+02:19
+and rename this index to ‘IDX_Title’ by clicking on the third icon on the left and save it using the Save icon next to it.
+
+02:37
+So, there is our index on the Title field.
+
+02:42
+In this way we can create, edit, rename or delete indexes for tables using Base.
+
+02:51
+Here is an assignment for you:
+
+02:54
+Create an index on names in the Members table and call it ‘IDX_MemberName’.
+
+03:03
+Next, let us see what a Table Filter is.
+
+03:07
+'Table Filter' feature allows us to hide tables in a Base database from other applications.
+
+03:15
+As an example, let us hide all tables except the Books table in the 'Library' database.
+
+03:22
+Now, Table Filter is available under the Tools menu.
+
+03:27
+Here, let us check All Views and check the Books table.
+
+03:33
+Meaning, we are marking only the Books table to be visible to other applications.
+
+03:39
+Now, let us click on the OK button.
+
+03:43
+Next, click on the View menu and then on Refresh Tables.
+
+03:50
+Notice that Books is the only table visible here.
+
+03:54
+Also, when accessing this database from LibreOffice Writer or Calc, we will only see the Books table there.
+
+04:04
+Here is another assignment:
+
+04:06
+1. Open LibreOffice Writer, access the Library database and check the tables available there.
+
+04:14
+2. Bring back all the tables to visibility in Base.
+
+04:19
+3. And reopen 'LibreOffice Writer' to check the tables’ availability again.
+
+04:26
+Finally, let us learn about the SQL command window.
+
+04:31
+The 'SQL command window' is accessed by choosing SQL from the Tools menu.
+
+04:41
+We can use this window to issue SQL statements to the database.
+
+04:47
+Now, we can also use Queries to execute SQL queries but there we are limited to only asking for data from the database.
+
+04:59
+Meaning, we can issue only SELECT statements there.
+
+05:04
+But we cannot execute SQL statements which modify data and table structures or to create new tables there.
+
+05:14
+And the 'SQL command window' helps us to use such data manipulation and data definition statements or language.
+
+05:24
+Examples of Data Manipulation Language or simply DML are:
+
+05:31
+INSERT, UPDATE and DELETE data.
+
+05:37
+And some examples of Data Definition Language or simply DDL are:
+
+05:45
+CREATE TABLE, DROP TABLE and ALTER statements.
+
+05:51
+We will first see a DML example.
+
+05:55
+In the Base window, let us open the SQL Command Window from the Tools menu.
+
+06:02
+Let us insert a new record into the Books table by typing in the “Command to execute” text area:
+
+06:12
+INSERT INTO "Books" ( "Title", "Author", "PublishYear", "Publisher", "Price")
+VALUES ('The Hobbit', 'J.R.R Tolkien', 2002, 'Oxford', 500);
+
+06:45
+Before clicking on the Execute button, let us look at the command closely now.
+
+06:52
+The INSERT statement lists the table name and the field names and then the Values that need to go into the new record.
+
+07:03
+Notice that the table name and field names are enclosed in double quotes.
+
+07:11
+We know that Base is case sensitive and the double quotes ensure that Base will accept the names as we created.
+
+07:22
+If we don’t use the quotes, Base will automatically convert all names into upper cases.
+
+07:31
+We have to use single quotes to encase the values that are of data type TEXT.
+
+07:37
+NUMERIC fields need not be encased with any quotes.
+
+07:43
+Also, we need not include the BookId field which is an AutoNumber field.
+
+07:51
+Base will take care of auto-generating the number.
+
+07:56
+So, let us execute the SQL. Notice the message ‘Command successfully executed’.
+
+08:05
+If there are any errors with the SQL we wrote, Base will point them out.
+
+08:12
+Let us double-click on the Books table and look for the new record we just inserted.
+
+08:18
+There it is, appended in the last row.
+
+08:23
+Next, let us see a DDL example.
+
+08:27
+We will create a new table called Authors with fields AuthorId, Author and Country.
+
+08:36
+In the SQL command window, let us type as shown in the screen
+
+08:43
+and execute it.
+
+08:47
+Let us go back to the Tables list and Refresh the tables from the View menu.
+
+08:54
+There is the new Authors table we just created.
+
+08:59
+To know more about DML, visit the website shown on the screen.
+
+09:06
+To know more about DDL visit the Wikipedia website shown on the screen.
+
+09:13
+Here is another assignment for you:
+
+09:16
+1. Use the UPDATE statement to set the price of the book with BookId as 3, to Rs. 300
+
+09:26
+2. Delete the book that has the title ‘'The Hobbit'
+
+09:30
+3. Insert a new record into the Authors table, author name as ‘J.R.R. Tolkien’, and country as‘England’
+
+09:41
+4. Drop the Authors table from the database by using the DROP statement.
+
+09:47
+This brings us to the end of this tutorial on LibreOffice Base.
+
+09:52
+To summarize, we learned the following topics:
+ Indexes
+ Table Filter
+ And the SQL Command window.
+
+
+10:01
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+10:13
+This project is coordinated by http://spoken-tutorial.org.
+
+10:18
+More information on the same is available at the following link.
+
+10:22
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

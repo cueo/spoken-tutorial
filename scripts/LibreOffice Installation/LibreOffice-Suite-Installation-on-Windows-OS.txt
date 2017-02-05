@@ -1,0 +1,115 @@
+00:01
+ Hello everyone. Welcome to this tutorial on Installation of LibreOffice Suite.
+
+ 00:07
+ In this tutorial, we will learn how to install LibreOffice Suite in Windows OS.
+
+00:13
+ To record this tutorial, I'm using:
+ Windows 7
+ Firefox web browser.
+
+You can use any web browser of your choice.
+
+ 00:25
+ Let us begin with the installation of LibreOffice Suite.
+
+ 00:30
+ First, I will open Firefox web browser.
+
+ 00:34
+ In the address bar, type:  www.LibreOffice.org/download and press Enter.
+
+ 00:46
+ We are immediately redirected to the Download page.
+
+ 00:50
+ Here, you can see the Download button to download LibreOffice Suite.
+
+ 00:55
+ By default, latest version for our OS is displayed here.
+
+ 01:00
+ In my case, I’m recording on Windows OS. So it shows the latest version of LibreOffice for Windows.
+
+01:10
+ But we can download this software as suitable for our OS version.
+
+01:15
+How can we change the OS for LibreOffice version? Just click on the link “change”, located just above the Download button.
+
+ 01:24
+ We are redirected to another page. Here, we can see the Download option for different OS ; select as per your need.
+
+ 01:34
+ Here, we can also choose the version of LibreOffice Suite that we want to install.
+
+ 01:40
+ I will choose Windows.
+
+ 01:43
+ On doing this, we have once again redirected to the Download page.
+
+ 01:49
+ Note that the default version of LibreOffice and OS is now as per our selection.
+
+ 01:55
+ Let us click on the Download button.
+
+ 02:00
+ On doing so, a Save As dialog box opens.
+
+ 02:04
+ Click on the Save button and the download will start. This may take some time depending upon the internet speed.
+
+ 02:12
+ When the downloading is complete, go to the Downloads folder. Now, double click on the LibreOffice  setup file.
+
+ 02:21
+ A dialog Box will open asking Do you want to run this file?
+Click on the RUN button.
+
+ 02:29
+ Now the installation wizard will open. Click on NEXT button whenever prompted.
+
+ 02:36
+ Now, it will ask whether you want a Typical or Custom installation. By default, Typical will be selected. Click on NEXT.
+
+02:46
+ Then click on Install button. The installation will take some time.
+
+ 02:50
+ Once the installation is complete, click on Finish.
+
+ 02:56
+ Let us now check whether LibreOffice is properly installed or not.
+
+ 03:01
+ Go to Start menu → All programs  and  LibreOffice 4.4
+
+ 03:08
+ You'll see various LibreOffice Suite components like- Base, Calc, Draw, Impress, Math and Writer.
+
+ 03:17
+ This indicates that LibreOffice Suite is successfully installed on your Windows system.
+
+ 03:24
+ That’s all for this tutorial. Let us summarize.
+
+ 03:28
+ In this tutorial, we learnt how to install LibreOffice Suite in Windows OS.
+
+ 03:35
+ The video at the following link summarizes the Spoken Tutorial Project. Please watch it.
+
+ 03:40
+ The Spoken Tutorial Project team  conducts workshops  and gives certificates on passing online tests. For more details, please write to us.
+
+ 03:51
+ Spoken Tutorial Project is funded by NMEICT, MHRD, Govt of India. More information on this mission is available at the following link.
+
+ 04:02
+ The script for this tutorial has been contributed by the Spoken Tutorial Team.
+
+ 04:08
+And this is Gaurav Shinde from IIT Bombay, signing off. Thank you for watching.

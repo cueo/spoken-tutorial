@@ -1,0 +1,209 @@
+00:00
+Welcome to the tutorial on LibreOffice Impress - Viewing a Presentation.
+
+00:06
+In this tutorial, we will learn about:
+View options and their uses and Master Pages.
+
+00:13
+Here, we are using:
+Ubuntu Linux 10.04 and   LibreOffice Suite version 3.3.4.
+
+00:22
+First, let us open our presentation “Sample Impress” by double-clicking on it.
+
+00:27
+LibreOffice Impress has many view options that help you create a better presentation.
+
+00:34
+By default, when you start LibreOffice Impress, it looks like this.
+
+00:41
+This is called the Normal view.
+
+00:43
+When the presentation is in any other view,
+
+00:48
+you can return to the Normal view by clicking on the Normal tab <PAUSE>
+
+00:53
+or by clicking on View and Normal.
+
+00:57
+In the Normal view, you can create and edit slides.
+
+01:02
+For example, we can change the design of the slides.
+
+01:05
+To do this, go to the slide titled "Overview".
+
+01:09
+On the right side, in the Tasks pane, Master Pages section, under "Used in This Presentation", we can see the slide design is 'prs strategy'.
+
+01:21
+Under this, we can see Recently Used and Available for Use slide designs.
+
+01:27
+Click on any one of your choice.
+
+01:30
+Notice the change in the slide design in the Workspace pane.
+
+01:35
+See, how easy it is to change the slide design?
+
+01:39
+You can also add designs that you have created as background for your slides.
+
+01:45
+Next, we will see the Outline view.
+
+01:47
+You can go to this view either by clicking on View and Outline <PAUSE>
+
+01:53
+or by clicking on the Outline tab.
+
+01:57
+In this view, you can see that the slides are arranged one below the other - just like a Table of Contents.
+
+02:05
+These here, are the slide headings.
+
+02:08
+Notice that the slide heading "Overview" is highlighted.
+
+02:12
+This is because we were on the Overview slide when we selected the Outline tab.
+
+02:18
+You can see these icons shaped like bullet points.
+
+02:23
+When you hover the mouse over these bullet points, the cursor turns into a hand.
+
+02:29
+We can then move these line items up or down in order to rearrange them within a slide <PAUSE>
+
+02:38
+or across slides.
+
+02:40
+Let us undo these changes by pressing Ctrl and Z so that our presentation appears in its original form.
+
+02:49
+We use the Slide Sorter view to rearrange slides.
+
+02:53
+We can get to the Slide Sorter view by clicking on View and Slide Sorter <PAUSE>
+
+03:00
+or by clicking on the Slide Sorter tab.
+
+03:04
+This view is useful to sort the slides in the desired order.
+
+03:08
+For example - To interchange slide number 9 and 10, click on slide number 10 and drag the slide before slide number 9.
+
+03:18
+Now, release the mouse button. <PAUSE>
+
+03:22
+The slides get interchanged!
+
+03:26
+In the Notes view, you can write notes that will help you during your presentation.
+
+03:31
+To go to the Notes view, click on View and then Notes Page.
+
+03:36
+You can also click on the Notes tab.
+
+03:39
+Select the slide "Development up to present" from the Slides pane.
+
+03:44
+Type some text in the notes portion.
+
+03:49
+When your slides are viewed on a projector, you will still be able to see your notes on your monitor but your audience won’t.
+
+03:58
+Now, let’s click on the Normal tab.
+
+04:01
+We can change the layout of the presentation in the Tasks pane, Layouts section, on the right.
+
+04:08
+To show or hide the Tasks pane,
+
+04:12
+click on View and Tasks Pane.
+
+04:14
+This will either show or hide the Tasks pane.
+
+04:18
+Let’s use the Layout section to change the layout of a slide.
+
+04:23
+Select the slide named "Development up to present".
+
+04:26
+From the Layout section, select Title Content over Content.
+
+04:33
+This changes the layout of the slide.
+
+04:37
+This brings us to the end of this tutorial.
+
+04:40
+To summarize, we learnt - View options and their uses and Master Pages.
+
+04:46
+Try this Comprehension Test Assignment.
+
+04:49
+Create a new presentation.
+
+04:52
+Create a master with dark blue background and light blue title area.
+
+04:58
+Watch the video available at the following link.
+
+05:02
+It summarizes the Spoken Tutorial project.
+
+05:05
+If you do not have good bandwidth, you can download and watch it.
+
+05:09
+The Spoken Tutorial Project team: * Conducts workshops using spoken tutorials.
+
+05:15
+Gives certificates for those who pass an online test.
+
+05:19
+For more details, please write to:
+contact at spoken hyphen tutorial dot org.
+
+05:26
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+05:30
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+05:38
+More information on this mission is available at:
+spoken hyphen tutorial dot org slash NMEICT hyhpen Intro.
+
+05:49
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

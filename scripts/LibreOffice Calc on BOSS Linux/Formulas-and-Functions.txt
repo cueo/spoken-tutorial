@@ -1,0 +1,409 @@
+00:00
+Welcome to the Spoken Tutorial on Formulas and Functions in LibreOffice Calc.
+
+00:07
+In this tutorial, we will learn about:
+ Conditional Operator
+ If..Or statement
+ Basic statistic functions
+ Rounding off numbers. 
+
+
+00:19
+Here, we are using GNU/Linux as our operating system and LibreOffice Suite version 3.3.4.
+
+00:30
+We have already learnt to apply the basic arithmetic operators like addition, subtraction and 'average' on data.
+
+00:39
+Now, let’s learn about a few other useful operators.
+
+00:43
+One of the most commonly used operator is the Conditional Operator.
+
+00:51
+Conditional Operators-
+check for the condition applied on the data by the user
+
+00:56
+and then show results in Boolean - TRUE or FALSE.
+
+01:01
+Let’s open “Personal-Finance-Tracker.ods”.
+
+01:05
+Here, under the heading “Cost”, we have listed the prices of several items.
+
+01:11
+Let’s apply conditional operators on them and analyze the results.
+
+01:17
+Let’s click on the cell referenced as B10 and type “Condition Result” inside it.
+
+01:24
+Now, click on the cell referenced as C10.
+
+01:28
+The condition’s result will be applied and displayed in this cell.
+
+01:33
+Note that the cost of the “House Rent” is rupees 6,000.
+
+01:38
+The cost for the “Electricity Bill” is rupees 800.
+
+01:43
+The cost of “House Rent” is more than that of “Electricity Bill”.
+
+01:48
+We can apply different conditions on them and check the results.
+
+01:54
+Click on the cell referenced as C10.
+
+01:57
+In this cell, type the first condition as is equal to C3 greater than C4 and press the Enter key.
+
+02:09
+Since the value in cell C3 is greater than the value in cell C4, the result we get is TRUE.
+
+02:18
+Now, let us change this conditional statement to is equal to C3 less than C4.
+
+02:26
+Press Enter.
+
+02:28
+The result we get is FALSE.
+
+02:32
+In the same manner, you can apply other conditional statements and study the results.
+
+02:38
+These statements are very useful when dealing with large amounts of data.
+
+02:44
+You can also use the If and Or condition on data
+
+02:49
+ to print the results according to the condition that holds TRUE.
+
+02:55
+Let’s click on the cell referenced as C10 and type:
+
+02:59
+is equal to IF and within braces, C3 greater than C4 comma, within double quotes “Positive” comma and again within double quotes “Negative”.
+
+03:16
+This means if the value in cell C3 is greater than the value in cell C4, “Positive” will be displayed
+
+03:25
+or else “Negative” will be displayed.
+
+03:28
+Now, press Enter.
+
+03:31
+Notice that the result is “Positive” since rupees 6000 is greater than rupees 800.
+
+03:39
+Now, in the conditional statement, let’s change “greater than” to “less than” and press the Enter key.
+
+03:47
+Note that the result is now “Negative” as the value in cell C3 is greater than the value in cell C4.
+
+03:57
+You can also see the change in result if we change the data in the cells C3 and C4.
+
+04:04
+The result which is displayed now is “Negative”.
+
+04:09
+Now, let us increase the value in cell C4 to 7000 and press the Enter key.
+
+04:17
+The result automatically changes to “Positive”.
+
+04:22
+Again, let’s decrease the value in cell C4 to 800.
+
+04:26
+And press the Enter key.
+
+04:29
+The result again automatically changes to “Negative”.
+
+04:34
+Now, let us delete the changes made.
+
+04:38
+Next, let’s learn a few arithmetic and statistic functions.
+
+04:43
+Basic arithmetic functions include:
+ SUM for addition
+ PRODUCT for multiplication
+ QUOTIENT for division and
+
+many more which we have already learnt in the earlier tutorials. 
+
+04:57
+Now let’s perform some operations to check how the Sum, Product and the Quotient functions work.
+
+05:05
+First let’s select Sheet 3.
+
+05:08
+Enter the numbers 50, 100 and 150 within the cells referenced “B1”, “B2” and “B3” respectively.
+
+05:19
+Click on the cell “A4” and type “SUM”.
+
+05:23
+Click on the cell “B4”.
+
+05:26
+We shall compute the result in this cell.
+
+05:30
+Type: is equal to “SUM” and within the braces, B1 comma B2 comma B3.
+
+05:37
+Press Enter.
+
+05:39
+Notice the result shows 300.
+
+05:43
+You can also enter a range of cells like this-
+
+05:47
+Click on B4 again.
+
+05:49
+Now, within the braces, instead of B1 comma B2 comma B3, type: B1 colon B3.
+
+05:58
+Press Enter.
+
+06:00
+Once again, the result shows 300.
+
+06:03
+Now, let’s click on the cell A5 and type “PRODUCT”.
+
+06:08
+Click on the cell “B5”.
+
+06:10
+Here, type: is equal to “PRODUCT” and within the braces, B1 colon B3.
+
+06:18
+Press Enter.
+
+06:20
+Notice the result shows 7,50,000.
+
+06:26
+Now, let’s see how Quotient works.
+
+06:29
+Click on the cell referenced “A6” and type: “QUOTIENT”.
+
+06:34
+Now, click on the cell “B6”.
+
+06:37
+We shall use this cell to compute the result.
+
+06:40
+And type: is equal to QUOTIENT and within the braces, B2 comma B1.
+
+06:47
+Press Enter.
+
+06:49
+You will get the result as “2”. That is because 100 divided by 50 gives 2.
+
+06:59
+Similarly, we can perform various arithmetic operations in Calc.
+
+07:05
+Now, let’s learn how to implement Statistic Functions.
+
+07:09
+Statistical functions are useful  for analysis of data in spreadsheets.
+For example- functions like COUNT, MIN, MAX, MEDIAN, MODE and many more are statistical in nature. 
+
+07:27
+First, let us click on sheet 1.
+
+07:30
+Let’s see how to find the minimum, the maximum and the median costs, using statistical functions.
+
+07:37
+Let’s click on the cell referenced as “C10” where we will be displaying the result.
+
+07:44
+Under the heading “Cost”, we have very few entries.
+
+07:48
+The minimum cost is rupees 300.
+
+07:51
+The maximum cost is rupees 6000.
+
+07:55
+These are the results which should be displayed when we use their functions.
+
+08:00
+In the cell “C10”, let’s type: is equal to MAX and within braces C3 colon C7.
+
+08:10
+Now press the Enter key.
+
+08:13
+Notice that the result is 6000 which is the maximum value in the column.
+
+08:20
+Now, let’s replace the term “MAX” in the statement with “MIN”.
+
+08:25
+And press the Enter key.
+
+08:28
+Note that the result is 300 which is the minimum amount in the Cost column.
+
+08:34
+To find the median value, replace the term “MIN” with “MEDIAN”.
+
+08:40
+And press the Enter key.
+
+08:43
+The result shows 800 which is the median cost in the column.
+
+08:50
+Similarly, you can use other statistical functions on data and analyze them accordingly.
+
+08:58
+Let us delete the changes in this cell.
+
+09:02
+Now, let’s learn how to round off numbers.
+
+09:05
+Let us make few changes under the heading, “Cost”.
+
+09:09
+We shall change:6000 to 6000.34,
+600 to 600.4, 300 to 300.3. 
+
+09:23
+Now, click on the cell referenced as “B11” and type the heading “ROUNDING OFF”.
+
+09:31
+Click on the cell referenced as “C11” where we will find the total of the items under the heading “Cost”.
+
+09:39
+In the cell C11, let’s type: is equal to SUM and within braces “C3” colon “C7”.
+
+09:49
+Now, press the Enter key.
+
+09:53
+Notice that the total is 9701.04.
+
+09:59
+Now, suppose we don’t want any decimal places in our result.
+
+10:04
+The best solution is to round off the result to the nearest whole number.
+
+10:09
+Let us click on the cell with the total 9701.04.
+
+10:15
+Type: is equal to ROUND, open brace “SUM” and again within braces “C3” colon “C7”.
+
+10:25
+Close the brace. Press the Enter key.
+
+10:29
+You see, that the result is now 9701 which is 9701.04, rounded of to the nearest whole number.
+
+10:44
+Rounding off, can also be done to either the lower whole number or the higher number.
+
+10:52
+Let’s click on the cell with the result and edit the term “ROUND” to “ROUNDUP”.
+
+10:59
+Now, press the Enter key.
+
+11:02
+You see that the result is now 9702 which is the higher whole number.
+
+11:10
+In order to round off to the lower whole number, change the term “ROUNDUP” to “ROUNDDOWN”
+
+11:17
+And press the Enter key.
+
+11:19
+The result is now 9701 which is the lower whole number.
+
+11:28
+Let us undo these changes in order to get our “Personal-Finance-Tracker.ods” to its original form.
+
+11:37
+This brings us to the end of this Spoken Tutorial on LibreOffice Calc.
+
+11:43
+To summarize, we learned about:
+ Conditional Operator
+
+ If..Or statement
+
+ Basic statistic functions
+
+ Rounding off numbers. 
+
+
+11:55
+Watch the video available at the following link:
+
+11:58
+It summarizes the Spoken Tutorial project.
+
+12:01
+If you do not have good bandwidth, you can download and watch it.
+
+12:06
+The Spoken Tutorial Project Team:
+
+12:08
+* Conducts workshops using spoken tutorials.
+
+12:11
+* Gives certificates for those who pass an online test.
+
+12:15
+For more details, please write to: contact at spoken hyphen tutorial dot org.
+
+12:21
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+12:26
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+12:34
+More information on this mission is available at:
+
+12:37
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+12:45
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

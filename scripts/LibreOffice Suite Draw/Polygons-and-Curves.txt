@@ -1,0 +1,279 @@
+00:01
+Welcome to the Spoken Tutorial on Creating Curves and Polygons in LibreOffice Draw.
+
+00:07
+ In this tutorial, you will learn how to work with Polygons and Curves in Draw.
+
+00:14
+ For this tutorial, you should have basic  knowledge of LibreOffice Draw. If not, for relevant tutorials, please visit this website.
+
+00:25
+ Here, we are using:
+ Ubuntu Linux, version 10.04 and
+ LibreOffice Suite, version 3.3.4.
+
+
+00:34
+What are polygons? The term poly means many. A many-sided figure is called a polygon.
+
+00:43
+We will learn how to a draw a map as shown in this slide. This map shows the route from the house to the school.
+
+ 00:53
+At the end of this  tutorial, you will be able to create a similar diagram by yourself.
+
+01:00
+Let us switch to Draw. I have named this file as "RouteMap" and saved it on the Desktop.
+
+01:09
+First of all, let us enable the Grid view. To do so, click on View, select Grid and choose Display Grid.
+
+ 01:19
+Before we begin drawing, let us set the Page margins and the Page orientation.
+
+01:26
+Place the cursor on the Draw page and right-click for the Context menu.
+
+01:33
+Select Page and click Page Setup.
+
+01:36
+The Page Setup dialog-box appears.
+
+01:40
+Click on the Format drop-down and select A4. Select Orientation as Portrait.
+
+01:49
+The Left, Right, Top and Bottom margins are set to 1. Click OK.
+
+ 01:57
+Let us set the default font size to 24.
+
+02:02
+From the Main menu, select Format and Character.
+
+02:06
+The Character dialog-box appears.
+
+02:10
+Click the Font tab and in the Size field, scroll down and select 24. Click OK.
+
+ 02:18
+This will ensure that the text we type inside the shapes are clearly visible.
+
+02:24
+Now, let us begin by drawing the house.
+
+02:28
+ Let’s insert a square to show the house and type "Home" inside it.
+
+ 02:37
+Next, let’s draw the park to the right of the house.
+
+02:42
+The park is an odd-shaped rectangle; the width on the left side is greater than the right side.
+
+02:51
+Let’s use a polygon to represent it. To draw a polygon, go to the Drawing toolbar.
+
+02:58
+Click on Curve and then click on the small black arrow next to the icon.
+
+03:04
+Now, select Polygon filled.
+
+03:08
+Place the cursor on the Draw page. Hold the left mouse button and drag the cursor down. Release the mouse button.
+
+03:18
+We have drawn a straight line. Drag the mouse to the right until the shape is that of a right triangle.
+
+03:26
+Click the left mouse button and drag the mouse upward. Now, double-click the left mouse button.
+
+ 03:35
+You have drawn a polygon. Let’s type "Park" inside it.
+
+03:41
+Next to the Park, there is a Commercial Complex. This too is an odd-shaped polygon. Let’s draw it!
+
+03:50
+Go to the Drawing toolbar. Click on the small black arrow next to the Curve icon and click on Polygon filled.
+
+04:00
+Place the cursor on the Draw page. Hold the left mouse button and drag it down.
+
+04:07
+Now, release the mouse button. You see a straight line. Move the mouse to the left until the shape is that of a triangle.
+
+04:19
+Click the left mouse-button and drag the mouse upward. Now, hold down the Shift key and drag the cursor inwards.
+
+04:31
+Double-click the left mouse-button.
+
+ 04:35
+You have drawn yet another polygon. Let us type the text "Commercial Complex" inside it.
+
+04:45
+Following the previous steps, let's draw a parking lot. From the Drawing toolbar, let’s select Polygon filled. And then place the cursor on the Draw page and draw the polygon.
+
+05:02
+Now, let us type the text "Parking Lot" inside it.
+
+ 05:08
+Remember, you can draw a polygon with as many sides as you want.
+
+05:14
+Pause this tutorial and try this assignment. Draw five-sided, six-sided and ten-sided polygons.
+
+05:23
+A Residential Complex is right next to the house and is rectangular in shape.
+
+05:30
+From the Drawing toolbar, select Rectangle.
+
+05:35
+Then, place the mouse on the Draw page and drag to draw a rectangle.
+
+05:41
+We will name it "Residential Complex".
+
+05:45
+There is also a Play Ground in this locality. This is in the shape of a really long rectangle.
+
+05:53
+From the Drawing toolbar, select Polygon 45 degree Filled.
+
+05:59
+Place the cursor on the Draw page. Click and drag the left mouse-button down and release it.
+
+06:07
+Click and move the mouse to the right and release it. Now, click and drag the mouse upward to complete the rectangle.
+
+06:17
+Double-click the left mouse-button.
+
+ 06:21
+You have drawn yet another polygon!
+
+06:25
+Let us type the text "Play Ground" inside it.
+
+06:30
+Now, let’s draw the Lake next to the playground.
+
+06:35
+From the Drawing toolbar, select  Freeform Line filled.
+
+06:40
+In the Draw page, press the left mouse-button and rotate the mouse in an anti-clockwise direction. Release the left mouse-button.
+
+ 06:52
+We have drawn a lake. Let’s type "Lake" inside it.
+
+06:58
+The last building in this area is the School.' The School campus is also in the form of a polygon.
+
+07:07
+Let’s draw this on our map now. Again from the Drawing toolbar, let us select Polygon 45 degree filled.
+
+07:17
+Next, let us place the cursor on the Draw page and draw the polygon. Finally, let’s double-click the mouse when the polygon has been completed.
+
+07:28
+Let’s type "School Campus" inside it.
+
+07:34
+Let’s insert a text-box and type the text "School Main Gates" inside it.
+
+ 07:44
+Let’s rotate the text-box and place it in the correct position.
+
+07:48
+Now, from the Main menu, select Modify and click Rotate.
+
+07:54
+Notice that the handles change to the color red. This implies that we are in the Rotate mode.
+
+08:02
+Can you see the small arc with arrows on either side? We use this to rotate the box.
+
+08:09
+Let’s place the cursor over the last handle on the top right corner of the text-box.
+
+08:17
+The Rotation curve appears.
+
+08:21
+Press the left mouse-button. Drag the curve in a clock-wise direction until it is placed in the correct position.
+
+08:30
+Now, click anywhere on the Draw page to exit the 'Rotate' mode.
+
+08:36
+Let’s also show the side entrance to the school.
+
+08:41
+Like in the previous step, let’s draw a text-box, enter the text "School Side Entrance" inside it.
+
+08:50
+Now, let’s draw directions using arrows. From the house, we have to turn right.
+
+08:57
+From the Drawing toolbar, let’s select Line Ends with Arrow.
+
+09:02
+Let’s move to the Draw page and draw the line.
+
+09:08
+Then walk past the Residential Complex and take a left.
+
+09:14
+Let’s draw another line to show this route.
+
+09:19
+Then, next to the Play Ground take the right, walk down.
+
+09:25
+Then take a right again to reach the School’s main gate.
+
+ 09:32
+We have drawn our first route. You would have noticed that two types of curves and polygons can be drawn.
+
+09:41
+One is using the Filled option and the other is without a fill. When you use the Filled option, the curve is filled with color.
+
+09:52
+You would have also noticed that each of the options in the Curve toolbar has a different method of mouse operation to draw the curve.
+
+10:02
+Here is an assignment for you. Draw curves and polygons using all the options in the Curve toolbar.
+
+10:10
+Notice, how the shape of the cursor and the mouse operations change with each selection of the curve or the polygon.
+
+10:20
+Check if you can change the fill color in the option Filled.
+
+10:25
+Watch the video available at the following link. It summarizes the Spoken Tutorial project.
+
+10:31
+If you do not have good bandwidth, you can download and watch it.The Spoken Tutorial Project team:
+ Conducts workshops using spoken tutorials.* Gives certificates for those who pass an online test.
+
+
+10:45
+For more details, please write to:contact at spoken hyphen tutorial dot org.
+
+10:51
+Spoken Tutorial project is a part of the Talk to a Teacher project. It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+11:04
+More information on this mission is available at:spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+11:14
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

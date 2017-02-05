@@ -1,0 +1,147 @@
+00:01
+Welcome to the Spoken Tutorial on Editing Curves and Polygons in LibreOffice Draw.
+
+  00:07
+ In this tutorial, you will learn how to edit Curves and Polygons in Draw.
+
+00:13
+For this tutorial, you should have basic knowledge of LibreOffice Draw. If not, for relevant tutorials, please visit this website.
+
+00:23
+Here, we are using:
+ Ubuntu Linux, version 10.04 and 
+ LibreOffice Suite, version 3.3.4.
+
+
+00:32
+Let us open our 'Routemap' drawing once again.
+
+00:37
+Previously, we learnt to draw curves and polygons. Now, let us learn how to edit them.
+
+00:42
+Let’s change the shape of the School Campus.
+
+ 00:48
+We will use the Edit Points toolbar to do this.
+
+00:52
+From the Main menu, click View, select Toolbars and click Edit Points.
+
+01:00
+The Edit Points toolbar is displayed.
+
+01:04
+Now, let us select the polygon School Campus.
+
+01:09
+Click the Points icon on the Edit Points tool bar.
+
+01:12
+In the object, the green selection handles will change to blue edit points. This indicates you are in the Edit point mode.
+
+01:23
+On the Edit Points toolbar, click on the Insert points icon.
+
+01:29
+Move to the Draw page. The cursor will turn into a plus sign.
+
+01:35
+Place this plus sign on the left side outline of the School Campus polygon.
+
+01:41
+Press the left mouse-button and drag it to the right. Release the button. You have inserted a point.
+
+01:51
+Now, click on the point that was inserted. The options in the Edit Points toolbar are enabled.
+
+02:00
+Click on Symmetric Transition.
+
+02:03
+The dotted control line appears next to the point.
+
+02:07
+Let’s drag the control line outwards to change the shape of the campus. The shape has changed!
+
+02:16
+To exit from the Edit Points toolbar, click Points.
+
+02:21
+Now, let’s elongate the campus to the right side.
+
+02:26
+Let’s specifically move only the last point on the top right.
+
+02:30
+Select the School Campus polygon.
+
+02:34
+Let’s enable the Edit Points toolbar.
+
+02:38
+The blue edit points appear on the object. Let us select this point.
+
+02:45
+On the Edit Points toolbar, click Move points.
+
+02:50
+You will see that the selected point becomes dark blue.
+
+02:54
+Now, let’s drag the point to the right.
+
+02:58
+We can use the grid to position objects as per our requirement.
+
+ 03:03
+We have changed the shape of the School Campus again!
+
+03:09
+Pause this tutorial and do this assignment.
+
+03:12
+Draw a curve and apply all the options from the Edit Points toolbar on it. Remember, you need a lot of practice to master the Edit Points toolbar.
+
+03:25
+Lastly, let us  group all the objects in the map. Press Ctrl + A key on the keyboard and right-click for the Context menu.
+
+03:35
+Now select Group. All the objects are grouped now.
+
+ 03:43
+The map is complete! You can also color the buildings; add roads using lines, add traffic signals and any other detail you require.
+
+03:56
+Here is our sample coloured routemap.
+
+04:00
+This brings us to the end of this tutorial. In this tutorial, we have learnt how to edit Curves and Polygons.
+
+04:10
+ Here is another assignment for you. Create the map shown on this slide.
+
+04:16
+Watch the video available at the following link. It summarizes the Spoken Tutorial project. If you do not have good bandwidth, you can download and watch it.
+
+04:27
+The Spoken Tutorial Project team:
+ Conducts workshops using spoken tutorials.
+ Gives certificates for those who pass an online test.
+
+
+04:37
+For more details, please write to:
+contact at spoken hyphen tutorial dot org.
+
+04:45
+Spoken Tutorial project is a part of the Talk to a Teacher project. It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+05:00
+More information on this mission is available at:
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+05:11
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

@@ -1,0 +1,250 @@
+00:02
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:06
+In this tutorial, we will learn how to
+
+00:09
+modify a report by customizing the layout and the look and feel of the report.
+
+00:16
+For this, let us consider our familiar Library database example.
+
+00:23
+In the previous tutorial, we learnt how to create a report.
+
+00:28
+And we built a report with the title ‘Books Issued to Members: Report History’. We will now learn how to modify this report.
+
+00:40
+In the 'Library' database,
+
+00:42
+let us click on the Reports icon on the left panel.
+
+00:47
+On the right panel, we see the ‘Books Issued to Members: Report History’ report in the reports list.
+
+00:57
+Let us right-click on it and then click on Edit to open the report for modifying or editing.
+
+01:08
+We now see a new window which is called the Report Builder window.
+
+01:14
+This screen is composed of three main sections.
+
+01:19
+Page Header and Footer section that form the top and the bottom.
+
+01:26
+Then the Header section
+
+01:29
+and the Detail section.
+
+01:34
+We can also add a record header and a footer section
+
+01:40
+by right-clicking on the main screen in the white area and clicking on the ‘Insert Report Header/Footer’.
+
+01:51
+We can shrink or expand these sections by double-clicking on the orange areas on the left of the screen.
+
+02:00
+Before we move on, here is a screenshot of the Report design window.
+
+02:06
+We will modify our report design to look like this.
+
+02:11
+We will add some text labels, fonts, formatting and adjust the spacing among the various sections.
+
+02:20
+Okay, now let us add some report headers and footers.
+
+02:27
+To do this, we will click on the Label Field icon
+
+02:31
+in the Report Controls toolbar, found below the menu bar at the top.
+
+02:40
+Let us draw it on the Report Header area, as being shown now
+
+02:48
+and double-click on the Label to bring up its properties on the right.
+
+02:55
+Here, let us type: "Books Issued to Members:
+
+03:00
+Report History" against the Label and press Enter.
+
+03:07
+Let us also change the font style; we will choose Arial Black, Bold and Size 12
+
+03:17
+and click on the OK button.
+
+03:21
+Next, let us add another label to the report footer as shown on the screen. <pause>
+
+03:31
+For example- let's type: "Report Prepared by Assistant Librarian" <pause>
+
+03:42
+and then change the font style to Arial, Bold Italic and Size 8. <pause>
+
+03:51
+Now, we will repeat the same steps again to add a label in the Page Footer area.  <pause>
+
+03:59
+This time, we will type: "Nehru Library, New Delhi" against the label <pause>
+
+04:09
+and change the font style to Arial, Bold Italic and Size 8. <pause>
+
+04:20
+Now, let us adjust the spacing.
+
+04:24
+First, let us reduce the Page Header area by double-clicking on the grey line between the Page Header and Report Header.
+
+04:37
+And we will take it all the way to the top by using the click, drag and drop method.
+
+04:47
+Next, let us reduce the Report header area
+
+04:52
+by double-clicking on the grey line between the report header and the header. <pause>
+
+05:01
+We will repeat the same steps to reduce the spacing between the Report footer and the Page footer also. <pause>
+
+05:13
+Next, let us centre the Header labels.
+
+05:18
+We will do this by first selecting all the labels by clicking on the Book Title
+
+05:26
+and then while pressing the Shift key, we will click on the rest of the labels as shown.
+
+05:35
+Now, let us use the up-arrow key to centre them.
+
+05:41
+We will now give the header a light blue background.
+
+05:47
+To do this, we will go to the Properties and change the Background transparent to NO.
+
+05:55
+And then select Blue 8 from the list for Background colour.
+
+06:03
+We will do the same with the Detail section as well. <pause>
+
+06:09
+For this, we will first increase the spacing between the Detail and Report footer sections <pause>
+
+06:20
+and then centre the fields. <pause>
+
+06:24
+We will select Light gray background for the Detail section as shown. <pause>
+
+06:32
+Next, we will change the data formatting for the Checked In field.
+
+06:39
+Since this holds Boolean values 1 or 0, it displays True or False.
+
+06:47
+We will change this to show a friendlier Yes or No option.
+
+06:53
+For this, we will double-click on the CheckedIn field on the right, in the Detail section.
+
+07:01
+Now, in the properties on the right, let us click on the Data tab first.
+
+07:08
+Let us click on the button next to the Data field that says "CheckedIn".
+
+07:15
+This opens a new pop-up window called the Function wizard.
+
+07:20
+Here, let us first empty the Formula text-box at the bottom right.
+
+07:27
+Then click on the Category drop-down and then double-click on ‘IF’.
+
+07:35
+Now on the right, we see new controls.
+
+07:40
+Let us click on the Select icon on the right, next to the first text box.
+
+07:49
+Here we will double-click on CheckIn.
+
+07:53
+Next, we will type in Yes within double-quotes in the second text-box.
+
+08:01
+And then type in No in the third text-box. <pause>
+
+08:12
+Now we will go to the General tab within the Properties section
+
+08:18
+and click on the button against Formatting, at the bottom.
+
+08:24
+Here, we will click on Text in the Category list
+
+08:28
+and then click on the OK button.
+
+08:32
+And now, we will save the report.
+
+08:36
+Okay, let us run our modified report now.
+
+08:41
+For this, we will click on the Edit menu at the top and then click on the Execute Report.
+
+08:50
+And there is our nice report history on the "Books issued to the Library members".
+
+08:57
+Notice the spacing, headers, footers, fonts
+
+09:01
+and the CheckedIn field which says 'Yes' or 'No'.
+
+09:06
+And we are done with modifying our report.
+
+09:11
+This brings us to the end of this tutorial on Modifying a Report in LibreOffice Base.
+
+09:17
+To summarize, we learned how to:
+
+09:20
+modify a report by customizing the layout and the look and feel of the report.
+
+09:26
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India. This project is coordinated by http://spoken-tutorial.org. More information on the same is available at the following link.
+
+09:48
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

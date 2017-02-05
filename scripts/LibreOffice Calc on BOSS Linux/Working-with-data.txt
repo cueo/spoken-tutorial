@@ -1,0 +1,302 @@
+00:00
+ Welcome to the Spoken tutorial on LibreOffice Calc – Working with data.
+
+ 00:06
+ In this tutorial, we will learn about:
+
+ 0:10
+* Speed up using Fill tools and Selection lists.
+
+ 00:14
+* Sharing content between sheets.
+
+ 00:17
+* Removing data, Replacing data and Changing part of a data.
+
+ 00:23
+ Here, we are using GNU/Linux as our operating system and  LibreOffice Suite version 3.3.4.
+
+00:33
+ Entering data into a spreadsheet can be very labor-intensive but Calc provides several tools for making it considerably easier.
+
+ 00:43
+The most basic ability is to drag and drop the contents of one cell to another with a mouse.
+
+ 00:50
+But Calc also includes several other tools for automating input, especially of repetitive material.
+
+ 00:57
+These tools are namely- “Fill tool”, “Selection lists”.
+
+ 01:01
+These can input information into multiple sheets of the same document.
+
+ 01:06
+ We will learn about each one of them, one by one.
+
+ 01:10
+Let us open our “Personal-Finance-Tracker.ods” file.
+
+ 01:14
+ The Fill tool is a useful method for duplicating the contents in the sheet.
+
+ 01:20
+In our “Personal-Finance-Tracker.ods” file, let's say we want to copy  the data under the heading “Cost” to the adjacent cells.
+
+ 01:30
+Then, first select all the data which needs to be copied by clicking on the cell which contains the entry  “6000”.
+
+ 01:38
+Now, holding down the left mouse button, drag the mouse till the end of the cell which contains the  cost entry “2000”.
+
+ 01:47
+Also, select the cells where we want to copy the data.
+
+ 01:51
+Now, release the left mouse button.
+
+ 01:54
+ Click on the “Edit” option in the Menu bar and then click on the “Fill” option.
+
+ 02:00
+In the pop-up menu, click on the “Right” option.
+
+ 02:04
+ You see that the data under the heading “Cost” gets copied to the adjacent cells.
+
+ 02:10
+Let us undo the changes.
+
+ 02:13
+ A more complex use of the Fill tool is to use it for  filling some series as data in sheets.
+
+ 02:21
+Calc provides default lists for the full and abbreviated days of the week and the months of the year.
+
+ 02:28
+It also enables the user to create his own lists.
+
+ 02:35
+ Now let's insert a new heading named “Days” in our sheet.
+
+ 02:39
+Under this, we will display the seven days of the week automatically.
+
+ 02:43
+ Select the first seven cells below the heading “Days”.
+
+ 02:48
+ Now, click on the “Edit” option in the Menu bar and go to the “Fill” option.
+
+ 02:54
+Click on the “Series” option in the menu.
+
+ 02:58
+ You see that a dialog box appears with the heading as “Fill Series”.
+
+ 03:02
+ Now under the heading, “Series type”, click on the “AutoFill” option.
+
+ 03:08
+ In the “Start value” field, we type our first day of the week, that is, “Sunday”.
+
+ 03:14
+The increment is already set as “1”.
+
+03:16
+Now click on the OK button.
+
+ 03:18
+ You see that the days are automatically entered into the cells.
+
+ 03:24
+You can enter only weekdays, month or year by the same method as they are pre-defined in Calc.
+
+ 03:32
+ Another method for auto-filling of sequential data is as follows-
+
+ 03:37
+type “Sunday” in a cell and press Enter.  This will shift the focus to the next cell in the column.
+
+ 03:46
+Go back to the cell where “Sunday” was typed.  You will now see a small black box at the bottom-right-hand corner of the cell.
+
+ 03:56
+Click on this box with the mouse.
+
+ 03:58
+Drag it downwards till you see "Saturday" in the display box on the right.
+
+ 04:04
+Release the mouse button.
+
+ 04:07
+The cells get filled with the weekdays automatically.
+
+ 04:10
+This trick works for all data that are sequential. Let us undo the changes.
+
+04:17
+ You can also create a one-time fill series for numbers by entering the start, end and the increment values.
+
+ 04:25
+To demonstrate this, we will first delete the serial numbers already entered in the cells A1 to A7.
+
+ 04:34
+ After deleting the numbers, select the cells referenced as A2 to A7 again.
+
+ 04:40
+ Now click on the Edit' in the Menu bar and then on Fill and Series option.
+
+ 04:47
+ A dialog-box appears in front of us. Now click on the Linear option, under the heading Series type, if it is not selected by default.
+
+ 04:57
+ In the Start value field, we will type the first serial number, that is, “1”.
+
+ 05:03
+ In the End value field, we will type the last value to be entered as “6”.
+
+ 05:08
+ Now, we set the Increment value as “1” and finally click on the OK button.
+
+ 05:15
+We see that the cells automatically get filled with the sequential serial numbers.
+
+ 05:21
+ In all these cases, the Fill tool creates only a momentary connection between the cells. Once they are filled, the cells have no further connection with one another.
+
+05:33
+ Apart from Fill tools, there is one more speed up tool called “Selection lists” which is limited to using only text.
+
+ 05:40
+We will discuss it in the later tutorials of this series.
+
+ 05:45
+ After learning about the “Fill tools” and “Selection lists” we will now learn how to share contents between sheets.
+
+ 05:52
+Calc enables the user to enter the same information in the same cell on multiple sheets.
+
+ 05:58
+This means, instead of entering the same list on each sheet individually, you can enter it in all the sheets at once.
+
+ 06:08
+ In our “Personal-Finance-Tracker.ods” file, our entire data is on “Sheet 1”.
+
+ 06:15
+Now, we want “Sheet 2” as well as “Sheet 3” to show the same data as in “Sheet 1”.
+
+ 06:21
+ So, we click on the Edit option in the Menu bar and then click on the Sheet option.
+
+ 06:28
+ Now, click on Select.
+
+ 06:31
+ Now, in the dialog-box which appears, using Shift key we select the options “Sheet 1”, “Sheet 2” and “Sheet 3”.
+
+ 06:40
+And then click on the OK button.
+
+ 06:43
+ This takes us back to “Sheet 1”.
+
+ 06:46
+Now, let's enter some data in “Sheet 1”.
+
+ 06:50
+For example-in the cell referenced as F12, we’ll type: “This will be displayed on multiple sheets”.
+
+ 06:58
+Now, click on the “Sheet 2” and  “Sheet 3” tab one after the other.
+
+ 07:03
+We see that in each of these sheets, the cell referenced as F12 contains the same data.
+
+ 07:10
+Let us undo the changes.
+
+ 07:12
+ Next, we will learn about different ways in which we can delete and edit data in the cells.
+
+ 07:19
+To delete data  without removing any of the formatting of the cell, just select a cell.
+
+ 07:26
+You see that the data of the cell is displayed in the “Input line” field.
+
+ 07:31
+Now, press the Backspace button on the keyboard.
+
+ 07:35
+You see that the data gets deleted.
+
+ 07:37
+Let us undo the changes.
+
+ 07:41
+ To replace the data in a cell, simply select the cell and type over the old data.
+
+ 07:47
+The new data will retain the original formatting. Let us undo the changes.
+
+ 07:53
+ In order to change a part of the data in a cell, without removing all of the contents, just double-click on the cell.
+
+ 08:02
+Now, by navigating the cursor, you can edit the cell as per your requirement.
+
+ 08:08
+Let us undo the changes.
+
+ 08:10
+ This brings us to the end of the Spoken Tutorial on LibreOffice Calc.
+
+ 08:15
+To summarize, we learned about:
+
+ 08:17
+* Speed up using Fill tools and Selection lists.
+
+ 08:21
+* Sharing content between sheets.
+
+ 08:24
+* Removing data, Replacing data, Changing a part of the data.
+
+ 08:29
+Watch the video available at the following link:
+
+ 08:33
+It summarizes the Spoken Tutorial project.
+
+ 08:36
+If you do not have good bandwidth, you can download and watch it.
+
+08:41
+The Spoken Tutorial Project team:
+
+ 08:43
+* Conducts workshops using spoken tutorials.
+
+ 08:46
+* Gives certificates for those who pass an online test.
+
+ 08:50
+For more details, please write to: contact at spoken hyphen tutorial dot org.
+
+ 08:56
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+ 09:01
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 09:08
+More information on this mission is available at:
+
+ 09:11
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+ 09:19
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.  Thanks for joining.
