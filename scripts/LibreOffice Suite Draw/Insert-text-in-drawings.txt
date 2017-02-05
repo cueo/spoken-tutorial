@@ -1,0 +1,548 @@
+00:01
+ Welcome to the Spoken Tutorial on Inserting Text in Drawings in LibreOffice Draw.
+
+00:07
+In this tutorial, we will learn how to:
+
+00:10
+* Work with text in drawings
+
+00:12
+* Format text in drawings and
+
+00:15
+* Work with text boxes.
+
+00:17
+ We will also learn to:
+
+00:19
+* Set indents, space and align text
+
+00:22
+* Add text to Lines and Arrows
+
+00:26
+* Place  text within Callouts.
+
+00:29
+Text can be added in two ways:
+
+00:31
+* It can be directly inserted into a drawn object,
+
+00:35
+including on lines and arrows.
+
+00:37
+* It can be inserted into a text box as an independent Draw object.
+
+00:42
+Here, we are using:
+
+00:44
+* Ubuntu Linux version 10.04 and
+ LibreOffice Suite version 3.3.4.
+
+
+00:52
+ Let us open the Draw file “Water Cycle” and add some text to it.
+
+00:57
+ We shall add the text “Cloud Formation” to the two white clouds, next to the sun.
+
+01:04
+ Select the white cloud group.
+
+01:06
+Double-click on it in order to enter the group.
+
+01:10
+ Let us select the top cloud.
+
+01:13
+Now, let’s select the Text tool from the Drawing toolbar.
+
+01:17
+ Can you see the cursor has transformed into a small, vertical, blinking line?
+
+01:23
+This is the text cursor.
+
+01:25
+ Let us type the text: “Cloud Formation”.
+
+01:29
+ Now, click anywhere on the page.
+
+01:33
+ Let us enter the same text for the other white cloud too.
+
+01:37
+ To exit the group, double-click anywhere on the page.
+
+01:42
+ Let us now name the sun in the same way.
+
+01:45
+ Entering text in objects cannot get simpler than this!
+
+01:50
+ Next, let us select the gray cloud group.
+
+ 01:53
+As before, double-click on it to enter the group.
+
+01:57
+ Type “Rain Cloud” in each cloud.
+
+02:02
+ As the text in the gray clouds is black in color, it is not visible.
+
+02:07
+So, let us change the color of the text to white.
+
+02:11
+ Select the text and right-click for the context menu and select Character.
+
+02:17
+ The “Character” dialog-box is displayed.
+
+02:20
+Click on the Font Effects tab.
+
+02:23
+ In the Font color field, scroll down and select White.
+
+02:28
+Click OK.
+
+02:30
+The font color changes to white.
+
+02:33
+ In the same manner, let’s change the text color of the second cloud.
+
+02:38
+Select the text and right-click, then select Character.
+
+02:43
+ In Font color, choose “White”.
+
+02:46
+ Double-click anywhere on the page to exit the group.
+
+02:50
+ Similarly, let’s type the word “Mountain” in the triangle that depicts the mountain.
+
+02:58
+ You can format text for
+
+02:59
+Character, that is, change font styles and give special effects to fonts.
+
+03:05
+ You can also format text for Paragraph, that is, align text, set indents or spacing and set tab positions.
+
+03:13
+ You can access these dialog-boxes either
+
+03:16
+from the Context menu or
+
+03:18
+from the Main menu.
+
+03:21
+ To access the Character dialog-box from the Main menu, select Format and select Character.
+
+03:28
+ To access the Paragraph dialog-box from the Main menu, select Format and select Paragraph.
+
+03:36
+ In the rectangle, let’s draw a thick black line to show where the ground water accumulates.
+
+03:43
+ From the Drawing tool bar, select Line.
+
+03:46
+Move the cursor to the page, press the left mouse-button and drag from left to right.
+
+03:54
+Draw a horizontal line that will divide the rectangle into two equal halves.
+
+04:01
+The ground is divided into two!
+
+ 04:04
+ Now, let’s make the line wider.
+
+04:07
+Select the line and right-click for the context menu.
+
+04:11
+Click on Line. The “Line” dialog-box appears.
+
+04:16
+ In the Style field, click the drop-down box.
+
+04:20
+Select Ultrafine 2 dots 3 dashes.
+
+04:24
+In the Width field, enter the value point  .70.
+
+04:29
+click OK.
+
+04:31
+We have widened the line!
+
+04:34
+ Lets insert the text “Ground water table”, inside the rectangle.
+
+04:39
+ First, let’s select the Text tool.
+
+04:42
+This is the capital “T” option on the Drawing toolbar.
+
+04:46
+Move to the Draw page.
+
+04:49
+Now, the cursor has been transformed into a Plus sign with a small capital 'I' beneath it.
+
+04:55
+ Click inside the rectangle.
+
+04:57
+Observe that a text-box appears.
+
+05:01
+Here, let's type: “Ground water table”.
+
+05:05
+ To  align the text to the centre of the text-box, place the cursor inside the text box.
+
+05:12
+Click on Centered icon, in the Standard toolbar, at the top.
+
+05:19
+ In a similar manner, let’s add the text:
+
+05:22
+“Rain water flows from land into rivers and sea”, in the triangle.
+
+05:30
+ Pause this tutorial for the assignment.
+
+05:33
+ Draw a square.
+
+05:35
+ Insert the text: “This is a square.
+
+05:38
+A square has four equal sides and four equal angles. Each angle in a square is ninety degrees.
+
+05:46
+ The square is a quadrilateral.”
+
+05:50
+Format this text using the options in the Text dialog-box.
+
+05:54
+ Apply the font size, style and alignment options to the text.
+
+06:00
+ Now let’s arrange the arrows in the diagram.
+
+06:03
+These arrows show evaporation of water from land, vegetation and water bodies to the clouds.
+
+06:12
+ Let’s select the left-most arrow.
+
+06:14
+Now, click and drag towards the mountain.
+
+06:18
+ Let’s select the middle arrow.
+
+06:21
+Now, click and drag towards the trees.
+
+06:25
+ The third arrow  shows evaporation of water from water to the clouds.
+
+06:31
+ Let’s use the option Curve to draw a line that shows water running down the mountains.
+
+06:37
+ From the Drawing toolbar, click on  Curve and select Freeform Line.
+
+06:43
+ On the draw page, place the cursor next to the mountain.
+
+06:47
+Press the left mouse button and drag down.
+
+06:51
+You have drawn a curved line!
+
+06:53
+ Now, let’s add descriptions to each of these arrows.
+
+06:58
+ Select the first arrow to the right and simply type: “Evaporation from rivers and seas”.
+
+07:06
+Click anywhere on the page.
+
+07:08
+The text appears on the line.
+
+07:12
+ Notice that the text is placed exactly on the line and hence it is not clear.
+
+07:18
+ To move the text above the line, click on the line.
+
+07:22
+ Text is placed horizontally.
+
+07:25
+ Place the cursor at the end of the text and press the Enter key.
+
+07:30
+Click on the page.
+
+07:32
+The text gets aligned.
+
+07:35
+ Text typed on lines and arrows can also be formatted using options from the context menu.
+
+07:41
+ Let’s format the font size using the context menu.
+
+07:45
+ Click on the text:
+
+07:47
+“Evaporation from rivers and seas”.
+
+07:50
+The text is now horizontal.
+
+07:53
+ Let’s select the text and right-click to view the context menu.
+
+07:58
+Select Size and click 22.
+
+08:02
+The size of the font has changed.
+
+08:05
+ Now, let’s type the following text for all the other arrows.
+
+08:09
+"Evaporation from soil"
+
+08:12
+"Evaporation from vegetation"
+
+08:17
+"Run off water from the mountains".
+
+08:22
+ Let’s show rain falling from the grey clouds.
+
+08:26
+ To show rain- let’s draw dotted arrows which point downwards from the cloud.
+
+08:32
+From the Drawing toolbar, select Line Ends with Arrow.
+
+08:37
+ Then place the cursor on the first grey cloud to the left.
+
+08:42
+Press the left mouse button and drag it down.
+
+08:46
+ Right-click for the context menu and click Line.
+
+08:50
+The “Line” dialog-box appears.
+
+08:53
+ Click on the Style drop-down list and select
+
+08:56
+2 dots 1 dash.
+
+08:58
+Click OK.
+
+09:00
+We have drawn a dotted arrow.
+
+09:02
+ Let’s copy and paste two more arrows for this cloud.
+
+09:06
+ Now, let’s copy and paste two arrows to the other cloud.
+
+09:12
+ Now, let’s add the text “Rain” to the dotted arrows.
+
+09:21
+ Let’s type the text “Evaporation to form the clouds”, in a text box, just above the Water object.
+
+ 09:28
+From the Drawing toolbar, select the Text tool and draw a text-box as shown.
+
+09:35
+Type: “Evaporation to form the clouds” inside it.
+
+09:41
+ From the Drawing toolbar, select the Text Tool
+
+09:44
+and draw a text-box next to the grey clouds.
+
+09:48
+Type: “Condensation to form rain” inside it.
+
+09:53
+ Move the text-box by first clicking on the border of the text-box.
+
+09:57
+Now, drag and drop it in the desired location.
+
+10:02
+ Following the previous steps, let’s give the title “WaterCycle Diagram”
+
+10:07
+using a text-box and format the text in Bold.
+
+10:16
+ We have completed drawing the 'Water Cycle' diagram!
+
+10:20
+ Now, let’s learn about Callouts.
+
+10:22
+What are Callouts?
+
+10:24
+ They are special text-boxes that call your attention to or
+
+10:29
+ point to an object or a location in the Draw page.
+
+10:33
+Most comic books, for example, have
+
+10:36
+text placed inside Callouts.
+
+10:39
+ Let’s add a new page to the Draw file.
+
+10:42
+From Main menu, select Insert and click on Slide.
+
+10:47
+A new page is inserted.
+
+10:50
+ To draw a Callout, go to the Drawing toolbar.
+
+10:54
+ Click the small black triangle, next to the Callout icon.
+
+10:59
+Various Callouts are displayed.
+
+11:01
+Let’s click on Rectangular Callout.
+
+11:04
+ Move the cursor to the page, press the left mouse button and drag.
+
+11:10
+You have drawn a Callout.
+
+11:12
+ You can enter text inside the Callout ,just as you did for the other objects.
+
+11:18
+Double-click and type the text: “This is an example”, inside the Callout.
+
+11:25
+ This brings us to the end of this tutorial on 'LibreOffice Draw'.
+
+ 11:30
+In this tutorial, you have learnt how to:
+
+11:33
+* Work with text in drawings
+
+11:35
+* Format text in drawings
+
+11:38
+* Work with text boxes
+
+ 11:40
+* Indenting, spacing and aligning text
+
+11:44
+* Adding text to Lines and Arrows
+
+11:46
+* Placing text within Callouts.
+
+11:50
+ Try out this assignment by yourself.
+
+11:53
+Create a note book label and an invitation as shown in this slide.
+
+12:00
+ Watch the video available at the following link.
+
+12:03
+ It summarizes the Spoken Tutorial project.
+
+12:06
+If you do not have good bandwidth, you can download and watch it.
+
+12:11
+The Spoken Tutorial Project team:
+
+12:13
+* Conducts workshops using spoken tutorials.
+
+12:17
+* Gives certificates for those who pass an online test.
+
+12:20
+ For more details, please write to:contact at spoken hyphen tutorial dot org.
+
+12:27
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+12:31
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+12:39
+More information on this mission is available at:spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+12:50
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.Thanks for joining.
+

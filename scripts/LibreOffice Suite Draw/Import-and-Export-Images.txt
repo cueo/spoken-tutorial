@@ -1,0 +1,287 @@
+00:01
+Welcome to the spoken tutorial on Import and Export Images in LibreOffice Draw.
+
+00:06
+ In this tutorial, you will learn to import images into a Draw page and to save a Draw file into various file formats.
+
+ 00:16
+We can import and export both vector and bitmap or raster images in Draw.
+
+00:23
+Here, we are using:
+ Ubuntu Linux version 10.04 and 
+ LibreOffice Suite version 3.3.4.
+
+
+00:32
+Let us open the file 'RouteMap'.
+
+00:35
+For the purpose of this tutorial, a 'JPEG' file of the 'WaterCycle' drawing has already been created and saved on the Desktop.
+
+ 00:46
+Let us import this image into our Draw file.
+
+00:49
+Let’s close this image.
+
+ 00:52
+First, select the page where you want to import the picture.
+
+00:57
+Let’s insert a new page and select it.
+
+01:01
+To import vector or bitmap images, click on the Insert tab and select Picture.
+
+01:08
+Then click From File.
+
+01:10
+The Insert picture dialog-box appears.
+
+01:14
+Let us now select 'Water Cycle.jpeg.'
+
+00:17
+If we click on Open, the image will be embedded physically into our Draw file.
+
+01:24
+If we check the Link box here, then the image will be linked by the path.
+
+01:29
+Let us click on Open.
+
+01:32
+A message appears saying that the image will only be stored as a link.
+
+01:37
+Click  Keep Link.
+
+ 01:40
+The picture is inserted as a link in the Draw file.
+
+ 01:44
+Links can also be removed easily.
+
+01:48
+Go to the Main menu, select Edit and then click Link.
+
+01:53
+The Edit Links dialog-box appears.
+
+01:57
+This dialog-box lists all the links in the Draw file.
+
+02:02
+Click on the link for the picture 'WaterCycle'.
+
+02:06
+Click Break Link.
+
+02:09
+Draw will display a confirmation message. Click Yes.
+
+02:14
+The link is removed. Now, click on the Close button.
+
+ 02:20
+But, you will notice that the picture is still present in the file.
+
+02:25
+When you break a link, the picture is automatically embedded in the Draw file.
+
+02:31
+Let’s delete this picture now. Select the picture and press the Delete button.
+
+02:39
+Here is an assignment for you.
+
+02:42
+Create two Draw files.
+
+02:44
+Insert an image in one file and save it.
+
+02:48
+Embed an image in another file and save it.
+
+02:52
+Compare both the file sizes.
+
+02:55
+In the file in which you linked the image, change the size of the image.
+
+03:00
+Check if the change is reflected in the original file.
+
+ 03:05
+Next, let’s import the 'WaterCycle' diagram directly into this file as a Draw image.
+
+03:13
+From the Main menu, click Insert and select File.
+
+03:18
+The  Insert File dialog-box opens.
+
+03:21
+From the list, select the Draw file "WaterCycle.odg".
+
+03:28
+Click Open.
+
+03:30
+The Insert slides/objects dialog-box appears.
+
+03:34
+Click on the plus sign next to the file path.
+
+03:38
+You will see a list of the slides.
+
+03:41
+Let us select slide one with the 'WaterCycle' diagram.
+
+ 03:46
+You can also insert the page or the object as a link.
+
+03:51
+To do this, simply click the  Link check-box.
+
+03:55
+Click OK.
+
+03:57
+A confirmation dialog-box appears, asking if the objects should be fit to the new format.
+
+04:05
+Click Yes.
+
+ 04:07
+The slide is inserted into the file, in a new page.
+
+ 04:12
+Next, we shall learn to export images from Draw.
+
+04:17
+Exporting a file in 'Draw' means- to convert a 'Draw' file or a page of the Draw file or an object in a Draw file to a different file format.
+
+04:29
+For example, the 'Draw' file can be converted to a 'PDF', 'HTML', 'JPEG' or a bitmap file.
+
+04:39
+The file formats PDF, Flash and HTML  always export the whole 'Draw' file.
+
+04:47
+Let’s minimize the 'RouteMap' file.
+
+04:51
+Do you wonder how we converted the 'Draw' 'WaterCycle' diagram to the 'JPEG' format?
+
+04:58
+Let me demonstrate how it was done.
+
+05:01
+Open the file 'WaterCycle.'
+
+05:05
+Then, from the Pages panel, select the page with the 'WaterCycle' diagram.
+
+05:11
+From the Main menu, click File and select Export.
+
+05:16
+The  Export dialog-box appears.
+
+05:18
+Let us enter the name "WaterCycleDiagram" in Filename field.
+
+05:24
+From the Places panel, browse and select Desktop.
+
+05:29
+In the File type field, we will select the option  JPEG. But you can save the 'Draw' file in any format you want.
+
+05:38
+Check the Selection check-box.
+
+05:42
+Click Save.
+
+ 05:43
+The JPEG Options dialog-box appears.
+
+05:47
+Let’s keep the default options that are selected in this dialog-box.
+
+05:53
+Click OK.
+
+05:55
+The Draw page with the 'WaterCycle' diagram is saved as a 'JPEG' on the Desktop.
+
+ 06:02
+Here, only one page from the 'Draw' file is converted to 'JPEG' file.
+
+ 06:08
+If you save in PDF, Flash or HTML formats then all the pages in the 'Draw' file will be exported.
+
+ 06:18
+We can also edit raster images in 'Draw'.
+
+06:22
+Raster images can be formatted using the Format menu.
+
+06:26
+You can also use the Picture toolbar to edit these pictures.
+
+06:31
+This brings us to the end of the tutorial on LibreOffice Draw.
+
+06:37
+In this tutorial, you have learnt to import and export images and to save Draw objects into various file formats.
+
+06:47
+Here is an assignment for you.
+
+06:50
+Individual objects or a group of selected objects can also be exported.
+
+06:56
+Convert only the clouds and the mountain from the 'WaterCycle' Draw file into  'JPEG' format.
+
+ 07:05
+Watch the video available at the following link.
+
+07:09
+It summarizes the Spoken Tutorial project.
+
+07:12
+If you do not have good bandwidth, you can download and watch it.
+
+07:17
+ The Spoken Tutorial Project team:
+
+07:20
+* Conducts workshops using spoken tutorials.
+
+07:23
+* Gives certificates for those who pass an online test.
+
+07:28
+For more details, please write to:
+contact at spoken hyphen tutorial dot org.
+
+ 07:35
+ Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+07:40
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+07:48
+More information on this mission is available at:
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+08:01
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.

@@ -1,0 +1,242 @@
+00:02
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:06
+In this tutorial, we will learn how to
+
+00:09
+ enter and update data in a form.
+
+00:12
+In the last tutorial, we learnt how to add form controls to a form.
+
+00:19
+In this tutorial, let us learn how to enter data and update data using a form.
+
+00:27
+Before doing this, let us make just three more modifications to our form design.
+
+00:36
+Let us first invoke the LibreOffice Base program, if it's not already open
+
+00:51
+and open our 'Library database'
+
+00:54
+by clicking Open under File menu.
+
+00:58
+Now we are in the Library database.
+
+01:02
+And, we will open the 'Books Issued to Members' form.
+
+01:07
+To do this, let us click on the Forms icon on the left panel and then right-click on the 'Books Issued to Members' form on the right panel
+
+01:20
+and then click on Edit.
+
+01:24
+We are now in the Form Design window.
+
+01:28
+Here, let us first resize the form, so it looks compact and less imposing.
+
+01:36
+To do this, we will decrease the height and length of our form window.
+
+01:43
+We will do this by clicking, dragging and dropping on the top and sides of the form window.
+
+01:51
+Next, let us change the font of the heading on our form.
+
+01:57
+Let us change the font to Arial Black and Size 12 from the Formatting toolbar at the top.
+
+02:12
+Finally, let us look at the Tab Order of the form controls.
+
+02:19
+This helps us to use keyboard tab keys to navigate across the form controls in a particular order.
+
+02:29
+Say, for example, from the top to the bottom.
+
+02:33
+This is called the tab order.
+
+02:37
+Now, Base automatically sets the tab order of the form controls from top to bottom in a form.
+
+02:47
+But since we removed a couple of text boxes and added two new list boxes and four buttons, we may have mixed up the tab order.
+
+03:00
+So, we will set it right now.
+
+03:05
+In the Form Design toolbar, usually found at the bottom of the window, we will browse through the icons
+
+03:16
+and find the icon with the tool tip that says 'Activation order'.
+
+03:25
+Let us click on this icon.
+
+03:29
+Now, we see a small pop-up window with 'Tab Order' as its title.
+
+03:38
+To order these form controls, we can either click, drag and drop the items.
+
+03:46
+Or we can use the 'Move up' or 'Move down' buttons.
+
+03:52
+So, let us set the tab order as shown in the image here. <pause>
+
+04:04
+We are done. So, let us click on the OK button to save these changes.
+
+04:12
+Okay, now let us save our form by pressing Control S
+
+04:19
+and then we will close the form window.
+
+04:24
+And finally, we are done with our Form design.
+
+04:29
+Now, let us test our form.
+
+04:33
+In the main Base window, let us open the 'Books Issued to Members' form by double-clicking on it.
+
+04:42
+Now, the form is open in data entry mode.
+
+04:47
+Notice the heading that says 'Form to track Books issued to Members'.
+
+04:54
+And here, we see book titles and member names instead of 'bookIds' and 'memberIds'.
+
+05:03
+Also, this is the first record of the BooksIssued table; we see that 'An Autobiography' is highlighted against the Book title.
+
+05:15
+And 'Nisha Sharma' highlighted against the Member name.
+
+05:21
+And we also see the rest of the fields.
+
+05:25
+Now we can traverse through all the records by using the Form Navigation toolbar icons at the bottom.
+
+05:45
+Let us go to the second record now.
+
+05:49
+Here we see that the member Jacob Robin has borrowed the book 'Macbeth' and let us assume now that he is returning the book.
+
+06:01
+So, let us update this information into this record.
+
+06:07
+For this, we will type in the actual return date, for example- 7/7/11
+
+06:17
+and check the Checked In field.
+
+06:21
+To save this information, we will press the Save Record button that we put there.
+
+06:30
+Notice that the button is greyed out, meaning now it is disabled from use.
+
+06:38
+But if we edit this record again then the button gets enabled again.
+
+06:45
+Okay, now let us test the Undo changes button.
+
+06:50
+For this, let us edit the record by clicking on the book title 'Conquest of Self' and then typing in 5/7/11 in the Actual Return Date field.
+
+07:06
+Notice that both the Save record button and the Undo changes button are enabled for use.
+
+07:15
+Now, let us click on the Undo Changes button and see what happens.
+
+07:22
+The changes we did last, have been undone.  Notice that 'Macbeth' is highlighted instead of 'Conquest of Self' and the Actual return date is 7/7/11.
+
+07:37
+Good, let us now click on the Delete Record button, meaning- we are trying to delete this second record.
+
+07:47
+Base is cautious about deletes, so it asks for a confirmation by alerting us.
+
+07:55
+For now, let us go ahead and click on the Yes button.
+
+08:02
+We can see that the record is indeed deleted; gone from the screen and in its place we see the next record.
+
+08:13
+Finally, let us add a new record by clicking on the last button on the form which is New record.
+
+08:22
+Let us type some values.
+
+08:26
+Since the IssueId is an auto generating field, we will skip it.
+
+08:33
+And here, let us add data as shown in the image.
+
+08:42
+To save the entries, click on the Save Record button.
+
+08:47
+There we go.
+
+08:48
+We have tested the form by entering and updating data.
+
+08:54
+Here is an assignment-
+Design a form to show the member's information. 
+
+09:00
+Make the form look compact.
+
+09:03
+Make the font bold.
+
+09:07
+Add Save and New record buttons.
+
+09:10
+This brings us to the end of this tutorial on Form Data in LibreOffice Base.
+
+09:17
+To summarize, we learned how to:
+
+09:20
+enter and update data in a form.
+
+09:23
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:34
+This project is coordinated by http://spoken-tutorial.org. More information on the same is available at the following link.
+
+09:44
+This script has been contributed by Priya Suresh,DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

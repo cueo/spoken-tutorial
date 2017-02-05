@@ -1,0 +1,317 @@
+00:02
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:06
+In this tutorial, we will learn how to:
+
+00:10
+* Write queries in SQL View
+
+00:13
+* Use ORDER BY clause
+
+00:15
+* Use JOINS
+
+00:17
+* Use Aggregate functions
+
+00:19
+* Use the GROUP BY clause
+
+00:21
+* And to use built in Functions.
+
+00:26
+Let us learn more about writing SQL queries.
+
+00:31
+For this, let us open our familiar Library database.
+
+00:36
+Now, let us click on the Queries list on the left panel
+
+00:42
+and then click on ‘Create Query in SQL View’.
+
+00:49
+First, let us see how we can sort the results of a query.
+
+00:55
+And let us consider the following example:
+
+00:59
+Retrieve Book title and author information for all those books published by Cambridge or Oxford
+
+01:09
+and sort them by the publisher in ascending order, followed by book titles in ascending order.
+
+01:19
+And here is the query:
+
+01:22
+SELECT Publisher, Title, Author
+
+01:28
+FROM Books
+
+01:31
+WHERE Publisher IN ( 'Cambridge', 'Oxford')
+
+01:42
+ORDER BY Publisher ASC, Title ASC
+
+01:50
+So, notice we have used the ORDER BY clause to specify sorting on column names.
+
+01:58
+Also notice the comma characters which help to add more columns for sorting.
+
+02:05
+And to specify the ascending or descending order, we can simply type 'A S C' or 'D E S C' next to each column name.
+
+02:19
+Now, let us click on the Run Query icon below the file menu bar.
+
+02:26
+Here are the books, first sorted by Publisher and then by book title.
+
+02;34
+Now, onto our next query.
+
+02:38
+Let us now get a list of book titles which have not yet been returned by the members, along with the book issue dates.
+
+02:48
+Since titles are in the Books table and the Book Issue date is in the BooksIssued table,
+
+02:55
+we will need to combine these two somehow.
+
+03:00
+So, we will use the JOIN keyword, to join these two tables
+
+03:07
+and we will use the common column, BookId, to link these two tables.
+
+03:14
+So the query is:
+
+03:17
+SELECT B.title, I.IssueDate, I.Memberid
+FROM Books B JOIN  BooksIssued I
+
+03:35
+ON B.bookid = I.BookId
+WHERE CheckedIn = FALSE
+
+03:48
+Notice the letters 'B' and 'I' in the FROM clause.
+
+03:55
+These are called Aliases which can be either descriptive or just single alphabets for better readability.
+
+04:06
+Notice that the BookId column is in both the tables.
+
+04:11
+So, we will use aliases to specify or qualify column names  to avoid any confusion.
+
+04:21
+Okay, now notice that we have joined the two tables using the JOIN keyword in the FROM clause
+
+04:31
+and we have specified the BookId column for joining by writing:
+ON B.bookid = I.BookId
+
+04:46
+So, let us run our query now
+
+04:49
+and we see a list of books and their issue date and notice that the CheckedIn status- not checked in.
+
+04:59
+Okay, also notice that we see only the MemberId in the results. Not very useful, is it?
+
+05:08
+So, how do we display member names which are in the members table?
+
+05:15
+Simple. We JOIN the members table to our query as follows:
+
+05:21
+SELECT B.Title, I.IssueDate, I.MemberId, M.Name
+FROM Books B
+
+05:37
+JOIN  BooksIssued I ON B.BookId = I.BookId
+JOIN Members M ON I.MemberId = M.MemberId
+
+05:58
+WHERE CheckedIn = FALSE
+
+06:02
+So, notice the second join with the Members table and the MemberId column used for joining.
+
+06:12
+Let us run the query.
+
+06:14
+Here are the member names along with the books that were issued to them.
+
+06:20
+Next, let us learn about aggregates and grouping.
+
+06:26
+How can we get a  count of all the members in the library?
+
+06:31
+Here is a query:
+
+06:34
+SELECT COUNT(*) AS "Total Members"
+FROM Members
+
+06:47
+So here, notice the COUNT.
+
+06:51
+This is called an aggregate function as it returns just one value by evaluating a set of records.
+
+07:02
+Also we have added an Alias- ‘Total Members’.
+
+07:07
+Now, let us run the query.
+
+07:10
+So here, Base has evaluated all the 4 members records and returned the number 4 which is the total count of members.
+
+07:22
+Some more examples of aggregate functions are SUM, MAX and MIN.
+
+07:30
+Now, let us learn about grouping information.
+
+07:36
+How do we get a count of books for each publisher?
+
+07:40
+Here is the query:
+
+07:43
+SELECT Publisher, COUNT(*) AS "Number of Books" FROM Books
+GROUP BY Publisher
+ORDER BY Publisher
+
+08:03
+Notice the new GROUP BY clause.
+
+08:06
+So, we are selecting the Publisher and the number of books and the GROUP BY clause to group the records for  each Publisher.
+
+08:18
+Let us run the query now.
+
+08:21
+Notice the publisher names and the number of books by each publisher beside them.
+
+08:33
+Next, let us learn about using Functions in SQL.
+
+08:38
+Functions are statements that return a single value.
+
+08:43
+For example, CURRENT_DATE returns today’s date.
+
+08:49
+So, let us list all the book titles that are due to be returned by the members.
+
+08:56
+And the query is:
+
+08:58
+SELECT B.Title, I.IssueDate, I.ReturnDate
+
+09:08
+FROM Books B JOIN BooksIssued I ON B.bookid = I.BookId
+
+09:21
+WHERE CheckedIn = FALSE and ReturnDate < CURRENT_DATE
+
+09:31
+So, notice the use of the CURRENT_DATE function.
+
+09:36
+We are retrieving books for which the Return Date is past today’s date.
+
+09:43
+Let us run the query.
+
+09:45
+And, here are the books that are due to be returned.
+
+09:51
+For a list of functions that HSQLdb offers: go to  http://hsqldb.org/doc/2.0/guide/builtinfunctions-chapt.html
+
+10:23
+The entire user guide can be accessed by visiting the website:
+
+10:29
+http://www.hsqldb.org/doc/2.0/guide/
+
+10:48
+Here is an assignment:
+
+10:50
+Write and test your SQL queries for the following:
+
+10:55
+1. Get a count of all the books in the Library.
+
+10;58
+2. Get a count of books written by each author.
+
+11:03
+3. Get a list of member names and their phone numbers who need to return books today.
+
+11:11
+4. Explain what  this query does?
+SELECT (price) AS "Total Cost of Cambridge Books"
+
+11:24
+FROM Books
+WHERE publisher = 'Cambridge'
+
+11:32
+This brings us to the end of this tutorial on more queries in SQL View LibreOffice Base.
+
+11:40
+To summarize, we learned how to:
+
+11:43
+* Create Queries in SQL View
+
+11:47
+* Use ORDER BY clause
+
+11:49
+* Use JOINS
+
+11:51
+* Use Aggregate functions
+
+11:54
+* Use the GROUP BY clause
+
+11:57
+* And use built in Functions.
+
+12:00
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India. This project is coordinated by http://spoken-tutorial.org. More information on the same is available at the following link.
+
+12:21
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

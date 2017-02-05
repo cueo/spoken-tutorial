@@ -1,0 +1,419 @@
+00:02
+ Welcome to the spoken tutorial on First C++ program.
+
+ 00:07
+  In this tutorial I am going to explain,
+
+ 00:10
+ *How to write a C++ program
+
+ 00:13
+ *How to compile it
+
+ 00:14
+ *How to execute it
+
+ 00:17
+ We will also explain some common errors and their solution.
+
+ 00:22
+  To record this tutorial, I am using Ubuntu operating system version 11.10 and
+
+ 00:29
+  G++ Compiler version 4.5.2 on Ubuntu.
+
+ 00:35
+  To practice this tutorial,
+
+ 00:37
+ You should be familiar with Ubuntu Operating System and an Editor
+
+ 00:44
+Some editors are 'vim' and 'gedit'.
+
+ 00:48
+ I am using 'gedit' in this tutorial.
+
+ 00:50
+ For relevant tutorial please visit our website which is as shown.
+
+ 00:56
+ Let me tell you how to write a C++ program through an example.
+
+ 01:01
+ Open the  terminal Window using Ctrl,  Alt and T keys simultaneously on your keyboard.
+
+ 01:09
+ To open the text editor, type on the terminal.
+
+ 01:13
+ “gedit” space “talk” dot “.cpp” space ampersand “&” sign.
+
+ 01:21
+ We use the “&” to free up the prompt.
+
+ 01:25
+ Please note that all the C++ files will have the extension “.cpp”.
+
+ 01:31
+ Now   Press Enter,
+
+ 01:33
+the text editor has opened.
+
+ 01:35
+  Let us start to write a program.
+
+ 01:38
+ Type double slash “//” space “My first C++ program”.
+
+ 01:44
+  Here, double slash is used to comment the line.
+
+ 01:49
+ Comments are used to understand the flow of program.
+
+ 01:52
+ It is useful for documentation.
+
+ 01:55
+ It gives us information about the program.
+
+ 01:59
+ The double slash is called as single line comment. Now press Enter.
+
+ 02:05
+ Type (hash) “#include”, space, opening angle bracket, closing angle bracket .
+
+ 02:13
+It is  a good practice to complete the brackets first, and then start writing inside it.
+
+ 02:20
+ Now Inside the bracket, type “iostream” .
+
+ 02:23
+ Here iostream is a header file.
+
+ 02:26
+ This file includes the declaration of  standard input output functions  in C++. Now press Enter.
+
+ 02:35
+  Type “using” space “namespace” space “std” and a semicolon “;” .
+
+02:45
+  The using statement informs the compiler that you want to use the std namespace.
+
+ 02:52
+ The purpose of namespace is to avoid name collisions.
+
+ 02:56
+ It is done by localizing the names of identifiers.
+
+03:00
+ It creates a declarative region and defines a scope.
+
+ 03:05
+ Anything defined within a namespace is in the SCOPE of that namespace.
+
+ 03:11
+Here std is the namespace in which entire standard C++ library is declared. Now press Enter.
+
+ 03:20
+ Type “int” space “main” opening bracket, closing bracket .
+
+ 03:26
+ main is a special function.
+
+ 03:30
+ It denotes that the execution of the program begins from this line.
+
+ 03:34
+The opening and the closing bracket is called as Parenthesis.
+
+ 03:39
+ Parenthesis followed by main  tells the user that main is a function.
+
+ 03:45
+ Here, the int main()  function takes no arguments and returns a value of type integer.
+
+ 03:52
+  We will learn about data types in another tutorial.
+
+ 03:56
+Now  let us switch to the slides to know more about  main function.
+
+ 04:02
+ Every program should have  one main function.
+
+ 04:04
+ There should NOT be more than one “main” function.
+
+ 04:09
+ Otherwise the compiler cannot locate the beginning of the program.
+
+ 04:13
+ The empty pair of parentheses indicates that main has no arguments.
+
+ 04:19
+ The concept of arguments will be discussed in  the upcoming tutorials.
+
+ 04:24
+ Now come back to our program. Press Enter.
+
+ 04:29
+ Type opening curly bracket “{”.
+
+ 04:32
+ The opening  curly  bracket marks the beginning of the function main().
+
+ 04:37
+Then Type closing curly bracket “}”.
+
+ 04:40
+ The closing bracket indicates the end of the function main().
+
+ 04:45
+Now, inside the bracket press enter twice.
+
+ 04:49
+ Move the cursor one line up.
+
+04:51
+ Indentation makes the code easier to read.
+
+ 04:54
+ It also helps to locate errors faster.
+
+ 04:58
+So let us  give a  space here.
+
+ 05:01
+And type “cout” space two opening angle bracket '.
+
+ 05:07
+ Here cout is a standard C++ function to print the output on the terminal.
+
+ 05:14
+Now  after the brackets, type within  double quotes.
+
+ 05:18
+Anything within the double quotes, in the cout  functions, will be printed.
+
+ 05:24
+Now inside a quote type“Talk to a teacher backslash n” (\n).
+
+ 05:31
+ Here \n signifies newline.
+
+ 05:35
+ As a result, after execution of the cout function, the cursor moves to the new line.
+
+ 05:41
+  Every C++ statement must end with a semicolon.
+
+ 05:45
+ Hence type it at the end of this line.
+
+ 05:48
+ Semicolon acts as a statement terminator. Now press Enter.
+
+ 05:53
+ Give a space here and  Type “return” space “0” and a semicolon “;”.
+
+ 06:00
+ This statement returns the integer zero.
+
+ 06:03
+ An integer has to be returned for this function because the function type is int.
+
+ 06:10
+ The return statement marks the end of executable statements.
+
+ 06:14
+ We will learn more about the returned values in another tutorial.
+
+ 06:20
+ Now click on “Save” button to save the file.
+
+ 06:23
+ It is a good habit to save files frequently.
+
+ 06:26
+ This will protect you from sudden power failures.
+
+ 06:30
+ It will also be useful in case the applications were to crash.
+
+ 06:34
+ Let us now compile the program.
+
+ 06:36
+ Come back to our  terminal.
+
+ 06:39
+ Type “g++” space “talk.cpp” space hyphen “-o” space “output”.
+
+ 06:49
+Here g++ is the compiler used to compile C++ programs.
+
+ 06:55
+ talk.cpp is our filename.
+
+ 06:59
+ hyphen -o output says that the executable should go to the file "output".
+
+ 07:05
+ Now press Enter.
+
+ 07:07
+  We see that the program is compiled.
+
+ 07:10
+ By typing ls space hyphen lrt, we can see that output is the last file to be created.
+
+ 07:19
+ Let us  execute a  program,  type  “./output” (dot slash output).
+
+ 07:24
+And  Press Enter.
+
+ 07:27
+ Here the output is displayed as “Talk to a teacher”.
+
+ 07:30
+  Now let us see the common errors which we can come across.
+
+ 07:35
+ Switch  back to  our text editor.
+
+ 07:38
+ Suppose here we miss the }(closing curly bracket)
+
+ 07:42
+now save the file.
+
+ 07:44
+ Let us execute. Come back to our  terminal.
+
+ 07:48
+ Now compile and run the program using the command we used before. We see an error.
+
+ 07:55
+ We see that there is an error at line no.7 in our talk.cpp file  that "expected curly bracket at the end of input".
+
+ 08:07
+Now  Come back to our  text editor .
+
+ 08:09
+ As I said before, the closing curly bracket marks the end of the function main
+
+ 08:14
+ Hence re-insert the bracket here. Now Save the file.
+
+ 08:19
+  Let us execute it again.
+
+ 08:21
+ You can recall the previously entered commands by using up arrow key.
+
+ 08:26
+ That is what I did now.
+
+ 08:30
+  Yes, it is working.
+
+08:32
+  I will show you another common error.
+
+ 08:35
+ Let us switch back to our text editor.
+
+ 08:37
+ Now, suppose here we missed std.
+
+ 08:41
+ Let us save the file.
+
+ 08:44
+  Come back to our  terminal .
+
+ 08:46
+ Let us compile .
+
+ 08:48
+ We see that there is an  error at line no.3 and  line no.6 in our talk.cpp file.
+
+ 08:56
+  That "expected identifier before 'semicolon' " and " 'cout' was not declared in this scope".
+
+09:05
+  As cout is the standard C++ library function.
+
+ 09:09
+ and the entire C++ library function is defined under std namespace .
+
+ 09:15
+ Hence it is giving an error.
+
+  09:18
+ Let us now  fix the error.
+
+ 09:19
+ Come back to our Text editor.  Type std here.
+
+ 09:23
+ Let us save it.
+
+ 09:25
+  Let us compile it again.
+
+ 09:29
+  Yes, it is working.
+
+ 09:32
+  As an assignment,
+
+ 09:33
+ write a program to print your name and city.
+
+ 09:37
+ We used single line comment in this tutorial.
+
+09:40
+ Now just try to give a multiline comment.
+
+ 09:44
+ Watch the video available at the link shown below.
+
+ 09:46
+ It summarizes the Spoken Tutorial project.
+
+ 09:48
+ If you do not have good bandwidth, you can download and watch it.
+
+09:53
+The Spoken Tutorial Project Team:
+
+ 09:55
+ Conducts workshops using spoken tutorials.
+
+09:58
+ Gives certificates to those who pass an online test.
+
+ 10:01
+ For more details, please  write to  contact @spoken-tutorial.org
+
+10:10
+  Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 10:14
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 10:20
+ More information on this Mission is available at the link shown below.
+
+ 10:25
+ This is Ashwini Patil from IIT Bombay signing off.
+
+ 10:28
+ Thank you for watching.

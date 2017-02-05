@@ -1,0 +1,308 @@
+00:01
+ Welcome to the spoken tutorial on Scope of variables in C and C++.
+
+ 00:08
+In this tutorial we will learn,
+
+ 00:11
+* What is the Scope of variable?
+
+ 00:13
+* What is a Global variable?
+
+ 00:16
+* What is a Local variable?
+
+ 00:19
+Few  examples.
+
+ 00:22
+We will also see some common errors and their solutions.
+
+00:27
+ To record this tutorial, I am using
+
+ 00:30
+Ubuntu Operating System version 11.04, gcc and g++ Compiler version 4.6.1.
+
+  00:41
+ Let us start with the introduction to the scope of variables.
+
+ 00:47
+It is the region of code within which the variable can be accessed.
+
+ 00:54
+Depending on it's type and place of declaration it is divided into two categories:
+
+ 00:59
+Global Variable &
+
+ 01:02
+Local Variable.
+
+01:05
+ Now we will see an example.
+
+ 01:07
+I have already typed the program on the editor.
+
+ 01:10
+Let me open it.
+
+ 01:14
+Note that our file name is scope.c.
+
+ 01:19
+Let me explain the code now.
+
+ 01:23
+This is our header file.
+
+01:26
+Here we have declared two global variables a and b.
+
+ 01:32
+And we have initialized them by assigning values as 5 and 2.
+
+ 01:39
+A global variable is available to all functions in your program.
+
+ 01:44
+These are declared outside any functions, above main() function.
+
+ 01:51
+These have a global scope.
+
+ 01:53
+Here we have declared a function add without arguments.
+
+01:59
+Here 'sum' is  a local variable, it is declared inside the function add.
+
+ 02:07
+A local variable is available only to the function inside which it is declared.
+
+ 02:13
+These variables are declared inside a block.
+
+ 02:16
+These have local scope.
+
+ 02:19
+Then sum of a & b will be stored in the variable 'sum'. Here we print the sum.
+
+ 02:29
+ This is our main() function.
+
+ 02:33
+ The add function is called and then executed.
+
+ 02:38
+ And this is our return statement.
+
+02:40
+ Now click on Save.
+
+ 02:43
+ Let us execute the program.
+
+ 02:45
+ Please open the terminal window  by pressing Ctrl, Alt and T keys simultaneously on your keyboard.
+
+ 02:55
+ To compile, type
+
+ 02:56
+gcc space scope.c space hyphen o space sco and press Enter.
+
+ 03:05
+To execute,
+
+ 03:06
+type ./sco (dot slash sco), press Enter.
+
+ 03:10
+  The output is displayed as
+
+ 03:13
+Sum of a and b is 7.
+
+ 03:16
+ Now let us see how to execute the same program in C++.
+
+  03:20
+ Come back to our program. First press Shift, Ctrl & S keys simultaneously on your keyboard.
+
+ 03:31
+Now save the file with an extension .cpp  (dot cpp) and click on Save.
+
+  03:41
+ Let us change the header file as iostream.
+
+ 03:47
+ Now  include the using statement. Click on save .
+
+ 03:58
+ The  declaration of global variable and local variable is same in  C++.
+
+ 04:03
+So, no need to change anything.
+
+  04:07
+ Now replace the printf statement with the cout statement.
+
+  04:13
+ Delete the format specifier and '\n'.
+
+ 04:17
+Now delete the comma.
+
+  04:19
+ Type two opening angle brackets.
+
+ 04:22
+Delete the closing bracket, again type two opening angle brackets.
+
+ 04:26
+And within the double quotes type backslash n. Now click on Save.
+
+ 04:35
+Let us execute the program.
+
+ 04:39
+Come back to our terminal.
+
+ 04:42
+ To compile, type g++ space scope dot cpp space -o space sco1 
+
+ 04:52
+ Here we have sco1 because we don't want to overwrite output parameter sco for the file 'scope.c'.
+
+ 05:04
+ Now press Enter.
+
+ 05:07
+ To execute type ./sco1 and press Enter.
+
+05:14
+The output is displayed as  Sum of a and b is 7.
+
+  05:19
+ We can see  that it is similar to our C code.
+
+  05:27
+Now we will see some common errors which we can come across.
+
+ 05:31
+Come back to our program. Suppose here I will declare a  variable a again.
+
+ 05:41
+Type int a  and a semicolon.
+
+  05:45
+ Click on Save. We have declared  the variable 'a' above the main() function and after the add function.
+
+  05:55
+ Let us see what happens.
+
+ 05:57
+Come back to our  terminal.
+
+06:01
+ Now compile as before.
+
+06:05
+We see errors, redefinition of 'int a'  ,  'int a' previously defined here. Come back to our program.
+
+06:18
+a is a global variable.
+
+06:20
+It has a global scope.
+
+06:22
+We cannot declare the variable twice as it is already declared globally.
+
+06:27
+We can only declare variable a as a local variable .
+
+06:34
+Let us fix the error.
+
+  06:36
+ Delete this .
+
+  06:39
+ Click on Save.
+
+  06:41
+ Let us execute again.
+
+06:42
+Come back to our terminal.
+
+  06:45
+  Now  compile as before, execute as before.
+
+ 06:49
+  Yes, it is working.
+
+06:52
+This brings us to the end of this tutorial.
+
+  06:56
+ Let us summarize.
+
+  06:58
+ In this tutorial we learnt ,
+
+  07:00
+ Scope of variable,
+
+  07:02
+ Global variable, e.g : int a=5 &
+
+  07:07
+ and  local variable ,e.g:int sum
+
+  07:12
+  As an assignment,
+
+07:14
+write a program to print the difference of two numbers.
+
+ 07:19
+ Watch the video available at the link shown below  .
+
+07:22
+It summarizes the Spoken Tutorial project.
+
+07:25
+If you do not have good bandwidth, you can download and watch it.
+
+ 07:30
+ The Spoken Tutorial Project Team:
+
+07:32
+Conducts workshops using spoken tutorials,
+
+07:35
+Gives certificates to those who pass an online test .
+
+07:40
+For more details, please write to,contact@spoken-tutorial.org
+
+ 07:47
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+07:52
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+08:00
+More information on this Mission is available at the link shown below
+
+ 08:04
+  This is Ashwini Patil from IIT Bombay signing off.
+
+08:08
+Thank You for watching.

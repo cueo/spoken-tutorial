@@ -1,0 +1,143 @@
+00:01
+ Hello Everyone. Welcome to this tutorial on Installation of LibreOffice Suite.
+
+ 00:07
+ In this tutorial, we will learn how to install LibreOffice Suite in Linux OS.
+
+ 00:14
+ To record this tutorial, I'm using:
+ Linux OS version 14.04 and
+ Firefox web browser. You can use any web browser of your choice.
+
+
+ 00:27
+ To follow this tutorial, in Linux OS, one should be familiar with:
+ Terminal commands and
+ Synaptic Package Manager.
+
+
+00:35
+If not, please refer to the relevant tutorials in the Linux series on this website.
+
+ 00:40
+ Let us begin with the installation of LibreOffice Suite.
+
+ 00:45
+ LibreOffice Suite can be downloaded and installed using Synaptic Package Manager.
+
+ 00:51
+ Refer to the relevant tutorial in the Linux spoken tutorial series to know more.
+
+ 00:57
+ Next, let us learn how to install LibreOffice Suite using the terminal.
+
+ 01:03
+ First, I will open Firefox web browser. 
+
+ 01:07
+ In the address bar, type:  www.LibreOffice.org/download and press Enter.
+
+ 01:19
+ We are immediately redirected to the download page.
+
+ 01:24
+ Here you can see the Download button to download LibreOffice Suite.
+
+ 01:30
+ By default, the latest version of LibreOffice for our default OS is displayed here.
+
+ 01:36
+ In my case, I’m recording on Linux OS. So, it shows the latest version of LibreOffice for Linux.
+
+ 01:45
+ But we can download this software as suitable for our OS version.
+
+01:51
+How do we change the OS or LibreOffice version? Just click on the link “change”, located just above the Download button.
+
+ 02:01
+ We are redirected to another page. Here, we can see the Download option for various OSs. We can select the one suitable for our need.
+
+ 02:12
+ Here, we can also choose the version of LibreOffice Suite that we want to install.
+
+ 02:18
+ I will choose Linux x64 in bracket deb as I have a 64-bit Ubuntu Linux machine.
+
+ 02:26
+ On doing this, we are once again redirected to the download page.
+
+ 02:31
+ Note that the default version of LibreOffice and OS is now as per our selection.
+
+ 02:40
+ Let us click on the Download button.
+
+ 02:43
+ On doing so, a Save As dialog box opens.
+
+ 02:46
+ Click on the OK button and the download will start. This may take some time, depending upon the internet speed.
+
+ 02:55
+ When the download is complete, open the terminal. We can do so by pressing Ctrl, Alt, T keys simultaneously on the keyboard.
+
+ 03:05
+ In the terminal, type: cd space Downloads and press Enter.
+
+ 03:13
+ Then type: ls and press Enter.
+
+ 03:17
+We can see a downloaded 'LibreOffice suite' file in tar.gz format.
+
+03:24
+Now I'll clear the screen by pressing Ctrl + L keys.
+
+03:29
+ Then type: tar space -zxvf space and the file name and press Enter.
+
+03:43
+Then type: cd space file name and press Enter.
+
+ 03:51
+ Now type: cd in caps DEBS and press Enter.
+
+ 03:59
+ At the end, type: sudo space dpkg -i space *.deb and press Enter.
+
+ 04:14
+ Type the password of your system and press Enter.
+
+ 04:19
+ After pressing Enter, the installation of LibreOffice Suite will begin.
+
+ 04:26
+ The installation will take some time. Once the installation is complete, close the terminal.
+
+04:34
+ Go to dash home and type office in the search bar field.
+
+ 04:40
+ You'll see various LibreOffice Suite components like-  Base, Calc, Impress, Writer, Draw and Math.
+
+ 04:51
+ This indicates that the LibreOffice Suite is successfully installed on your Linux system.
+
+ 04:58
+ That’s all for this tutorial. Let us summarize.
+
+ 05:02
+ In this tutorial, we learned how to install LibreOffice Suite in Ubuntu Linux OS.
+
+ 05:09
+ The video at the following link summarizes the Spoken Tutorial project. Please watch it.
+
+ 05:16
+ The Spoken Tutorial Project team conducts workshops and gives certificates to those on passing online tests. For details, please write to us.
+
+ 05:29
+ Spoken Tutorial Project is funded by NMEICT, MHRD, Govt of India. More information on this mission is available at the following link.
+
+05:43
+ The script for this tutorial has been contributed by the Spoken Tutorial Team. And this is Gaurav Shinde from IIT Bombay, signing off. Thank you for joining.

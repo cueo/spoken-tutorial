@@ -1,0 +1,485 @@
+00:01
+ Welcome to the spoken tutorial on Basics of Shell Scripting.
+
+ 00:05
+ In this tutorial, we will learn about:
+
+ 00:09
+* System variables
+
+ 00:11
+* User defined variables and
+
+ 00:13
+* Accepting user input via keyboard.
+
+ 00:16
+ To follow this tutorial, you should be familiar with Linux Operating System.
+
+ 00:23
+If not, for relevant tutorials, please visit our website which is as shown.
+
+ 00:29
+ For this tutorial, I am using:
+
+ 00:32
+* Ubuntu Linux 12.04 Operating System and
+
+ 00:35
+* GNU Bash version 4.1.10
+
+ 00:40
+ Please NoteGNU Bash version 4 or above is recommended for practice.
+
+00:46
+ Let us start with an introduction to variables.
+
+00:49
+ Bash variables provide temporary storage for information.
+
+ 00:55
+ These variables can be used within the lifespan of the program.
+
+ 01:01
+ There are two types of variables:
+ System variables
+ User defined variables .
+
+
+ 01:07
+ System variables: These are created and maintained by Linux Bash Shell itself.
+
+ 01:14
+They are defined by capital letters.
+
+ 01:17
+Commonly used system variables are-
+
+ 01:20
+* BASH_VERSION 
+
+ 01:21
+* HOSTNAME 
+
+ 01:23
+* HOME etc.
+
+ 01:25
+ Let us open the terminal by pressing Ctrl, Alt and T keys simultaneously  on your keyboard.
+
+ 01:33
+ Now, type: set and press Enter.
+
+ 01:38
+This will display all the system variables.
+
+ 01:42
+ Alternately, you can type env or printenv to view all the system variables.
+
+01:53
+Let me clear the prompt.
+
+ 01:55
+ Now, type: echo space within double quotes dollar sign HOSTNAME
+
+ 02:01
+ now press Enter.
+
+ 02:04
+The hostname of the system will be displayed.
+
+ 02:07
+ Now let's find out the full path of homedirectory.
+
+ 02:11
+ Type:  echo space within double quotes dollar sign HOME(in capital).
+
+ 02:18
+ Press Enter.
+
+ 02:21
+The full path of user's home directory will be displayed.
+
+02:26
+ Now, type:
+
+ 02:27
+echo space within double quotes HOME (in capital).
+
+ 02:32
+Press Enter.
+
+ 02:34
+This will display only the "HOME", not the value of HOME variable.
+
+02:39
+So, it is necessary to use dollar sign( $) at the beginning of every variable to display its value.
+
+02:48
+Let us switch back to our slides.
+
+ 02:51
+User Defined Variables:
+
+ 02:53
+ These variables are created and maintained by users.
+
+ 02:57
+ It is always a good idea to avoid uppercase for the names of user defined variables.
+
+ 03:05
+ This makes it easy to differentiate between user defined and system variables.
+
+03:12
+ Switch back to our terminal.
+
+ 03:14
+ Type: username equal to sign sunita
+
+ 03:20
+Please note that there should not be any blank space between username, equal to sign and sunita.
+
+ 03:29
+Now, press Enter.
+
+ 03:30
+ To display the value of variable username,
+
+ 03:33
+Type: echo space within double quotes dollar sign username
+
+03:40
+ press Enter.
+
+ 03:42
+This will display sunita on your terminal.
+
+ 03:46
+ The value of a variable can be unset.
+
+03:50
+Let us switch back to our slides.
+
+03:52
+unset- the value of a variable can be unset by using the unset command.
+
+03:59
+The syntax for this is- unset variablename
+
+ 04:03
+ Let's use the previous example where username is our variable.
+
+ 04:08
+ Switch to the Terminal.  Now type: unset space username, press Enter.
+
+ 04:18
+Let us check. Type: echo space within double quotes dollar sign username  press Enter.
+
+ 04:28
+Nothing will be displayed on the terminal.
+
+ 04:30
+This means that the value of variable username has been removed.
+
+04:36
+Now switch back to our slide.
+
+ 04:39
+Global and local variables:
+
+04:42
+  In Shell script, user defined variables can be declared globally or locally.
+
+ 04:49
+ By default, all variables are global.
+
+ 04:52
+ This means, their values remain the same inside and outside the function.
+
+ 04:59
+ Let us learn how to declare variables globally and locally.
+
+ 05:04
+ Switch to the terminal . Type:
+
+ 05:07
+gedit space g_(underscore)variable.sh space & (ampersand sign).
+
+05:16
+gedit is the text editor g_(underscore) variable.sh is our file name
+
+05:23
+and '&' (ampersand) is used to free up the prompt.
+
+ 05:28
+ Press Enter.
+
+ 05:30
+ Type the code as shown here, in your "g_(underscore)variable.sh" file.
+
+ 05:35
+ Let me explain the code now.
+
+ 05:38
+ The first line with the hash and exclamation symbol is a shebang or a bang line.
+
+ 05:44
+ username=sunita is the userdefined variable and it is declared globally.
+
+ 05:51
+ echo will display the string "outside function:"  and
+
+ 05:55
+dollar username will print the value of the variable username.
+
+ 06:00
+This is how we define a function in BASH script.
+
+ 06:04
+We will discuss about functions in detail, in later tutorials.
+
+ 06:09
+ This is the body of the function.
+
+ 06:12
+Here, another message "inside function" will be displayed along with the value of username.
+
+ 06:19
+ Here, we call the function.
+
+ 06:21
+This is our code. Now let's execute it.
+
+ 06:23
+ Come back to our Terminal. 
+
+06:26
+Let me clear the prompt.
+
+ 06:28
+First we need to make our file executable.
+
+ 06:31
+Type: chmod space plus x space g_(underscore)variable.sh,  press Enter.
+
+06:39
+Now, type: dot slash g_(Underscore)variable.sh
+
+ 06:45
+Press Enter.
+
+ 06:47
+ Observe the output.
+
+ 06:48
+Outside the function, username takes the value sunita.
+
+ 06:53
+Inside the function also, username takes the same value sunita.
+
+ 06:59
+ This is because username was declared globally outside the function.
+
+ 07:04
+ Next, let us learn how to declare a variable locally.
+
+07:09
+ Type: gedit space l_(Underscore)variable.sh space & (ampersand sign).
+
+ 07:18
+ Press Enter.
+
+ 07:20
+ Type the code as shown here, in your "l_(underscore)variable.sh" file.
+
+ 07:25
+ Let me explain the code.
+
+ 07:28
+ The code is the same as before except for an extra line of code inside the function.
+
+07:36
+ Inside the function block, we have a line- local space username equals to jack.
+
+ 07:41
+ This assigns a new value for the variable username locally.
+
+ 07:48
+ Now switch to the Terminal. 
+
+ 07:50
+Let's make the file executable
+
+ 07:52
+by typing chmod space plus x space l_variable.sh
+
+ 08:00
+ Press Enter.
+
+ 08:02
+Type: dot slash l_variable.sh
+
+ 08:07
+Press Enter.
+
+08:08
+The output is displayed.
+
+ 08:10
+ Outside the function, username takes the value sunita
+
+ 08:15
+whereas inside the function, username takes the value jack.
+
+ 08:20
+This is because username is assigned this value locally, within the function.
+
+ 08:26
+ Now let us quickly see how to get user input via keyboard.
+
+ 08:31
+The read command is used to accept input from the keyboard.
+
+ 08:36
+It can also be used to assign an input value to a user defined variable.
+
+ 08:41
+ The syntax of read command is-
+
+ 08:44
+read space hyphen p space within double quotes PROMPT 
+
+ 08:50
+Please note that PROMPT is just a string that waits for user input.
+
+ 08:55
+You may replace it with your own string.
+
+ 08:58
+ Now, switch to the terminal .
+
+ 09:00
+Type: gedit space read.sh space &  (ampersand sign)
+
+ 09:08
+Press Enter.
+
+ 09:09
+ Type the code as shown here in your  "read.sh" file.
+
+ 09:14
+ Let me explain the code.
+
+ 09:16
+ In this example, input is given from the keyboard by the user.
+
+ 09:21
+ This is the bang line.
+
+ 09:23
+ Here -p displays the prompt without a newline and takes input from the keyboard.
+
+ 09:31
+The user input will be stored in the variable username.
+
+ 09:36
+ echo command displays the message
+
+ 09:38
+Hello and the name entered by the user via the keyboard.
+
+ 09:43
+So, let us  execute the program.
+
+09:45
+ Come back to our terminal.
+
+ 09:49
+Type: chmod space plus x space read.sh
+
+ 09:55
+ press Enter.
+
+ 09:56
+ Type: dot slash read.sh  press Enter.
+
+ 10:01
+ Here it is displayed Enter username: 
+
+ 10:04
+I will type ashwini,  press Enter.
+
+ 10:08
+ The message Hello ashwini is displayed.
+
+ 10:13
+ashwini was assigned as an input value to the user defined variable username.
+
+10:20
+Let us go back to our slides and summarize.
+
+ 10:23
+ In this tutorial, we learnt:
+
+ 10:26
+* System variables 
+
+ 10:27
+* User defined variables and
+
+ 10:29
+* Accepting user input via keyboard.
+
+ 10:33
+  As an assignment-
+
+10:34
+ Write a simple Bash program to get the following system variables.
+
+ 10:38
+* pwd  and * logname.
+
+ 10:41
+* Write a simple Bash program
+
+ 10:43
+ to ask username from user
+
+ 10:46
+ to exit the program, if user does not enter anything within 10 seconds.
+
+ 10:51
+ {Hint: read -(Hyphen)t 10 -(Hyphen)p}
+
+ 10:56
+ Watch the video available at the link shown below.
+
+ 10:59
+It summarizes the Spoken-Tutorial project.
+
+ 11:02
+If you do not have good bandwidth, you can download and watch it.
+
+ 11:07
+ The Spoken Tutorial Project team:
+ Conducts workshops using spoken tutorials. 
+ Gives certificates to those who pass an online test. 
+
+
+ 11:16
+For more details, please write to contact@spoken-tutorial.org
+
+11:23
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 11:27
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 11:34
+More information on this mission is available at the link shown below:  http://spoken-tutorial.org/NMEICT-Intro
+
+ 11:40
+ The script has been contributed  by FOSSEE and Spoken Tutorial teams.
+
+ 11:44
+ This is Ashwini Patil from IIT Bombay, signing off. Thank you for joining.

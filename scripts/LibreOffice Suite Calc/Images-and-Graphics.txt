@@ -1,0 +1,333 @@
+00:00
+Welcome to the Spoken tutorial on Inserting images in LibreOffice Calc.
+
+00:06
+In this tutorial, we will learn the following:
+
+00:09
+Inserting an image file into a document.
+
+00:13
+For e.g. - jpeg, png or bmp.
+
+00:19
+Here, we are using:Ubuntu Linux version 10.04 and LibreOffice Suite version 3.3.4.
+
+00:28
+Images can be added into a spreadsheet by-Inserting an image file directly From a graphics program With the help of a clipboard orFrom the gallery.
+
+00:39
+We will discuss each one of them in detail.
+
+00:43
+Let us open our “Personal-Finance-Tracker.ods” spreadsheet.
+
+00:48
+First, let us select sheet 2.
+
+00:51
+We will insert images in this sheet.
+
+00:54
+It is a good practice to select a cell and then insert pictures.
+
+00:59
+If an image is already stored on your computer, you can insert it by first clicking on Insert
+
+01:06
+and then Picture and selecting From File.
+
+01:10
+Now, locate the image you want to insert.
+
+01:14
+I have already stored some images on the Desktop, in a folder named “Images”.
+
+01:20
+So, I will choose "Image1".
+
+01:24
+We will see the name of the image in the “Location” field .
+
+01:28
+Click on the Open button.
+
+01:31
+Observe that the image appears in the spreadsheet. <pause>
+
+01:38
+Let us insert another picture by linking it.
+
+01:42
+First, let us select a new cell.
+
+01:45
+Now, let’s click on Insert and Picture and select From File. Let us select another image.
+
+01:55
+Now, click on “Image 2”.
+
+01:58
+To link the image to your document, check the Linkoption and click Open.
+
+02:05
+In the dialog-box that appears, click on Keep Link button.
+
+02:11
+The picture is now linked to the file.
+
+02:15
+Linking:
+
+02:17
+When we link a file- First, it reduces the size of the spreadsheet when it is saved
+
+02:23
+since our spreadsheet does not contain the image.
+
+02:27
+Second, it enables the user to modify both the files separately.
+
+02:32
+Any changes made to the image file will be reflected in the linked image in the spreadsheet.
+
+02:39
+Let us change the color of "Image 2" which is linked to the file, to greyscale.
+
+02:46
+I am using the picture editor GIMP to edit this picture.
+
+02:50
+You can use any editor that is installed on your machine.
+
+02:54
+First, let’s save and close "Personal-Finance-Tracker.ods".
+
+03:01
+Next, go to the images folder.
+
+03:04
+Select "Image 2".
+
+03:06
+Now, right-click and select Open with GIMP.
+
+03:10
+"Image 2" opens in GIMP.
+
+03:13
+Now, let us change the picture from color to Grayscale.
+
+03:18
+Now, let’s save and close the image.
+
+03:22
+Let us open the "Personal-Finance-Tracker.ods".
+
+03:26
+"Image 2" is now displayed in grayscale.
+
+03:30
+However, one major disadvantage of linking the file is that- whenever you want to send this spreadsheet to a different computer or user,
+
+03:40
+you will have to send both- the spreadsheet as well as the image file.
+
+03:44
+Which means, you will always have to keep track of the location where you are storing both the files.
+
+03:52
+Let’s move this image to the right of the spreadsheet.
+
+03:58
+Another method of inserting images into a spreadsheet is by dragging it from its folder
+
+04:05
+where you have stored the image and dropping it on your spreadsheet.
+
+04:09
+Let us drag and drop an image.
+
+04:12
+Now, drag and drop the image file directly into your spreadsheet wherever you want to place it.
+
+04:19
+You will see that the image gets inserted into your document.
+
+04:23
+Let’s undo this change by pressing CTRL and Z.
+
+04:29
+Now, let us link the image using the drag and drop method.
+
+04:34
+This is easy too! Just press and hold the Control and Shift keys
+
+04:40
+while dragging the image into the spreadsheet.
+
+04:44
+The image file is now linked to the document.
+
+04:48
+Let’s save this Calc file by pressing Ctrl and S keys together.
+
+04:54
+Now, let’s close this file.
+
+04:58
+Now, let’s go to the folder where the image is located.
+
+05:02
+Let’s rename the image “Image 3.jpg”, that we inserted in the file, to “Image4.jpg”.
+
+05:12
+Now, open the “Personal Finance Tracker.ods” file again.
+
+05:18
+You see that the linked image is no longer visible!
+
+05:22
+The linked path shows an error!
+
+05:25
+Let us delete this link.
+
+05:28
+Pause this tutorial and do this assignment.
+
+05:32
+Insert an image as a link in a Calc sheet, save and close it.
+
+05:38
+Now, go to the folder where the image is stored and delete the image.
+
+05:43
+Open and check if the image is still visible in the Calc file.
+
+05:49
+Now, paste the image back into the image folder.
+
+05:53
+Check if the image is visible in the Calc file.
+
+05:57
+Notice, a new toolbar just below the “Standard” toolbar.
+
+06:02
+This is the “Picture” toolbar.
+
+06:04
+The Filter button at the top left of the “Picture” toolbar gives several options to change the look of the image.
+
+06:13
+Let’s undo this by typing Ctrl and Z.
+
+06:18
+The Graphics mode button has options to change the image into Grayscale, black-and-white or as a watermark.
+
+06:26
+There are other options on the Picture toolbar which we will cover later.
+
+06:32
+Next, we will learn how to insert image from a clipboard.
+
+06:37
+One can copy images stored on the clipboard, from one LibreOffice spreadsheet to another.
+
+06:44
+Let's create a new spreadsheet and name it as “abc.ods”.
+
+06:50
+This is our target document.
+
+06:53
+We already have an image in our “Personal-Finance-Tracker.ods” file.
+
+06:59
+This is our source document.
+
+07:02
+Now, select the image from the source file which is to be copied.
+
+07:06
+Press Ctrl and C keys together to copy the image.
+
+07:11
+The image is now saved on the clipboard.
+
+07:15
+Now switch to the target document which is “abc.ods”.
+
+07:21
+Select the location where you wish to place your saved image in “abc.ods”.
+
+07:28
+Now, press Ctrl and V keys together to insert the image into the document.
+
+07:35
+We see that the image is inserted into our target file.
+
+07:42
+Now we will learn how to insert images directly from the Calc Gallery.
+
+07:48
+Gallery has image as well as sounds which you can insert into your spreadsheet.
+
+07:54
+Let’s see how to do this.
+
+07:57
+Click on the Gallery icon in the standard toolbar.
+
+08:01
+Alternately, click on Tools option in the menu bar and then click on Gallery to open it.
+
+08:09
+Now, go through the images which the “Gallery” provides and click on the image you want to insert into your document.
+
+08:18
+Drag the image from the “Gallery” and drop it into the spreadsheet where you want to insert it.
+
+08:26
+You see that the image gets inserted into our “Personal-Finance-Tracker.ods” file.
+
+08:34
+This brings us to the end of this spoken tutorial on LibreOffice Calc.
+
+08:39
+To summarize, we learned how to:Insert an image file into a spreadsheet in many different ways,
+
+08:46
+like-from a file from the clipboard or from the gallery.
+
+08:52
+Watch the video available at the following link.
+
+08:55
+It summarizes the Spoken Tutorial project.
+
+08:58
+If you do not have good bandwidth, you can download and watch it.
+
+09:03
+The Spoken Tutorial project team: Conducts workshops using spoken tutorials.
+
+09:08
+Gives certificates for those who pass an online test.
+
+09:12
+For more details, please write to:contact at spoken hyphen tutorial dot org.
+
+09:19
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+09:23
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:31
+More information on this mission is available at:spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+09:41
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.Thanks for joining.
+

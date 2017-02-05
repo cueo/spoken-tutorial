@@ -1,0 +1,435 @@
+00:00
+ Dear friends, welcome to the spoken tutorial on Nested and multilevel if statement in BASH.
+
+ 00:09
+  In this tutorial, we will learn about:
+
+ 00:12
+ Nested if-else and
+
+ 00:14
+ Multilevel if-else statement.
+
+ 00:17
+ We will do this by using a few examples.
+
+00:22
+ To follow this tutorial, You should be familiar with  Linux Operating System.
+
+ 00:28
+ If not, for relevant tutorials, please visit our website which is as shown.
+
+  00:35
+  For this tutorial, I am using
+
+ 00:38
+ Ubuntu Linux 12.04 OS and
+
+ 00:42
+ GNU Bash version 4.1.10
+
+ 00:46
+ GNU Bash version 4 or above is recommended for  practice.
+
+ 00:52
+  Let us understand the flow of Nested if-else statement.
+
+ 00:57
+ Here, if condition 1 is True then condition 2 will be evaluated,
+
+ 01:04
+  if condition2 is True then statement 1 will be executed.
+
+ 01:10
+ That means, only when both the conditions 1 and 2 are True  then statement 1 will be executed.
+
+ 01:19
+ If condition1 is False, then statement 3 will be executed.
+
+ 01:25
+ And, if condition 2 is False then statement 2 will be executed.
+
+ 01:31
+ Let's see an example.
+
+ 01:33
+ I have written code in the file nestedifelse.sh.
+
+ 01:38
+ I will open it.
+
+  01:40
+  Let me explain the code now.
+
+ 01:43
+ This is the  shebang line.
+
+ 01:45
+ The variable NAME has been assigned the value anusha.
+
+ 01:50
+ The variable PASSWORD has been assigned the value "abc123".
+
+ 01:56
+ The read command reads one line of data from the standard input.
+
+ 02:02
+ '- (hyphen) p' flag displays the prompt.
+
+ 02:05
+ The string after - (hyphen) p, “Enter name: ”  will be displayed on the terminal.
+
+ 02:11
+ myname is a variable which stores the text entered by user i.e. the user input.
+
+ 02:18
+ The first if statement compares the two variables myname and NAME 
+
+ 02:24
+ i.e. the user input and the value stored in variable Name i.e. "anusha".
+
+ 02:31
+ If the two values match then the rest of the code in this if statement will be evaluated.
+
+ 02:38
+ The read command reads and stores the entered password in variable mypassword.
+
+ 02:46
+ Here, '- (hyphen) s' flag is for silent mode. 
+
+ 02:49
+ It means, the text entered by the user will not be displayed on the terminal.
+
+ 02:56
+ Here, we have another set of if-else statements.
+
+  02:59
+  This set of if-else statements is nested within the first if .
+
+  03:05
+  The second if statement compares variables mypassword and PASSWORD.
+
+ 03:12
+ echo displays the message “Welcome” on the terminal when the if condition is True
+
+ 03:18
+ i.e. the passwords match.
+
+ 03:21
+ '-e' enables interpretation of backslash escape.
+
+ 03:27
+ '\n' stands for new line which means the string Welcome” will be printed on a new line.
+
+ 03:35
+  When the if condition is not True then the else condition will be executed
+
+ 03:42
+ i.e. when the passwords don't match, the else condition will be executed.
+
+ 03:48
+ In this case, echo displays  “Wrong password”.
+
+ 03:53
+ fi ends the inner  if-else statement.
+
+ 03:57
+ Coming back to our first if-else statement-
+
+ 04:01
+ if the values in myname and NAME don't match then this else statement will be executed.
+
+ 04:09
+ This will echo the message “Wrong Name” on the terminal.
+
+ 04:14
+ fi ends the outer if-else statement.
+
+ 04:18
+  Now, open the terminal window by pressing ctrl+alt and t keys simultaneously on your keyboard.
+
+ 04:27
+ Make the file executable.
+
+ 04:29
+ Type: chmod space plus x space nestedifelse.sh 
+
+  04:38
+  Type: dot slash nestedifelse.sh
+
+ 04:43
+  The program verifies  two conditions
+
+ 04:46
+ i.e Name and Password
+
+ 04:48
+ when it is executed on the terminal.
+
+ 04:52
+  Here, the prompt displays Enter Name:
+
+ 04:55
+  Let us type "anusha".
+
+  04:57
+  As this condition is True, the next if condition will be evaluated.
+
+  05:02
+  Now the prompt says Password.
+
+  05:05
+  I will type the password as "abc123".
+
+  05:10
+  The password matches with the value in the variable PASSWORD.
+
+ 05:15
+  So, the prompt displays the message Welcome.
+
+  05:19
+  Now let us execute the script again.
+
+ 05:21
+ Press the 'up-arrow' key.
+
+ 05:24
+ Go to  dot slash nestedifelse.sh 
+
+ 05:29
+ Press Enter.
+
+ 05:31
+  This time, we will enter the same name with different password.
+
+ 05:37
+  So, I will enter the name as "anusha" and password as "123".
+
+  05:44
+  The name values will match but the password values won't.
+
+  05:49
+  So, the message Wrong passwordwill be displayed.
+
+  05:53
+  This proves that the nested else statement within the first if statement was executed.
+
+ 06:01
+  Let's execute the script once more.
+
+ 06:04
+ This time, we will give the name as "swati".
+
+  06:08
+  The message “Wrong name” is displayed.
+
+ 06:12
+ This is because the name "swati" does not match the previously declared value "anusha".
+
+ 06:19
+ The control comes out of the first if statement and executes the else statement.
+
+  06:25
+  This prints the message Wrong name.
+
+  06:29
+  Now let us look at multilevel if-else statement.
+
+06:34
+ If condition1 is True then statement1 is executed.
+
+ 06:40
+ If condition1 is False then condition 2 is evaluated.
+
+ 06:46
+ If condition2 is True then statement 2 is executed .
+
+ 06:52
+ And if condition 2 is False then condition N is evaluated.
+
+ 06:58
+ If condition N is True then statement N is executed.
+
+ 07:03
+ And if Condition N is false then statement X will be executed.
+
+  07:10
+  Let's look at an example.
+
+ 07:12
+  I have a working example.
+
+ 07:14
+ I will open it.  Note that our file name is multilevel hyphen ifelse dot sh.
+
+  07:23
+  Let us go through the code.
+
+ 07:25
+  This is the shebang line.
+
+ 07:27
+ mystring is a variable which stores the word, input by user, during execution.
+
+07:34
+ The if condition checks whether input string is null.
+
+ 07:39
+'- (hyphen) z' checks whether length of string is zero.
+
+ 07:44
+Type: man test  on terminal and explore various string  comparison.
+
+  07:51
+  This echo statement  will be printed if nothing is entered.
+
+ 07:56
+  The first elif condition checks whether the input string contains "raj".
+
+ 08:03
+If it does then this echo statement will be printed.
+
+ 08:08
+The wildcard character ensures that any word with  "raj" in it, will be identified.
+
+ 08:15
+  The next elif condition checks whether the input string contains the word "jit".
+
+ 08:22
+If it does then this echo statement will be printed.
+
+ 08:27
+ The else condition will be executed when all the above conditions fail.
+
+ 08:33
+And it will display the message Sorry! Input does not contain either 'raj' or 'jit'. 
+
+ 08:41
+ fi indicates the end of  multilevel if-else statement.
+
+  08:46
+  Let us execute the program.
+
+ 08:48
+ Come back to our terminal.
+
+ 08:51
+Type: chmod space plus x space multilevel hyphen ifelse dot sh 
+
+ 09:00
+  Type dot slash multilevel hyphen ifelse dot sh
+
+  09:06
+  We are prompted for an input.
+
+ 09:09
+Let us give different inputs and see what happens each time.
+
+ 09:14
+  First I will press Enter without typing anything.
+
+  09:19
+  The message Nothing was Entered  is displayed.
+
+ 09:22
+And the control comes out of the multilevel if-else statement.
+
+ 09:28
+ Let me clear the prompt.
+
+ 09:30
+Let us try executing the script with a different input.
+
+ 09:34
+Press 'up-arrow' key.
+
+ 09:36
+Go to dot slash multilevel hyphen ifelse dot sh.
+
+ 09:41
+Press Enter.
+
+ 09:43
+  The prompt displays "Enter a Word".
+
+ 09:45
+I will type "abhijit".
+
+ 09:48
+  The output displayed is: “abhijit" contains word 'jit'.
+
+ 09:53
+This shows that the control flowed to the third condition in our code.
+
+ 09:59
+The first two conditions did not match.
+
+10:03
+ The same logic is applicable for all the conditions.
+
+ 10:07
+Try executing the program with different inputs and check the results.
+
+ 10:13
+Let us summarize.
+
+ 10:15
+In this tutorial, we learned the usage of:
+
+ 10:18
+ Nested if-else: with  Name and Password verification and
+
+ 10:23
+Multilevel if-else: String comparison program.
+
+10:28
+As an assignment, write a program to output different messages when number is
+
+ 10:34
+* greater than 3
+
+ 10:35
+* lesser than 3
+
+ 10:37
+* or equal to 3
+
+ 10:39
+or when the user input is empty.
+
+ 10:42
+ Watch the video available at the link shown below.
+
+ 10:45
+It summarizes the Spoken Tutorial project.
+
+ 10:48
+If you do not have good bandwidth, you can download and watch it.
+
+ 10:53
+  The Spoken Tutorial Project Team:
+
+ 10:55
+* Conducts workshops using spoken tutorials.
+
+ 10:58
+* Gives certificates to those who pass an online test.
+
+ 11:02
+For more details, please write to  contact@spoken-tutorial.org
+
+ 11:09
+ Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+ 11:13
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 11:20
+More information on this mission is available at the link shown below.
+
+11:26
+ The script has been contributed by FOSSEE and Spoken Tutorial teams.
+
+ 11:31
+This is Ashwini from IIT Bombay.
+Thank you for joining.

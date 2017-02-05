@@ -69,5 +69,5 @@ if __name__ == '__main__':
 		posts = get_posts()
 		items.append(posts)
 
-	post_json = json.dumps({'posts': items})
+	post_json = json.dumps({'posts': items}, indent=4)
 	print post_json

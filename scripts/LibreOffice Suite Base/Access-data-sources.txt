@@ -1,0 +1,316 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:04
+In this tutorial, we will learn how to:
+
+00:08
+* Access other Data Sources
+
+00:10
+* Register '.odb' databases
+
+00:15
+* View Data sources
+
+00:17
+And * Use Data Sources in Writer.
+
+00:22
+Let us see how we can access other Data Sources in Base.
+
+00:28
+Libre Office allows other data sources to be accessed apart from Base Databases.
+
+00:37
+It also allows to link them into other Libre Office documents.
+
+00:43
+For example, we can access a spreadsheet or a simple text document from inside LibreOffice Base.
+
+00:53
+And then link them into a LibreOffice Writer document.
+
+00:58
+As an example, let us create an example spreadsheet using LibreOffice Calc.
+
+01:06
+Click on Start Menu >> All Programs and open the LibreOffice Suite menu.
+
+01:16
+Or, if LibreOffice is already open then we can click on File, New and then Spreadsheet to open a new spreadsheet.
+
+01:30
+Now, in the spreadsheet, let us type in some sample data as shown in the image. <pause>
+
+01:46
+And save this spreadsheet as ‘LibraryMembers’ in a directory location.
+
+01:54
+Now, let us remember the location as we will need to use this file later in our example.
+
+02:02
+And we will close the Calc window.
+
+02:07
+Okay, now let us see how we can access this spreadsheet from 'LibreOffice Base'.
+
+02:15
+To do this, open Base either from Windows Start menu
+
+02:25
+or if LibreOffice is already open then we will click on File, New and then Database.
+
+02:36
+Now, this opens the Database Wizard.
+
+02:39
+Here, we will click on the ‘Connect to an existing database’
+
+02:45
+then click on the drop-down.
+
+02:48
+Notice the various database sources in this list that Base can access.
+
+02:55
+And we will click on Spreadsheet here.
+
+02:59
+And the Next button.
+
+03:02
+Now, using the browse button, let us locate the spreadsheet from where we saved it earlier.
+
+03:10
+If there is a password for the spreadsheet, we will need to provide it too.
+
+03:16
+Here we won’t need it.
+
+03:19
+Let us click on the Next button.
+
+03:22
+Now let us register the spreadsheet as a data source
+
+03:27
+and open it for editing.
+
+03:32
+And, click on the Finish button.
+
+03:36
+Now, let us provide a database name here. Let us type in "LibraryMembers".
+
+03:44
+Notice the Save as type: It says ODF Database which is '.odb' in our case.
+
+03:56
+And Save it in the same location as the spreadsheet.
+
+04:01
+There we have registered the spreadsheet as a data source in Base.
+
+04:07
+We are in the main Base window now.
+
+04:11
+Here, let us click on the Tables icon in the left panel.
+
+04:16
+Notice the tables ‘Sheet1’, Sheet2, and 'Sheet3'.
+
+04:23
+Let us double-click on Sheet1 to open it and here is the data from the spreadsheet.
+
+04:31
+Now, with this method of accessing the Spreadsheet, we cannot make any changes from here.
+
+04:39
+We can only view data or create queries and reports based on the existing data from here.
+
+04:47
+So, changes have to be made directly to the Spreadsheet itself.
+
+04:54
+Registering '.odb' databases.
+
+04:59
+Now, there are other programs such as OpenOffice.org that can produce '.odb' databases.
+
+05:11
+To use these inside LibreOffice Base, we will first need to register them in Base.
+
+05:19
+To register any '.odb' database, we will need to open Base and
+
+05:28
+choose Tools, Options, LibreOffice Base and Databases.
+
+05:36
+Under Registered Databases, click New.
+
+05:42
+Browse to where the database is located and ensure the registered name is correct
+
+05:51
+and Click on the OK button.
+
+05:55
+Let us see how we can view Data sources in LibreOffice.
+
+06:01
+For this, let us consider the example spreadsheet that we registered in Base.
+
+06:07
+Now, we can use it in LibreOffice Writer or Calc.
+
+06:12
+For example, let us see how we can view it inside 'LibreOffice Writer'.
+
+06:19
+First, let us open Writer from the 'Base' window.
+
+06:24
+For this, let us click on File, New and then Text Document.
+
+06:33
+Now we are in the Writer window.
+
+06:36
+To view the available data sources, we will click on the View menu at the top and click on Data Sources.
+
+06:46
+Alternately, we can press the F4 key.
+
+06:52
+Now we see a list of registered databases at the top left, including "LibraryMembers" which we created just now.
+
+07:03
+To view the database, we will expand it by clicking on the plus symbol on the left of the database name
+
+07:14
+and we will expand Tables.
+
+07:18
+Here are Sheet1, 2 and 3.
+
+07:24
+Let us click on Sheet 1.
+
+07:28
+So, that’s our data at the top right of the Writer window.
+
+07:36
+Now we will see how we can use this data in our example Writer document.
+
+07:43
+Okay, here if we want to use all of the data from the table above then first we will select all the records there.
+
+07:55
+For this, let us click on the gray cell to the left of the first column in the first record.
+
+08:05
+Then, while pressing Shift key, we will click on the gray cell to the left of the first column in the last record.
+
+08:17
+Notice that all the data gets highlighted.
+
+08:21
+Now we will click, drag and drop this onto the Writer document below.
+
+08:30
+Next, we see a pop-up window titled Insert Database columns.
+
+08:37
+So here, we will click on the Table option at the top
+
+08:42
+and then click on the double-arrow button to move all the fields from the left to the right list.
+
+08:52
+Notice the various choices here.
+
+08:56
+For now, we will simply click on the OK button.
+
+09:00
+And here is the entire table of data in the document.
+
+09:05
+Next, let us see how we can insert individual fields.
+
+09:13
+Let us go to the top of the Writer document and press the Enter key twice. Again, go to the top left.
+
+09:22
+Here, let us type in "Member Name" colon.
+
+09:28
+And then click on the Name column in the data sources area at the top right.
+
+09:36
+Now we will click, drag and drop it next to the text we typed.
+
+09:43
+And we will press the Tab key and type in "Phone number" colon.
+
+09:51
+And..... we know what to do, don’t we?
+
+09:55
+We will click and drag the Phone column from the top and drop it next to our text.
+
+10:04
+Then let us highlight the first record by clicking the gray cell to the left of the first record.
+
+10:13
+And then, we will click on the Data to Fields icon.
+
+10:19
+This can be found in the Table Data toolbar at the top, below the Formatting toolbar.
+
+10:27
+Notice that the data in the table above is now in the Writer document.
+
+10:35
+To bring in another record, we just have to highlight a different record and use the Data to Fields icon again.
+
+10:46
+So, there we learnt how to use data sources inside LibreOffice documents.
+
+10:54
+This brings us to the end of this tutorial on Accessing other Data Sources in LibreOffice Base.
+
+11:01
+To summarize, we learned how to:
+
+11:05
+* Access other Data Sources
+
+11:07
+* Register .odb databases
+
+11:12
+* View Data sources
+
+11:14
+* And Use Data Sources in Writer.
+
+11:19
+Spoken Tutorial project is a part of the Talk to a Teacher project,
+
+11:23
+supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+11:30
+This project is coordinated by http://spoken-tutorial.org.
+
+11:35
+More information on the same is available at the following link.
+
+11:44
+This script has been contributed by Priya Suresh, DesiCrew Solutions. And this is Soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+

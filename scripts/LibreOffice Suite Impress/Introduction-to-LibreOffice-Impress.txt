@@ -1,0 +1,269 @@
+00:00
+Welcome to the tutorial on Introduction to LibreOffice Impress.
+
+00:04
+In this tutorial, we will learn:
+
+00:07
+Introduction to LibreOffice Impress
+
+00:09
+Various Toolbars in Impress
+
+00:12
+How to create a new presentation
+
+00:15
+How to save as MS PowerPoint presentation
+
+00:19
+How to open an MS PowerPoint presentation and
+
+00:22
+How to export as a PDF document in Impress.
+
+00:27
+LibreOffice Impress is the presentation manager of the LibreOffice Suite.
+
+00:32
+It is used to create powerful presentations.
+
+00:35
+It is the equivalent of Microsoft Office PowerPoint.
+
+00:39
+LibreOffice Impress is a free, Open-Source software, free of cost and free to use and distribute.
+
+00:47
+To get started with LibreOffice suite,
+
+00:50
+you can use either Microsoft Windows 2000 and its higher versions like MS Windows XP or MS Windows 7 or you can use GNU/Linux as your Operating System.
+
+01:02
+Here, we are using:
+Ubuntu Linux version 10.04 and 
+LibreOffice Suite version 3.3.4.
+
+01:12
+If you do not have LibreOffice Suite installed,
+
+01:15
+Impress can be installed by using Synaptic Package Manager.
+
+01:19
+For more information on Synaptic Package Manager,
+
+01:22
+please refer to the Ubuntu Linux Tutorials on this website and download LibreOffice Suite by following the instructions on this website.
+
+01:32
+Detailed instructions are available in the first tutorial of LibreOffice Suite.
+
+01:38
+Remember, when installing, use the 'Complete' option to install 'Impress'.
+
+01:43
+If you have already installed LibreOffice Suite,
+
+01:46
+you will find LibreOffice Impress by clicking on the Applications option, at the top left of your screen, and then clicking on Office and then on LibreOffice option.
+
+01:58
+A new dialog-box opens up with various LibreOffice components.
+
+02:03
+In order to access LibreOffice Impress, click on the Presentation component. In the new dialog-box, click on Create.
+
+02:13
+This will open an empty presentation in the main Impress window.
+
+02:18
+Now, let us learn about the main components of the Impress window.
+
+02:22
+The Impress window has various tool bars like- the title bar, the menu bar, the standard toolbar, the formatting bar and the status bar.
+
+02:36
+We will learn more about the toolbars as the tutorials progress.
+
+02:41
+We are now ready to work on our first presentation! Now, close this file.
+
+02:47
+Let us go to Applications, click on Office, then click on LibreOffice Impress.
+
+02:56
+Click on From template.
+
+02:59
+Select "Recommendation of a Strategy" and click on the Next button.
+
+03:06
+In the "Select a slide design" drop-down, select Presentation Backgrounds. Then select Blue Border.
+
+03:14
+In the "Select an output medium" field, select Original.
+
+03:19
+Click on the Next button.
+
+03:22
+This is the step for building slide transitions.
+
+03:26
+Leave all the options as they are and click on Next.
+
+03:32
+In the "What is your name.." field, you can type your name or your organization's name.  I will type "A1 services".
+
+03:41
+In the "What is the subject of your presentation" field, type: "Benefits of Open Source".
+
+03:47
+Click on Next.
+
+03:49
+This step describes the presentation.
+
+03:52
+All the options are selected by default. Don’t change anything.
+
+03:58
+They are sample headings for the presentation.
+
+04:01
+Click on the Create button.
+
+04:04
+You have now created your first presentation in LibreOffice Impress!
+
+04:09
+Now, let's learn how to save the presentation.
+
+04:13
+Click on File and Save.
+
+04:15
+The Save dialog-box will open. We will name this file as "Sample-Impress" and click on the Save button.
+
+04:25
+Note that the Impress Open Document Format will be saved with the extension ".odp".
+
+04:33
+Now we will close the file. To close the presentation, click on File and Close.
+
+04:40
+Next, let's learn how to save a LibreOffice Impress presentation as a Microsoft PowerPoint presentation.
+
+04:48
+We will open the Sample Impress presentation again. Click on File and Open and select "Sample Impress".
+
+04:59
+By default, the LibreOffice Impress saves documents in the Open document format (ODP).
+
+05:06
+To save a presentation as Microsoft PowerPoint,
+
+05:11
+Click on File and Save as.
+
+05:14
+In the File type, choose “Microsoft PowerPoint".
+
+05:18
+Choose the location to save the file.
+
+05:20
+Click on the Save button.
+
+05:24
+Click on “Keep Current Format” button. The file is now saved as a "ppt".
+
+05:33
+Let's close this file by clicking on File and Close.
+
+05:36
+Next, we will see how to open a Microsoft PowerPoint Presentation in LibreOffice Impress.
+
+05:44
+Click on File and Open.
+
+05:46
+Browse for the 'ppt' file you want to open.
+
+05:50
+Select the file and click on Open.
+
+05:54
+Finally, we will now learn how to export a LibreOffice Impress presentation as a 'PDF' file.
+
+06:01
+Click on File and "Export as PDF". In the PDF options dialog-box, leave all the options as they are and click on the Export button.
+
+06:12
+In the filename field, type:  “Sample Impress”.
+
+06:16
+In the Save in folder field, choose the location where you want to save the file and click on Save.
+
+06:23
+The document has now been saved as a 'pdf' file on the desktop.
+
+06:29
+This brings us to the end of this tutorial on LibreOffice Impress.
+
+06:34
+To summarize, we learnt: * Introduction to LibreOffice Impress
+
+06:39
+Various Toolbars in Impress
+
+06:42
+How to create a new presentation
+
+06:45
+How to save as MS PowerPoint presentation
+
+06:49
+How to open an MS PowerPoint presentation and * How to export as a PDF document in Impress.
+
+06:58
+Try this comprehensive assignment.
+
+07:00
+Open a new document. Write some text in first slide.
+
+07:05
+Save it as a MS Powerpoint document. Than close it.
+
+07:11
+Now, reopen the file you have saved.
+
+07:15
+Watch the video available at the following link. It summarizes the Spoken Tutorial project.
+
+07:22
+If you do not have good bandwidth, you can download and watch it.
+
+07:26
+The Spoken Tutorial project team: * Conducts workshops using spoken tutorials.
+
+07:32
+Gives certificates to those who pass an online test.
+
+07:36
+For more details, please write to:
+contact @ spoken hyphen tutorial dot org.
+
+07:42
+Spoken Tutorial project is a part of the Talk to a Teacher project. It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+07:55
+More information on this mission is available at:
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+08:07
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

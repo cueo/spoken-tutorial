@@ -1,0 +1,553 @@
+00:01
+Welcome to the Spoken Tutorial on Working with Objects in LibreOffice Draw.
+
+00:06
+In this tutorial, we will learn how to:
+
+00:08
+* Position objects using Grids and Guide lines
+
+00:12
+* Use snap functions
+
+00:14
+* Customize lines and arrowheads.
+
+00:18
+You will also learn how to: * Duplicate objects
+
+00:21
+* Re-size objects exactly
+
+00:24
+* Distribute objects
+
+00:25
+* Combine, merge, subtract and intersect objects.
+
+00:30
+We are using:
+ Ubuntu Linux version 10.04 as our operating system and 
+ LibreOffice Suite version 3.3.4.
+
+
+00:40
+What are Grids?
+
+00:42
+Grids aid to position objects,
+
+00:45
+accurately on the Draw page.
+
+00:48
+Let us open the file RouteMap that was saved on the Desktop.
+
+00:53
+In the previous tutorials, we had briefly used grids.
+
+00:57
+Now, let us learn about grids in detail.
+
+01:01
+From the Main menu, select View and click on Grid.
+
+01:05
+Then click on Display Grid.
+
+01:08
+The Draw page is filled with a number of horizontal and vertical dotted lines. These form the grid.
+
+01:17
+These grids are for display purposes only. They will not be printed.
+
+01:22
+We can customize the size of the grids, that is, make them smaller or bigger as required.
+
+01:30
+From the Main menu, select Tools and click Options.
+
+01:35
+You will see the Options dialog-box.
+
+01:38
+Click LibreOffice Draw and select Grid.
+
+01:42
+Under Resolution, enter the following values:
+
+01:46
+ Horizontal – 7 cm
+
+01:49
+Vertical – 5 cm.
+
+01:53
+Subdivision decides the number of spaces in a grid.
+
+01:57
+Let us enter Subdivision values.
+
+02:00
+Horizontal – 3
+
+02:02
+Vertical – 4.
+
+02:05
+Let us leave the Synchronize axes option unchecked.
+
+02:09
+Click OK.
+
+02:11
+Look at the Draw page now. Look at the size of each box in the grid.
+
+ 02:17
+Let us count the spaces that we set in the Subdivision.
+
+02:22
+Horizontally there are 1, 2, 3 spaces and vertically there are 1, 2, 3, 4 spaces.
+
+ 02:33
+Let us learn about Guides.
+
+02:36
+What are Guides?
+
+02:38
+Guides are helper lines or extensions of the edges of the objects
+
+02:43
+that are displayed when it is moved.
+
+ 02:47
+Let us enable the guidelines.
+
+02:50
+Go to the Main menu, select View and select the option Guides.
+
+02:55
+Now, click the option Display Guides.
+
+02:59
+From the Main menu, click Tools and Options.
+
+03:03
+The Options dialog-box appears.
+
+03:06
+From the left panel, click on the small black triangle next to LibreOffice Draw. Click View.
+
+03:15
+From the right panel, select Guides when moving. This way, you can see the guides when moving objects.
+
+03:23
+Click OK.
+
+03:27
+Now, let us move the park a little to the right.
+
+03:29
+When the park is moved, the extension lines of the edges of the object become visible. These are the Guidelines.
+
+03:39
+What are Snap Lines?
+
+03:41
+Snap Lines help us position two or more objects within an area that is defined.
+
+03:48
+Snap lines and Snap points are created by the user.
+
+03:53
+Snap lines run vertically and horizontally and appear as dashed lines.
+
+ 03:59
+You must enable the Snap Lines option before you create snap lines.
+
+04:05
+Go to the Draw page. Right-click for the context menu and select Snap Lines.
+
+04:12
+Now, check all the three options:
+
+04:16
+Snap Lines Visible,
+
+04:18
+Snap to Snap Lines,
+
+04:20
+Snap Lines to Front.
+
+ 04:22
+Snap lines that we create, will now be visible.
+
+04:26
+Let’s define an area, using Snap Lines, within which the objects in the map must fall (as shown in the slide).
+
+04:34
+Move the mouse cursor over the vertical ruler.
+
+04:38
+Press the left-mouse-button.
+
+04:41
+You will notice that the cursor is now shaped like a two-sided arrow.
+
+04:46
+Drag the mouse towards the Draw page.
+
+04:50
+You will see a dotted line.
+
+04:53
+Do not release the mouse-button.
+
+04:55
+Holding the left-mouse-button, drag the dotted line to the page.
+
+05:01
+Now, release the mouse-button.
+
+ 05:04
+Can you see the line?
+
+05:06
+This is the Snap Line.
+
+ 05:07
+To create the bottom most limit, simply drag the line to the bottom of the page.
+
+05:13
+Let’s create three more Snap Lines to define the area within which the map is enclosed.
+
+ 05:24
+We have created horizontal and vertical Snap Lines.
+
+05:29
+Now you can position the objects along these Snap Lines.
+
+05:34
+ You can, of course, create as many Snap Lines as you want.
+
+05:40
+The horizontal and vertical Snap Lines function like the 'X' and 'Y' axes on a  graph.
+
+05:48
+Within these two axes, you can position objects exactly.
+
+05:54
+You can use the Snap function along with the grid lines to position objects accurately.
+
+05:59
+You can also: * Snap to Grid-  position an object exactly on grid points
+
+06:06
+* Snap to Snap lines - position an object exactly on a snap line
+
+06:11
+* Snap to Page margin - position an object exactly on the page margin.
+
+06:18
+Pause this tutorial and do this assignment.
+
+06:21
+Explore all the Grid options.
+
+06:24
+Check what happens to objects when you snap to Grid, snap lines and page margins.
+
+06:31
+Now let’s add one more lake, in the exact shape of this lake, next to the School Campus.
+
+ 06:38
+To do this, let’s use the Duplicate option.
+
+06:43
+Let’s select the Lake.
+
+06:45
+Go to the Main menu', select Edit and click on Duplicate.
+
+06:51
+The Duplicate dialog-box appears.
+
+06:54
+In Number of copies, enter the value 1 and click OK.
+
+ 06:59
+The Lake is duplicated.
+
+07:03
+Let’s drag the lake and place it near the school.
+
+ 07:06
+Objects can also be re-sized exactly to any measurement that is required.
+
+07:11
+Let’s use the exact measurements and change the shape of the House as shown in this slide.
+
+ 07:18
+Let’s give it the same height and width and slant its corners and rotate it.
+
+07:24
+First, select Home, right-click for the context menu and select Position and Size.
+
+07:31
+The Position and Size  dialog-box appears.
+
+07:35
+Click the Position and Size tab.
+
+07:38
+Under Size, enter the value 3 in both the Width and Height fields.
+
+07:43
+Then click the Rotation tab.
+
+07:46
+In the Angle field, enter the value 10.
+
+07:50
+Finally, select the Slant and Corner Radius tab.
+
+07:55
+In the Slant Angle field, enter 5 degrees.
+
+07:59
+Click OK.
+
+ 08:01
+We have re-designed the house!
+
+08:05
+Pause this tutorial and do this assignment.
+
+08:08
+# Draw various shapes using the Drawing tool bar.
+
+08:11
+# Check if you can apply Corner radius to all shapes.
+
+08:16
+Now, let’s space the right edges of some objects evenly.
+
+ 08:21
+We will use the Distribution option to achieve this.
+
+08:26
+ We must select at least three objects  to use the Distribution option.
+
+08:32
+First, select the Residential Complex, the Parking Lot and the Commercial Complex.
+
+08:39
+Let’s group them by dragging the Select arrow to cover all the objects.
+
+08:45
+Now, right-click and select Distribution.
+
+08:50
+Under Horizontal, select Right.  Click OK.
+
+08:56
+The right edges of the objects will be distributed evenly.
+
+09:01
+The Distribution option does not distribute the objects horizontally or vertically.
+
+09:07
+The Horizontal Distribution option distributes-
+
+09:10
+* The right and left edges
+
+09:12
+* The horizontal centers and
+
+09:14
+* The spacing of the objects.
+
+09:17
+The Vertical option distributes-
+
+09:21
+* The top and bottom edges
+ The vertical centers and 
+ The spacing of the objects.
+
+
+ 09:26
+Now, let’s create our own line style for this map.
+
+09:32
+From the Main menu, select Format and click Line.
+
+09:35
+The Line dialog-box appears.
+
+09:38
+Click on the Line Styles tab.
+
+09:41
+In Line Styles, select the option Three dashes and three dots.
+
+09:47
+Leave the Type field as it is.
+
+09:50
+In Number, let’s enter 10 and 5; Length as  8%.
+
+09:57
+Click Add. Enter the name "My Line Style". Click OK.
+
+10:06
+Again click OK.
+
+10:08
+Let’s select this arrow. Right-click and select Line. The Line dialog-box appears.
+
+10:13
+Click the Line tab.
+
+10:16
+Click on the Style drop-down box.
+
+10:19
+It now displays the new style that was created.
+
+10:22
+Select it and click OK.
+
+10:26
+We have created a new line style!
+
+ 10:29
+Let’s draw a small stadium to the left of the School Campus.
+
+10:34
+From the Drawing toolbar, click Basic Shapes and select a Circle.
+
+10:40
+Let’s enter it in the Draw page.
+
+10:44
+The outline of the circle is of the style My Line Style.
+
+10:49
+Let’s type “Stadium” inside it.
+
+ 10:53
+Now, let’s learn to combine, merge, subtract and intersect objects.
+
+10:59
+What is the difference between Grouping and combining objects?
+
+11:03
+When objects are grouped, a number of objects are just put together.
+
+11:09
+When objects are combined, new object is created.
+
+ 11:13
+We will use three objects to demonstrate these options.
+
+11:18
+First, let us add a new page to the Draw file.
+
+11:23
+Let’s draw a circle from the Drawing toolbar- click Basic Shapes and select Circle.
+
+11:32
+Move the mouse in the Draw page and drag it down.
+
+11:35
+Let’s  draw a second object  Diamond.
+
+11:38
+From the Drawing toolbar, click Basic Shapes and select  Diamond.
+
+11:43
+Move  the cursor  to  the Draw page, drag it  down. And from the menu bar, select Area Style / Filling drop down button and select color Red 3.
+
+11:55
+Draw a  third object, a Rectangle, and color the object as Green 6.
+
+12:02
+Select the three objects by holding down the Shift key and clicking on each object.
+
+12:11
+Right-click for the Context menu and click Combine.
+
+12:14
+A new object is created!
+
+ 12:18
+Notice that the new object takes the color of the object that is last and at the back.
+
+12:24
+Let us undo this action by pressing the CTRL+Z keys together.
+
+12:29
+Select the figures again and right-click for the context menu.
+
+12:35
+Select Shapes and click Merge.
+
+12:38
+Another new shape is created!
+
+ 12:41
+Remember the more you experiment with these functions, the more you will learn.
+
+12:48
+This brings us to the end of the tutorial.
+
+12:51
+In this tutorial, you have learnt how to use Grids, Guides and snap lines to align objects accurately.
+
+12:59
+You have also learnt to Duplicate, Resize objects and distribute objects.
+
+13:06
+We also created new line styles and learnt how to form new objects using-
+
+13:12
+Combine, Merge, Subtract, Intersect.
+
+13:17
+Watch the video available at the following link.
+
+13:20
+It summarizes the Spoken Tutorial project.
+
+13:23
+If you do not have good bandwidth, you can download and watch it.
+
+13:28
+The Spoken Tutorial Project team:
+ Conducts workshops using spoken tutorials.
+ Gives certificates for those who pass an online test.
+
+
+13:37
+For more details, please write to:
+contact at spoken hyphen tutorial dot org.
+
+13:43
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+13:48
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+13:55
+More information on this mission is available at:
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+14:06
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+
+14:10
+Thanks for joining.

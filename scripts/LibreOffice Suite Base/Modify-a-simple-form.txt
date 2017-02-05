@@ -1,0 +1,223 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:04
+In this tutorial on Modifying a Form, we will learn how to enter data in a form, modify a form.
+
+00:14
+In the previous tutorial, we learnt to create a form using LibreOffice Base.
+
+00:22
+We created a simple Books data entry form in our example 'Library' database.
+
+00:29
+Let us see how we can enter data into the Books table, using this form.
+
+00:39
+Let us first invoke the LibreOffice Base program, if it's not already open.
+
+00:48
+And open our 'Library' database.
+
+00:52
+If Base is already open then we can open the Library database from here by clicking the Open inside the File menu
+
+01:03
+or by clicking the Recent Documents inside the File menu.
+
+01:08
+Now we are in the 'Library' Database.
+
+01:12
+Let us click on the Forms icon in the Database list on the left panel.
+
+01:18
+Notice that the 'Books Data entry form', under Forms, is highlighted in the centre of this window.
+
+01:28
+Let us right-click on this form name and click on Open.
+
+01:33
+Now, we see a new window with a blue background, with labels and text boxes corresponding to the fields in the Books table.
+
+01:45
+Let us click on the Tab key to go to each field and as we go to the last, Base opens the next record.
+
+01:56
+This way we can traverse the records.
+
+02:00
+Or we can also use the black triangle icons in the bottom toolbar to navigate among the records.
+
+02:10
+Alternately, to simply go to a particular record, type in the record number in the bottom toolbar and press Enter key or the Tab key.
+
+02:23
+Let us go to the last record which is the fifth.
+
+02:29
+Now, let us add a new record.
+
+02:34
+To do this, click on the New Record icon, that is second right of the Last record icon in the bottom toolbar.
+
+02:46
+Notice that we see empty text boxes and the record number at the bottom says 6.
+
+02:55
+Now we are ready to add a new record with information about a new book.
+
+03:03
+Let us type in 'Paradise Lost' in the Title text box and let us use Tab key to navigate to the next field.
+
+03:17
+Let us type in 'John Milton' against Author,
+
+03:23
+'1975' against PublishedYear,
+
+03:28
+'Oxford' against Publisher
+
+03:31
+and 200 against Price.
+
+03:36
+There, we have just entered a new record into the Books table by using the Books Data Entry Form.
+
+03:45
+We will close this window.
+
+03:47
+We can add more records or data in this way.
+
+03:53
+Let us see if Base has updated the Books table with the last record we entered just now.
+
+04:02
+For this, in the LibreOffice Base main window, let us double-click on Books table on the right panel.
+
+04:12
+Notice the new record that we entered through the form here.
+
+04:18
+Okay, we will close this window now.
+
+04:23
+Next, let us learn how to make simple modifications to our form.
+
+04:30
+We will click on the Forms icon in the Database list on the left panel.
+
+04:37
+And open the 'Books Data Entry form' for modifying by right-clicking on it and then choosing 'Edit'.
+
+04:47
+A familiar window opens now
+
+04:51
+except that if you click on the label title, you will see several small green boxes enclosing the label and the text box.
+
+05:03
+This means that we are in the form design window.
+
+05:08
+And we can modify the look and feel of the form and its elements as well as its functionalities.
+
+05:17
+For example, we can change the placement and size of the labels and text-boxes.
+
+05:25
+These are also called properties.
+
+05:28
+Double-click on the label Title.
+
+05:31
+This opens a smaller pop-up window called Properties.
+
+05:38
+Notice the various elements here.
+
+05:48
+Now, let us click on the label author, notice that the Properties window refreshes and shows the properties of label Author.
+
+06:01
+So, as we click on various elements on the form, we see that the 'Properties window' refreshes to show the selected element's properties.
+
+06:14
+Now, the 'Properties window' title reads as Properties Multiselection.
+
+06:21
+This is because we see that the Author label and its textbox adjacent to it, are encased in one set of green boxes.
+
+06:34
+Base automatically has grouped the labels and corresponding textboxes in the form. We can un-group them.
+
+06:44
+Right-click on the Title label and then click on Group at the bottom, then click on Ungroup.
+
+06:54
+Now we see that the label Title and its text-box have been ungrouped.
+
+07:02
+In this way, we can modify the properties of individual elements on the form.
+
+07:10
+Next, let us add a tool tip to the Title text-box.
+
+07:16
+Now, let us scroll to the bottom in the Properties window.
+
+07:22
+Notice the label 'Help text' and here, let us type in 'Enter the title of the book here'.
+
+07:32
+Now, let us save the form by clicking on the Save icon, below the File menu, on the top. And we will close this window.
+
+07:46
+Let us now see, how our form looks like after the modification that we made.
+
+07:54
+For this, let us go to the Base main window, click on the Forms icon on the left panel
+
+08:03
+and double-click on 'Books Data Entry Form' on the right panel.
+
+08:10
+Let us point the mouse over the Title label or the text-box.
+
+08:17
+Notice that a tool-tip appears saying 'Enter the title of the book here'.
+
+08:24
+So now, we have learnt how to make a simple modification to our form.
+
+08:31
+We will see how to make more modifications to a form, in the next part of the Base tutorial.
+
+08:39
+Here is an assignment.
+
+08:41
+Create a simple form for the Members table.
+
+08:46
+This brings us to the end of this tutorial on Modifying a Form in LibreOffice Base.
+
+08:52
+To summarize, we learned: how to enter data in a form, how to Modify a form.
+
+09:00
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+09:12
+This project is coordinated by: http://spoken-tutorial.org.
+
+09:17
+More information on the same is available at the following link.
+
+09:22
+This Script has been contributed by Priya Suresh, DesiCrew solutions. And this is Soundharya, DesiCrew solutions, signing off.
+Thanks for joining.
+

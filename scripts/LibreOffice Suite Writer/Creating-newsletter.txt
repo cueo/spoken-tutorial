@@ -1,0 +1,267 @@
+00:00
+ Welcome to the Spoken tutorial on LibreOffice Writer- Creating Newsletters with Multiple Columns.
+
+00:07
+ In this tutorial, we will learn how to create newsletters in LibreOffice Writer and a few operations that can be performed on them.
+
+00:17
+ Here, we are using:
+Ubuntu Linux 10.04 as our operating system and
+LibreOffice Suite version 3.3.4. 
+
+00:27
+ A newsletter is used as a publication which gets circulated out to its subscribers in a regular time interval. For example - a periodical, a pamphlet and many more.
+
+00:39
+It has multiple columns as sections and makes it easier for the reader to go through different articles in these sections.
+
+00:47
+ Using LibreOffice Writer, one can create newsletters which make reading of articles much easier and faster.
+
+00:55
+Let's open a new text document by clicking on File, New and Text Document option.
+
+01:03
+ Save this document with file name Newsletter.
+
+01:13
+ So, we have a new text document named Newsletter.
+
+01:17
+ Now, let's insert columns into our document.
+
+01:20
+To do so, first click on the Format button in the menu bar and then click on Columns.
+
+01:27
+ A dialog-box appears with various options -
+
+01:31
+selecting the number of columns you want,
+
+01:34
+setting the width and spacing of these columns
+
+01:37
+as well as setting the various properties of the separator lines.
+
+01:42
+ We will select two columns for the newsletter document by increasing the column field value to 2.
+
+01:49
+ The five icons besides the column field show you the preview of the various formats available.
+
+01:56
+ So, let's click on the second format.
+
+01:59
+Let's keep all the other values which define the property of the columns as default.
+
+02:05
+And click on the OK button.
+
+02:08
+ You see that 2 columns get displayed in the text area.
+
+02:12
+ Let us write an article in our first column.
+
+02:15
+We will give its heading as "Nature" in bold text with font size 15.
+
+02:21
+And below that, we will write an article on it.
+
+02:25
+ You see that the cursor automatically goes to the next column after it reaches the end of the first column.
+
+02:33
+ You can even insert a picture in the column and resize it so that it fits into the column.
+
+02:39
+ Now, after leaving out some spaces, you can write another article into the column.
+
+02:46
+ So, we will first give it a heading as Sports in bold text with font size 15 and below that we will write an article on it.
+
+02:56
+ So, you see, columns make it easier for the reader to go through multiple articles.
+
+03:02
+ Let us delete some sentences so that our article fits in the first column only.
+
+03:08
+ Then, to access the further columns, click on the Insert button and then click on Manual Break.
+
+03:16
+ In the dialog-box which appears, click on the Column break button and then click on the OK button.
+
+03:23
+ You see that the cursor comes on the next column automatically.
+
+03:27
+So, you can start writing another article in this column.
+
+03:31
+ All the formatting options like-
+
+03:33
+Align left, Align right,
+
+03:36
+adding Background Color to the text,
+
+03:38
+Highlighting the text and many other features
+
+03:41
+can be added to the text to make it attractive.
+
+03:45
+ For example, we select the portion of the text to which we want to apply a background color.
+
+03:51
+Now, click on the Background Color icon in the toolbar and then click on Green 4.
+
+03:59
+We see that the background color of the selected text changes to light green.
+
+04:05
+ Likewise you can give different background colors to different parts of the text.
+
+04:10
+ You can even add banners to the newsletter by first clicking on the Text option in the Drawing toolbar.
+
+04:18
+ Now, place the text-box anywhere in the document where there is no written text.
+
+04:24
+Inside the text-box, you can write any text which will act as a banner or ads.
+
+04:30
+ So, let us type some text like: "This is a newsletter".
+
+04:35
+ You can even add effects to this text.
+
+04:37
+For example- first, right-click on the text and then click on the Text option in the menu.
+
+04:45
+ A dialog-box appears which has tabs namely Text and Text Animation.
+
+04:50
+Click on the Text Animation tab.
+
+04:53
+ In the Effect field, under this tab, there are various options.
+
+04:58
+ In order to blink the text in the newsletter, we click on the Blink option
+
+05:04
+and finally click on the OK button.
+
+05:07
+ We see that the text "This is a newsletter" constantly blinks in the document.
+
+05:13
+Similarly, various such effects and graphics can be given to the text.
+
+05:18
+ Now, for writing a new article on the next page, you need to first click on the Insert button
+
+05:25
+and then click on the Manual Break option.
+
+05:29
+ In the dialog-box which appears, click on the Page break button.
+
+05:34
+And finally click on the OK button.
+
+05:37
+ You see that the cursor comes on the next page.
+
+05:40
+This page contains the same column format as on the previous page.
+
+05:46
+ For maintaining a word count in your article, first  select a portion of your text or the entire document.
+
+05:53
+Now, click on the Tools option in the menu bar.
+
+05:57
+ Now, click on the Word Count option in the drop-down box.
+
+06:02
+ A dialog-box appears which shows you the word count of Current selection and the Whole document as well.
+
+06:10
+It also shows the total count of characters in your entire document as well as in the selected text.
+
+06:18
+ The spell check can be done automatically while writing the document.
+
+06:23
+Click on the AutoSpellcheck icon in the toolbar.
+
+06:27
+ Now, while writing the article, if there are any spelling mistakes  then 'Writer' automatically shows them by underlining the word with a red line.
+
+06:37
+For example, when we write the word  Cat as C -A- A -T and press the space-bar, we see that a red line is displayed below it.
+
+06:48
+ But, when we correct the word, the red line disappears.
+
+06:52
+ Hence, we see that all the formatting options discussed in the previous tutorials can be applied in the newsletters too.
+
+07:01
+ This brings us to the end of this spoken tutorial on
+
+07:04
+LibreOffice Writer.
+
+07:06
+To summarize, we learned about how to create Newsletters in LibreOffice Writer and few operations which can be performed on them.
+
+07:17
+Watch the video available at the following link.
+
+07:21
+It summarizes the Spoken Tutorial project.
+
+07:24
+If you do not have good bandwidth, you can download and watch it.
+
+07:28
+The Spoken Tutorial Project team:
+
+07:31
+Conducts workshops using spoken tutorials.
+
+07:34
+Gives certificates for those who pass an online test.
+
+07:38
+For more details, please write to: contact at spoken hyphen tutorial dot org.
+
+07:44
+Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+07:48
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+07:56
+More information on this mission is available at:
+
+08:00
+spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+08:07
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

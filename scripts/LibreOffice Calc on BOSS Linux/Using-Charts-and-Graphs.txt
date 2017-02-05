@@ -1,0 +1,349 @@
+00:00
+Welcome to the Spoken tutorial on LibreOffice Calc- Inserting Charts in spreadsheets.
+
+00:08
+In this tutorial, we will learn the following:
+
+00:11
+* Creating, Editing and Formatting Charts
+
+00:15
+* Resizing and moving of Charts.
+
+00:18
+Here, we are using GNU/Linux as our operating system and LibreOffice Suite version 3.3.4.
+
+00:27
+So, let us start learning about the various viewing options in LibreOffice Calc.
+
+00:33
+Charts can be powerful ways to convey information to the reader.
+
+00:38
+LibreOffice Calc offers a variety of charts formats for your data.
+
+00:43
+Using Calc, you can customize charts to a considerable extent too.
+
+00:48
+Let us open our "personal finance tracker.ods" sheet.
+
+00:53
+And let us fill the amount spent on each of the items listed in the sheet.
+
+00:59
+We will click on the cell referenced as E3 and type the amount as 6500.
+
+01:06
+Now going down the column, we will type the amounts as 1000, 625, 310 and 2700 in the cell referenced as “E4”, ”E5”, ”E6” and “E7” respectively.
+
+01:26
+Next, we shall fill the amounts received on each of the items listed in the sheet.
+
+01:31
+So, click on the cell referenced as “F3” and type the amount as 500.
+
+01:37
+Now going down this column, we will type the amounts as 200, 75, 10 and 700 in the cells referenced as “F4”, ”F5”, ”F6” and “F7” respectively.
+
+01:54
+Let us now learn how to create a chart for this table.
+
+01:58
+In order to create a chart, we have to first select the data to be included in the chart.
+
+02:05
+So, click on the cell “SN” and without releasing the mouse button, drag the cursor till the last cell which has 700 in it.
+
+02:14
+Now, click on the Insert option in the Menu bar and then click on the Chart option.
+
+02:21
+You see that the default chart with the date is inserted into the worksheet.
+
+02:27
+Simultaneously the "Chart Wizard" dialogue box opens up.
+
+02:32
+The "Chart Wizard" shows that the default chart is selected.
+
+02:36
+This default chart updates to reflect the changes you make in the Chart Wizard.
+
+02:42
+The "Chart Wizard" dialogue-box has three main parts- the steps involved in setting up the chart, choice of chart types and the options for each chart type.
+
+02:55
+By checking the 3D Look option, one can also get the chart display in three dimension.
+
+03:03
+Let's try these options.
+
+03:06
+We will click on the Bar option under the “Choose a chart type” field.
+
+03:11
+Observe that the sample chart shows the representation of the data in the table in the “Bar” format.
+
+03:19
+Similarly, you can click on the other options like “Pie”, <pause> “Area”, <pause> “Bubble” <pause>
+
+03:28
+and many other options under the Choose a chart type field and get the required type of chart.
+
+03:35
+Under the Steps option, we have another option named “Data Range”.
+
+03:41
+Using this option, you can manually edit the range of data you want to represent in the chart.
+
+03:48
+The default option of plotting data is “Data series in columns”.
+
+03:54
+We can change the way we want to plot the data by using “Data series in rows” instead.
+
+04:02
+This is useful if you use a style of chart such as “Column” to display your data.
+
+04:10
+Lastly, you can choose whether to use the “First row as label”
+
+04:17
+or “First column as label”
+
+04:22
+or both as labels on the axes of the chart.
+
+04:27
+Then click on Data series in column again.
+
+04:31
+Now, in our sample chart, if we wish to remove the data under the heading “Received”, we can do so by first clicking inside the “Data range” field.
+
+04:42
+And then editing the range “$A$1 is to $F$7” to “$A$1 is to $D$7”.
+
+04:56
+Observe that the data under the heading “Received” is no longer represented in the chart.
+
+05:03
+Next, let's see what “Data Series” does.
+
+05:08
+Notice there are 5 rows here, representing the total rows of data in our spreadsheet.
+
+05:14
+The “Add” and “Remove” buttons will allow us to add or remove rows of data from the chart.
+
+05:21
+We can also re-order the data by using the “Up” and “Down” buttons.
+
+05:27
+So, after selecting what and how to represent data in the chart, click on the “Finish” button in the dialog-box.
+
+05:35
+You see that the chart is inserted into the spreadsheet.
+
+05:40
+After learning about how to insert charts in spreadsheet,
+
+05:44
+we will now learn how to format charts in LibreOffice Calc.
+
+05:49
+The “Format” menu has many options for formatting
+
+05:53
+and fine-tuning the appearance of the charts.
+
+05:57
+Let us format the chart we inserted into the spreadsheet.
+
+06:00
+So, double-click on the chart so that it is enclosed by a gray border
+
+06:06
+indicating that it is in the Edit mode.
+
+06:11
+Now, click on the Format option in the main menu.
+
+06:15
+You see that the drop down menu contains a number of formatting options like “Format Selection”, “Position and Size”, “Arrangement”, “Chart Wall”, “Chart Area” and many more.
+
+06:30
+They are used for positioning the chart, arranging and formatting the background and title of the chart.
+
+06:36
+We will learn about the most frequently used formatting options one by one.
+
+06:42
+The “Format Selection” option opens a dialog-box with the heading “Chart Area”.
+
+06:49
+Observe that there are 3 tabs here - “Borders”, “Area” and “Transparency”.
+
+06:55
+By default, Borders tab is selected.
+
+07:00
+Let us change the style and color of the chart’s border.
+
+07:04
+To do so, click on the “Style” field and choose “Continuous”.
+
+07:09
+Then, similarly in the “Color” field click on “Green”.
+
+07:13
+Now, click on the OK button.
+
+07:18
+Notice that the style and color of the chart border changes accordingly.
+
+07:23
+The “Title” option formats the title of the chart and its axes.
+
+07:29
+The “Axis” option formats the lines that create the chart
+
+07:33
+as well as the font of the text that appears on both the X and Y axes.
+
+07:39
+Explore all of these options on your own later, in order to learn what they do.
+
+07:46
+Calc also provides an option for changing the background of the chart area.
+
+07:50
+The chart area is the area surrounding the chart graphic, including the main title and key.
+
+07:58
+To format the chart area, click on the “Format” option and select “Chart Wall”.
+
+08:05
+You see that a dialog-box appears with the heading “Chart Wall”.
+
+08:09
+The “Style” field displays “Continuous” as this was our last choice.
+
+08:15
+In the “Color” field, let’s click on “Red”.
+
+08:19
+We will also change the size to “0.20”cm.
+
+08:23
+Now click on the OK button.
+
+08:27
+You see that the style and color of the chart area changes. <pause>
+
+08:34
+Next we will learn about how to resize and move elements in a chart.
+
+08:39
+For resizing a chart, click on the sample chart.
+
+08:44
+You see that green handles appear around the chart.
+
+08:47
+To increase or decrease the size of the chart, click and drag one of the markers in one of the four corners of the chart.
+
+08:55
+In order to move the chart, first click on the chart.
+
+09:00
+Now hover the cursor anywhere over the chart.
+
+09:04
+The cursor turns to a hand.
+
+09:06
+Click and move the chart to the desired location. Now, release the mouse button.
+
+09:13
+You have moved the chart!
+
+09:17
+Next we will learn how to resize charts by using the “Position and Size” dialog box.
+
+09:23
+Again, click on the chart.
+
+09:26
+Now, right-click on the chart and select “Position and Size” from the context menu.
+
+09:32
+The “Position and Size” dialog box appears.
+
+09:36
+It has various fields that can set the 'X' and 'Y' positions of the chart as well as the width and height of the chart.
+
+09:45
+Let us set the 'X' coordinate to “1.00” “ and 'Y' coordinate to “0.83” “ for our chart.
+
+09:55
+Click on the OK button.
+
+09:57
+We see that the chart positions itself according to the set values within the chart area.
+
+10:04
+This brings us to the end of this Spoken Tutorial.
+
+10:08
+To summarize, we learned how to: Create charts, edit and format them.
+
+10:14
+We also learnt how to resize and move the charts within the spreadsheet.
+
+10:20
+Comprehensive Assignment-
+
+10:22
+* Open your spreadsheet “practice.ods”
+
+10:26
+* Insert a "Pie chart" for the data.
+
+10:30
+* Resize and move the chart to the bottom right corner of the sheet.
+
+10:35
+Watch the video available at the following link:
+
+10:39
+It summarizes the Spoken Tutorial project.
+
+10:43
+If you do not have good bandwidth, you can download and watch it.
+
+10:47
+The Spoken Tutorial Team:
+
+10:49
+* Conducts workshops using spoken tutorials.
+
+10:53
+* Gives certificates for those who pass an online test.
+
+10:56
+For more details, please write to: contact at spoken hyphen tutorial dot org.
+
+11:03
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+11:08
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+11:15
+More information on this mission is available at: spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+11:27
+This tutorial has been contributed by DesiCrew Solutions Pvt. Ltd.
+Thanks for joining.
+

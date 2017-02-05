@@ -1,0 +1,245 @@
+00:02
+Welcome to the Spoken tutorial on LibreOffice Base.
+
+00:06
+In this tutorial, we will learn how to:
+ create simple queries using the Query wizard
+ Select fields 
+ Set the sorting order of the fields and
+ provide search criteria or conditions for a query.
+
+
+00:24
+Let us first learn what a query is.
+
+00:29
+A query can be used to get specific information from a database.
+
+00:36
+In other words, we can "query" the database for some data that matches a given criteria.
+
+00:48
+For example, let us consider our familiar 'Library' database example.
+
+00:56
+We have stored information about books and members in our Library database.
+
+01:04
+Now we can query the Library database for all the members of the Library.
+
+01:12
+Or we can query the database for all the books that are not in the Library.
+
+01:21
+Let us see how we can create a simple query using Base.
+
+01:30
+Our example is to list all the members of the 'Library' along with their phone numbers.
+
+01:44
+We are in the 'Library' database. You probably know how to open this by now.
+
+01:51
+Let us click on the Queries icon on the left panel.
+
+01:57
+On the right panel, we see three options.
+
+02:03
+Since we are creating a simple query first, we will choose an easy and fast method.
+
+02:11
+And that is by using a Query Wizard.
+
+02:17
+For creating complex queries, Base provides us with very handy options such as 'Create Query in Design View'
+
+02:28
+and 'Create Query in SQL view' which we will learn about later.
+
+02:36
+For now, let us click on 'Use Wizard to Create Query'.
+
+02:43
+Now, we see a pop-up window that says Query Wizard on the top.
+
+02:50
+On the left, we see 8 steps that we will go through.
+
+02:57
+We are in Step 1 - 'Field Selection'.
+
+03:03
+On the right side, we will see a drop-down box underneath the label Tables.
+
+03:11
+This is where we will select the source of the data that we need from this query.
+
+03:21
+Since our example query is about getting a list of all the members of the Library, we will click on the Tables: Members from the drop-down box.
+
+03:35
+Now, let us double-click on the Name field in the Available fields list on the left and move it to the list box on the right.
+
+03:50
+Next, let us click on the Phone field on the left and move it to the right.
+
+04:00
+Note that to move all the fields to the right, we can use the double-arrow button that points to the right.
+
+04:09
+Now, let us click on the Next button at the bottom.
+
+04:15
+Now we are in Step 2 - Sorting Order.
+
+04:20
+Since the result of our query is a list of members and their phone numbers, we can leave this as it is.
+
+04:30
+Or we can order the list by member names.
+
+04:36
+The Base Wizard allows us to sort up to 4 fields in the result list at a time.
+
+04:45
+For now, let us click on the top most drop-down box,
+
+04:51
+And click on Members.Name.
+
+04:55
+We can also choose if we want to sort the names in ascending or descending order.
+
+05:03
+Let us click on the Ascending option
+
+05:07
+and proceed to the next step.
+
+05:11
+Step 3 - Search Conditions.
+
+05:16
+This step will help if we want to limit our result set to some conditions.
+
+05:22
+For example, we can limit the result set to only those members whose name starts with the alphabet R.
+
+05:34
+For this, we will click on the Fields drop-down box and then click on Members.Name.
+
+05:45
+Now, click on the Condition drop-down box.
+
+05:51
+Notice the various conditions here.
+
+05:58
+Let us click on like.
+
+06:02
+In the Value text box, let us type in ‘capital R’ and a ‘percentage symbol’.
+
+06:13
+This is how we can introduce simple and complex conditions into our query.
+
+06:22
+Let us now delete the 'R%' from the Value text-box to list all the members and click on the Next button.
+
+06:37
+Please note that we have skipped to Step 7.
+
+06:43
+This is because we are creating a simple query from a single table.
+
+06:51
+And our query will return details and not summaries.
+
+06:57
+Summary queries show data from aggregate functions and by grouping.
+
+07:05
+Some examples are count of all the members or sum of the prices of all the books.
+
+07:13
+We will learn about these later.
+
+07:17
+Okay, now here let us set aliases,
+
+07:23
+meaning- let us provide friendly and descriptive labels or headers in the resulting list.
+
+07:32
+So the 'Name' field can have an alias as 'Member Name' and the 'Phone' field can have an alias as 'Phone Number'.
+
+07:46
+So, let us type in these new aliases in the two text-boxes and click on the Next button.
+
+07:57
+Now, we are in Step 8 - the final step.
+
+08:03
+Here let us give a nice descriptive name to our simple query.
+
+08:09
+Let us type in 'List of all members and their phone numbers' against the 'Name of the Query’ label.
+
+08:20
+Now, notice that we see an overview of our choices in the wizard.
+
+08:27
+And how do we want to proceed from here?
+
+08:31
+Let us click on the 'Display Query' option on the top right side and click on the Finish button.
+
+08:41
+The wizard window has closed and there is a new window whose title says- 'List of all members and their phone numbers'.
+
+08:52
+Notice that we see all the four members that we originally entered in the Members table along with their phone numbers.
+
+09:04
+Also, we see that this list is arranged alphabetically in ascending order.
+
+09:13
+So, this is our first simple query.
+
+09:18
+Here is an assignment.
+
+09:21
+Create a query that will list all the Books in ascending order.
+
+09:28
+Include all fields.
+
+09:31
+Name it as ‘List of all books in the Library’.
+
+09:38
+This brings us to the end of this tutorial on Creating Queries using Wizard in LibreOffice Base.
+
+09:45
+To summarize, we learned how to :
+ Create simple queries using the Query wizard 
+ Select fields 
+ Set the sorting order of the fields And 
+ provide search criteria or conditions for a query.
+
+
+10:00
+Spoken Tutorial project is a part of the Talk to a Teacher project, supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+10:12
+This project is coordinated by http://spoken-tutorial.org.
+
+10:17
+More information on the same is available at the following link.
+
+10:22
+This script has been contributed by Priya Suresh, DesiCrew Solutiions. And this is soundharya, DesiCrew Solutions, signing off.
+Thanks for joining.
+
