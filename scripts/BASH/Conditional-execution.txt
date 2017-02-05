@@ -1,0 +1,380 @@
+00:01
+ Dear friends, welcome to the spoken tutorial on Conditional execution in Bash.
+
+  00:08
+  In this tutorial, we will learn:
+
+  00:10
+* Use of test command and
+
+  00:13
+* Conditional statements.
+
+  00:15
+ We will do this using a few examples.
+
+  00:19
+ To follow this tutorial,
+
+  00:21
+ You should be familiar with  GNU/Linux Operating System.
+
+  00:26
+ If not, for relevant tutorials, please visit our website which is as shown.
+
+  00:32
+  For this tutorial, I am using:
+
+  00:35
+* Ubuntu Linux 12.04  OS and
+
+  00:39
+* GNU Bash version 4.1.10
+
+  00:43
+ GNU Bash version 4 or above is recommended for practice.
+
+   00:49
+Let us start with an introduction to test.
+
+   00:52
+ test is a built-in command which returns the exit status.
+
+  00:57
+ It returns 0 (zero) for True and 1 (one) for False.
+
+   01:02
+ Return value depends on the evaluation of the expression.
+
+ 01:07
+ One can get the return status by typing Dollar and question mark sign ($?).
+
+ 01:14
+  An expression can be evaluated in two ways-
+
+ 01:18
+ One- by using the keyword  test.
+
+ 01:21
+ And other by using the expression enclosed within square brackets.
+
+  01:27
+  Now, open the terminal by pressing Ctrl+Alt and T keys simultaneously.
+
+  01:35
+ Type: test space 4 space hyphen eq space 4 semicolon space echo space dollar sign and a question mark. Press  Enter.
+
+  01:53
+ It returns  zero  which means  True.
+
+  01:57
+ 4 is equal to 4.
+
+  02:00
+ Next, type:
+
+ 02:02
+ opening square bracket space 4 space hyphen eq space 4 space closing square bracket semicolon space echo space dollar sign and a question mark. Press Enter.
+
+ 02:22
+  It returns zero which means  True.
+
+ 02:25
+ i.e.4 is equal to 4.
+
+ 02:28
+ Let's take another expression. Type:
+test space 4 space hyphen eq space 5 semicolon space echo space dollar sign question mark.
+Press Enter.
+
+ 02:48
+ It returns one which means False.
+
+ 02:52
+ i.e.4 is not equal to 5.
+
+ 02:56
+  Now let's write the same expression within square brackets. Type:
+
+ 03:01
+ opening square bracket space 4 space hyphen eq space 5 space closing square bracket semicolon space echo space dollar sign and a question mark. Press Enter.
+
+ 03:21
+ It also returns one which means False.
+
+ 03:25
+ i.e. 4 is not equal to 5.
+
+  03:29
+  This can be extended for other kind of testing.
+
+  03:33
+ Please type: man space test and explore its usage.
+
+ 03:40
+ Now, let us go back to our slides.
+
+ 03:43
+ Now we will see the syntax for if statement-
+
+ 03:48
+ if space opening square bracket space expression space closing square bracket semicolon space then
+
+ 03:59
+ On the next line, type: commands or  statements that you want to execute.
+
+ 04:05
+ Lastly, end the if loop with fi.
+
+ 04:11
+ The basic rules of condition are:
+
+ 04:14
+* Always keep spaces between the brackets and the expression.
+
+ 04:19
+* Always terminate the line using semicolon before keyword “then”.
+
+ 04:25
+* Semicolon is used to terminate the statement or an expression.
+
+  04:31
+  It is recommended to quote string variables if you use them in condition.
+
+  04:38
+ Don't forget to close the conditional block with “fi”.
+
+ 04:43
+ Let us see an example on if statement.
+
+ 04:46
+ Come back to our terminal.
+
+ 04:49
+ I will open an already existing script file named simpleif.sh.
+
+ 04:58
+ This Bash script displays the message “count is 100” when the count equals to 100.
+
+ 05:06
+ This is the first line of Bash shell script known as shebang line.
+
+ 05:12
+ An integer 100 is assigned to a variable count.
+
+ 05:17
+ Note that there should not be any space between count, = and 100.
+
+ 05:24
+ This expression checks whether count is equal to hundred.
+
+ 05:30
+ Here, -eq is comparison operator.
+
+ 05:35
+ If the condition is True, it will display the message count is 100.
+
+ 05:41
+ fi is to end if block.
+
+ 05:45
+ Now save the file by pressing Ctrl + S.
+
+ 05:49
+ Go back to the Terminal.
+
+ 05:51
+ To make the file executable, type: chmod space plus x space simpleif.sh and press Enter.
+
+ 06:04
+ Let me clear the prompt.
+
+ 06:06
+ Now type: dot slash simpleif.sh press Enter.
+
+ 06:14
+  Here it is displayed:
+
+ 06:16
+ Count is 100.
+
+ 06:18
+ Try changing the value of variable count  and execute the script.
+
+ 06:24
+  Now switch back to our slides.
+
+ 06:26
+ We will see  if-else condition.
+
+ 06:30
+  The general syntax is: if space opening square bracket space condition space closing square bracket space semicolon space then
+
+ 06:44
+ On the next line, type commands.
+
+ 06:47
+ On the next line, there is else statement.
+
+ 06:51
+ And again type some other commands.
+
+ 06:55
+ on the next line, type fi to end if block.
+
+ 07:00
+ Let us study the usage of if-else with an interesting password program.
+
+ 07:06
+ Come back to the terminal.
+
+ 07:09
+ I will open the file ifelse.sh.
+
+ 07:14
+ This is the shebang line.
+
+ 07:17
+ Here,abc123 is stored in the variable PASS.
+
+ 07:23
+ As abc123 is a string, it should be written within double-quotes.
+
+ 07:29
+ The read command reads one line of data from the standard input.
+
+ 07:35
+ In this case, standard input is our keyboard.
+
+ 07:39
+ Hyphen s is for silent mode
+
+ 07:43
+ which means the entered password will not be displayed as we type.
+
+ 07:48
+ We don't want others to see our password.
+
+ 07:52
+ Hyphen p is for prompt.
+
+ 07:55
+ It will display a string “'Enter password: ” before it takes input from user.
+
+ 08:01
+ mypassword is a variable.
+
+ 08:04
+ It stores the string, in this case the password entered by the user.
+
+ 08:10
+  This checks that the entered password matches the value of the variable PASS.
+
+ 08:17
+ It is stored in a variable mypassword.
+
+ 08:21
+ If the password matches, it  displays the message:
+
+ 08:25
+ “Password accepted”
+
+ 08:27
+ else it will display “Access denied”.
+
+ 08:31
+ fi is the end of if-else loop.
+
+  08:34
+  Now save the file by pressing Ctrl, s.
+
+  08:38
+ Come back to our terminal, make the file executable. Type:
+chmod space plus x space ifelse.sh. Press Enter.
+
+ 08:52
+ Type: dot slash ifelse.sh . Press  Enter.
+
+ 08:57
+ Here it is displayed :
+
+ 08:59
+ Enter password:
+
+ 09:00
+ I will type abc. Press Enter.
+
+ 09:05
+ As the password entered is wrong, it displays the message as  “Access denied”.
+
+ 09:11
+ Let's execute again but this time we will enter password as abc123.
+
+ 09:21
+ It is displayed as: Password accepted.
+
+  09:25
+ This brings us to the end of this tutorial.
+
+  09:28
+ Come back to our slides and summarize.
+
+  09:31
+ In this tutorial, we have covered usage of test command, simple if statement and if-else statement.
+
+  09:41
+  As an assignment-
+
+  09:43
+ Write a script, take your name as an input.
+
+  09:46
+ It should check this name with your system's username.
+
+ 09:51
+ If the username matches, it should greet you by displaying “Hello”.
+
+  09:56
+ Else, it should display “Try again”.
+
+  10:00
+ HINT: Your system's username is stored in a variable $USER.
+
+ 10:06
+ Watch the video available at the link shown below.
+
+ 10:09
+ It summarizes the Spoken Tutorial project.
+
+ 10:11
+ If you do not have good bandwidth, you can download and watch it.
+
+ 10:16
+  The Spoken Tutorial Project team:
+
+ 10:18
+* Conducts workshops using spoken tutorials.
+
+ 10:22
+* Gives certificates to those who pass an online test.
+
+ 10:26
+ For more details, please write to contact@spoken-tutorial.org
+
+ 10:33
+ Spoken Tutorial project is a part of the "Talk to a Teacher" project.
+
+ 10:37
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 10:45
+ More information on this mission is available at the link shown below.
+
+ 10:51
+  The script has been contributed by FOSSEE and spoken-tutorial team.
+
+ 10:56
+ This is Ashwini from IIT Bombay, signing off.
+
+ 11:01
+ Thank you for joining.

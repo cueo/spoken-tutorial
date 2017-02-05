@@ -1,0 +1,492 @@
+00:01
+Welcome to the spoken tutorial on Functions in C and C++.
+
+ 00:06
+In this tutorial we will learn,
+
+ 00:09
+* What is a function
+
+ 00:11
+* Syntax of a function
+
+ 00:13
+*Significance of return statement
+
+ 00:16
+ We will do this through examples.
+
+ 00:18
+We will also see some common errors and their solutions.
+
+ 00:22
+ To record this tutorial, I am using,
+
+ 00:25
+Ubuntu Operating System version 11.10,
+
+00:29
+ gcc and g++ Compiler version 4.6.1 .
+
+00:35
+Let us start with the introduction to functions.
+
+00:39
+A function is a self-contained program executing a specific task.
+
+ 00:45
+Every program consists of one or more functions.
+
+ 00:49
+Once executed, the control will be returned back from where it was accessed.
+
+ 00:55
+Let us see the syntax for function.
+
+ 00:59
+ret-type defines the type of data that the function returns. 
+
+ 01:05
+fun_name defines the name of the function.
+
+01:09
+parameters is the list of variable names and their types.
+
+ 01:14
+We can specify an empty parameter list.
+
+ 01:18
+This is called as functions without arguments. 
+
+ 01:21
+And this is called as functions with arguments. 
+
+01:26
+Let us see a program using void. 
+
+01:29
+I have already typed the program on the editor.
+
+01:32
+So I will open it.
+
+01:35
+Note that our file name is function. 
+
+ 01:38
+And I have saved the file with the extension .c (dot c).
+
+ 01:43
+Let me explain the code.
+
+ 01:45
+This is our header file. 
+
+01:47
+Before using any function, it must be defined.
+
+01:51
+Here we have defined a function called add.
+
+01:54
+Note that add function is without any arguments.
+
+01:58
+And the return type is void. 
+
+ 02:01
+There are two types of functions-
+
+ 02:03
+ User-defined that is our add function and
+
+ 02:06
+ Pre-defined that is printf and main function .
+
+ 02:12
+ Here we have initialized a and b by assigning them values as 2 and 3.
+
+ 02:19
+ Here we have declared a variable c. 
+
+ 02:21
+Then we add the values of a and b.
+
+ 02:24
+The result is stored in c.
+
+ 02:27
+Then we print the result.
+
+ 02:29
+ This is our main function. 
+
+ 02:32
+Here we call the add function.
+
+ 02:34
+The addition operation will be performed and the result will be printed.
+
+ 02:39
+ Now click on Save.
+
+ 02:42
+Let us execute the program.
+
+ 02:45
+Please open the terminal window by pressing Ctrl,  Alt and T  keys simultaneously.
+
+ 02:53
+To compile, type gcc  function dot c  hyphen o  fun.
+
+ 03:00
+To execute, type ./fun (dot slash fun).
+
+ 03:05
+We see the output is displayed as Sum of a and b is 5 .
+
+ 03:10
+Now come back to our program.
+
+ 03:13
+Functions contain special identifiers called as parameters or arguments.
+
+ 03:20
+Let us see the same example with arguments.
+
+ 03:23
+I will change a few things here.
+
+ 03:27
+Type int add(int a, int b) 
+
+ 03:32
+Here we have declared a function add. 
+
+ 03:36
+int a and int b are the arguments of the function  add.
+
+ 03:41
+Let us delete this.
+
+ 03:42
+No need to initialize a and b here.
+
+ 03:46
+Delete the printf statement.
+
+ 03:49
+Type int main() 
+
+ 03:52
+ Let us declare a variable sum here.
+
+ 03:54
+Type int sum; 
+
+ 03:57
+Then type sum = add(5,4); 
+
+ 04:03
+Here we call the add function.
+
+ 04:05
+Then we pass the parameters as 5 and 4.
+
+ 04:10
+5 will be stored in a and 4 will be stored in  b. 
+
+ 04:14
+The addition operation will be performed.
+
+ 04:18
+Let us now print the result.
+
+ 04:20
+Hence type here
+
+ 04:21
+printf(“Sum is %d\n”, sum);
+
+ 04:27
+Delete this, as we have already called the function above.
+
+ 04:32
+Type return 0;
+
+ 04:36
+A non-void function must use a return statement that returns a value.
+
+ 04:41
+Click on Save.
+
+ 04:43
+Let us execute the program.
+
+ 04:45
+Come back to our terminal.
+
+ 04:48
+Now compile the program as before.
+
+ 04:50
+Let us execute.
+
+ 04:52
+The output is displayed as Sum is 9 .
+
+ 04:57
+Now let us see how to execute the same program in C++.
+
+ 05:02
+Come back to our program.
+
+ 05:04
+Let me change a few things here.
+
+ 05:07
+First press Shift, Ctrl and S keys simultaneously.
+
+ 05:12
+Now save the file with .cpp extension.
+
+ 05:18
+Click on Save.
+
+ 05:19
+First we will change the header file as <iostream>
+
+ 05:24
+We will include the using statement here.
+
+ 05:28
+The function declaration is same in C++.
+
+ 05:32
+So there is no need to change anything here.
+
+ 05:37
+Now replace the printf statement with the  cout statement, as we use cout<< function to print a line in C++.
+
+ 05:48
+We don't need the format specifier and \n here.
+
+ 05:52
+Delete the comma.
+
+ 05:54
+Now, type two opening angle brackets.
+
+ 05:58
+After sum , again type two opening angle brackets.
+
+ 06:03
+Within double quotes, type backslash n.
+
+ 06:07
+Delete this closing bracket.
+
+ 06:09
+Now Click on Save. 
+
+ 06:11
+Let us compile the program.
+
+ 06:14
+Come back to our terminal.
+
+ 06:16
+Type g++ function dot cpp hyphen o fun1 
+
+ 06:23
+Here we have fun1, this is because we don't want to overwrite the output file fun.
+
+ 06:31
+Press Enter. 
+
+ 06:34
+Type ./fun1 
+
+ 06:38
+The output is displayed as: Sum is 9
+
+ 06:42
+Now we will see the common errors which we can come across.
+
+ 06:47
+Suppose here, we type x in  place of 4.
+
+ 06:51
+I will retain the rest of the code as it is.
+
+ 06:55
+Click on Save.
+
+ 06:58
+Let us compile the program.
+
+ 07:02
+We see an error at line no. 10.
+
+ 07:06
+ 'x' was not declared in this scope.
+
+ 07:09
+This is because 'x' is a character variable.
+
+ 07:13
+It was not declared anywhere.
+
+ 07:15
+And our add function has integer variable as an argument.
+
+ 07:21
+So, there is a mismatch in return type and return value.
+
+ 07:25
+Now come back to our program.
+
+ 07:27
+Let us fix the error.
+
+ 07:30
+Type 4 at line no. 10.
+
+ 07:32
+Click on Save. 
+
+ 07:35
+Let us execute again.
+
+ 07:37
+Let me clear the prompt.
+
+ 07:40
+Compile the program as before.
+
+ 07:42
+Yes! It is working.
+
+ 07:45
+Now we will see another common error which we can come across.
+
+ 07:50
+Suppose here we pass only one parameter.
+
+ 07:55
+Delete 4.
+
+ 07:56
+Click on Save.
+
+ 07:58
+Switch to the terminal.
+
+ 08:00
+ Let us compile.
+
+ 08:01
+We see an error at line no 10.
+
+ 08:06
+too few arguments to function 'int add (int, int)' 
+
+ 08:11
+Switch back to our program.
+
+ 08:14
+You can see here we have two parameters
+
+ 08:19
+int a and int b. 
+
+ 08:22
+And here we are passing only one parameter.
+
+ 08:25
+Hence it is giving an error.
+
+ 08:27
+Let us fix the error.
+
+ 08:29
+Type 4.
+
+ 08:31
+Click on Save .
+
+ 08:34
+Switch to the terminal.
+
+ 08:36
+Let us execute again.
+
+ 08:39
+Yes! It is working.
+
+ 08:42
+Come back to our slides.
+
+ 08:44
+To summarize, in this tutorial we have learnt -
+
+ 08:49
+*function
+
+ 08:50
+*Syntax of function
+
+ 08:51
+*function without arguments
+
+ 08:53
+Eg- void add()
+
+ 08:55
+Function with arguments
+
+ 08:57
+Eg- int add(int a, int b)
+
+ 09:02
+As an assignment-
+
+ 09:03
+Write a program to calculate the square of a number.
+
+ 09:07
+Watch the video available at the link shown below.
+
+ 09:11
+It summarizes the Spoken Tutorial project.
+
+ 09:14
+If you do not have good bandwidth, you can download and watch it.
+
+ 09:18
+The Spoken Tutorial Project Team:
+
+ 09:21
+Conducts workshops using spoken tutorials,
+
+ 09:24
+Gives certificates to those who pass an online test.
+
+ 09:28
+For more details, please write to, contact@spoken-tutorial.org
+
+09:35
+Spoken Tutorial Project is a part of Talk to a Teacher project.
+
+ 09:40
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 09:47
+More information on this Mission is available at the link shown below.
+
+ 09:52
+This is Ashwini Patil from IIT Bombay.
+
+ 09:55
+Thank You for joining.
+

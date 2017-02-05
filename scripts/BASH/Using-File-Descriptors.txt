@@ -1,0 +1,296 @@
+00.01
+  Dear friends, welcome to the spoken tutorial on Using File Descriptors.
+
+  00.08
+  In this tutorial, we will learn to:
+
+  00.11
+ * Assign an output file descriptor
+
+  00.14
+ * Assign an input file descriptor
+
+  00.17
+ * Close the file descriptor (fd)
+
+  00.19
+  with the help of some examples.
+
+00.23
+  To follow this tutorial, you should have knowledge of Shell Scripting in BASH.
+
+  00.29
+ If not, for relevant tutorials, please visit our website which is as shown. http://www.spoken-tutorial.org
+
+  00.35
+  For this tutorial, I am using:
+
+  00.38
+ * Ubuntu Linux 12.04 Operating System
+
+  00.43
+ * GNU BASH version 4.2
+
+  00.46
+ Please note, GNU Bash version 4 or above is recommended for practice.
+
+  00.54
+  Let us start with an introduction.
+
+  00.56
+ We have already studied about file descriptors in the previous tutorial.
+
+  01.02
+  0, 1 and 2 are the standard file descriptors for stdin, stdout and stderr.
+
+  01.15
+ File descriptors are used for i/o redirection.
+
+  01.20
+  The syntax to assign a file descriptor to an output file is:
+
+  01.25
+ exec [File descriptor] greater than symbol filename
+
+  01.31
+ Let us see an example.
+
+  01.33
+ I have a code file with the name fdassign dot sh.
+
+ 01.43
+  The first line is the shebang line.
+
+  01.49
+  The "exec" command replaces the current shell process.
+
+  01.56
+ It will be executed in the place of the current shell without creating a new process.
+
+  02.04
+ We know that 0, 1, and 2 are standard file descriptors.
+
+  02.09
+ For any newly opened file, we have additional file descriptors from 3 to 9.
+
+  02.19
+ Here, 3 is the file descriptor.
+
+  02.22
+ This will write the output to the output dot txt file.
+
+  02.30
+  The string "Welcome to BASH learning" is sent to the file output dot txt.
+
+  02.36
+ This is done via file descriptor 3.
+
+  02.42
+ This is similar to redirecting a string to a file.
+
+  02.49
+  Each new string will be appended to the file.
+
+  02.52
+ For example:
+
+  02.54
+ We will append the current system date to the output dot txt file.
+
+  03.00
+ The syntax is: date SPACE greater-than symbol ampersand sign 3.
+
+  03.13
+  Here, we close the file descriptor.
+
+  03.16
+ After this line, the descriptor cannot write anything to the output dot txt file.
+
+  03.23
+  Let us execute the code and see the output.
+
+  03.26
+ Open the terminal using CTRL+ALT+T keys.
+
+  03.34
+  Type: chmod space plus x space fdassign dot sh
+
+  03.41
+  Type: dot slash fdassign dot sh
+
+  03.46
+  Let us check the output now by typing cat space output dot txt.
+
+  03.56
+ We can see that the string "Welcome to BASH learning" and the current system date is displayed.
+
+ 04.05
+  Let us go back to the editor.
+
+  04.11
+ Now I will type echo at the end, after the descriptor is closed.
+
+  04.17
+ Type: echo space within double quotes Hi after quotes space greater than symbol ampersand sign 3
+
+  04.31
+ Click on Save.
+
+  04.35
+ Let us execute the script once again and see what happens.
+
+  04.38
+  On the terminal, press the up-arrow key twice, recall the previous command dot slash fdassign dot sh.
+
+  04.50
+ press Enter.
+
+  04.52
+  We see an error:
+
+  04.55
+ "Bad file descriptor".
+
+  04.58
+  Let us fix this error.
+
+  05.00
+ Come back to the editor.
+
+  05.03
+ I will cut the last line of code and paste it below the date command.
+
+ 05.11
+  Click on Save.
+
+  05.13
+ Let us execute the code once again, on the terminal.
+
+  05.19
+ Recall the previous command dot slash fdassign.sh.
+
+  05.24
+ press Enter.
+
+  05.26
+  Now let us open the output dot txt file.
+
+  05.29
+ Type: cat space output dot txt
+
+ 05.41
+  We can see the output.
+
+  05.43
+ The string "Hi" is displayed at the end.
+
+  05.49
+  Now we will assign the file descriptor to the input file.
+
+  05.54
+ Let us see an example.
+
+  05.56
+ I have a file named fdread dot sh.
+
+  06.03
+ Let us go through it.
+
+  06.07
+  This is the 'exec' command.
+
+  06.13
+ Here we will read the file output dot txt.
+
+  06.19
+ The line exec 3 lesser than symbol output dot txt will open the file for reading.
+
+  06.30
+  'cat' command will display the content of the file.
+
+  06.35
+ And finally, we close the file descriptor.
+
+ 06.39
+  Now, let us execute this shell script.
+
+  06.42
+ On the terminal, let me clear the prompt.
+
+  06.47
+ Type: chmod space plus x space fdread dot sh
+
+  06.55
+ Type dot slash fdread dot sh
+
+  07.01
+  We can see the output on the terminal.
+
+  07.05
+ The content of output dot txt file is displayed.
+
+  07.10
+  This brings us to the end of this tutorial.
+
+  07.13
+  Come back to the slides.
+
+  07.16
+ Let us summarize.
+
+  07.17
+ In this tutorial, we learned to:
+
+  07.19
+ * Assign the output file descriptor
+
+  07.22
+ * Assign the input file descriptor
+
+  07.26
+ * Close the file descriptor.
+
+ 07.28
+  As an assignment:
+
+  07.30
+ Try to append a few lines to a file test dot txt using file descriptors;
+
+  07.36
+ Display the contents of the file using file descriptors.
+
+  07.41
+  Watch the video available at the link shown below.
+
+  07.45
+ It summarizes the Spoken-Tutorial project.
+
+  07.48
+ If you do not have good bandwidth, you can download and watch it.
+
+   07.53
+  The Spoken Tutorial Project team: Conducts workshops using spoken tutorials.
+
+  07.58
+ Gives certificates to those who pass an online test.
+
+  08.02
+ For more details, please write to contact@spoken-tutorial.org
+
+  08.10
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+  08.14
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+  08.22
+ More information on this mission is available at the link shown below http://spoken-tutorial.org/NMEICT-Intro
+
+   08.28
+  The script has been contributed by FOSSEE and Spoken-Tutorial teams.
+
+  08.33
+ This is Ashwini Patil from IIT Bombay, signing off.
+
+  08.37
+ Thank you for joining.

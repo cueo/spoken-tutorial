@@ -1,0 +1,518 @@
+00:01
+ Welcome to the spoken tutorial on Tokens in C and C Plus Plus.
+
+00:06
+ In this tutorial we will learn ,
+
+00:09
+How to define and use tokens.
+
+00:12
+ We will do this with the help of an example.
+
+00:15
+ We will also see some common errors and their solutions.
+
+ 00:20
+ To record this tutorial,
+
+00:21
+ I am using Ubuntu Operating system version 11.10,
+
+00:26
+ gcc and g++ Compiler version 4.6.1.
+
+00:33
+ Let us start with an introduction.
+
+00:36
+ Token is a generic word for data types, variables, constants and identifiers.
+
+00:46
+ Let us start with our program.
+
+00:49
+ I have already typed the code on the editor.
+
+00:53
+ Let me open it.
+
+00:56
+ Note that our file name is 'tokens.c'.
+
+01:04
+ In this program we will initialize the variables and print their values.
+
+01:09
+ Let me explain the code now.
+
+01:12
+ This is our header file.
+
+01:16
+ This is our main function.
+
+ 01:20
+Here, int is a keyword.
+
+01:22
+ The compiler knows the meaning of keyword.
+
+ 01:26
+ a is an integer variable.
+
+ 01:28
+ We have assigned a value of 2 to it.
+
+01:32
+ This is called as initialization.
+
+ 01:35
+If a value is not assigned to a variable then it is called as declaration of the variable.
+
+01:43
+ Here, b is a constant.
+
+ 01:46
+ We have initialized 'b' by assigning a value of 4 to it.
+
+01:53
+ const keyword is used to create 'read only' variable.
+
+01:58
+ Let us switch back to our slides to know more about keywords and constant.
+
+ 02:06
+ Keywords have fixed meanings that cannot be changed.
+
+02:11
+ Keywords cannot be used as variable names.
+
+02:15
+ There are 32 keywords in C.
+
+02:18
+ To name some, auto, break, case, char, enum, extern, etc.
+
+ 02:28
+Constants: constants are fixed values.
+
+02:33
+ They do not change during the execution of a program.
+
+02:38
+ There are two types of constants, Numeric constants and Character constants.
+
+02:45
+ Now come back to our program.
+
+ 02:47
+Here, float is a data type of variable c.
+
+02:52
+ We have assigned it a value of 1.5.
+
+02:56
+ Data type is a finite set of values along with a set of rules.
+
+ 03:04
+ Here, d is a variable.
+
+03:07
+ char and single quotes suggest that we are dealing with a character.
+
+03:12
+ As a result, d is a character variable  storing the value A.
+
+ 03:20
+ It is easy to see that int, double, float and char are data types.
+
+03:30
+ a, c and d are variables.
+
+03:35
+ Now come back to our slides.
+
+ 03:37
+We will know more about data types and variables.
+
+03:48
+Data types: Let us begin with integer data type.
+
+03:50
+It is declared as int.
+
+03:53
+ If we want to print an integer data type , we will use %d as the format specifier.
+
+ 04:01
+ Similarly, we will use float and %f for floating point numbers.
+
+04:09
+For character data type, we will  use char and %c.
+
+04:15
+ And For double data type, we will use double and %lf as the format specifier.
+
+04:24
+ Now we will see the range of data types.
+
+04:29
+ Integer data type has a range of this
+
+04:34
+ Floating point has a range of this
+
+04:39
+ Character has a range of this
+
+04:42
+ And Double has a range of this
+
+ 04:47
+The values stored in the variable must not be greater or less than this range.
+
+04:56
+ Now we will move on to variables.
+
+05:00
+ Variable is a data name.
+
+05:02
+It may be used to store a data value .
+
+05:06
+The values can change when a program runs.
+
+05:10
+ Before using a variable it must be declared.
+
+05:14
+ We should try to give meaningful names to  variables.
+
+05:18
+ example john, marks, sum etc.
+
+05:24
+ Now we will move back to our program.
+
+ 05:27
+ Here, printf is the identifier name for this function.
+
+ 05:32
+Come back to our slides.
+
+ 05:35
+  Let us know about identifiers.
+
+ 05:38
+ Identifiers are user defined names.
+
+05:41
+ An identifier consists of letters and digits.
+
+05:46
+ Both uppercase and lowercase letters are permitted.
+
+05:51
+ First character must be an alphabet or underscore.
+
+ 05:55
+Now Come back to our program.
+
+ 05:58
+Here we have initialized the variables and constants.
+
+ 06:02
+Here we print them.
+
+ 06:05
+And this is our return statement.
+
+ 06:08
+Now click on Save.
+
+ 06:10
+ Let us execute the program.
+
+06:12
+ Please open the terminal window by pressing Ctrl, Alt and T keys simultaneously on your keyboard.
+
+06:21
+ To compile, type gcc space tokens dot c space hyphen o tok. Press Enter.
+
+ 06:30
+ To execute, type ./tok (dot slash tok).
+
+ 06:35
+ The output is displayed.
+
+06:39
+ We can see that here we have six values after the decimal point.
+
+06:44
+ And here we have two values.
+
+ 06:48
+ Now let us find out how this happened. Come back to our program.
+
+ 06:54
+ This is because we have % point 2f here.
+
+06:59
+ It denotes that we can print only two values after the decimal point.
+
+ 07:04
+  Suppose here I want an output with three decimal places.
+
+ 07:09
+ Let us replace % point 2f with % point 3f.
+
+07:16
+ Now click on Save.
+
+07:19
+ Come back to our terminal.
+
+07:22
+  Compile as before, execute as before.
+
+ 07:28
+We see here three values after the decimal point.
+
+07:33
+Now we will execute the same program in c++.
+
+07:36
+ Come back to our program.
+
+ 07:40
+ I will change a few things here.
+
+ 07:42
+ First press Shift+Ctrl+s keys simultaneously on your keyboard.
+
+ 07:50
+ Now save the file with an extension .cpp and click on Save.
+
+ 07:58
+Let us change the header file as iostream
+
+ 08:03
+ Now  include the using statement.
+
+ 08:08
+ And click on Save.
+
+ 08:11
+Now replace the printf statement with the  cout  statement
+
+08:15
+ since we use cout<< function to print a line in C++.
+
+ 08:21
+ Click on Search for and replace text option.
+
+ 08:27
+ Type here printf opening bracket “(”
+
+ 08:33
+ And here in this column type, cout and two opening angle brackets “<<”.
+
+ 08:40
+ Now click on Replace All  and click on Close.
+
+ 08:45
+ We don't need the format specifier and '\n'
+
+08:50
+ Let us delete them.
+
+08:52
+ Now delete the comma and  type two opening angle brackets.
+
+ 09:01
+Click on Save. Now delete the closing bracket.
+
+09:04
+ Type two opening angle brackets again.
+
+09:09
+ And within the double quotes type \n.
+
+09:16
+ Now Click on Save.
+
+09:20
+Let us execute the program. Come back to our terminal.
+
+ 09:24
+To compile, type g++ space  tokens dot cpp space hyphen o space tok1.
+
+09:35
+ Here we have tok1 because we don't want to overwrite the output parameter tok for the file tokens.c.
+
+09:46
+ Now press Enter.
+
+09:48
+ To execute, type ./tok1 . Press Enter.
+
+ 09:55
+ The output is displayed.
+
+09:59
+ Now let us move on to some common errors which we can come across.
+
+10:03
+ Come back to our program.
+
+10:05
+  Suppose here I will reassign a new value to b as 8.
+
+10:12
+ Now click on Save. Let us see what happens.
+
+ 10:15
+ Come back to our terminal.
+
+ 10:17
+ Let me clear the prompt.
+
+ 10:22
+ Now compile as before.
+
+10:26
+ We see an error at line no.7 in our tokens. cpp file.
+
+ 10:32
+ "Assignment of read only variable 'b' ".
+
+10:36
+Come back to our program.
+
+ 10:39
+ This is because 'b' is a constant. Constants are  fixed values.
+
+10:45
+They do not change during the execution of program.
+
+ 10:49
+ Hence it is giving an error. Let us fix the error.
+
+ 10:54
+Delete this. Click on Save.
+
+ 10:57
+ Let us execute again. Come back to our terminal.
+
+ 11:01
+Compile as before.
+
+ 11:03
+Execute as before. Yes, it is working.
+
+11:09
+ Now we will see another common error.
+
+ 11:12
+Switch back to our program.
+
+11:15
+ Suppose here I will miss the single quotes. Click on Save.
+
+ 11:21
+ Let us execute. Come back to our  terminal.
+
+ 11:25
+Compile as before.
+
+ 11:28
+ We see an error at line no.9 in our tokens dot cpp file.
+
+11:34
+" 'A' was not declared in the scope". Come back to our program.
+
+11:40
+ This is because anything within the single quotes is considered as a character value.
+
+11:47
+ And here we have declared 'd' as a character variable.
+
+ 11:53
+ Let us fix the error. Type single quotes at line no.9 here.
+
+11:59
+Now Click on Save. Let us execute.
+
+12:02
+Come back to our terminal.
+
+12:04
+Now Compile as before.
+
+12:06
+Execute as before. Yes it is working.
+
+12:13
+Now switch back to our slides.
+
+12:15
+Let us summarize.
+
+12:16
+ In this tutorial we learnt,
+
+12:18
+* Data types eg. int, double, float etc.
+
+12:24
+* Variables eg. int a=2;
+
+12:29
+* Identifiers eg. printf() and
+
+12:34
+* Constant eg. double const b=4;
+
+ 12:40
+ As an assignment,
+
+12:41
+ Write a  program to calculate the simple interest.
+
+12:45
+ Hint: principal * rate * time upon  100.
+
+12:50
+Watch the video available at the link shown below.
+
+12:54
+ It summarizes the Spoken Tutorial project.
+
+12:56
+ If you do not have good bandwidth, you can download and watch it.
+
+ 13:01
+ The Spoken Tutorial Project Team:
+
+13:03
+ Conducts workshops using spoken tutorials,
+
+13:07
+ Gives certificates to those who pass an online test.
+
+13:10
+ For more details, please write to contact @spoken-tutorial.org
+
+ 13:19
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+13:24
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+13:30
+ More information on this Mission is available at the link  shown below.
+
+13:35
+ Ashwini Patil from IIT Bombay signing off .Thank You for joining.

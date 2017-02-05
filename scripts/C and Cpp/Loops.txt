@@ -1,0 +1,513 @@
+00:01
+Welcome to the spoken tutorial on Loops in C and C++.
+
+ 00:06
+In this tutorial we will learn,
+
+ 00:09
+for loop, 
+
+ 00:10
+while loop and
+
+ 00:12
+do…while loop. 
+
+ 00:13
+ We will do this with the help of some examples.
+
+ 00:17
+We will also see some common errors and their solutions.
+
+ 00:21
+ To record this tutorial, I am using
+
+ 00:24
+Ubuntu Operating System version 11.04,
+
+00:28
+ gcc and g++ Compiler version 4.6.1 on Ubuntu.
+
+00:34
+Let us start with the introduction to loops.
+
+00:38
+Loops are used to execute a group of instructions repeatedly.
+
+ 00:44
+Depending on the purpose they are divided into three types:
+
+ 00:48
+while loop 
+
+ 00:49
+do…..while loop and
+
+ 00:51
+for loop 
+
+ 00:52
+Let us start with the while loop first.
+
+ 00:56
+A while loop tests the condition in the beginning.
+
+ 01:00
+The structure is:
+
+ 01:01
+while ( condition )
+
+01:03
+within the bracket statement block.
+
+ 01:07
+Now move on to  do….while loop .
+
+ 01:09
+A do..while loop is executed at least once before the condition could be validated.
+
+ 01:15
+The structure is:
+
+ 01:17
+do (within the brackets) statement block,
+
+01:20
+after the bracket the while ( condition ).
+
+01:23
+You can see that the condition is checked at the end.
+
+ 01:27
+Now,let us see an example on while loop and do...while loop .
+
+ 01:32
+I have already typed the code on the editor.
+
+ 01:35
+Let me open it.
+
+01:37
+Note that our file name is while.c..
+
+01:41
+Today we are going to learn addition of first 10 numbers using while loop.
+
+01:47
+Let me explain the code now.
+
+01:49
+This is our header file.
+
+ 01:51
+Inside the main() function we have declared two integer variables x and y and initialized to 0.
+
+ 01:59
+ This is our while loop.
+
+ 02:02
+ The condition of the while loop is x is less than or equal to 10. 
+
+02:06
+Here the value of x is added to the value of y.
+
+ 02:10
+ The value obtained after the addition is stored in y. 
+
+ 02:15
+ Then we print the value of y.
+
+ 02:18
+ Here  x is incremented.
+
+ 02:20
+ That means the variable x is increased by one.
+
+ 02:25
+And this is our return statement.
+
+ 02:27
+Now,let us execute the program.
+
+ 02:30
+ Please open the terminal window by pressing Ctrl, Alt and T keys simultaneously on your keyboard.
+
+ 02:39
+Type gcc space while dot c space hyphen o space while 
+
+ 02:45
+Press Enter.
+
+ 02:47
+Type   ./while  (dot slash while). Press Enter.
+
+ 02:52
+ The output is displayed.
+
+ 02:54
+ Now lets us see the working of  while loop.
+
+ 02:57
+Let me resize the window.
+
+ 03:00
+Here, first the  value of  x  and  y  is 0.
+
+ 03:04
+This is our  while  condition.
+
+ 03:06
+Here we check whether x is less than or equal to 10 which means the values of x will be from 0 to 10.
+
+ 03:15
+Then we add y plus x (i.e) 0 plus 0, we get 0.
+
+ 03:22
+ We print the value of y, here we get 0.
+
+ 03:27
+ Then x is incremented which means now the value of x will be 1.
+
+ 03:33
+Then we  will check the condition again, 1 is less than or equal to 10. If the condition is  true  then we will add the values,
+
+ 03:44
+ y (i.e ) 0 plus x that is 1. 0 plus 1 is 1.
+
+ 03:50
+We print the value as 1.
+
+ 03:53
+Again x is incremented.
+
+ 03:55
+Now the value of x is 2.
+
+ 03:59
+We check the condition again.
+
+ 04:01
+2 is less than or equal to 10, if the condition is  true  then we will add the values, (i.e ) 1 plus 2 which will give 3.
+
+ 04:11
+We print the value as 3.
+
+ 04:13
+Like this, it will go on up to x is less than or equal to 10 (x<=10).
+
+ 04:20
+ Now, we will see the same program using  do….while loop  .
+
+ 04:24
+ Here is our program.
+
+ 04:26
+Note that our file name is  do hyphen while dot c .
+
+ 04:31
+This part is already explained in the previous program.
+
+ 04:35
+So, let us move on to a  do...while loop .
+
+ 04:38
+Here, first the body of the loop will be executed  and then the condition is checked.
+
+ 04:44
+The value of x is added to the value of y and the value obtained after the addition is stored in y.
+
+ 04:52
+The logic is same as in  while  program.
+
+ 04:55
+Now let us execute the program.
+
+ 04:58
+Come back to our terminal.
+
+ 05:00
+Type  gcc space do hyphen while dot c space hyphen o space do . Press  Enter .
+
+ 05:08
+Type  dot slash do (./do). Press Enter .
+
+ 05:12
+We can see that the output is similar  to our  while  program.
+
+ 05:16
+Now, let us see the working of  do...while loop .
+
+ 05:20
+Let me resize the window.
+
+ 05:22
+Here the value x and y is 0.
+
+ 05:25
+We add those values. Then we will get 0.
+
+ 05:29
+Now the value of y is 0.
+
+ 05:31
+We print the value as 0.
+
+ 05:33
+Then x is incremented by 1 which means now the value of x is 1, then the condition will be checked.
+
+ 05:42
+ You can see that the body of loop is executed first.
+
+ 05:45
+  Anyhow, if the condition is  false  then also we will get a value that is 0.
+
+ 05:52
+Now, here we will check whether 1 is less than or equal to 10.
+
+ 05:56
+The condition is true. Again we will add the values.
+
+ 06:00
+ Now 0 plus 1.
+
+ 06:02
+ Then we will print the value of y as 1.
+
+ 06:05
+Again x will be incremented.
+
+ 06:08
+Now the value of x is 2.
+
+ 06:11
+Then we check 2 is  less than or equal to 10.
+
+ 06:15
+We will go back here.
+
+ 06:17
+Then we will add the values. 1 plus 2 is 3.
+
+ 06:20
+ We print the value of y as 3.
+
+ 06:23
+Like this, the conditions will be checked till the value of x will be less than or equal to 10.
+
+ 06:30
+And this is our return statement.
+
+ 06:33
+Note that here the while condition ends with the semicolon.
+
+ 06:38
+In while loop the condition does not end with the semicolon.
+
+ 06:43
+Now let us see how to execute these programs in C++.
+
+ 06:48
+This is our while program in C++.
+
+ 06:52
+The logic and implementation are same as in our C program.
+
+ 06:56
+There are a few changes like the header file as iostream in place of stdio.h.
+
+ 07:04
+We have included the 'using' statement here using namespace std and here we have used the cout function in place of  printf  function.
+
+ 07:16
+The structure of  while loop is same as in our C program.
+
+ 07:21
+Lets us execute the program.
+
+ 07:23
+Come back to a terminal.
+
+ 07:25
+Let me clear the prompt.
+
+ 07:28
+To execute, type   g++ space while dot cpp space hyphen o space while1 . Press Enter .
+
+ 07:38
+Type  dot slash while1 (./while1). Press  Enter .
+
+ 07:43
+You can see that the output is similar to our while program in C.
+
+ 07:48
+Now let us see the  do... while  program in C++.
+
+ 07:52
+Come back to the text editor.
+
+ 07:54
+Here also there are similar changes like the  header file , the  using statement  and the  cout  function.
+
+ 08:03
+Rest of the things are similar.
+
+ 08:06
+Lets us execute the program.
+
+ 08:08
+Come back to our terminal.
+
+ 08:10
+Type  g++ space do hyphen while dot cpp space hyphen o space do1 . Press  Enter .
+
+ 08:19
+Type  dot slash do1 (./do1). Press  Enter .
+
+ 08:23
+We can see that the output is similar to our  do...while program in C. 
+
+ 08:28
+Now we will see some common errors and their solutions.
+
+ 08:32
+Come back to our text editor.
+
+ 08:35
+Suppose, here I will not increment the value of x.
+
+ 08:41
+Click on Save.
+
+ 08:42
+Let us see what happens.
+
+ 08:44
+Come back to the terminal.
+
+ 08:45
+Let me clear the prompt.
+
+ 08:47
+Lets us execute the program.
+
+ 08:50
+Press the up-arrow key twice.
+
+ 08:54
+ Again press the up-arrow key.
+
+ 08:57
+The output is displayed.
+
+ 08:59
+We can see number of zeros, this is because the loop does not have the terminating condition .
+
+ 09:07
+It is known as  infinite loop. 
+
+ 09:10
+ Infinite loop  can cause the system to become unresponsive.
+
+ 09:14
+ It causes the program to consume all the  processors  time  but it can be terminated.
+
+ 09:21
+Come back to our program, let us fix the error.
+
+ 09:25
+Type  x++  and a semicolon.
+
+ 09:28
+Click on Save. Let us execute again.
+
+ 09:31
+Come back to terminal.
+
+ 09:33
+Press the up-arrow key.
+
+ 09:38
+Yes, it is working.
+
+ 09:40
+This brings us to the end of this tutorial.
+
+ 09:43
+We will move back to our slides.
+
+ 09:45
+Let us summarize.
+
+ 09:47
+In this tutorial we learned,
+
+ 09:50
+ while loop  .
+
+ 09:51
+example. while(x is less than or equal to 10)
+
+ 09:54
+ do….while loop  .
+
+ 09:56
+example. do statement block and
+
+ 09:59
+while condition at the end.
+
+ 10:01
+As an assignment,
+
+ 10:03
+write a program to print the following, using for loops.
+
+ 10:07
+0 to 9.
+
+ 10:10
+The syntax of the  for loop  is
+
+ 10:12
+ for (variable initialization; variable condition; and variable increment or decrement) 
+
+ 10:20
+and here will be the body of the loop.
+
+ 10:24
+Watch the video available at the link shown below.
+
+ 10:27
+It summarizes the Spoken Tutorial project.
+
+ 10:30
+If you do not have good bandwidth, you can download and watch it.
+
+ 10:33
+The Spoken Tutorial Project Team:
+
+ 10:35
+Conducts workshops using spoken tutorials.
+
+ 10:38
+Gives certificates to those who pass an online test.
+
+ 10:42
+For more details, please write to contact@spoken-tutorial.org.
+
+ 10:47
+Spoken Tutorial Project is a part of Talk to a Teacher project.
+
+ 10:51
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 10:58
+More information on this mission is available at the link shown below.
+
+ 11:02
+This script as been contributed by Dhawal Goyal. This is Ashwini Patil from IIT Bombay, signing off.
+
+ 11:08
+Thank You for joining.
+
