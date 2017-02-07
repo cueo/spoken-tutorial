@@ -42,7 +42,7 @@ def create_dataset():
 		data = populate_courses(path)
 		courses[i] = data
 	data = []
-	for course in courses:
+	for course in courses[:1]:
 		data += course
 	return data
 
@@ -70,7 +70,10 @@ t0 = time()
 # dataset = fetch_20newsgroups(shuffle=True, random_state=1, remove=('headers', 'footers', 'quotes'))
 # data_samples = dataset.data[:n_samples]
 dataset = create_dataset()
-data_samples = dataset
+# data_samples = dataset
+with open('./scripts/Advance C/Command-line-arguments-in-C.txt', 'r') as f:
+	data_samples = clean(f.read()).split('. ')
+	print(data_samples)
 print("done in %0.3fs." % (time() - t0))
 
 # Use tf-idf features for NMF.

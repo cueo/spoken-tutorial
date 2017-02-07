@@ -10,13 +10,14 @@ if not os.path.exists(clean_dir):
 def clean(text):
 	text = text.lower()
 	text = re.sub(r'\d\d\:\d\d\n', '', text)
-	text = re.sub('[#.,$%|~\-\/&\"\'`*+=!?;:()^]', '', text)
+	text = re.sub('[#,$%|~\-\/&\"\'`*+=!?;:()^]', '', text)
 	text = re.sub(r'\n', ' ', text)
 	text = re.sub('\s+', ' ', text)
 
 	words = text.split()
 	filtered_words = [word for word in words if word not in stopwords.words('english')]
 	text = ' '.join(filtered_words)
+	return text
 
 def main():
 	for root, directory, files in os.walk('./scripts'):
