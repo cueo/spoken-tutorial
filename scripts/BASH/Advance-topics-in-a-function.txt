@@ -1,0 +1,299 @@
+00:01
+ Dear friends, welcome to the spoken tutorial onAdvance topics in a function .
+
+ 00:08
+ In this tutorial, we will learn:
+
+ 00:11
+* source command
+
+ 00:12
+* To put a function in the background
+
+ 00:14
+ with the help of some examples.
+
+ 00:18
+ To follow this tutorial, you should have knowledge of Shell Scripting in BASH.
+
+ 00:24
+If not, for relevant tutorials, please visit our website which is as shown. http://spoken-tutorial.org/What_is_a_Spoken_Tutorial
+
+ 00:30
+ For this tutorial, I am using:
+
+ 00:32
+* Ubuntu Linux 12.04 Operating System and
+
+ 00:36
+* GNU BASH version 4.2
+
+ 00:40
+Please note, GNU Bash version 4 or above is recommended for practice.
+
+ 00:46
+ source command is used to load a file into Shell script.
+
+ 00:53
+ It reads and executes commands from that file.
+
+ 00:58
+ It also imports code into the script.
+
+ 01:01
+ This is useful when multiple scripts use a common data or a function library.
+
+ 01:09
+ The syntax for source command is as follows-
+
+ 01:12
+source filename
+
+ 01:15
+source Path_to_file 
+
+ 01:18
+souce filename arguments.
+
+01:22
+ Let me open a file  'function dot sh'.
+
+01:26
+ This is theshebang line.
+
+01:29
+source detail dot sh will load the file detail dot sh into function dot sh.
+
+01:37
+ Let me open detail dot sh file.
+
+01:41
+I have a function machine.
+
+01:44
+Now, type inside the function-
+
+01:47
+echo "function machine is called in function dot sh file" .
+
+01:52
+Click on Save.
+
+01:54
+ Now let us go back to function dot sh file.
+
+01:59
+Here, type: echo “Beginning of program”.
+
+02:04
+Click on Save.
+
+02:06
+Then type:  machine echo “End of program”.
+
+02:12
+ This will print the message “Beginning of program”.
+
+02:16
+ machine is the function call.
+
+02:19
+ And this will print the message End of program.
+
+02:23
+ Note that machine is the function which we created in the detail dot sh file.
+
+02:29
+And we are calling the function, here, in function dot sh file.
+
+02:34
+ Now click on Save.
+
+ 02:36
+ Let us execute the program.
+
+ 02:41
+ So, type on the terminal: chmod space  plus (+) x space function dot sh
+
+02:51
+ Press Enter.
+
+02:53
+ Type: dot slash function dot sh
+
+02:56
+ Press Enter.
+
+02:59
+ The output is displayed.
+
+ 03:02
+ Now let's move on to background function.
+
+03:06
+ To run a process in the background, we use & (ampersand) at the end of a function call.
+
+03:13
+ The shell forks a child process to run the command.
+
+03:19
+The forked process will have a job number and a PID (Process Identifier).
+
+ 03:27
+ Let us understand this with the help of an example. I will open the file background dot sh.
+
+03:35
+ This is the shebang line.
+
+03:38
+ bg underscore function marks the beginning of the function.
+
+03:44
+ The echo statement here displays the message "Inside bg_function”.
+
+03:50
+ Next, we will use the find command to find all the dotmp3 files.
+
+03:57
+ This statement will find all the files with the extension dot mp3.
+
+04:03
+ It will do so in the current working directory.
+
+04:07
+ Hyphen iname is used to ignore the case.
+
+04:11
+ And the result is stored in myplaylist.txt.
+
+04:16
+ Now, type: bg underscore function ampersand(&). This is the function call. '&'(Ampersand) puts 'bg_function' in the background.
+
+04:28
+ Now click on Save.
+
+04:31
+ Let us execute the program.
+
+04:34
+ Come back to the terminal.
+
+04:37
+ Type: chmod space plus x space background dot sh
+
+04:45
+ Press Enter.
+
+ 04:46
+Now, type: dot slash background dot sh
+
+ 04:51
+Press Enter.
+
+ 04:53
+Blank output indicates dot mp3 file is not present in current directory.
+
+05:02
+ Now, come back to our program.
+
+ 05:05
+Type: echo (hyphen) -e "Process running in background are: backslash n"  and jobs space hyphen l
+
+ 05:19
+Click on Save.
+
+05:21
+ This echo statement will display the message “Process running in background are ”.
+
+05:28
+ jobs space hyphen l lists the status of all background jobs.
+
+05:34
+ Now come back to our terminal.
+
+ 05:38
+Now, type:  dot slash background.sh.
+
+05:42
+ Press Enter.
+
+05:44
+ The output is shown.
+
+05:48
+Here, one within opening and closing square bracket is the job number.
+
+05:53
+3962 is the PID.
+
+05:57
+PID will vary accordingly.
+
+06:01
+If the function takes time to execute, it will run the process in the background
+
+06:06
+and we will see the status as "Running".
+
+06:11
+If the function gets executed before the script, we will see the status as "Done".
+
+06:20
+The output will vary from machine to machine.
+
+06:23
+This brings us to the end of this tutorial.
+
+06:28
+Let us summarize.
+
+06:29
+In this tutorial, we learned:
+
+06:32
+* Source command
+
+06:34
+* To put a function in the background
+
+06:36
+ with the help of some examples.
+
+ 06:39
+ As an assignment:
+
+ 06:40
+Write a function add to add two numbers and call the function in another file.
+
+06:47
+ Watch the video available at the link shown below http://spoken-tutorial.org/What_is_a_Spoken_Tutorial
+
+ 06:51
+It summarizes the Spoken-Tutorial project.
+
+ 06:55
+If you do not have good bandwidth, you can download and watch it.
+
+ 07:00
+ The Spoken Tutorial Project team:
+ Conducts workshops using spoken tutorials. 
+ Gives certificates to those who pass an online test.
+
+
+ 07:10
+ For more details, please write to contact@spoken-tutorial.org
+
+07:18
+ Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+ 07:22
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 07:30
+ More information on this mission is available at the link shown below. http://spoken-tutorial.org/NMEICT-Intro
+
+ 07:36
+ The script has been contributed by FOSSEE and Spoken-Tutorial teams.
+
+07:42
+This is Ashwini from IIT Bombay. Thank you for joining.
