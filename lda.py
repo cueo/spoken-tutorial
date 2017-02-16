@@ -75,8 +75,9 @@ with open('./scripts/Advance C/Command-line-arguments-in-C.txt', 'r') as f:
 	data_samples = clean(f.read()).split('. ')
 	print(data_samples)
 print("done in %0.3fs." % (time() - t0))
+print(dataset)
 
-# Use tf-idf features for NMF.
+'''# Use tf-idf features for NMF.
 print("Extracting tf-idf features for NMF...")
 tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=2,
                                    max_features=n_features,
@@ -120,4 +121,4 @@ print("done in %0.3fs." % (time() - t0))
 
 print("\nTopics in LDA model:")
 tf_feature_names = tf_vectorizer.get_feature_names()
-print_top_words(lda, tf_feature_names, n_top_words)
+print_top_words(lda, tf_feature_names, n_top_words)'''

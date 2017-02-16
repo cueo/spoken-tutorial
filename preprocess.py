@@ -23,7 +23,7 @@ def main():
 	for root, directory, files in os.walk('./scripts'):
 		if '.DS_Store' in files:
 			files.remove('.DS_Store')
-		if root.split(os.sep)[-2] != 'clean':
+		if 'clean' not in root.split(os.sep):
 			for file in files:
 				file_path = os.path.join(root, file)
 				print('Cleaning:', file_path.split(os.sep, maxsplit=2)[-1])
@@ -32,7 +32,7 @@ def main():
 				f.close()
 				text = clean(text)
 
-				dir_ = root.split(os.sep)[2]
+				dir_ = root.split(os.sep)[1]
 				if not os.path.exists(clean_dir + dir_):
 					os.makedirs(clean_dir + dir_)
 				file = os.path.join(os.getcwd(), clean_dir, dir_, file)
