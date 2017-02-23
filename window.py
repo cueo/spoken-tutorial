@@ -26,10 +26,14 @@ def calculate_interval(path):
 	return script, time_interval_index
 
 if __name__ == '__main__':
-	path = 'scripts/Advance C/Command-line-arguments-in-C.txt'
+	path = 'scripts/C and Cpp/First-C-Program.txt'
 	script, time_intervals = calculate_interval(path)
 	snippets = []
 	for t in xrange(len(time_intervals)):
 		snippet = ' '.join(script[t:time_intervals[t]])
 		snippets.append(snippet)
-	print snippets[0]
+	for index, snippet in enumerate(snippets):
+		print index, snippet, '\n'
+
+	# compare snippet against forum text
+	pass
