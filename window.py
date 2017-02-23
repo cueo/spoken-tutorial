@@ -27,6 +27,7 @@ def calculate_interval(path):
 			time_interval_index.append(l-1)
 	return script, time_interval_index
 
+
 if __name__ == '__main__':
 	path = 'data/C and Cpp/First-C-Program.txt'
 	script, time_intervals = calculate_interval(path)
