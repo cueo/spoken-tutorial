@@ -1,4 +1,3 @@
-from __future__ import print_function
 import os
 import re
 from nltk.corpus import stopwords
@@ -11,6 +10,7 @@ def clean(text):
 	text = text.lower()
 	text = re.sub('[#.,$%|~\-/&\"\'`*+=!?;()^]', '', text)
 	text = re.sub('\n ', '\n', text)
+	text = re.sub('\n\n+', '\n\n', text)
 	text = re.sub(' +', ' ', text)
 
 	lines = text.split('\n\n')
@@ -33,7 +33,7 @@ def clean(text):
 	return cleaned_lines
 
 
-def main():
+def clean_all_scripts():
 	clean_dir = 'scripts/clean/'
 	if not os.path.exists(clean_dir):
 		os.mkdir(clean_dir)
@@ -44,7 +44,7 @@ def main():
 		if 'clean' not in root.split(os.sep):
 			for file in files:
 				file_path = os.path.join(root, file)
-				print('Cleaning:', file_path.split(os.sep, maxsplit=2)[-1])
+				print 'Cleaning:', file_path.split(os.sep, maxsplit=2)[-1]
 				f = open(file_path, encoding='utf8')
 				text = f.read()
 				f.close()
@@ -60,7 +60,6 @@ def main():
 
 
 if __name__ == '__main__':
-	# main()
+	# clean_all_scripts()
 	with open('scripts/BASH/Introduction-to-BASH-Shell-Scripting.txt', 'r') as f:
-		file_text = f.read()
-	clean(file_text)
+		print clean(f.read())
