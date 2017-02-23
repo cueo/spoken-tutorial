@@ -23,7 +23,7 @@ def get_questions(path):
 
 
 if __name__ == '__main__':
-	path = 'scripts/Links to topics v2.1 - Sheet1.csv'
+	path = 'data/Links to topics v2.1 - Sheet1.csv'
 	qids = get_questions(path)
 	# for k, v in qids.items():
 	# 	print k, v
