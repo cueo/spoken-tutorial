@@ -28,7 +28,7 @@ def calculate_interval(path):
 	return script, time_interval_index
 
 if __name__ == '__main__':
-	path = 'scripts/C and Cpp/First-C-Program.txt'
+	path = 'data/C and Cpp/First-C-Program.txt'
 	script, time_intervals = calculate_interval(path)
 	snippets = []
 	for t in xrange(len(time_intervals)):
@@ -46,4 +46,6 @@ if __name__ == '__main__':
 		print 'Fetching:', id_
 		question, answers = get_answers(id_)
 		forum_texts.append(question + '\n' + ' '.join(answers))
+	print snippets[73]
+	print forum_texts
 	calculate_similarity([snippets[73]] + forum_texts)
