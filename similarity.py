@@ -16,7 +16,7 @@ class Similarity():
 	stop_words.extend([])
 
 	def __init__(self, documents):
-		self.documents = [open(f).read() for f in files]
+		self.documents = documents
 		self.clean()
 		self.vectorizer = TfidfVectorizer(tokenizer=self.normalize, stop_words='english')
 		self.tfidf = self.vectorizer.fit_transform(self.documents)
