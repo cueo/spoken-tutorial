@@ -1,5 +1,7 @@
 from preprocess import clean
 from datetime import datetime
+from stack import get_answers
+from similarity import calculate_similarity
 
 # window of 60 seconds
 interval = 60
@@ -32,8 +34,16 @@ if __name__ == '__main__':
 	for t in xrange(len(time_intervals)):
 		snippet = ' '.join(script[t:time_intervals[t]])
 		snippets.append(snippet)
+	'''
 	for index, snippet in enumerate(snippets):
 		print index, snippet, '\n'
+	'''
 
 	# compare snippet against forum text
-	pass
+	ids = ['2377466', '333889', '571076', '3661251']
+	forum_texts = []
+	for id_ in ids:
+		print 'Fetching:', id_
+		question, answers = get_answers(id_)
+		forum_texts.append(question + '\n' + ' '.join(answers))
+	calculate_similarity([snippets[73]] + forum_texts)
