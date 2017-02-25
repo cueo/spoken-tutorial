@@ -47,6 +47,6 @@ if __name__ == '__main__':
 		print 'Fetching:', id_
 		question, answers = get_answers(id_)
 		forum_texts.append(question + '\n' + ' '.join(answers))
-	print snippets[73]
-	print forum_texts
+	print 'Snippet:', snippets[73]
+	print 'Forum text:', forum_texts
 	calculate_similarity([snippets[73]] + forum_texts)
