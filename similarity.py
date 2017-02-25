@@ -60,14 +60,7 @@ class Similarity:
 def calculate_similarity(documents):
 	sim = Similarity(documents)
 	sim.word2vec()
-	print 'Cosine Similarity:'
-	print sim.cosine_sim()[0]
-	print '-' * 50
-	print 'Euclidean Distance:'
-	print sim.euclidean_distance()[0]
-	print '-' * 50
-	print 'Manhattan Distance:'
-	print sim.manhattan_distance()[0]
+	return sim.cosine_sim()[0], sim.euclidean_distance()[0], sim.manhattan_distance()[0]
 
 
 if __name__ == '__main__':
