@@ -7,6 +7,14 @@ from similarity import calculate_similarity
 interval = 60
 
 
+"""
+Given a transcript file, create snippets of time interval = interval.
+script = each line in the transcript (broken at the subtitle timing breaks)
+times = timestamps in the video corresponding to each of the lines in the script
+time_interval_index = a list where each element, i, is the index of the list times
+	such that scripts[i] and scripts[times[i]] are interval seconds apart
+	therefore, the window = snippet between scripts[i] and scripts[times[i]]
+"""
 def calculate_interval(path):
 	with open(path, 'r') as f:
 		text = clean(f.read())
@@ -40,13 +48,34 @@ if __name__ == '__main__':
 		print index, snippet, '\n'
 	'''
 
-	# compare snippet against forum text
+	"""
+	Compare snippet against forum text
+	"""
 	ids = ['2377466', '333889', '571076', '3661251']
 	forum_texts = []
 	for id_ in ids:
 		print 'Fetching:', id_
 		question, answers = get_answers(id_)
-		forum_texts.append(question + '\n' + ' '.join(answers))
+		"""
+		Model for vanilla comparison
+		"""
+		# forum_texts.append(question + '\n' + ' '.join(answers))
+		"""
+		Bag of post model
+		"""
+		forum_texts.append([question] + answers)
+	"""
+	Pairwise similarity without learning weight of upvotes
+	"""
+	similarity = []
+	for text in forum_texts:
+		sim = 0
+		for post in text:
+			l = len(post)
+			sim += calculate_similarity([snippets[73], post])[1]
+		sim /= (l * 1.0)
+		similarity.append(sim)
+
 	print 'Snippet:', snippets[73]
 	print 'Forum text:', forum_texts
-	calculate_similarity([snippets[73]] + forum_texts)
+	print similarity
