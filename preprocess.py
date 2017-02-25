@@ -9,7 +9,7 @@ stop_words.extend(['hello', 'spoken', 'tutorial', 'dear', 'friends', 'welcome'])
 def simple_clean(text):
 	text = text.lower()
 	text = re.sub(r'https?:\/\/.*', '', text)
-	text = re.sub('[#.,$%|~\-/&\"\'`*+=!?;()^\[\]<>]', '', text)
+	text = re.sub('[#.,$%|~\-/&\"\'`*+=!?;(){}^\[\]<>]', '', text)
 	text = re.sub('\n+', ' ', text)
 	text = re.sub(' +', ' ', text)
 	words = [word for word in text.split(' ') if word not in stop_words]
@@ -18,7 +18,7 @@ def simple_clean(text):
 
 def clean(text):
 	text = text.lower()
-	text = re.sub('[#.,$%|~\-/&\"\'`*+=!?;()^]', '', text)
+	text = re.sub('[#.,$%|~\-/&\"\'`*+=!?;(){}^]', '', text)
 	text = re.sub('\n ', '\n', text)
 	text = re.sub('\n\n+', '\n\n', text)
 	text = re.sub(' +', ' ', text)
