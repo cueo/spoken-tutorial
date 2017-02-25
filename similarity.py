@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import manhattan_distances
 from gensim.models import Word2Vec
 
 
-class Similarity():
+class Similarity:
 	stemmer = nltk.stem.porter.PorterStemmer()
 	remove_punctuation_map = dict((ord(char), None) for char in string.punctuation + '“”[](){}')
 	stop_words = stopwords.words('english')
@@ -48,7 +48,7 @@ class Similarity():
 		return self.stem_tokens(nltk.word_tokenize(text.lower().translate(self.remove_punctuation_map)))
 
 	def cosine_sim(self):
-		return ((self.tfidf * self.tfidf.T).A)
+		return (self.tfidf * self.tfidf.T).A
 
 	def euclidean_distance(self):
 		return euclidean_distances(self.tfidf)
@@ -61,13 +61,13 @@ def calculate_similarity(documents):
 	sim = Similarity(documents)
 	sim.word2vec()
 	print 'Cosine Similarity:'
-	print sim.cosine_sim()
+	print sim.cosine_sim()[0]
 	print '-' * 50
 	print 'Euclidean Distance:'
-	print sim.euclidean_distance()
+	print sim.euclidean_distance()[0]
 	print '-' * 50
 	print 'Manhattan Distance:'
-	print sim.manhattan_distance()
+	print sim.manhattan_distance()[0]
 
 
 if __name__ == '__main__':
