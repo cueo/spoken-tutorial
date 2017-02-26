@@ -39,6 +39,35 @@ def calculate_interval(path):
 	return script, time_interval_index
 
 
+def get_pairwise_similarity(snippet, forum_texts):
+	sum_similarity, sub_similarity, max_similarity, min_similarity = [], [], [], []
+	for text in forum_texts:
+		sum_sim, sub_sim, max_sim, min_sim = 0, 1, 0, 0
+		l = len(text)
+		for post in text:
+			temp = calculate_similarity([snippet, post])[0][1]
+
+			# sum the pairwise similarity for each post (normalize in the end)
+			sum_sim += temp
+
+			# take the max of pairwise similarity for the posts
+			if temp > max_sim:
+				max_sim = temp
+
+			# take the min of pairwise similarity for the posts
+			if temp < max_sim:
+				min_sim = temp
+		sum_sim /= l
+		sub_sim -= sum_sim
+
+		sum_similarity.append(sum_sim)
+		sub_similarity.append(sub_sim)
+		max_similarity.append(max_sim)
+		min_similarity.append(min_sim)
+
+	return [sum_similarity, sub_similarity, max_similarity, min_similarity]
+
+
 if __name__ == '__main__':
 	path = 'data/C and Cpp/First-C-Program.txt'
 	script, time_intervals = calculate_interval(path)
@@ -80,23 +109,16 @@ if __name__ == '__main__':
 	"""
 	Pairwise similarity without learning weight of upvotes
 	"""
-	similarity = []
-	for text in forum_texts:
-		sim = 0
-		l = len(text)
-		for post in text:
-			# sum the pairwise similarity for each post (normalize in the end)
-			sim += calculate_similarity([snippets[73], post])[0][1]
+	similarity = get_pairwise_similarity(snippets[73], forum_texts)
 
-			# take the max of pairwise similarity for the posts
-			# temp = calculate_similarity([snippets[73], post])[0][1]
-			# if temp > sim:
-			# 	sim = temp
-		sim /= l
-		similarity.append(sim)
 	print 'Snippet:', snippets[73]
 	print 'Forum text:', forum_texts
-	print similarity
+	print '=' * 50
+	print 'Similarity:'
+	print 'Sum similarity:', similarity[0]
+	print 'Sub similarity:', similarity[1]
+	print 'Max similarity:', similarity[2]
+	print 'Min similarity:', similarity[3]
 
 	"""
 	Compare data against relevant and irrelevant forums.
