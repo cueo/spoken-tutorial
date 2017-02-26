@@ -55,7 +55,7 @@ if __name__ == '__main__':
 	Compare snippet against forum text
 	"""
 	# first two ids are irrelevant, last two are relevant
-	ids = ['330793', '333889', '571076', '3661251']
+	ids = ['23774466', '333889', '571076', '3661251']
 	qids = []
 	path = 'data/data.pkl'
 	if os.path.exists(path):
@@ -83,11 +83,16 @@ if __name__ == '__main__':
 	similarity = []
 	for text in forum_texts:
 		sim = 0
-		l = 0
+		l = len(text)
 		for post in text:
-			l = len(post)
-			sim += calculate_similarity([snippets[73], post])[1]
-		sim /= (l * 1.0)
+			# sum the pairwise similarity for each post (normalize in the end)
+			sim += calculate_similarity([snippets[73], post])[0][1]
+
+			# take the max of pairwise similarity for the posts
+			# temp = calculate_similarity([snippets[73], post])[0][1]
+			# if temp > sim:
+			# 	sim = temp
+		sim /= l
 		similarity.append(sim)
 	print 'Snippet:', snippets[73]
 	print 'Forum text:', forum_texts
