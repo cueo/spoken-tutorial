@@ -18,12 +18,14 @@ def get_questions(path):
 				else:
 					links = [link]
 				for l in links:
-					qid = l.split('/')[-2]
+					details = l.split('/')
+					site = details[2]
+					qid = details[-2]
 					if qid not in qids:
 						try:
-							print 'Fetching:', qid
-							question, answers = get_answers(qid)
-							qids[qid] = [[question] + answers]
+							print 'Fetching:', l
+							question, answers = get_answers(qid, site)
+							qids[qid] = [question] + answers
 						except Exception as e:
 							print "Couldn't fetch, error:", e
 					else:
