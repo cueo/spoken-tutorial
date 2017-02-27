@@ -42,7 +42,7 @@ def calculate_interval(path):
 def get_pairwise_similarity(snippet, forum_texts):
 	sum_similarity, sub_similarity, max_similarity, min_similarity = [], [], [], []
 	for text in forum_texts:
-		sum_sim, sub_sim, max_sim, min_sim = 0, 1, 0, 0
+		sum_sim, sub_sim, max_sim, min_sim = 0, 1, 0, 999
 		l = len(text)
 		for post in text:
 			temp = calculate_similarity([snippet, post])[0][1]
@@ -55,7 +55,7 @@ def get_pairwise_similarity(snippet, forum_texts):
 				max_sim = temp
 
 			# take the min of pairwise similarity for the posts
-			if temp < max_sim:
+			if temp < min_sim:
 				min_sim = temp
 		sum_sim /= l
 		sub_sim -= sum_sim
