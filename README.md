@@ -6,4 +6,4 @@ Annotating forum links to spoken-tutorial.org videos at different time frames us
     gensim
     html2text
     py-stackexchange
-    numpy, scikit, sklearn
+    numpy, scipy, sklearn
