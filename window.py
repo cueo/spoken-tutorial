@@ -1,11 +1,24 @@
+import pickle
+import os
+
 from preprocess import clean
 from datetime import datetime
+from stack import get_answers
+from similarity import calculate_similarity
 
 # window of 60 seconds
 interval = 60
 
 
 def calculate_interval(path):
+	"""
+	Given a transcript file, create snippets of time interval = interval.
+	script = each line in the transcript (broken at the subtitle timing breaks)
+	times = timestamps in the video corresponding to each of the lines in the script
+	time_interval_index = a list where each element, i, is the index of the list times
+		such that scripts[i] and scripts[times[i]] are interval seconds apart
+		therefore, the window = snippet between scripts[i] and scripts[times[i]]
+	"""
 	with open(path, 'r') as f:
 		text = clean(f.read())
 	script = [x[0] for x in text]
@@ -25,15 +38,89 @@ def calculate_interval(path):
 			time_interval_index.append(l-1)
 	return script, time_interval_index
 
+
+def get_pairwise_similarity(snippet, forum_texts):
+	sum_similarity, sub_similarity, max_similarity, min_similarity = [], [], [], []
+	for text in forum_texts:
+		sum_sim, sub_sim, max_sim, min_sim = 0, 1, 0, 999
+		l = len(text)
+		for post in text:
+			temp = calculate_similarity([snippet, post])[0][1]
+
+			# sum the pairwise similarity for each post (normalize in the end)
+			sum_sim += temp
+
+			# take the max of pairwise similarity for the posts
+			if temp > max_sim:
+				max_sim = temp
+
+			# take the min of pairwise similarity for the posts
+			if temp < min_sim:
+				min_sim = temp
+		sum_sim /= l
+		sub_sim -= sum_sim
+
+		sum_similarity.append(sum_sim)
+		sub_similarity.append(sub_sim)
+		max_similarity.append(max_sim)
+		min_similarity.append(min_sim)
+
+	return [sum_similarity, sub_similarity, max_similarity, min_similarity]
+
+
 if __name__ == '__main__':
-	path = 'scripts/C and Cpp/First-C-Program.txt'
+	path = 'data/C and Cpp/First-C-Program.txt'
 	script, time_intervals = calculate_interval(path)
 	snippets = []
 	for t in xrange(len(time_intervals)):
 		snippet = ' '.join(script[t:time_intervals[t]])
 		snippets.append(snippet)
+	'''
 	for index, snippet in enumerate(snippets):
 		print index, snippet, '\n'
+	'''
 
-	# compare snippet against forum text
-	pass
+	"""
+	Compare snippet against forum text
+	"""
+	# first two ids are irrelevant, last two are relevant
+	ids = ['23774466', '333889', '571076', '3661251']
+	qids = []
+	path = 'data/data.pkl'
+	if os.path.exists(path):
+		with open(path, 'r') as f:
+			stack_data = pickle.load(f)
+			qids = stack_data.keys()
+	forum_texts = []
+	for id_ in ids:
+		if id_ in qids:
+			forum_texts.append(stack_data[id_])
+		else:
+			print 'Fetching:', id_
+			question, answers = get_answers(id_)
+			"""
+			Model for vanilla comparison
+			"""
+			# forum_texts.append(question + '\n' + ' '.join(answers))
+			"""
+			Bag of post model
+			"""
+			forum_texts.append([question] + answers)
+	"""
+	Pairwise similarity without learning weight of upvotes
+	"""
+	similarity = get_pairwise_similarity(snippets[73], forum_texts)
+
+	print 'Snippet:', snippets[73]
+	print 'Forum text:', forum_texts
+	print '=' * 50
+	print 'Similarity:'
+	print 'Sum similarity:', similarity[0]
+	print 'Sub similarity:', similarity[1]
+	print 'Max similarity:', similarity[2]
+	print 'Min similarity:', similarity[3]
+
+	"""
+	Compare data against relevant and irrelevant forums.
+	"""
+
