@@ -1,0 +1,7 @@
+nltk
+gensim
+html2text
+py-stackexchange
+numpy
+scikit
+sklearn
