@@ -5,10 +5,9 @@ import os
 
 
 def get_questions(path):
-	with open(path) as csvfile:
+	with open(path, 'r') as csvfile:
 		reader = csv.reader(csvfile)
 		# dictionary of StackExchange with key=question id and value=question + answer text
-		reader.next()
 		reader.next()
 		for row in reader:
 			link = row[3]
