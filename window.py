@@ -41,31 +41,26 @@ def calculate_interval(path):
 
 def get_pairwise_similarity(snippet, forum_texts):
 	sum_similarity, sub_similarity, max_similarity, min_similarity = [], [], [], []
-	for text in forum_texts:
-		sum_sim, sub_sim, max_sim, min_sim = 0, 1, 0, 999
-		l = len(text)
-		for post in text:
-			temp = calculate_similarity([snippet, post])[0][1]
+	sum_sim, sub_sim, max_sim, min_sim = 0, 1, 0, 999
+	l = len(forum_texts)
 
-			# sum the pairwise similarity for each post (normalize in the end)
-			sum_sim += temp
+	for post in forum_texts:
+		temp = calculate_similarity([snippet, post])[0][1]
 
-			# take the max of pairwise similarity for the posts
-			if temp > max_sim:
-				max_sim = temp
+		# sum the pairwise similarity for each post (normalize in the end)
+		sum_sim += temp
 
-			# take the min of pairwise similarity for the posts
-			if temp < min_sim:
-				min_sim = temp
-		sum_sim /= l
-		sub_sim -= sum_sim
+		# take the max of pairwise similarity for the posts
+		if temp > max_sim:
+			max_sim = temp
 
-		sum_similarity.append(sum_sim)
-		sub_similarity.append(sub_sim)
-		max_similarity.append(max_sim)
-		min_similarity.append(min_sim)
+		# take the min of pairwise similarity for the posts
+		if temp < min_sim:
+			min_sim = temp
+	sum_sim /= l
+	sub_sim -= sum_sim
 
-	return [sum_similarity, sub_similarity, max_similarity, min_similarity]
+	return [sum_sim, sub_sim, max_sim, min_sim]
 
 
 if __name__ == '__main__':
@@ -109,16 +104,23 @@ if __name__ == '__main__':
 	"""
 	Pairwise similarity without learning weight of upvotes
 	"""
-	similarity = get_pairwise_similarity(snippets[73], forum_texts)
+	print 'Relevant id:', ids[-1]
+	print 'Irrelevant ids:', ids[:-1]
+	print '=' * 100
+	for index in xrange(len(forum_texts)):
+		forum = forum_texts[index]
+		print 'Comparing with id:', ids[index]
+		similarity = get_pairwise_similarity(snippets[73], forum)
 
-	print 'Snippet:', snippets[73]
-	print 'Forum text:', forum_texts
-	print '=' * 50
-	print 'Similarity:'
-	print 'Sum similarity:', similarity[0]
-	print 'Sub similarity:', similarity[1]
-	print 'Max similarity:', similarity[2]
-	print 'Min similarity:', similarity[3]
+		print 'Snippet:', snippets[73]
+		print 'Forum text:', forum
+		print '-' * 50
+		print 'Similarity:'
+		print 'Sum similarity:', similarity[0]
+		print 'Sub similarity:', similarity[1]
+		print 'Max similarity:', similarity[2]
+		print 'Min similarity:', similarity[3]
+		print '=' * 50
 
 	"""
 	Compare data against relevant and irrelevant forums.
