@@ -19,6 +19,8 @@ def get_courses():
 	courses = []
 	select = soup.find_all('select')[0]
 	options = select.find_all('option')
+	# courses = Advanced C, C and CPP, Bash
+	values = ['Advance C', 'BASH', 'C and Cpp']
 	for option in options:
 		value = option['value']
 		text = option.text
@@ -27,9 +29,7 @@ def get_courses():
 		if 'Libre' in value:
 			courses.append(value)
 		'''
-		# courses = Advanced C, C and CPP, Bash
-		condition = (value == 'Advance C' or value == 'BASH' or value == 'C and Cpp')
-		if condition:
+		if value in values:
 			courses.append(text)
 	return courses
 
