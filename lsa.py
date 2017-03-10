@@ -31,6 +31,20 @@ def svd(matrix):
 def cosine(vector1,vector2):	
 	return float(dot(vector1,vector2) / (norm(vector1) * norm(vector2)))
 
+def lsa_similarity(documents):
+	tfidf_matrix = tf_matrix(documents)
+	lsa = svd(tfidf_matrix)
+
+	# print lsa
+
+	values = list(itertools.combinations(lsa, 2))
+	sim = 0
+
+	for i in values:
+		sim = sim + cosine(i[0], i[1])
+
+	return sim
+
 if __name__ == "__main__":
 	documents = []
 	transcript_path = 'data/C and Cpp/Working-With-Structures.txt'
@@ -40,23 +54,13 @@ if __name__ == "__main__":
 	transcript = re.sub('\d+'," ",transcript)
 	documents.append(transcript)
 	
-	#http://stackoverflow.com/questions/26188265/c-declare-the-struct-before-definition R
-	#http://stackoverflow.com/questions/17250480/c-declaring-int-array-inside-struct SR
-	forum_id = 9593798 #IR
-	question,answers = get_answers(forum_id)
+	forum_id = 26188265 	# R
+	# forum_id = 17250480  	# SR
+	# forum_id = 9593798  	# IR
+
+	question, answers = get_answers(forum_id)
 	answers = ' '.join(i for i in answers)
 	documents.append(answers)
-	tfidf_matrix = tf_matrix(documents)
-	lsa = svd(tfidf_matrix)
 
-	print lsa
-	
-	values = list(itertools.combinations(lsa,2))
-	sim = 0
-
-	for i in values:
-		sim = sim + cosine(i[0],i[1])
-
-	print sim
-	
-
+	similarity = lsa_similarity(documents)
+	print similarity
