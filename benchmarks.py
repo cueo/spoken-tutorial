@@ -49,7 +49,7 @@ if __name__ == '__main__':
 	# compare using cosine similarity
 	sum_sim, sub_sim, max_sim, min_sim = [], [], [], []
 	for index in xrange(l):
-		print index
+		print '%d/%d' % (index, l)
 		script = scripts[index]
 		forum = forums[index]
 		try:
@@ -63,6 +63,11 @@ if __name__ == '__main__':
 		max_sim.append(similarity[2])
 		min_sim.append(similarity[3])
 	x = np.arange(l)
+
+	print sum_sim
+	print sub_sim
+	print max_sim
+	print min_sim
 
 	# plot
 	plt.plot(x, sum_sim, 'ro', color='red', )
