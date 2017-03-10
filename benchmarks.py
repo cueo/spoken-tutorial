@@ -3,8 +3,11 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 
-from stack import get_answers
+from preprocess import simple_clean
 from window import get_pairwise_similarity
+from lsa import lsa_similarity
+from rake.rake import extract_keywords
+from similarity import calculate_similarity
 
 
 def get_data(path):
@@ -46,12 +49,15 @@ if __name__ == '__main__':
 	# get the transcript and the forum data
 	scripts, forums = get_data(path)
 	l = len(scripts)
-	# compare using cosine similarity
 	sum_sim, sub_sim, max_sim, min_sim = [], [], [], []
+	lsa_sim = []
+	key_sim = []
 	for index in xrange(l):
 		print '%d/%d' % (index, l)
 		script = scripts[index]
 		forum = forums[index]
+
+		# compare using cosine similarity
 		try:
 			similarity = get_pairwise_similarity(script, forum)
 		except Exception as e:
@@ -59,20 +65,76 @@ if __name__ == '__main__':
 			print 'Script:', script
 			print 'Forum:', forum
 		sum_sim.append(similarity[0])
-		sub_sim.append(similarity[1])
+		# sub_sim.append(similarity[1])
 		max_sim.append(similarity[2])
-		min_sim.append(similarity[3])
+		# min_sim.append(similarity[3])
+
+		# LSA
+		documents = [simple_clean(script), ' '.join(forum)]
+		lsa_sim.append(lsa_similarity(documents))
+
+		# Keyword matching
+		script_keywords = extract_keywords(documents[0])
+		try:
+			sk = ' '.join([x[0] for x in script_keywords])
+			forum_keywords = extract_keywords(documents[1])
+			fk = ' '.join([x[0] for x in forum_keywords])
+			documents = [sk, fk]
+			keyword_similarity = calculate_similarity(documents)[0][1]
+			key_sim.append(keyword_similarity)
+		except Exception as e:
+			key_sim.append(0)
+
 	x = np.arange(l)
 
-	print sum_sim
-	print sub_sim
-	print max_sim
-	print min_sim
+	print 'Sum cosine similarities:', sum_sim
+	print 'Max cosine similarities:', max_sim
+	print 'LSA similarities:', lsa_sim
+	print 'Keyword similarities:', key_sim
 
 	# plot
-	plt.plot(x, sum_sim, 'ro', color='red', )
-	plt.plot(x, sub_sim, 'ro', color='blue')
-	plt.plot(x, max_sim, 'ro', color='green')
-	plt.plot(x, min_sim, 'ro', color='yellow')
+	plt.figure(1)
+	red_dot, = plt.plot(x, sum_sim, 'ro', color='red')
+	blue_dot, = plt.plot(x, max_sim, 'ro', color='blue')
+	green_dot, = plt.plot(x, lsa_sim, 'ro', color='green')
+	orange_dot, = plt.plot(x, key_sim, 'ro', color='orange')
 
+	plt.legend([red_dot, blue_dot, green_dot, orange_dot], ['cosine sum', 'cosine max', 'lsa', 'keyword matching'])
 	plt.show()
+	plt.close()
+
+	BASE_SIMILARITY = 0.2
+	n = np.arange(3)
+	ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy = 0, 0, 0, 0
+	for i in xrange(l):
+		ss, ms, lsa, ks = sum_sim[i], max_sim[i], lsa_sim[i], key_sim[i]
+		if ss > BASE_SIMILARITY:
+			ss_accuracy += 1
+		if ms > BASE_SIMILARITY:
+			ms_accuracy += 1
+		if lsa > BASE_SIMILARITY:
+			lsa_accuracy += 1
+		if ks > BASE_SIMILARITY:
+			key_accuracy += 1
+
+	ss_accuracy /= (l * 1.0)
+	ms_accuracy /= (l * 1.0)
+	lsa_accuracy /= (l * 1.0)
+	key_accuracy /= (l * 1.0)
+
+	x = np.arange(4)
+	y = np.array([ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy])
+	c = ['r', 'b', 'g', 'orange']
+	area = np.pi * (50 * y) ** 2
+
+	print 'Sum cosine accuracy:', ss_accuracy
+	print 'Max cosine accuracy:', ms_accuracy
+	print 'LSA accuracy:', lsa_accuracy
+	print 'Keyword accuracy:', key_accuracy
+
+	# accuracy plot
+	plt.figure(2)
+	plt.scatter(x, y, s=area, c=c, alpha=0.7)
+	plt.ylabel('accuracy')
+	plt.show()
+	plt.close()
