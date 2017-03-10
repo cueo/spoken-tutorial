@@ -3,18 +3,14 @@
 # Rose, S., D. Engel, N. Cramer, and W. Cowley (2010). 
 # Automatic keyword extraction from indi-vidual documents. 
 # In M. W. Berry and J. Kogan (Eds.), Text Mining: Applications and Theory.unknown: John Wiley and Sons, Ltd.
-#
-# NOTE: The original code (from https://github.com/aneesha/RAKE)
-# has been extended by a_medelyan (zelandiya)
-# with a set of heuristics to decide whether a phrase is an acceptable candidate
-# as well as the ability to set frequency and phrase length parameters
-# important when dealing with longer documents
 
 from __future__ import absolute_import
 import re
 import operator
 import six
-from .preprocess import clean
+import os
+
+from preprocess import clean
 
 
 debug = False
@@ -184,43 +180,51 @@ class Rake(object):
 
 def get_string(path):
 	with open(path, 'r') as f:
-
+		text = f.read()
+		text = ' '.join([phrase[0] for phrase in clean(text)])
+		return text
 
 
 if __name__ == '__main__':
-	path = '../data/BASH/Array-Operations-in-BASH.txt'
-	text = get_string(path)
-	# Split text into sentences
-	sentenceList = split_sentences(text)
-	# stoppath = "FoxStoplist.txt" #Fox stoplist contains "numbers", so it will not find "natural numbers"
-	stoppath = "SmartStoplist.txt"  # SMART stoplist misses some of the lower-scoring keywords 
-	stopwordpattern = build_stop_word_regex(stoppath)
+	path = '../data'
+	for r, d, files in os.walk(path):
+		for f in files:
+			if f.endswith('.txt'):
+				print 'Processing file:', r + '/' + f
+				file_path = os.path.join(r, f)
+				text = get_string(file_path)
+				# Split text into sentences
+				sentenceList = split_sentences(text)
+				# stoppath = "FoxStoplist.txt" #Fox stoplist contains "numbers", so it will not find "natural numbers"
+				stoppath = "SmartStoplist.txt"  # SMART stoplist misses some of the lower-scoring keywords
+				stopwordpattern = build_stop_word_regex(stoppath)
 
-	# generate candidate keywords
-	phraseList = generate_candidate_keywords(sentenceList, stopwordpattern)
+				# generate candidate keywords
+				phraseList = generate_candidate_keywords(sentenceList, stopwordpattern)
 
-	# calculate individual word scores
-	wordscores = calculate_word_scores(phraseList)
+				# calculate individual word scores
+				wordscores = calculate_word_scores(phraseList)
 
-	# generate candidate keyword scores
-	keywordcandidates = generate_candidate_keyword_scores(phraseList, wordscores)
-	if debug: print keywordcandidates
+				# generate candidate keyword scores
+				keywordcandidates = generate_candidate_keyword_scores(phraseList, wordscores)
+				if debug: print keywordcandidates
 
-	sortedKeywords = sorted(six.iteritems(keywordcandidates), key=operator.itemgetter(1), reverse=True)
-	if debug: print sortedKeywords
+				sortedKeywords = sorted(six.iteritems(keywordcandidates), key=operator.itemgetter(1), reverse=True)
+				if debug: print sortedKeywords
 
-	totalKeywords = len(sortedKeywords)
-	if debug:
-		print totalKeywords
-	# print sortedKeywords[0:(totalKeywords // 3)]
+				totalKeywords = len(sortedKeywords)
+				if debug:
+					print totalKeywords
+				# print sortedKeywords[0:(totalKeywords // 3)]
 
-	rake = Rake("SmartStoplist.txt")
-	# rake = Rake("SmartStoplist.txt", 5, 3, 2)
-	# Each word has at least 5 characters
-	# Each phrase has at most 3 words
-	# Each keyword appears in the text at least 4 times
-	keywords = rake.run(text)
-	if keywords:
-		print keywords
-	else:
-		print "Oops.."
+				rake = Rake("SmartStoplist.txt")
+				# rake = Rake("SmartStoplist.txt", 5, 3, 2)
+				# Each word has at least 5 characters
+				# Each phrase has at most 3 words
+				# Each keyword appears in the text at least 4 times
+				keywords = rake.run(text)
+				if keywords:
+					print keywords
+				else:
+					print "Oops.."
+				print '=' * 50
