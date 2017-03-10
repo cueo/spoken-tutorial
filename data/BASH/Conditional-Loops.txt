@@ -1,0 +1,367 @@
+00:01
+ Dear friends, welcome to the spoken tutorial on loops in BASH.
+
+ 00:07
+  In this tutorial, we will learn:
+
+ 00:09
+ * for loop
+
+ 00:11
+ * while loop with a few examples.
+
+ 00:15
+ To record this tutorial, I am using:
+
+ 00:18
+ * Ubuntu Linux 12.04 Operating System 
+
+ 00:22
+ * GNU BASH version 4.1.10
+
+ 00:26
+ Please note, GNU bash version 4 or above is recommended to practice this tutorial.
+
+ 00:34
+   Let us start with an introduction to  loops.
+
+ 00:37
+ Loops are used to execute a group of statements repeatedly.
+
+ 00:43
+  Let us see the syntax.
+
+ 00:45
+ for expression 1, 2, 3
+
+ 00:49
+ statement 1, 2, 3
+
+ 00:51
+ and this is the end of for loop.
+
+ 00:55
+  An alternate syntax of for loop is:
+
+ 00:58
+ for variable in sequence/range
+
+ 01:03
+ statement 1, 2, 3
+
+ 01:06
+ and end of for loop.
+
+ 01:09
+ Let us see an example of for loop using the first syntax.
+
+ 01:14
+ In this program, we will calculate the sum of first n numbers.
+
+ 01:20
+  Note that our filename is for.sh.
+
+ 01:25
+  This is our shebang line.
+
+ 01:28
+   The variable number will store the value given by user.
+
+  01:34
+ The value is an integer here.
+
+  01:37
+ Now, we initialize the variable sum as zero.
+
+  01:42
+  This is where we begin the for loop.
+
+ 01:45
+ First, we initialize 'i' to 1.
+
+ 01:48
+ Then we check whether 'i' is less than or equal to number.
+
+ 01:54
+  Now here, we calculate the sum as sum plus i
+
+  02:00
+ and then we print it.
+
+ 02:03
+   After this, we increment the value of 'i' by 1.
+
+ 02:08
+  And then we check the condition till this condition is False.
+
+  02:14
+  On exiting the for loop, this message is printed.
+
+  02:19
+  Let us execute the program and observe what happens.
+
+ 02:24
+  On the terminal, type - chmod +x for.sh
+
+ 02:31
+ Then type: ./for.sh
+
+  02:36
+  I will enter 5 as the input number.
+
+  02:40
+ The sum that is calculated for each value of 'i' is displayed.
+
+  02:46
+ After that, the last line of the output is displayed:
+
+  02:50
+ "Sum of first n numbers is 15".
+
+  02:54
+ Now, let us see the flow of the program.
+
+  02:57
+ Let me resize the windows.
+
+  03:00
+   First, we have value of 'i' as 1.
+
+  03:04
+  Then we check whether 1 is less than or equal to  5.
+
+  03:10
+ Since the condition is True, we calculate the sum as 0 + 1.
+
+  03:16
+ Now we have the sum as 1.
+
+  03:20
+ Then we print sum  i.e 1.
+
+  03:24
+  Next, 'i' is incremented by 1 and the new value of 'i' is 2.
+
+  03:31
+ Then we check whether  2  is less than or equal to  5.
+
+  03:36
+ The condition is True and now sum will be  1 + 2  i.e  3.
+
+ 03:44
+    'i' is then incremented by 1 and then the new value of 'i' is 3.
+
+ 03:51
+ And we get sum as  6.
+
+ 03:55
+  The script will continue to add the next value of 'i' to the previous value in  sum.
+
+ 04:02
+ This will continue till i<=5 is False.
+
+ 04:09
+  On exiting the for loop, the final message is printed.
+
+ 04:14
+  Let us see another example of for loopusing the second syntax.
+
+ 04:20
+ I have written the code in this file and named it as for-loop.sh.
+
+ 04:27
+ This simple program will list the files in a directory.
+
+ 04:32
+ This is the shebang line.
+
+ 04:35
+  Then we have for loop.
+
+ 04:37
+  'ls'  command lists the directory content.
+
+ 04:41
+ -1 (hyphen one) lists one file per line.
+
+ 04:46
+ This will list all the files present in your home directory.
+
+  04:51
+ This is the end of for loop.
+
+ 04:53
+  Let us execute the script on the terminal by typing -
+
+ 04:58
+ chmod +x for-loop.sh
+
+ 05:04
+ Type: ./for-loop.sh
+
+ 05:09
+  This will display all the files present in the Home directory.
+
+ 05:14
+   Now we will learn about  while loop.
+
+ 05:18
+ Let us understand the syntax first.
+
+ 05:21
+ while condition
+statement 1, 2, 3
+end of while loop.
+
+ 05:27
+ This means that the while loop will execute as long as the condition is True.
+
+05:34
+Let us see an example of while loop.
+
+  05:37
+ Here, I have named it as while.sh.
+
+  05:42
+ In this program, we will calculate the sum of even numbers within a given range.
+
+05:49
+ Let us go through the code.
+
+05:52
+ Here, we accept a number from the user and store it in variable number.
+
+05:59
+   Next, we declare variables 'i' and sum and initialize them to  0 (zero).
+
+06:06
+Now, this is the while condition.
+
+ 06:08
+ Here, we check whether 'i' is less than or equal to value of number given by the user.
+
+ 06:17
+  Then we calculate the sum by adding value of 'i' to value of sum.
+
+  06:24
+  Next, we increment the value of 'i' with 2.
+
+  06:28
+ This will ensure that we only add the even numbers.
+
+  06:33
+ And the while loop is repeated till the value of 'i' exceeds the value of number.
+
+  06:40
+  When we exit the while loop, we print the sum of all the even numbers within the given range.
+
+  06:47
+ Let us execute the program.
+
+ 06:50
+  Type on the terminal:
+
+ 06:52
+ chmod +x while.sh
+
+ 06:56
+ ./while.sh
+
+  07:00
+  I will give 15 as my input.
+
+  07:04
+  The last line of the output is:
+
+  07:06
+ "Sum of even numbers within the given range is 56".
+
+ 07:11
+  Let me resize the window and explain the output.
+
+ 07:14
+  First we check whether 'i' which is 0, is less than or equal to the number which is 15.
+
+  07:24
+  The condition is True. Hence sum will be '0+0' i.e 0.
+
+  07:31
+ Now 'i' will be incremented by 2 and the new value of 'i' is  2.
+
+  07:37
+   Then we check if 2 is less than or equal to 15.
+
+  07:43
+   The condition again is True; so we add 0+2.
+
+  07:49
+ Now sum  has the value 2.
+
+  07:52
+  Again the value of 'i' will be incremented by 2.
+
+  07:56
+ So, now value of 'i' will be 2+2 i.e 4.
+
+  08:03
+  And the next value of  sum  will be 4+2 i.e 6.
+
+  08:09
+   In the same way, the script will continue to add 2 to the previous value of 'i', till it exceeds 15.
+
+  08:18
+ And we get the total value in sum as  56.
+
+ 08:24
+ This brings us to the end of this tutorial.
+
+ 08:27
+ Let us summarize.
+
+ 08:28
+ In this tutorial, we learned two different syntax of for loop  and we also learned about the while loop.
+
+ 08:37
+   As an assignment -
+
+ 08:38
+ find the sum of the first "n" prime numbers.
+
+  08:43
+   Watch the video available at the link shown below.
+
+  08:46
+ It summarizes the Spoken-Tutorial project.
+
+  08:50
+ If you do not have good bandwidth, you can download and watch it.
+
+ 08:54
+  The Spoken Tutorial Project team:
+
+ 08:56
+* Conducts workshops using spoken tutorials.
+
+ 09:00
+* Gives certificates to those who pass an online test.
+
+ 09:04
+ For more details, please write to contact@spoken-tutorial.org
+
+  09:11
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+  09:14
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+  09:22
+ More information on this mission is available at the link shown below.
+
+  09:28
+ The script has been contributed by Fossee and spoken-tutorial team.
+
+  09:34
+  This is Ashwini Patil from IIT Bombay, signing off.
+
+  09:38
+ Thank You for joining.

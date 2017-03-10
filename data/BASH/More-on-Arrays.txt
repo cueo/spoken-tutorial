@@ -1,0 +1,293 @@
+00:02
+  Welcome to the spoken tutorial on More on Arrays in BASH.
+
+  00:07
+ In this tutorial, we will learn to:
+
+  00:10
+ * Extract an element from an  array
+
+  00:13
+ * Replace an element in an  array
+
+  00:16
+ * Add an element to an  array and
+
+  00:19
+ * Remove an element from an  array.
+
+  00:22
+  To follow this tutorial, you should be familiar with the Linux Operating System.
+
+  00:28
+ If not, for relevant tutorials, please visit our website which is as shown.
+
+ 00:34
+ For this tutorial, I am using
+ Ubuntu Linux 12.04 OS and
+
+
+ 00:41
+* GNU Bash version 4.1.10
+
+ 00:45
+ GNU Bash version 4 or above is recommended for practice.
+
+  00:50
+ Let us see how to extract an element from an array.
+
+  00:55
+  The elements in an  array can be extracted from any position.
+
+  01:00
+  Here, position is the index number.
+
+  01:04
+ Note that  index number always starts from zero.
+
+ 01:09
+ The syntax is as follows:
+
+ 01:12
+ ArrayName within square bracket "At" sign colon position colon Number of elements to be extracted from the position mentioned.
+
+  01:25
+ Let us understand with the help of an example.
+
+ 01:29
+ Open the terminal by pressing Ctrl+Alt and T keys simultaneously on your keyboard.
+
+ 01:37
+ Type:  gedit space array2.sh space & (ampersand sign). Press Enter.
+
+  01:47
+  Now type the code as shown here, in your "array2.sh" file.
+
+  01:54
+ Let me explain the program.
+
+  01:56
+ This is the  Shebang line.
+
+ 01:59
+ This "declare" command  declares an array  named Linux  with elements-
+
+ 02:06
+ * "Debian"
+
+ 02:07
+ * "Redhat"
+
+ 02:08
+ * "Ubuntu" and
+
+ 02:09
+ * "Fedora".
+
+ 02:11
+ This "echo" command will print the list of all the elements in the array.
+
+ 02:16
+ The next "echo" command will print the extracted elements.
+
+ 02:21
+ The command ${Linux[@]:1:2} will print two elements starting from index 'one' which is "Redhat".
+
+ 02:34
+ Now switch to the Terminal.
+
+ 02:36
+ First, let's make the file executable by typing chmod space plus x space array2.sh. Press Enter.
+
+ 02:50
+  Type: dot slash array2.sh press Enter.
+
+ 02:56
+  We get the output - "Original elements in an array Linux: Debian Redhat Ubuntu Fedora".
+
+ 03:06
+  "The two elements starting from index one(Redhat): Redhat Ubuntu".
+
+ 03:12
+ Let us switch back to the slides.
+
+ 03:15
+ We will see how to replace an element in an array .
+
+ 03:19
+ An existing element in an array can be replaced using the following syntax.
+
+ 03:25
+ ArrayName within square brackets 'n' equals to within single quote NewWord.
+
+ 03:34
+ Here 'n' is the index number or element number.
+
+ 03:38
+ Come back to our text editor.
+
+ 03:41
+ Linux[2]='Mandriva' .
+
+ 03:45
+ This command will replace the third element "Ubuntu" with "Mandriva".
+
+ 03:51
+ This echo command will display all elements of array Linux after replacement.
+
+ 03:58
+ Come back to our Terminal.
+
+ 04:01
+ Let's execute again.
+
+ 04:04
+ This displays- "All elements after replacement : Debian Redhat Mandriva  Fedora" .
+
+ 04:12
+ Now, switch to the slides.
+
+ 04:14
+ We will see how to add an element to an array.
+
+ 04:18
+ ArrayName equal to opening round bracket within double quotes dollar sign opening curly bracket ArrayName opening square bracket "At" sign closing square bracket closing curly bracket
+space within double quotes New_Word_1 space within double quotes New_Word_2 and closing round bracket.
+
+  04:45
+  Let us understand this with the help of one example.
+
+  04:50
+ Switch to the code file.
+
+  04:52
+ The highlighted command will append  a new element "Suse"  to the array Linux.
+
+  04:59
+ Then we will echo all the elements after appending "Suse".
+
+  05:05
+ Switch to the terminal.
+
+  05:07
+ Let me clear the prompt.
+
+  05:09
+ We will execute the program again.
+
+  05:12
+ The output is displayed: All elements after appending Suse : Debian Redhat Mandriva Fedora and Suse.
+
+  05:22
+ Now, come back to our slides.
+
+  05:24
+ We will see how to remove an element from an array.
+
+  05:29
+ An element can be removed from an  array by using the following syntax -
+
+  05:35
+ unset space ArrayName opening square bracket index number closing square bracket.
+
+  05:44
+ Let us switch to the code file.
+
+  05:46
+ Here, we are using the unset command.
+
+  05:50
+ And we will remove the third element Mandriva from the array Linux.
+
+  05:56
+  Then we will echo all the elements again after the removal of Mandriva.
+
+  06:02
+ Now switch to the terminal.
+
+  06:04
+ We will execute the program.
+
+  06:07
+ Here is the list of elements after removing  Mandriva.
+
+ 06:12
+ Debian Redhat Fedora and  Suse
+
+ 06:16
+ This brings us to the end of this tutorial.
+
+ 06:19
+ Come back to our slides.
+
+ 06:21
+ Let us summarize.
+
+ 06:23
+ In this tutorial, we learned to:
+
+ 06:25
+ * Extract an element from an array
+
+ 06:28
+ * Replace an element in an array
+
+ 06:30
+ * Add element to an array and
+
+ 06:32
+ * Remove element from an array.
+
+ 06:36
+ As an assignment-
+
+ 06:37
+ # Declare an array names2 of length 7 and perform following operations.
+
+ 06:44
+ * Extract three elements, starting from index two.
+
+ 06:48
+ * Replace third element with Debian and display.
+
+ 06:55
+ Append any new name at the end of array.
+
+ 06:58
+ Watch the video available at the link shown below.
+
+ 07:01
+ It summarizes the Spoken Tutorial project.
+
+ 07:04
+ If you do not have good bandwidth, you can download and watch it.
+
+ 07:09
+ The Spoken Tutorial Project team:
+
+ 07:12
+* Conducts workshops using spoken tutorials.
+
+ 07:15
+* Gives certificates to those who pass an online test.
+
+ 07:19
+ For more details, please write to contact@spoken-tutorial.org
+
+ 07:27
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 07:31
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 07:38
+ More information on this mission is available at the link shown below.
+
+ 07:44
+ The script has been contributed by FOSSEE and spoken-tutorial teams.
+
+ 07:50
+ This is Ashwini Patil from IIT Bombay, signing off.
+
+ 07:55
+ Thank you for joining.

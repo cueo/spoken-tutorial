@@ -1,0 +1,377 @@
+00:01
+   Dear friends, welcome to the Spoken tutorial on Logical Operators in Bash.
+
+   00:07
+  In this tutorial, we will learn use of:
+
+   00:10
+* Logical AND
+ Logical OR
+ Logical NOT
+
+using a few examples. 
+
+  00:19
+   To follow this tutorial, you should have knowledge of:
+
+  00:22
+* if-else statement
+ command line arguments and 
+ quoting in BASH.
+
+
+  00:30
+ If not, for relevant tutorials, please visit our website which is as shown.
+
+  00:36
+  For this tutorial, I am using:
+
+  00:38
+ * Ubuntu Linux 12.04 OS
+
+  00:43
+ * GNU Bash version 4.1.10
+
+  00:47
+ GNU Bash version 4 or above is recommended for practice.
+
+    00:53
+  Let us understand the use of  Logical-operators.
+
+    00:57
+ Logical operators are mainly used to control program flow.
+
+    01:02
+ Logical operators help to link two expressions or conditions.
+
+   01:09
+ They can be a part of if, while or some other control statements.
+
+   01:15
+  Let's see the syntax of logical AND.
+
+   01:19
+ Opening square-bracket space dollar symbol condition1 space closing square-bracket space ampersand ampersand space opening square-bracket space dollar symbol condition2 space closing square-bracket.
+
+   01:38
+  Or we can use this syntax-
+
+   01:41
+  Opening square-bracket space dollar symbol condition1 space hyphen-a space dollar symbol condition2 space closing square-bracket.
+
+   01:53
+ Logical AND returns True when both condition1 and condition2 are True.
+
+  02:00
+  Let us see the syntax of Logical OR.
+
+  02:04
+ Opening square-bracket space dollar symbol condition1 space closing square-bracket space vertical bar again vertical bar space opening square-bracket space dollar symbol condition2 space closing square-bracket.
+
+  02:22
+ Or we can use this syntax-
+
+  02:24
+ Opening square-bracket space dollar symbol condition1 space hyphen-o space dollar symbol condition2 space closing square-bracket.
+
+  02:36
+ Logical OR returns  True when either condition1 or condition2 is True.
+
+  02:43
+  Let us learn the usage of  Logical OR and Logical AND using an example.
+
+   02:50
+  I have already typed the code in a file named logical.sh.
+
+   02:55
+  Open the terminal by pressing ctrl+alt and t keys simultaneously on your keyboard.
+
+  03:04
+ Type: gedit space logical.sh space ampersand sign, press Enter.
+
+  03:12
+ Now type the code as shown here, in your "logical.sh" file.
+
+ 03:18
+ Let me explain the code now.
+
+  03:21
+  This is the shebang line.
+
+ 03:25
+   The read command reads one line of data from  standard input.
+
+ 03:29
+ - (hyphen) p displays the prompt.
+
+ 03:33
+ string is a variable which stores the text entered by the user, during execution.
+
+   03:39
+    The if statement checks whether the entered string is empty.
+
+  03:45
+ - (hyphen) z checks whether length of string is zero.
+
+    03:50
+    Type: man space test on  terminal to explore various other string comparisons.
+
+  03:57
+  The echo statement will print a message if nothing was entered.
+
+ 04:02
+  If the string is not empty, the program will move to the first elif statement.
+
+ 04:08
+ Here, it checks whether the entered string contains both the words  "raj" and  "jit".
+
+ 04:16
+ If yes, then it echoes out a message.
+
+ 04:20
+ Please note that logical AND is used here.
+
+ 04:24
+ Hence, the message will be displayed only when both the conditions are satisfied.
+
+  04:31
+ If that is not so then the program will move onto the second elif statement.
+
+ 04:37
+ Here, it checks whether the entered string contains either "raj" or "jit".
+
+ 04:43
+ If 'yes' then it displays the message.
+
+ 04:47
+ Please note that logical OR is used here.
+
+ 04:52
+ The message will be displayed only when any one of the conditions are satisfied.
+
+  04:59
+  Lastly, we have the default else statement.
+
+ 05:02
+ When all the above statements are False then this statement will be executed.
+
+  05:08
+ "fi" is the end of multilevel if-else loop.
+
+  05:12
+ Let us execute the program.
+
+  05:15
+ Switch back to the terminal.
+
+  05:17
+ First make the file executable by typing- chmod space plus x space logical dot sh press Enter.
+
+  05:30
+ Now type: dot slash logical.sh press Enter.
+
+  05:36
+ The prompt displays "Enter a word:" 
+
+  05:38
+ I will enter "jitinraj" .
+
+  05:42
+ The output is: "jitinraj contains both the words 'raj' and 'jit' ".
+
+  05:48
+ This means that the control was passed to the second statement.
+
+  05:52
+ And as both the conditions are satisfied, it displays the message.
+
+  05:57
+  Now, let us execute the script again.
+
+  06:00
+ Press the up-arrow key.
+
+  06:02
+ Go to ./logical.sh  press Enter.
+
+ 06:07
+  The prompt displays "Enter a word:"
+
+ 06:09
+ This time I will enter "abhijit".
+
+ 06:13
+ The output is displayed as: "abhijit contains the word 'raj' or 'jit'".
+
+  06:19
+  Please try executing the program with different inputs and observe the output.
+
+  06:25
+  Let's switch back to our slides.
+
+  06:27
+  Let's have a look at logical NOT operator.
+
+  06:31
+  It inverts the Boolean value of an expression
+
+  06:35
+  which means, it returns True if the expression is False
+
+  06:40
+  and returns False if the expression is True.
+
+   06:44
+  The syntax of logical NOT operator is-
+
+  06:48
+ Exclamation mark space expression
+
+  06:52
+ or  opening square-bracket space exclamation mark space expression space closing square-bracket.
+
+  07:00
+   Let us see an example.
+
+  07:03
+ I have already typed the code in a file.
+
+  07:05
+ So, I will go to the terminal  and type: gedit space logicalNOT dot sh space ampersand sign, press  Enter.
+
+  07:18
+  Now type the code as shown here, in your logicalNOT dot sh file.
+
+ 07:24
+   This is the  shebang line as we already know.
+
+  07:28
+ $1 is the first command line argument passed to the script.
+
+  07:33
+ - (hyphen) f checks if the file exists with the same name that was passed as an argument.
+
+  07:41
+ So, it will return True if the file exists and False if it does not exist.
+
+  07:48
+  This NOT operator here, inverses the returned value
+
+  07:52
+ which means, if a file of that name exists, the condition will be True.
+
+  07:58
+ But the NOT operator will inverse its value to False.
+
+  08:02
+ And it will display the message "FILE does not exist".
+
+   08:07
+ Here, in the else statement, it displays the message  FILE exists.
+
+ 08:13
+ "fi" marks the end of if loop.
+
+  08:16
+  Now , switch to the terminal.
+
+  08:18
+ Let me clear the prompt.
+
+  08:20
+ Let's create an empty file with the name test.txt.
+
+  08:25
+ Type : touch space test dot txt press Enter.
+
+ 08:32
+  Next, make the script executable by typing:
+chmod space plus x space logicalNOT dot sh press Enter.
+
+ 08:45
+ Now, type: dot slash logicalNOT dot sh space test dot txt press  Enter.
+
+ 08:55
+  Our shell script will check whether the file exists.
+
+ 09:00
+ Our file test dot txt  exists,  hence the value will be True.
+
+ 09:07
+ Then the logical NOT will inverse that value and return False.
+
+ 09:12
+ Because the evaluation is False, the else statement is evaluated.
+
+  09:18
+   And the message displayed is -File 'test.txt' exists.
+
+  09:23
+ Try executing the program again with argument test1.txt.
+
+  09:29
+ And observe the control flow as explained before.
+
+ 09:33
+  Come back to our slides.  Let us summarize.
+
+ 09:37
+ In this tutorial, we learned the usage of:
+ logical AND
+ logical OR and
+ logical NOT.
+
+
+ 09:45
+   As an assignment,
+
+ 09:47
+ check whether the file exists
+
+ 09:49
+  and is executable
+
+ 09:51
+ using logical operators   explained in this tutorial.
+
+ 09:56
+ (Hint: man space test)
+
+   09:59
+   Watch the video available at the link shown below.
+
+  10:02
+ It summarizes the Spoken-Tutorial project.
+
+  10:05
+ If you do not have good bandwidth, you can download and watch it.
+
+  10:09
+   The Spoken Tutorial Project team:
+
+  10:12
+* Conducts workshops using spoken tutorials.
+
+  10:15
+* Gives certificates to those who pass an online test.
+
+  10:19
+ For more details, please write to contact@spoken-tutorial.org
+
+ 10:26
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 10:30
+  It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 10:37
+  More information on this mission is available at the link shown below.
+
+ 10:42
+   The script has been contributed by FOSSEE and spoken-tutorial team.
+
+ 10:47
+ This is Ashwini Patil from IIT Bombay, signing off.
+
+ 10:51
+ Thank you for joining.

@@ -1,0 +1,355 @@
+00:01
+  Welcome to the spoken tutorial on Arithmetic Comparison in BASH.
+
+  00:07
+ In this tutorial, we will learn:
+
+  00:09
+ * equal to (-eq)
+
+  00:10
+ * not equal to (-ne)
+
+  00:12
+* less than (-lt)
+
+  00:13
+* less than equal to (-le)
+
+  00:15
+* greater than (-gt) and
+
+  00:16
+* greater than equal to (-ge) commands.
+
+  00:19
+ We will do this with the help of some examples.
+
+ 00:23
+  For this tutorial, I am using:
+
+ 00:26
+ * Ubuntu Linux 12.04 Operating System
+
+ 00:30
+ *GNU BASH version 4.1.10
+
+ 00:34
+ GNU Bash version 4 or above is recommended for practice.
+
+ 00:39
+ I already have a working example of arithmetic operators.
+
+ 00:43
+ Let me switch to it.
+
+ 00:45
+ I have named the file example1.sh.
+
+  00:50
+  Open a file in any editor of your choice and type the code as shown.
+
+  00:56
+ You must be familiar how to do so, by now.
+
+ 01:00
+   In this program, we will check whether a given file is empty or not.
+
+ 01:06
+  Let me explain the code.
+
+ 01:08
+ This is the shebang line.
+
+   01:10
+  First of all, “Enter filename” will be printed on the console.
+
+  01:15
+ read command reads  one line of data from the standard input.
+
+  01:20
+   This command is enclosed within backticks.
+
+  01:24
+ Backtick has a very special meaning.
+
+  01:27
+ Everything you type between backtick is evaluated.
+
+  01:32
+ cat command will display the content of the file.
+
+  01:37
+ wc will print newline, word and byte counts for each file.
+
+  01:43
+ - (hyphen) w will print the word count.
+
+  01:47
+ What will happen is -
+
+  01:49
+ First the cat command will read the file.
+
+  01:53
+ This is the input file
+
+  01:55
+  which is then piped or sent to the wc command.
+
+  02:00
+ So, this statement counts the words in a given file.
+
+  02:05
+  The output is stored in variable  x.
+
+  02:08
+   This is the if statement.
+
+  02:10
+ - (hyphen) eq command checks whether word count is equal to zero.
+
+  02:16
+ If the condition is True, we will print a message "File has zero words”.
+
+  02:22
+ "fi" is the end of first if condition.
+
+  02:26
+   Here is another if condition.
+
+  02:28
+ Here, - (hyphen) ne command checks whether word count is not equal to zero.
+
+  02:35
+ If the condition is True, we print “File has so-and-so words”.
+
+  02:40
+ $x (dollar x) will give the word count.
+
+  02:43
+ This is the end of 2nd if condition.
+
+  02:46
+ Save your program file.
+
+  02:48
+ Let us execute our program.
+
+   02:51
+  Open the terminal.
+
+  02:53
+   First let's create a file list.txt.
+
+  02:57
+ Type: touch list.txt.
+
+ 03:01
+ Now, let's add a line in the file.
+
+ 03:04
+ Type:
+echo within double quotes “How are you” after the double quotes greater than sign list.txt.
+
+   03:13
+ Now let's make our script executable.
+
+ 03:16
+ Type:
+chmod plus x example1 dot sh
+
+ 03:21
+ Now, type: dot slash example1.sh
+
+ 03:26
+ "Enter filename:"  is displayed.
+
+ 03:28
+ Type: list.txt
+
+ 03:31
+ The output is displayed as: "list.txt has 3 words".
+
+  03:36
+  Now let's learn about another set of operators.
+
+ 03:40
+ Let me switch to another file.
+
+ 03:43
+ This is example2.sh .
+
+ 03:46
+  Please open a file in your editor and name it as "example2.sh".
+
+   03:52
+  Now type the code as shown here, in your "example2.sh" file.
+
+ 03:58
+  Let me explain the code.
+
+  04:00
+  This program will check whether the word count is-
+
+  04:04
+ * greater or less than one
+
+ 04:07
+ * Between one and hundred or above hundred.
+
+   04:11
+  We have our shebang line here.
+
+  04:14
+ read  statement takes input as filename from the user.
+
+  04:19
+  Here, - (hyphen) c command is used to print the byte counts.
+
+  04:24
+  In the if statement, - (hyphen) lt command checks whether word count is less than one.
+
+  04:31
+ If the condition is True then we print “No characters present in the file”.
+
+  04:37
+ "fi" ends the if condition.
+
+  04:40
+   The next if statement contains a nested if statement.
+
+  04:45
+ First,  - (hyphen) gt command checks whether word count is greater than one.
+
+  04:51
+ If 'yes' then this echo statement  will be executed.
+
+ 04:56
+  There are multiple conditions within this if statement.
+
+ 05:01
+ Here, in this if:
+ - (hyphen) ge command checks whether word count is greater than or equal to one and
+
+
+ 05:09
+* - (hyphen) le command checks whether word count is less than or equal to hundred.
+
+ 05:17
+ If both the conditions are satisfied then it prints:
+
+ 05:21
+ "Number of characters ranges between 1 and 100".
+
+ 05:25
+ Please note that both conditions should be True to satisfy the entire if condition.
+
+ 05:33
+ This is because we have included ampersand in-between both the conditions.
+
+ 05:39
+ "fi" is the end of this if statement.
+
+  05:43
+  Then the next if statement will be evaluated.
+
+  05:47
+ - (hyphen) gt command checks whether word count is greater than hundred.
+
+  05:53
+ If the condition is satisfied, we print "Number of characters is above hundred".
+
+  06:00
+ "fi" is the end of if statement.
+
+  06:04
+  Here we end the 2nd if statement.
+
+   06:07
+  Now come back to our terminal.
+
+   06:10
+ Let us execute the program.
+
+  06:13
+ chmod plus x example2 dot sh
+
+  06:18
+ dot slash example2 dot sh
+
+  06:22
+  Type list.txt .
+
+  06:25
+   The output is displayed as "list.txt has more than one character".
+
+ 06:31
+ "Number of characters ranges between one and hundred".
+
+ 06:36
+   Now, add or remove characters to the list.txt file.
+
+ 06:40
+ Then observe which if statement gets executed.
+
+  06:46
+    This brings us to the end of this tutorial.
+
+  06:49
+ Let us summarize.
+
+ 06:51
+  In this tutorial we learnt:
+ equal to
+ not equal to
+ less than
+ less than equal to
+ greater than and
+ greater than equal to commands.
+
+
+  07:03
+  As an assignment, write a program to demonstrate the use of not equal to operator.
+
+  07:09
+ Hint: - (hyphen) ne.
+
+   07:12
+  Watch the video available at the link shown below.
+
+   07:15
+ It summarizes the Spoken-Tutorial project.
+
+   07:18
+ If you do not have good bandwidth, you can download and watch it.
+
+   07:23
+  The Spoken Tutorial Project team:
+
+   07:25
+ Conducts workshops using spoken tutorials.
+
+   07:28
+ Gives certificates to those who pass an online test.
+
+   07:32
+ For more details, please write to contact@spoken-tutorial.org
+
+  07:40
+ Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+  07:43
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+  07:51
+ More information on this mission is available at the link shown below.
+
+  07:56
+ The script has been contributed by FOSSEE and spoken-tutorial team.
+
+  08:02
+ This is Ashwini Patil from IIT Bombay, signing off.
+
+  08:06
+ Thank you for joining.

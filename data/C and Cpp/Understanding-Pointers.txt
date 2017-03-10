@@ -1,0 +1,228 @@
+00:01
+Welcome to the spoken tutorial on Pointers in C and C++ .
+
+ 00:06
+In this tutorial we will learn:
+
+ 00:08
+* Pointers
+
+ 00:10
+* To create Pointers
+
+ 00:12
+* And operations on Pointers.
+
+ 00:14
+ We will do this with the help of an example.
+
+ 00:18
+To record this tutorial, I am using Ubuntu operating system version 11.10,
+
+ 00:25
+ gcc and g++ compiler version 4.6.1 on Ubuntu.
+
+ 00:31
+Let us start with an introduction to pointers.
+
+00:34
+Pointers point to the locations in memory.
+
+00.38
+Pointers store the memory address.
+
+ 00:41
+It also gives value stored at that address.
+
+ 00:45
+Now, let us see an example on pointers.
+
+ 00:48
+Note that our file name is pointers_demo.c.
+
+ 00:54
+Let us go through the code now.
+
+ 00:56
+This is our header file as stdio.h.
+
+ 01:00
+This is our main() function.
+
+ 01:03
+Here we have long integer num, assigned value 10.
+
+ 01:09
+Then we have declared a pointer ptr.
+
+ 01:12
+Asterisk sign is used to declare a pointer.
+
+ 01:16
+This pointer can point to type long  int. 
+
+ 01:20
+In the 'printf' statement, ampersand is used for retrieving memory address of the variable.
+
+01:28
+So, ampersand num (&num) will give the memory address of num.
+
+ 01:33
+This statement will print the address of the variable num.
+
+ 01:37
+Over here, ptr stores the address of num.
+
+ 01:41
+This statement will print the address of ptr.
+
+ 01:45
+sizeof() function will give the size of ptr.
+
+01:49
+This is will give the value of ptr.
+
+01:51
+That is the memory address of num.
+
+01:54
+And here asterisk ptr will give the value at the address.
+
+01:59
+So, using asterisk will not give the memory address.
+
+02:03
+Instead it will give the value.
+
+02:06
+%ld is a format specifier for the long int.
+
+02:10
+Now, let us execute the program.
+
+02:13
+Open the terminal window by pressing Ctrl, Alt and T keys simultaneously on your keyboard.
+
+02:21
+To compile, type gcc space  pointers underscore demo dot c space hyphen o space point
+
+02:32
+Press Enter.
+
+02:34
+Type dot slash point. Press Enter.
+
+02:39
+The output is displayed.
+
+ 02:42
+We see that the num address and ptr value is same
+
+ 02:48
+ where as memory address of num and ptr are different.
+
+ 02:53
+Then the size of pointer is 8 bytes.
+
+ 02:57
+ Also the value pointed by ptr is 10 which was assigned to num.
+
+ 03:03
+ Now let us see the same program in  C++.
+
+ 03:07
+ Note that our file name is pointer underscore demo.cpp.
+
+ 03:13
+ Here we have a few changes like the header file as iostream.
+
+ 03:19
+Then we are using the std namespace.
+
+ 03:23
+And here we have the cout function in place of printf() function.
+
+ 03:28
+Rest all the things are similar.
+
+ 03:30
+Let us execute the program. Come back to our terminal.
+
+ 03:34
+To compile, type g++ space pointers_demo.cpp space hyphen o space point1, press Enter.
+
+ 03:50
+Type dot slash point1, press Enter.
+
+ 03:55
+ We can see that the output is similar to our C program.
+
+ 04:00
+This brings us to the end of this tutorial.
+
+ 04:03
+ Come back to our slide.
+
+ 04:05
+Let us summarize.
+
+ 04:06
+In this tutorial, we learnt:
+
+ 04:08
+About the pointer.
+
+ 04:10
+To create a pointer.
+
+ 04:12
+And operation on pointer.
+
+ 04:14
+As an assignment, write a C and C++ program
+
+ 04:18
+to declare a variable and pointer.
+
+ 04:21
+ Store the address of variable in the pointer.
+
+ 04:24
+And print the value of the pointer.
+
+ 04:27
+Watch the video available at the link shown below.
+
+ 04:30
+It summarizes the Spoken Tutorial project.
+
+ 04:33
+If you do not have good bandwidth, you can download and watch it.
+
+ 04:37
+The Spoken Tutorial Project Team:
+
+ 04:39
+Conducts workshops using spoken tutorials.
+
+04:43
+Gives certificates to those who pass an online test.
+
+ 04:47
+For more details, please write to contact@spoken-tutorial.org.
+
+ 04:53
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 04:58
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 05:06
+More information on this mission is available at the link shown below.
+
+ 05:10
+ This is Ashwini Patil from IIT Bombay, signing off.
+
+ 05:14
+Thank You for joining.
+

@@ -1,0 +1,393 @@
+00:01
+Welcome to the spoken-tutorial on  files in C .
+
+ 00:05
+In this tutorial we will learn:
+
+ 00:08
+* How to open a file.
+
+ 00:10
+* How to read data from a file.
+
+ 00:12
+* How to write data into a file.
+
+ 00:15
+* Few examples.
+
+ 00:17
+To record this tutorial, I am using
+
+ 00:20
+  Ubuntu Operating System version 11.10,
+
+ 00:24
+ gcc Compiler version 4.6.1.
+
+ 00:28
+ Let us start with the introduction to files.
+
+ 00:31
+File is a collection of data.
+
+00:34
+It can be a database, a program, a letter or anything.
+
+00:39
+We can create a file and access it using C.
+
+00:44
+Now let us see an example on file handling in C.
+
+ 00:48
+I have a written program.
+
+ 00:50
+ Let's take a look.
+
+ 00:51
+Note that our file name is file.c 
+
+ 00:55
+In this program we will create a file and write data into it.
+
+ 01:01
+Let me explain the code now.
+
+ 01:03
+This is our header file. 
+
+ 01:05
+This is our main() function.
+
+01:07
+To define a file variable we use the type FILE. 
+
+ 01:12
+The FILE variable is defined under the header stdio.h.
+
+ 01:19
+*fp is a pointer to the FILE variable. 
+
+ 01:22
+It will store all the information about the file ,
+
+ 01:26
+like its name, status and current information.
+
+01:31
+Let us go back to our slides.
+
+01:33
+Now we will see the syntax to open a file.
+
+01:37
+Here, the fopen() function opens a stream.
+
+01:42
+Then it links the file with the stream.
+
+01:44
+file name is the name of the file that we want to open or create.
+
+01:49
+We can give the path along with the file name.
+
+ 01:53
+ And We can also give the extension.
+
+ 01:56
+Here we can give the mode of the file.
+
+01:59
+Let us see the types of modes :
+
+ 02:02
+ "w" - creates file for read and write.
+
+ 02:06
+ "r" – opens  file for reading.
+
+ 02:09
+ "a" – writing at the end of the file. 
+
+ 02:12
+Now come back to our program.
+
+ 02:15
+Here, we create a Sample.txt file in write mode.
+
+ 02:20
+We can see that the path is given.
+
+ 02:23
+Our file will be created on the desktop.
+
+ 02:27
+Then we will write the statements into the file.
+
+ 02:30
+ "Welcome to the spoken-tutorial"  and
+
+ 02:32
+ "This is an test example".
+
+ 02:34
+ fprintf() writes output to the given output stream.
+
+ 02:39
+ fclose() closes the file associated with the stream.
+
+ 02:43
+And this is our return statement.
+
+ 02:46
+Now click on Save. 
+
+ 02:48
+Let us execute the program.
+
+ 02:50
+Open the terminal window by pressing Ctrl, Alt and T keys simultaneously on your keyboard.
+
+ 02:59
+To compile, type
+
+ 03:00
+gcc space file dot c space hyphen o space file 
+
+ 03:06
+Press Enter .
+
+ 03:07
+To execute, type dot slash file (./file).
+
+ 03:11
+ Press Enter.
+
+ 03:13
+We see the file is executed.
+
+ 03:15
+Now we will check it out.
+
+ 03:17
+Let us open the Home folder.
+
+ 03:20
+Click on the Home folder option.
+
+ 03:22
+Now click on the Desktop option.
+
+ 03:25
+Here is our sample.txt file.
+
+ 03:29
+This shows that our file is successfully created.
+
+ 03:32
+Now let us open.
+
+ 03:34
+Double click on the file.
+
+ 03:36
+We can see the messages here.
+
+ 03:39
+Welcome to the Spoken Tutorial. 
+
+ 03:41
+This is an test example. 
+
+ 03:44
+This is how we create a file and write data into it.
+
+ 03:48
+Now we will see how to read data from a file. 
+
+ 03:52
+ I have already made the program.
+
+ 03:54
+I will open it.
+
+ 03:56
+In this program, we will read data from our sample.txt file and print the data on the console.
+
+ 04:03
+Let me explain the code now.
+
+ 04:05
+This is our header file. 
+
+ 04:08
+This is our main() function.
+
+ 04:10
+Here, a file variable and a pointer to the file variable is defined.
+
+ 04:15
+Then we have declared a character variable c.
+
+ 04:19
+Here, we open the file Sample.txt in read mode.
+
+ 04:24
+The output is stored in fp.
+
+ 04:27
+Then we check the condition-
+
+ 04:29
+"If fp is equal to NULL ".
+
+ 04:32
+If the condition is true then we print the message:
+
+ 04:36
+ "File doesn't exist." 
+
+ 04:38
+Else, it will check for another condition-
+
+ 04:41
+While c is not equal to EOF. 
+
+ 04:46
+Here, EOF is the end of file. 
+
+ 04:49
+It denotes the end of input.
+
+ 04:52
+It is a condition where no more data can be read from a data source.
+
+ 04:57
+If the condition is true then it will display the characters from Sample.txt file, on the console.
+
+ 05:06
+Here, getc returns a character from a specified file or stream.
+
+ 05:12
+Now, it will return a character from our Sample.txt file.
+
+ 05:17
+putchar is used to display a character on the console. 
+
+ 05:22
+Then it will store the characters in variable c.
+
+ 05:25
+Here we close the file.
+
+ 05:28
+And this is our return statement.
+
+ 05:30
+Now click on Save. 
+
+ 05:32
+Let us execute the program.
+
+ 05:35
+Come back to the terminal. 
+
+ 05:37
+To compile, type
+
+ 05:38
+gcc space readfile dot c space hyphen o space read 
+
+ 05:45
+Now press Enter .
+
+ 05:47
+To execute, type ./read (dot slash read).
+
+ 05:52
+The output is displayed as:
+
+ 05:54
+Welcome to the Spoken-Tutorial. 
+
+ 05:56
+This is an test example. 
+
+ 05:59
+This brings us to the end of this tutorial.
+
+ 06:01
+Come back to our slides.
+
+ 06:03
+Let us summarize.
+
+ 06:04
+In this tutorial we learnt:
+
+ 06:06
+* File handling,
+
+ 06:08
+* To write data into a file.
+
+ 06:10
+eg. fp = fopen(“Sample.txt”, “w”); 
+
+ 06:17
+* To read data from a file.
+
+ 06:18
+eg. fp = fopen(“Sample.txt”, “r”); 
+
+ 06:25
+As an assignment-
+
+ 06:26
+Write a program to create a file TEST. 
+
+ 06:30
+Write your name and address in the file TEST. 
+
+ 06:33
+Then display it on the console using C Program.
+
+ 06:37
+Watch the video available at the link shown below.
+
+ 06:40
+It summarizes the Spoken Tutorial project.
+
+ 06:43
+If you do not have good bandwidth, you can download and watch it.
+
+ 06:47
+The Spoken Tutorial Project Team:
+
+ 06:50
+Conducts workshops using spoken tutorials.
+
+06:53
+Gives certificates to those who pass an online test.
+
+ 06:57
+For more details, please write to, contact@spoken-tutorial.org.
+
+ 07:03
+Spoken Tutorial Project is a part of  Talk to a Teacher project.
+
+ 07:07
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 07:14
+More information on this Mission is available at the link shown below.
+
+ 07:18
+ This is Ashwini Patil from IIT Bombay, signing off.
+
+ 07:22
+Thank You for joining.
+

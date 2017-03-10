@@ -1,0 +1,259 @@
+00:01
+Welcome to this spoken tutorial on Globbing and Export command.
+
+ 00:06
+In this tutorial, we will learn about:
+
+ 00:08
+* Globbing
+
+ 00:09
+* export command.
+
+ 00:11
+ To follow this tutorial, You should be familiar with Linux Operating System.
+
+ 00:18
+If not, for relevant tutorials, please visit our  website which is as shown.
+
+  00:24
+For this tutorial, I am using:
+
+  00:27
+* Ubuntu Linux 12.04 OS and
+
+  00:31
+* GNU Bash version 4.1.10
+
+  00:35
+ Please note, GNU Bash version 4 or above is recommended to practice this tutorial.
+
+  00:43
+  Let us start with an introduction to globbing.
+
+  00:46
+ Filename or pathname expansion carried by BASH is known as Globbing.
+
+  00:52
+ Globbing recognizes and expands wildcards.
+
+  00:57
+ It also interprets standard wildcard characters like-
+
+  01:02
+ # *  (asterisk) and
+
+   01:04
+# ? (Question mark).
+
+ 01:05
+ Let us understand this with the help of an example.
+
+  01:09
+Open the terminal window by pressing Ctrl+Alt and T keys simultaneously on your keyboard.
+
+  01:18
+On the Terminal, type: ls space asterisk dot sh press Enter.
+
+ 01:27
+It matches all the files having ".sh" extension in the present directory.
+
+ 01:34
+Here, we can see that all the sh files are listed.
+
+ 01:40
+Let me clear the prompt. Now type: ls space s asterisk dot sh press Enter.
+
+  01:51
+ We can see that s asterisk dot sh matches all the files starting with character s and having "sh" as  extension.
+
+ 02:02
+ Let's move on ...
+
+  02:04
+ Now, type: ls space opening square bracket a hyphen c closing square bracket asterisk dot sh press Enter.
+
+ 02:19
+ This will match and display the files starting with letter 'a' or 'b' or 'c.'
+
+  02:26
+ Observe the output.
+
+  02:28
+We see a list of all files starting with character 'a' or 'b' or 'c.'
+
+  02:35
+And these files have "sh" extension.
+
+ 02:39
+Now, let's go ahead and type: ls space opening square bracket caret-sign a hyphen c closing square bracket asterisk dot sh press Enter.
+
+ 02:55
+ This will match all the file-names with extension "sh"
+
+ 03:00
+but will omit those starting with character as 'a' OR 'b' OR 'c'.
+
+  03:07
+ Observe the output. You will notice that the file names are not starting with character 'a', 'b' or 'c'.
+
+  03:16
+Let me clear the prompt.
+
+  03:19
+ Now type: ls space opening square bracket capital 'A'  small 'a' closing square bracket asterisk-sign dot sh press Enter.
+
+ 03:34
+ This will match file names starting with upper and lower case of letter 'A'.
+
+ 03:40
+ See the output. All file names starting with upper and lower case 'A' and extension "sh" are listed.
+
+ 03:49
+ Now let's see the Export command in BASH.
+
+ 03:53
+ Switch to our slides.
+
+ 03:55
+ In Bash, variables are local to their own Shell.
+
+ 04:00
+ Local variables can be used by same Shell  or by the current Shell.
+
+ 04:06
+ Export command-
+ exports a variable or a function to the environment of all child processes.
+
+
+ 04:15
+ * Can also change a local variable to a global variable.
+
+ 04:20
+ We will try to understand this with an example.
+
+  04:24
+ Switch to our Terminal,  type: myvar equal to sign lion press Enter.
+
+  04:34
+ Now type: echo space dollar-sign myvar press Enter.
+
+  04:41
+lion is printed.
+
+ 04:44
+This is the value assigned to the variable myvar.
+
+ 04:48
+Now, let's navigate to a new Shell.
+
+ 04:51
+ To go to a new Shell, we can either open a new Terminal or type: slash bin slash bash press Enter.
+
+ 05:03
+ Now, let's check the value in the variable myvar.
+
+ 05:07
+ Type: echo space dollar-sign myvar press Enter.
+
+ 05:15
+ An empty line is printed.
+
+ 05:17
+This means that the value assigned to variable myvar  was not transferred to this Shell.
+
+ 05:24
+Also, the variable myvar  is  local only to the previous Shell and not to the current Shell.
+
+  05:32
+We will type exit to get back to our previous Shell.
+
+ 05:36
+ So, to declare variables globally, we have to use the export command. 
+
+ 05:43
+ Let's learn how.
+
+ 05:46
+ Type: export space myvar equal to sign lion  press Enter.
+
+ 05:55
+ Now type: echo space dollar sign myvar press Enter.
+
+ 06:02
+lion  is displayed.
+
+ 06:05
+ Let's navigate to another Shell.  Type: slash bin slash bash press  Enter.
+
+ 06:13
+ Let me clear the prompt.
+
+  06:15
+  Now type: echo space dollar-sign myvar.
+
+ 06:22
+ lion is displayed
+
+ 06:25
+ This is because we have declared the variable myvar globally using the export command.
+
+ 06:33
+ This brings us to the end of this tutorial.
+
+ 06:36
+ Let us summarize. Come back to our slides.
+
+  06:39
+   In this tutorial, we learnt:
+
+  06:41
+ * Globbing
+
+  06:42
+* Export command.
+
+ 06:44
+ As an assignment,
+
+ 06:45
+ Write a Bash script to do all the operations discussed under globbing.
+
+  06:51
+ Watch the video available at the link shown below.
+
+  06:54
+ It summarizes the Spoken Tutorial project.
+
+  06:57
+ If you do not have good bandwidth, you can download and watch it.
+
+  07:02
+The Spoken-Tutorial Project team:
+
+  07:05
+* Conducts workshops using spoken tutorials.
+
+  07:08
+* Gives certificates to those who pass an online test.
+
+  07:12
+ For more details, please write to contact@spoken-tutorial.org
+
+  07:20
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+  07:24
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+  07:31
+More information on this mission is available at the link shown below.
+
+  07:37
+The script has been contributed by FOSSEE and Spoken-Tutorial team.
+
+  07:42
+ This is Ashwini from IIT Bombay, signing off.
+
+  07:47
+ Thank you for joining.
