@@ -77,7 +77,6 @@ both
 brief
 but
 by
-c
 c'mon
 c's
 came
@@ -413,6 +412,7 @@ sorry
 specified
 specify
 specifying
+spoken
 still
 sub
 such
@@ -476,6 +476,8 @@ tries
 truly
 try
 trying
+tutorial
+tutorials
 twice
 two
 u
