@@ -2,7 +2,6 @@ from gensim.models import Word2Vec
 import os
 from preprocess import clean
 
-
 class CleanSentences:
 	def __init__(self, path):
 		self.path = path
@@ -17,10 +16,10 @@ class CleanSentences:
 						for x in clean_text:
 							yield x[0].split()
 
-
 if __name__ == '__main__':
 	sentences = CleanSentences('data')
 	print 'Creating a word2vec model for the transcripts...'
-	model = Word2Vec(sentences)
+	model = Word2Vec(sentences, size=dimension)
 	model.save('data/snippet.model')
 	print 'Created a word2vec model for the transcripts.'
+		
