@@ -66,4 +66,7 @@ def calculate_similarity(documents):
 if __name__ == '__main__':
 	files = ['test/transcript.txt', 'test/forum.txt', 'test/forum_diff.txt']
 	documents = [open(f).read() for f in files]
-	calculate_similarity(documents)
+	sim = calculate_similarity(documents)
+	print sim[0]
+	print sim[1]
+	print sim[2]
