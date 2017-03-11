@@ -53,7 +53,7 @@ if __name__ == '__main__':
 	lsa_sim = []
 	key_sim = []
 	for index in xrange(l):
-		print '%d/%d' % (index, l)
+		print 'Evaluating: %d/%d' % (index, l)
 		script = scripts[index]
 		forum = forums[index]
 
@@ -87,10 +87,12 @@ if __name__ == '__main__':
 
 	x = np.arange(l)
 
-	print 'Sum cosine similarities:', sum_sim
-	print 'Max cosine similarities:', max_sim
-	print 'LSA similarities:', lsa_sim
-	print 'Keyword similarities:', key_sim
+	print '=' * 50
+	print '{:26}{}'.format('Sum cosine similarities:', sum_sim)
+	print '{:26}{}'.format('Max cosine similarities:', max_sim)
+	print '{:26}{}'.format('LSA similarities:', lsa_sim)
+	print '{:26}{}'.format('Keyword similarities:', key_sim)
+	print '=' * 50
 
 	# plot
 	plt.figure(1)
@@ -127,14 +129,16 @@ if __name__ == '__main__':
 	c = ['r', 'b', 'g', 'orange']
 	area = np.pi * (50 * y) ** 2
 
-	print 'Sum cosine accuracy:', ss_accuracy
-	print 'Max cosine accuracy:', ms_accuracy
-	print 'LSA accuracy:', lsa_accuracy
-	print 'Keyword accuracy:', key_accuracy
+	print '=' * 50
+	print '{:22}{}'.format('Sum cosine accuracy:', ss_accuracy)
+	print '{:22}{}'.format('Max cosine accuracy:', ms_accuracy)
+	print '{:22}{}'.format('LSA accuracy:', lsa_accuracy)
+	print '{:22}{}'.format('Keyword accuracy:', key_accuracy)
+	print '=' * 50
 
 	# accuracy plot
 	plt.figure(2)
-	plt.scatter(x, y, s=area, c=c, alpha=0.7)
+	plt.scatter(x, y, s=area, c=c, alpha=0.7, label='Cosine')
 	plt.ylabel('accuracy')
 	plt.show()
 	plt.close()
