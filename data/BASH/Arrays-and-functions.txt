@@ -1,0 +1,307 @@
+00:01
+ Dear friends, welcome to the spoken tutorial on Arrays & functions.
+
+ 00:07
+ In this tutorial, we will learn:
+
+00:11
+* To pass an array to a function 
+
+00:14
+* Use of exit statement in a function
+
+00:17
+* Use of return statement in a function
+
+00:20
+ with the help of some examples.
+
+ 00:24
+ To follow this tutorial, you should have knowledge of Shell Scripting.
+
+00:29
+You should also have knowledge of arrays and 'if' statement in BASH.
+
+00:36
+If not, for relevant tutorials, please visit our website which is as shown. http://www.spoken-tutorial.org
+
+ 00:43
+ For this tutorial, I am using:
+
+00:46
+* Ubuntu Linux 12.04 Operating System and
+
+00:50
+* GNU BASH version 4.2
+
+00:54
+Please note, GNU Bash version 4 or above is recommended to practice this tutorial.
+
+01:02
+ Let us first learn how to pass an array to a function and its usage.
+
+ 01:09
+ Let me open a file function_(underscore)array dot sh.
+
+01:15
+ This is the shebang line.
+
+01:18
+ Our function name is array_(underscore) display.
+
+01:22
+Open curly brace opens the function definition.
+
+ 01:27
+The use of Dollar @(at-sign) was explained in previous tutorials in this series.
+
+01:34
+Basically, it is used to print all arguments passed to a function.
+
+01:40
+Dollar @ (at sign) within round brackets stores array elements in variable 'array'.
+
+01:47
+ Dollar opening curly brace array within square bracket @(At-sign) closing curly brace.
+
+01:55
+This line of code displays all the elements of an array.
+
+02:00
+ Dollar opening curly brace array within square brackets one closing curly brace.
+
+02:08
+This line of code displays the second element of the array.
+
+ 02:14
+ operating_systems is declared with the elements "Ubuntu", "Fedora", "Redhat" and "Suse".
+
+ 02:22
+ Here, array operating_systems is passed to the function array_display.
+
+02:29
+ The syntax to pass an array to a function is function_name space dollar opening curly brace array_name within square brackets @(At sign) closing curly brace.
+
+ 02:45
+ Come back to our program.
+
+02:48
+ Similarly, colors is declared with the elements White, green, red and blue.
+
+02:57
+Here, array colors is passed to the function array_display.
+
+03:02
+ Now let's save the file and go to the terminal.
+
+03:07
+ Type: chmod space plus x space function underscore array dot sh
+
+03:18
+Press Enter.
+
+03:19
+ Type: dot slash function underscore array dot sh
+
+03:25
+Press Enter.
+
+03:27
+ As we can see, array elements of 'operating_systems' and 'colors' are displayed.
+
+03:33
+And the second array element of 'operating_systems' and 'colors' are also displayed.
+
+03:41
+ In Bash,  'exit' and 'return' statements give status code of a function or a program.
+
+ 03:49
+The return statement will return to the script from where it was called.
+
+03:54
+exit statement will end the entire script from where it is encountered.
+
+ 04:01
+ Let us learn these 2 ways to return within a function.
+
+04:06
+ Let me open a file 'return_exit.sh'.
+
+04:12
+ This is the shebang line.
+
+ 04:14
+ Function name is return_(Underscore)function .
+
+ 04:18
+ Open curly brace opens the function definition.
+
+04:22
+ This if statement compares two variables.
+
+04:27
+If the two variables are equal then commands in 'if' are executed.
+
+04:33
+ This echo statement displays the message:
+
+04:36
+"This is return function".
+
+04:39
+ return 0 moves the control from function to main program with status code 0(zero).
+
+04:47
+ Note that the statements after return will not be executed in a function.
+
+ 04:54
+ 'fi' indicates the end of 'if' statement.
+
+04:58
+ Here the function name is exit_(Underscore)function.
+
+05:02
+ The 'if' statement here, compares two variables.
+
+05:06
+ If the two variables are equal then the commands in 'if' are executed.
+
+ 05:14
+ This echo statement displays the message "This is exit function" .
+
+05:19
+ exit 0 will terminate the program.
+
+ 05:23
+ 'fi' indicates the end of this 'if' statement.
+
+ 05:27
+ This is a function call with arguments 3 and 3.
+
+05:33
+ This displays the message "We are in main program".
+
+05:38
+ This is another function call with arguments 3 and 3.
+
+05:44
+ This echo statement displays the message "This line is not displayed".
+
+ 05:49
+ Note that exit will terminate the program.
+
+05:53
+Anything after exit will not be executed.
+
+05:58
+ Save the file and go to the terminal.
+
+06:00
+ Type: chmod space plus x space return underscore exit dot sh
+
+06:09
+ Press Enter.
+
+ 06:12
+Type: dot slash return underscore exit dot sh
+
+06:18
+ Press Enter.
+
+ 06:20
+ The output displays the messages as shown.
+
+ 06:24
+Now, let us understand the flow of the program.
+
+ 06:27
+The control will be in main program which is the script itself.
+
+06:33
+ The control goes to return_function because of the function call.
+
+ 06:39
+ As the two variables are equal, it displays the message "This is return function".
+
+ 06:47
+ Then it encounters return 0. And the control flows from function to the statement below the function call, in the main program.
+
+ 06:59
+ Then it displays the message "We are in main program" .
+
+ 07:03
+ After that, the control goes to exit_function because of the function call.
+
+ 07:11
+As the two variables are equal, it displays the message "This is exit function".
+
+ 07:19
+Then it encounters exit 0. This will terminate the program.
+
+ 07:25
+ Any statement after exit will not be executed.
+
+ 07:30
+ Also, the statement "This line is not displayed" will not be executed.
+
+ 07:36
+ Hope the difference is clear to you.
+
+ 07:39
+Let us now summarize.
+
+ 07:41
+ In this tutorial, we learnt:
+
+ 07:44
+* To pass an array to a function 
+
+ 07:47
+* Use of exit statement in a function
+
+ 07:50
+* Use of return statement in a function
+
+07:53
+with the help of some examples.
+
+ 07:56
+ As an assignment-
+
+ 07:57
+Write a program
+
+ 07:58
+  where a function adds all the elements in an array.  The function should display the sum of elements.
+
+ 08:07
+Make 2 function calls with array elements (1, 2, 3) and (4, 5, 6).
+
+08:15
+ Watch the video available at the link shown below. http://spoken-tutorial.org/What_is_a_Spoken_Tutorial
+
+ 08:19
+It summarizes the Spoken Tutorial project.
+
+ 08:23
+If you do not have good bandwidth, you can download and watch it.
+
+08:28
+ The Spoken Tutorial Project Team:
+
+ 08:30
+ Conducts workshops using spoken tutorials.
+Gives certificates to those who pass an online test.
+For more details, please write to contact@spoken-tutorial.org
+
+08:45
+ Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 08:49
+It is supported by the National Mission on Education through ICT, MHRD, Government of India. More information on this mission is available at the link shown below. http://spoken-tutorial.org/NMEICT-Intro
+
+ 09:04
+ The script has been contributed by FOSSEE and Spoken-Tutorial teams.
+
+ 09:10
+This is Ashwini Patil from IIT Bombay, signing off. Thank you for joining.

@@ -1,0 +1,318 @@
+00:01
+Welcome to the spoken-tutorial on String Library Functions in C.
+
+ 00:07
+In this tutorial we will learn
+
+ 00:09
+String Library Functions.
+
+ 00:11
+We will do this with the help of some examples.
+
+ 00:15
+To record this tutorial, I am using
+
+ 00:18
+ Ubuntu Operating System version 11.10,
+
+ 00:22
+gcc Compiler Version 4.6.1.
+
+ 00:27
+Let us start with an introduction to string library functions.
+
+ 00:31
+These are the group of functions implementing operations on strings.
+
+00:36
+Various operations such as copying, concatenation, searching etc are supported.
+
+00:44
+Let us see some of the string library functions.
+
+00:48
+Here we have the strncpy function.
+
+00:52
+The syntax for this is strncpy(char str1, char str2, and int n ); 
+
+01:02
+It copies first n characters of string str2  into string str1.
+
+ 01:09
+example, char strncpy( char hello, char world, 2);
+
+ 01:16
+The output will be Wollo .
+
+01:21
+Here we have Wo from the string 2 and rest of the characters from string 1.
+
+ 01:29
+Now we will see strncmp function, the syntax for this is strncmp(char str1, char str2, and int n); 
+
+ 01:42
+It will compare first n characters of string 2 with string 1.
+
+ 01:48
+example int strncmp(char ice, char icecream, and  2);
+
+01:55
+The output will be 0.
+
+ 01:58
+Now we will see how to use the string library functions.
+
+ 02:02
+I am going to show you some of the commonly used string functions.
+
+02:07
+I have already typed the program on the editor,
+
+02:10
+ I will open it.
+
+02:12
+Here, we have the string length function.
+
+02:15
+Note that our file name is strlen.c. 
+
+02:20
+In this, we will find the length of the string.
+
+02:23
+These are the header files as stdio.h and string.h. 
+
+02:29
+This is our main() function.
+
+ 02:31
+Here we have a character variable  'arr'. 
+
+ 02:35
+It stores a value  'Ashwini' .
+
+ 02:38
+Then we have an integer variable len1 .
+
+ 02:42
+Here we will find the length of the string using strlen function.
+
+ 02:48
+The result will be stored in 'len1'.
+
+ 02:52
+Then we print the string and the length of the string.
+
+02:56
+And this is our return statement.
+
+02:59
+Now let us execute the program.
+
+03:01
+Open the terminal window by pressing
+
+ 03:04
+Ctrl, Alt and T keys simultaneously on your keyboard.
+
+ 03:09
+ To compile, type:  "gcc"  space  "strlen.c"  space  “-o” space “str1”.  Press Enter.
+
+ 03:19
+Type (dot slash) ./str1. Press Enter.
+
+ 03:24
+The output is displayed as
+
+ 03:26
+string = Ashwini, Length = 7 
+
+03:30
+You can count here. 1,2,3,4,5,6, and 7.
+
+ 03:37
+ Let us see another string function.
+
+ 03:40
+Here we have the string copy function.
+
+ 03:43
+Note that our file name is strcpy.c .
+
+ 03:48
+In this, we will copy the source string into the target string.
+
+ 03:53
+Here we have 'Ice' in the source string, it will be copied to the target string.
+
+ 03:59
+This is our strcpy function
+
+ 04:02
+Here we will print the source string and the target string.
+
+ 04:07
+Let us execute and see.
+
+ 04:09
+Come back to our terminal.
+
+ 04:11
+ To compile, type gcc space strcpy.c space hyphen  o space str2. Press  Enter
+
+ 04:20
+Type (dot slash)./str2 . Press Enter .
+
+ 04:24
+The output is displayed as:
+
+ 04:26
+source string = Ice 
+
+ 04:29
+target string = Ice 
+
+ 04:32
+ Now let us see another string function.
+
+ 04:34
+Now we will see the string compare function.
+
+ 04:37
+Note that our file name is strcmp.c.
+
+ 04:42
+In this, we will compare two strings.
+
+ 04:46
+Here we have character variables as str1 and str2 .
+
+ 04:52
+str1 stores the value as  'Ice' and str2 stores the value as  'Cream'.
+
+ 04:58
+Here we have integer variables as i and j.
+
+ 05:03
+In this we will compare the string using the strcmp function.
+
+ 05:08
+Here we compare str1 i.e 'Ice' with 'Hello'.
+
+ 05:14
+The result is stored in i.
+
+ 05:16
+In this we will compare string2 i.e 'Cream' with 'Cream'
+
+ 05:23
+The result is stored in j.
+
+ 05:25
+Then we print both the results.
+
+ 05:28
+And this is our return statement.
+
+ 05:31
+Let us execute the program.
+
+ 05:33
+Come back to our terminal.
+
+ 05:35
+To compile type gcc space strcmp.c space hyphen o space str3
+
+ 05:46
+Press Enter.
+
+ 05:47
+Type (dot slash) ./str3 
+
+ 05:50
+The output is displayed as 1, 0.
+
+ 05:54
+Come back to our program.
+
+ 05:56
+Here we get 1 and here we get as 0.
+
+ 06:01
+Let us come back to our slides.
+
+ 06:04
+Let us summarize.
+
+ 06:06
+In this tutorial we learned,
+
+ 06:07
+String library functions-
+
+ 06:09
+* strlen()
+
+ 06:11
+* strcpy()
+
+ 06:13
+* strcmp()
+
+ 06:14
+* strncpy()
+
+ 06:16
+*and strncmp().
+
+ 06:19
+As an assignemnt,
+
+ 06:21
+write a C Program to concatenate String 'best' and String 'bus'.
+
+ 06:25
+Hint: strcat(char str1, char str2);
+
+ 06:32
+Also explore the other functions in string library.
+
+ 06:36
+Watch the video available at the link shown below.
+
+ 06:39
+It summarizes the Spoken Tutorial project.
+
+ 06:42
+If you do not have good bandwidth, you can download and watch it.
+
+ 06:46
+The Spoken Tutorial Project Team:
+
+ 06:49
+Conducts workshops using spoken tutorials.
+
+ 06:52
+Gives certificates to those who pass an online test.
+
+ 06:56
+For more details, please write to, contact@spoken-tutorial.org.
+
+07:03
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 07:08
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 07:15
+More information on this mission is available at the link shown below.
+
+ 07:20
+This is Ashwini Patil from IIT Bombay, signing off.
+
+ 07:24
+Thank you for joining.
+

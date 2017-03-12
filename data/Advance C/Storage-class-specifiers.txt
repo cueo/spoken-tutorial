@@ -1,0 +1,359 @@
+00:01
+ Welcome to the Spoken Tutorial on Storage class specifiers.
+
+ 00:07
+ In this tutorial, We will learn about:
+ Storage class specifiers
+ auto keyword
+ static keyword 
+ extern keyword
+ register keyword, with the help of an example.
+
+
+ 00:22
+ For this tutorial, I am using:
+ Ubuntu Operating system version 11.10 and 
+ gcc Compiler version 4.6.1 on Ubuntu.
+
+
+ 00:34
+ To follow this tutorial, you should be familiar with C tutorials.
+
+ 00:41
+ If not, for relevant tutorials, please visit our website which is as shown.
+
+ 00:47
+ I will start with an introduction to storage class specifiers.
+
+ 00:52
+ Specifiers tell the compiler- * where to store a variable
+
+ 00:57
+* How to store the variable
+
+ 00:59
+* What is the initial value of the variable
+
+ 01:03
+* Life time of the variable.
+
+ 01:06
+ The Syntax is: storage_specifier data_type variable _name.
+
+ 01:13
+ Types of storage class specifiers are:
+ auto 
+ static 
+ extern 
+ register .
+
+
+ 01:21
+ Let us start with auto keyword.
+
+ 01:24
+ auto keyword declares an automatic variable.
+
+ 01:28
+  It has a local scope.
+
+ 01:30
+ Keywords are not initialized automatically.
+
+ 01:34
+  You should explicitly initialize keywords while declaring.
+
+ 01:39
+ Storage-space of keywords is CPU memory.
+
+ 01:43
+ Let us see an example. I have a code file; let us go through it.
+
+ 01:49
+ Note that our filename is auto.c.
+
+ 01:54
+ We have declared a function as “increment()”.
+
+01:58
+ This is the main() function.
+
+ 02:00
+ In the main() function, increment() function is called 4 times.
+
+ 02:06
+ Then we have the  return 0 statement.
+
+ 02:10
+ Let us see the function definition.
+
+ 02:14
+ Here, we have declared variable i as auto int. It has a local scope.
+
+ 02:21
+ Then we display value of i using printf.
+
+ 02:26
+ Value of i is incremented here.
+
+ 02:30
+ Let us open the terminal by pressing Ctrl+Alt+T keys simultaneously on your keyboard.
+
+ 02:38
+ Type: gcc space auto.c space hyphen o space auto. Press Enter.
+
+ 02:48
+ Type:  dot slash auto
+
+ 02:51
+ The output is zero.
+
+ 02:54
+ Now come back to our program.
+
+ 02:57
+ Let us initialize the auto variable i above the main() function.
+
+ 03:02
+ I will cut this declaration and initialization from here and paste it over here.Click on Save.
+
+ 03:14
+ Let us execute on the terminal. Press the up-arrow key twice. Press Enter.
+
+ 03:22
+ We get an error: "file-scope declaration of i specifies auto".
+
+ 03:29
+ This is because an auto variable is local to the function.
+
+ 03:34
+ We cannot initialize it globally.
+
+ 03:37
+ Let us fix the error. Come back to our program.
+
+ 03:42
+ Delete this; paste it over here.
+
+ 03:47
+ Click on Save and execute on the terminal.
+
+ 03:52
+ Press the up-arrow key. Recall the previous command.
+
+ 03:57
+ Press Enter. Type: dot slash auto.  Press Enter.
+
+ 04:03
+ Yes, it is working! The output is zero.
+
+ 04:07
+ This is because we have initialized the value of i as zero.
+
+ 04:13
+ Now, let us see static variable.
+
+ 04:16
+ Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+
+ 04:24
+ 'static' variables are initialized to zero.
+
+ 04:28
+ They are not destroyed even after program control exits from the block.
+
+ 04:35
+ Value of the variable persists between different function calls.
+
+ 04:41
+ Storage-space is CPU memory.
+
+ 04:45
+ Let us see an example. I will edit the same code file.
+
+ 04:51
+Come back to our program.
+
+ 04:54
+ Press Ctrl + Shift + S keys simultaneously.
+
+ 05:01
+ Now, I will just change the filename as static. Click on Save.
+
+05:10
+ Now, I will change the initialization of  the variable i to static int i equal to zero
+Click on Save.
+
+05:23
+ Let us see what happens.  Execute the file on the terminal.
+
+ 05:30
+ Type: gcc space static.c space hyphen o space stat. Press Enter.
+
+ 05:41
+ Type: dot slash stat. Press Enter.
+
+ 05:46
+ The output is displayed as: 0, 1, 2, 3
+
+ 05:51
+ This is because static variables are global variables.
+
+ 05:56
+ The scope of static variable is local to the function, they are defined in.
+
+ 06:03
+ They do not lose their value between function calls.
+
+ 06:08
+ Now, let us learn about extern keyword.
+
+ 06:12
+Scope of extern variable is throughout the main program.
+
+ 06:17
+Definition for extern variable might be anywhere in the C program.
+
+ 06:23
+ extern variables are initialized to zero, by default.
+
+ 06:28
+ They can be accessed by all functions in the program.
+
+ 06:33
+ These are stored in CPU memory.
+
+ 06:36
+ Let us see an example.
+
+ 06:38
+I have a code file; let us go through it.
+
+ 06:42
+Note that our filename is "extern.c".
+
+ 06:47
+ I have initialized a variable as integer variable x to 10.
+
+06:54
+ This is the main() function. In the main() function, I have declared an extern integer variable y.
+
+07:03
+ Using the printf statements, we will display the values of x and y.
+This is the return statement.
+
+ 07:12
+ We will initialize y to 50 after the main() function close.
+
+ 07:18
+ Now, switch to the terminal and let us see what will be the output.
+
+ 07:24
+ Type: gcc space extern.c space hyphen o space ext. Press Enter.
+
+ 07:35
+ Type: dot slash ext. Press Enter.
+
+ 07:40
+ The output is displayed as:
+"The value of x is 10"
+"The value of y is 50"
+
+ 07:48
+ As we studied, the value of the extern keyword is through out the main program.
+
+ 07:55
+We can define it anywhere in the program.
+
+ 07:59
+Both the statements are justified.
+
+ 08:02
+ Now, let us move on to register keyword.
+
+ 08:06
+ register variables will be accessed faster than normal variables.
+
+ 08:13
+They are stored in register memory rather than main memory.
+
+ 08:19
+Limited number of variables can be used since register size is very low.
+
+ 08:25
+16 bits, 32 bits or 64 bits.
+
+ 08:30
+ Let us see an example now. I have a code file. Let us go through it.
+
+ 08:37
+Note that the filename is register.c
+
+ 08:42
+ Here, we have declared register integer variable.
+
+ 08:47
+This variable will be directly stored in the register memory.
+
+08:53
+ This is the 'for' loop that displays the value of i from 1 to 5.
+
+ 08:59
+This will display the value of i.
+
+ 09:03
+ Let us execute the program and see.
+
+ 09:07
+On the terminal, type: gcc space register.c space hyphen o space register
+
+ 09:17
+Press Enter. Type: dot slash register. Press Enter.
+
+ 09:25
+ You can see, the output is displayed as: Values stored in register memory 1 2 3 4 5.
+
+ 09:34
+ This brings us to the end of this tutorial. Let us summarize.
+
+ 09:39
+ In this tutorial, we learnt-
+ Storage class specifiers
+ auto keyword
+ static keyword
+ extern keyword
+ register keyword.
+
+
+ 09:52
+ As an assignment, write a program to print the sum of first 5 numbers.
+
+ 09:59
+ Declare both the keywords auto and static in the program.
+
+ 10:04
+ Watch the video available at the link shown below.
+
+ 10:07
+It summarizes the Spoken Tutorial project.
+
+ 10:11
+If you do not have good bandwidth, you can download and watch it.
+
+ 10:16
+ The Spoken Tutorial project team: * Conducts workshops using spoken tutorials.
+
+ 10:22
+Gives certificates to those who pass an online test.For more details, please write to contact@spoken-tutorial.org
+
+ 10:33
+ Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+ 10:38
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 10:45
+More information on this mission is available at the link shown below:http://spoken-tutorial.org\NMEICT-Intro.
+
+ 10:52
+ This is Ashwini Patil from IIT Bombay, signing off. Thank you for joining.

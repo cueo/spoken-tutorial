@@ -1,0 +1,423 @@
+00:01
+ Welcome to the spoken tutorial on Command line arguments and Quoting in BASH.
+
+ 00:08
+ In this tutorial, we will learn about:
+
+ 00:11
+* Command line Arguments and
+
+ 00:13
+* Quoting.
+
+ 00:15
+ To follow this tutorial, you should be familiar with the Linux Operating System.
+
+ 00:20
+If not, for relevant tutorials please visit our website which is as shown.
+
+ 00:26
+ For this tutorial, I am using:
+
+ 00:29
+* Ubuntu Linux 12.04 OS
+
+ 00:33
+* GNU Bash version 4.1.10
+
+ 00:37
+GNU Bash version 4 or above is recommended for practice.
+
+ 00:43
+ Shell script can accept arguments from the command line.
+
+ 00:46
+ An argument is passed to a program being called.
+
+ 00:52
+ Any number of arguments can be passed to a program.
+
+ 00:57
+ Let us open the terminal by pressing Ctrl, Alt and T keys simultaneously on your keyboard.
+
+ 01:06
+ I have already written the code in the file named arg.sh.
+
+ 01:12
+On the terminal, let me open this file by typing-
+
+ 01:16
+gedit space arg.sh space ampersand sign(&).
+
+ 01:23
+We use the ampersand to free up the prompt.
+
+ 01:27
+Now, press Enter.
+
+ 01:30
+ The text editor is opened.
+
+ 01:33
+Let me explain the code now.
+
+ 01:36
+ This is the shebang line.
+
+ 01:39
+ This line will print the zeroth argument.
+
+ 01:43
+Here, $0 (Dollar zero) will print the name of the shell script.
+
+ 01:48
+This, in turn, means that the zeroth  argument is the name of the program itself.
+
+ 01:55
+ Let us execute the program and see.
+
+ 01:59
+Switch to the terminal.
+
+ 02:01
+ First, make the file executable by typing:
+
+ 02:05
+chmod space plus x space arg.sh
+
+ 02:12
+Press Enter.
+
+02:14
+ Now, type: dot slash arg.sh
+
+02:18
+Press Enter.
+
+ 02:19
+ The output is displayed as: Zeroth argument is arg.sh.
+
+ 02:26
+ Now, come back to our editor and type the three lines as shown here.
+
+ 02:33
+ $1 (Dollar one) represents the first argument passed to the program from the command line.
+
+ 02:40
+$2 (Dollar two) represents the second argument passed to the program
+
+ 02:44
+  and $3 (Dollar three) represents the third argument.
+
+ 02:48
+ Now, click on Save.
+
+ 02:49
+ Let us execute the program and see.
+
+ 02:52
+Press the up-arrow key,  press Enter.
+
+ 02:57
+ We see that the zeroth argument is printed
+
+ 03:00
+but the first, second and third arguments are blank.
+
+ 03:05
+This is because the command line arguments are given during execution.
+
+ 03:11
+ Hence, press the up-arrow key and type: sunday monday and tuesday
+
+ 03:18
+Press Enter.
+
+ 03:21
+ You can see that the first, second and third arguments are sunday monday and tuesday.
+
+ 03:28
+ Now switch back to our editor. Press Enter.
+
+ 03:33
+Now, type the line as shown here.
+
+ 03:37
+ $12 (Dollar twelve) represents the twelfth argument.
+
+ 03:41
+ To write an argument greater than 9, we need to use curly brackets.
+
+ 03:46
+Else, bash will only take the argument of the integer in the ten's place
+
+ 03:53
+and you will not get expected output.
+
+ 03:57
+ Now click on Save.
+
+ 03:59
+Let us execute the program.
+
+ 04:01
+Switch to the terminal.
+
+ 04:04
+Let me clear the prompt.
+
+ 04:07
+ Now we need to give 12 or 13 arguments to the program.
+
+04:12
+ Hence, type: dot slash arg.sh space 1 to 13. Now press Enter.
+
+04:23
+You can see that the 12th argument is 12.
+
+ 04:27
+ Come back to our editor
+
+ 04:30
+and type the line as shown here.
+
+ 04:34
+ $# (Dollar hash) gives the total number of arguments that have been passed to a program.
+
+ 04:40
+ Now click on Save.
+
+ 04:43
+Let us execute.
+
+ 04:44
+ Switch to the terminal.
+
+ 04:46
+ Let us execute. Press the up-arrow key and press Enter.
+
+ 04:52
+We can see that the total arguments are 13.
+
+ 04:57
+Now switch to the editor.
+
+ 05:00
+Press Enter and type the lines as shown here.
+
+ 05:04
+ $* (Dollar asterisk) will print all the arguments on a single line.
+
+ 05:10
+ We will test this with the help of a simple for loop.
+
+ 05:14
+ We will analyze this for loop at the time of execution.
+
+ 05:18
+ Now, click on Save. Switch to the terminal.
+
+05:22
+ Let me clear the prompt.
+
+ 05:26
+ Now, let us type: dot slash arg.sh space sunday monday and tuesday.
+
+ 05:35
+ Press Enter.
+
+ 05:38
+ You can see that the total number of arguments are 3 as we have passed 3 arguments to our program.
+
+ 05:46
+As already said, $* will print all the arguments on a single line.
+
+ 05:54
+ And this is the output for the for loop.
+
+ 05:57
+ We see that all the arguments are printed on the single line.
+
+ 06:02
+ Now, move back to our program and type the lines as shown here.
+
+ 06:09
+ $@ (Dollar at) will also print all the arguments.
+
+ 06:13
+ However, this time each argument will be printed on separate line.
+
+ 06:20
+ This is another for loop which will print each argument in a separate line.
+
+ 06:26
+ Let us see how. Click on Save.
+
+ 06:29
+ Switch to the terminal.
+
+ 06:32
+Press the up-arrow key.
+
+ 06:34
+ Press Enter. You can see the difference now.
+
+ 06:39
+ These are the arguments printed by $@.
+
+ 06:43
+$@ prints each argument on separate line.
+
+ 06:47
+This is the output for the 2nd for loop.
+
+ 06:52
+ Now let's move on to quoting in BASH.
+
+ 06:55
+Switch to the slides.
+
+ 06:57
+ There are three types of quotes:
+
+ 06:59
+* Double quote
+
+ 07:00
+* Single quote
+
+ 07:02
+* Backslash.
+
+ 07:03
+ Double quote substitutes the value of variables and commands.
+
+ 07:09
+ Example echo “Username is $USER”.
+
+ 07:13
+ It displays the username  of the system.
+
+ 07:17
+ Switch to the Terminal.
+
+ 07:20
+ Let me clear the prompt.
+
+07:23
+Now, type:  echo space within double quotes Username space  is dollar USER  in capitals.
+
+ 07:34
+ Press Enter.
+
+ 07:35
+ The username of the system is printed.
+
+ 07:39
+ The output will vary according to your system.
+
+ 07:42
+ Now move back to slides.
+
+ 07:46
+ Single quotes preserves the literal meaning of each character of a given string.
+
+ 07:53
+ It is used to turn off special meaning of all characters.
+
+ 07:58
+ Switch to the Terminal.
+
+ 08:01
+ Type: echo space within single quote Username  is dollar USER in capital.
+
+ 08:10
+ Press Enter.
+
+08:12
+ The output is Username is $USER.
+
+ 08:16
+ In this example, it prints all the characters which appear within the single quotes.
+
+ 08:23
+ It does not substitute the value of variable $USER.
+
+ 08:28
+ Switch back to our slides.
+
+08:31
+ Backslash removes the special meaning from a single character.
+
+ 08:37
+ It is used as an escape character in BASH.
+
+ 08:42
+ Switch to the Terminal. 
+
+ 08:44
+Now, type: echo space within double quote Username is backslash dollar USER  (in capital).
+
+ 08:55
+Since we have given double quotes, we expect the echo command to display the username.
+
+ 09:02
+Let's try this command, so press Enter.
+
+ 09:06
+ The output is Username is $USER.
+
+ 09:10
+In this example, the backslash removes the special meaning of (Dollar) '$' symbol.
+
+ 09:16
+$USER is just treated as a string without any special functionality.
+
+09:22
+ This brings us to the end of this tutorial.
+
+ 09:25
+Switch back to our slides.
+
+ 09:27
+Let us summarize.
+
+ 09:28
+ In this tutorial, we learnt:
+
+ 09:31
+* Command line arguments
+
+ 09:33
+* Functionality of  double quote, single quote and backslash.
+
+ 09:39
+ Watch the video available at the link shown below.
+
+ 09:42
+It summarizes the Spoken-Tutorial project.
+
+ 09:45
+If you do not have good bandwidth, you can download and watch it.
+
+ 09:51
+ The Spoken Tutorial Project team: Conducts workshops using spoken tutorials.
+
+ 09:56
+Gives certificates to those who pass an online test.
+
+ 10:00
+For more details, please write to contact@spoken-tutorial.org
+
+ 10:07
+ Spoken Tutorial Project is a part of the "Talk to a Teacher" project.
+
+ 10:10
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+More information on this mission is available at: http://spoken-tutorial.org/NMEICT-Intro
+
+ 10:24
+ The script has been contributed by FOSSEE and spoken-tutorial team.
+
+ 10:30
+And this is Ashwini Patil from IIT Bombay, signing off. Thank you for joining.

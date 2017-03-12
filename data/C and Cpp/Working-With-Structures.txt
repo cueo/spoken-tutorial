@@ -1,0 +1,303 @@
+00:01
+Welcome to the spoken-tutorial on Structures in C and C++.
+
+ 00:06
+In this tutorial we will learn,
+
+ 00:08
+* What is a Structure. 
+
+ 00:10
+* Declaration of a structure.
+
+ 00:13
+We will do this through an example.
+
+ 00:15
+ To record this tutorial, I am using
+
+ 00:18
+Ubuntu Operating System  version 11.10,
+
+ 00:22
+ gcc and g++ Compiler version 4.6.1.
+
+ 00:28
+Let us start with an introduction to Structure .
+
+00:31
+When one or more variables are grouped under one name, it is known as structure.
+
+00:37
+Structure is used to group different data into one object.
+
+00:42
+It is called as compound data-type.
+
+ 00:45
+It is used to group related information together.
+
+ 00:49
+  Now we will see the syntax to declare a structure.
+
+ 00:52
+Here, the keyword struct tells the compiler that a structure is declared.
+
+ 00:59
+strcut_name is the name of the structure.
+
+ 01:02
+eg. struct employee; 
+
+ 01:04
+You can give any name.
+
+ 01:07
+Now we will see how to declare a structure variable.
+
+01:10
+The syntax for this is:
+
+ 01:13
+struct struct_name and  struct_var; 
+
+ 01:17
+struct_var is the variable of type struc_name.
+
+ 01:21
+example, struct employee addr; 
+
+ 01:26
+addr is the variable of type employee. 
+
+01:30
+Let us move on to our example.
+
+01:33
+I have already typed the program on the editor. So, let me open it.
+
+01:37
+Note that our file name is structure.c.
+
+01:41
+In this program we will calculate the total marks of three subjects using structure.
+
+01:48
+Let me explain the code now.
+
+01:51
+This is our header file.
+
+ 01:53
+Here we have declared a structure as student.
+
+ 01:57
+ Then we have declared three integer variables as English, maths and science. 
+
+ 02:03
+Variables defined under the structure are called as members of the structure.
+
+02:09
+This is our main() function.
+
+ 02:11
+ Here we have declared an integer variable 'total'.
+
+ 02:16
+ Now we have declared a structure variable stud, stud is the variable of type student, it is used to access and modify the structure members.
+
+ 02:28
+ Here we have modified the members
+
+ 02:31
+by assigning them values as 75, 70 and 65.
+
+ 02:37
+Here we calculate the total of three subjects.
+
+ 02:41
+Then we print the result.
+
+ 02:44
+This is our return statement.
+
+ 02:46
+Now click on Save .
+
+ 02:48
+Let us execute the program.
+
+ 02:50
+Please open the terminal window by pressing
+
+ 02:54
+ Ctrl, Alt and T keys simultaneously on your keyboard.
+
+ 02:59
+ To compile, type gcc space structure.c space hyphen o space struct and press Enter.
+
+ 03:12
+To execute, type (dot slash)./struct. Press Enter.
+
+ 03:17
+The output is displayed as:
+
+ 03:20
+Total is 210
+
+ 03:22
+Now we will execute the same program in C++ .
+
+ 03:26
+Come back to our program.
+
+ 03:28
+I will edit the same code.
+
+ 03:30
+First press Shift, Ctrl and  S keys simultaneously on the keyboard.
+
+ 03:37
+Now save the file with an extension .cpp 
+
+ 03:41
+ and click on save.
+
+ 03:43
+ Let's change the header file as iostream.
+
+ 03:47
+Now include the using statement
+
+ 03:53
+and click on save.
+
+ 03:56
+Structure declaration in C++ is same as in C.
+
+ 04:01
+So, no need to change anything here.
+
+ 04:05
+At the end we will replace the printf statement with the cout  statement.
+
+ 04:12
+Delete the format specifier and (backslash n) \n.
+
+ 04:15
+Now delete the comma.
+
+ 04:17
+Type two opening angle brackets.
+
+ 04:20
+Here, delete the closing bracket
+
+ 04:22
+and type two opening angle brackets.
+
+ 04:25
+And within the double quotes, type \n (backslash n).
+
+ 04:29
+Now click on Save.
+
+ 04:31
+Let us execute the program.
+
+ 04:33
+Come back to our terminal.
+
+ 04:35
+To compile, type g++ space structure.cpp space hyphen o space struct1 .
+
+ 04:46
+ Here we have struct1 because we don't want to overwrite the output parameters struct for the file structure.c .
+
+ 04:55
+Now press Enter.
+
+ 04:57
+To execute, type (dot slash) ./struct1. Press Enter.
+
+ 05:03
+The output is displayed as:
+
+ 05:05
+Total is 210
+
+ 05:08
+You can see that the output is same as our C code.
+
+ 05:12
+Now let us go back to our slides.
+
+ 05:14
+We will summarize now. In this tutorial we learned,
+
+ 05:18
+* Structure
+
+ 05:19
+* Syntax of a structure
+
+ 05:20
+eg. struct struct_name; 
+
+ 05:23
+* To access members of a structure.
+
+ 05:25
+Eg: stud.maths = 75;
+
+ 05:30
+* And to add the structure variables.
+
+ 05:33
+Eg: total = stud.eng + stud.maths + stud.science;
+
+ 05:40
+As an assignment,
+
+ 05:41
+write a program to display  records of an employee.
+
+ 05:44
+Like name, address, designation, and salary.
+
+ 05:49
+Watch the video available at the link shown below.
+
+ 05:52
+It summarizes the Spoken Tutorial project.
+
+ 05:54
+If you do not have good bandwidth, you can download and watch it.
+
+ 05:59
+The Spoken Tutorial Project Team:
+
+ 06:01
+Conducts workshops using spoken tutorials.
+
+06:04
+Gives certificates to those who pass an online test.
+
+ 06:08
+For more details, please write to, contact@spoken-tutorial.org.
+
+ 06:15
+Spoken Tutorial Project is a part of Talk to a Teacher project.
+
+ 06:18
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 06:25
+More information on this mission is available at the link shown below.
+
+ 06:29
+ This is Ashwini Patil from IIT Bombay, signing off.
+
+ 06:33
+Thank You for watching.
+

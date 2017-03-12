@@ -1,0 +1,429 @@
+00:01
+ Welcome to the spoken tutorial on Relational Operators in C and C++.
+
+00:06
+  In this tutorial, we will learn about:
+
+00:09
+Relational operators like,
+
+00:11
+Less than: e.g.  a < b
+
+00:14
+Greater than: e.g. a > b
+
+00:17
+Less than or equal to: e.g.  a <= b
+
+00:22
+Greater than or equal to: e.g. a >= b
+
+00:27
+Equal to: e.g. a == b
+
+00:30
+Not equal to: e.g. a != b
+
+ 00:37
+ To record this tutorial, I am using: Ubuntu 11.10 as the operating system,
+
+00:42
+gcc and g++ Compiler version 4.6.1 in Ubuntu.
+
+  00:50
+  Let us begin with an introduction.
+
+00:53
+Relational operators are used to compare integer and floating point numbers.
+
+00:57
+Expressions using relational operators return 0 for false and 1 for true.
+
+ 01:04
+  Now I will demonstrate the relational operators with the help of a C program.
+
+  01:09
+   I have already made the program.
+
+01:11
+So, I'll open the editor and explain the code.
+
+ 01:15
+  First, we declare two variables a and b.
+
+  01:20
+  This printf statement prompts the user to enter the values of a and b.
+
+ 01:26
+  This scanf statement takes input for the variables a and b.
+
+  01:32
+   Now we have the greater than (>) operator.
+
+01:35
+This operator compares the two operands on either side of the operator.
+
+01:38
+It returns True if a is greater than b.
+
+  01:43
+  This printf statement is executed if the above condition is true.
+
+01:47
+If the above condition is false then it is skipped.
+
+01:50
+The control then jumps to the next statement.
+
+ 01:53
+  We now have the less than (<) operator.
+
+01:56
+This too compares the operands.
+
+01:57
+It returns true when a is less than b.
+
+ 02:02
+This printf statement is executed if the above condition is true.
+
+02:06
+It is skipped otherwise.
+
+02:09
+  Let's execute the code till here.
+
+02:13
+First comment out the following.
+
+02:16
+Type /* (slash asterisk)
+
+02:21
+ */  (asterisk slash).
+
+ 02:24
+  Click on Save.
+
+02:26
+I have saved my file as relational.c.
+
+ 02:29
+   Open the terminal window by pressing Ctrl, Alt and T keys simultaneously.
+
+ 02:35
+  To compile, type the following on the terminal gcc space  relational dot c space -o space rel.
+
+ 02:49
+  Press Enter.
+
+ 02:51
+  To execute,  type ./rel (dot slash rel). Press Enter.
+
+ 02:56
+  I enter a as 8 and b as 3.
+
+ 03:01
+  The output is displayed:
+
+ 03:03
+ 8 is greater than 3.
+
+ 03:07
+  You can try executing this code with different values of a and b.
+
+03:11
+ Coming back to  the code.
+
+ 03:14
+  Delete the comment from here
+
+ 03:18
+  and  put it here.
+
+ 03:24
+Now we have the less than or equal to (<=) operator.
+
+ 03:28
+  This operator compares the two operands on either side of the operator.
+
+ 03:33
+  It returns true if a is less than or equal to b.
+
+03:38
+ This printf statement is executed if the above condition is true.
+
+ 03:42
+  If the above condition is false then it is skipped.
+
+ 03:45
+  The control then jumps to the next statement.
+
+ 03:49
+ Next comes the greater than or equal to (>=) operator.
+
+ 03:52
+  It compares a and b and  returns  true if a is greater than or equal to b.
+
+ 04:00
+ If the condition is true then this printf statement will be executed.
+
+ 04:05
+ Now let's execute the code till here.
+
+ 04:07
+  Click on Save.
+
+ 04:09
+  Switch back to the terminal.
+
+ 04:12
+  Compile and execute as before.
+
+ 04:17
+  I enter a as 8 and b as 3.
+
+ 04:22
+  The output is displayed:
+
+ 04:25
+ 8 is greater than or equal to 3
+
+ 04:30
+Now  Coming back to rest of the code.
+
+ 04:33
+  Delete the multiline comments from here
+
+ 04:39
+   and here.
+
+ 04:43
+We now have the equal to operator.
+
+ 04:47
+  It is denoted by double equal signs (==).
+
+ 04:50
+  This operator returns true when both operands are equal to one another.
+
+ 04:57
+This printf statement executes when a is equal to b.
+
+ 05:00
+  If not, the control then jumps on to the next statement.
+
+05:06
+Similarly, we have the not equal to operator.
+
+ 05:08
+  This operator returns true when the operands are not equal to one another.
+
+05:15
+ This printf statement will execute when a is not equal to b.
+
+  05:20
+Coming to the end of the program. return 0;
+
+ 05:24
+ Click on Save.
+
+05:26
+ Switch back to the terminal.
+
+ 05:28
+  Compile and execute as before.
+
+ 05:32
+  Enter a as 8 and b as 3.
+
+ 05:38
+  The output is displayed on the screen:
+
+ 05:40
+ 8 is not equal to 3
+
+ 05:44
+  So, we see how the relational operators work.
+
+ 05:48
+  Try executing this code with different set of inputs.
+
+ 05:51
+ Now, writing a similar program in C++ is quite easy.
+
+ 05:56
+  There are a few differences in the syntax.
+
+ 05:59
+  I have already made the code in C++.
+
+06:04
+ Here  is the code for relational operators in C++.
+
+06:08
+Notice that the header is different.
+
+ 06:12
+  Also we have the using statement here.
+
+ 06:15
+  The output statement in C++ is cout.
+
+ 06:19
+  And the input statement in C++ is cin.
+
+ 06:22
+  So, apart from these differences, the two codes are very similar.
+
+06:26
+ Click on Save.
+
+ 06:28
+  Please make sure the file is saved with the extension .cpp.
+
+ 06:32
+  I have saved my file as relational.cpp.
+
+ 06:37
+ Let's compile the code.
+
+ 06:39
+  Open the terminal and type g++ relational.cpp space minus o space rel1
+
+ 06:50
+  To  execute, type  ./rel1 (dot slash rel1), press Enter.
+
+ 06:56
+  I enter a as 8 and b as 3.
+
+ 07:00
+  The output is displayed:
+
+ 07:02
+  We see that the output is same as  the one in  C program.
+
+ 07:07
+ Now let us see an error which we can come across.
+
+ 07:10
+  Come back to the program.
+
+ 07:13
+ Suppose here we replace the 'double equal to' sign with the 'single equal to'.
+
+ 07:19
+  Click on Save.
+
+ 07:21
+  Come back to the terminal.
+
+ 07:23
+  Compile and execute as before.
+
+  07:33
+ Here we see it is showing 3 is equal to 3.
+
+ 07:37
+  Come back to our program.
+
+ 07:40
+  This is because here we have an assignment operator.
+
+ 07:43
+  So value of b is assigned to a.
+
+  07:46
+Now, let us fix this error.
+
+ 07:49
+  Type an equal to sign.
+
+ 07:51
+  Click on Save.
+
+  07:54
+  Switch back to  the terminal.
+
+ 07:56
+  Compile and execute as before.
+
+ 08:04
+  The output is now correct.
+
+08:06
+ Let's summarize the tutorial.
+
+ 08:08
+  In this tutorial, we learnt
+
+ 08:10
+  relational operators like:
+
+ 08:12
+  Less than:  e.g. a <  b
+
+ 08:14
+  Greater than: e.g. a>b
+
+ 08:17
+  Less than or equal to:  e.g. a<=b
+
+ 08:22
+  Greater than or equal to: e.g. a>=b
+
+ 08:27
+  Equal to: e.g. a==b
+
+ 08:29
+  Not equal to: e.g. a!=b
+
+  08:34
+  As an assignment:
+
+ 08:35
+  Write a program that takes the marks of three students as input.
+
+ 08:39
+  Compare the marks to see which student has scored the highest.
+
+ 08:43
+  Check also if two or more students have scored equal marks.
+
+  08:48
+  Watch the video available at the following link.
+
+ 08:51
+  It summarizes the Spoken Tutorial project.
+
+ 08:54
+  If you do not have good bandwidth, you can download and watch it.
+
+ 08:58
+  The Spoken Tutorial Project Team:
+
+ 09:00
+  Conducts workshops using spoken tutorials.
+
+ 09:03
+  Gives certificates for those who pass an online test.
+
+ 09:06
+  For more details, please write to contact at spoken hyphen tutorial dot org.
+
+ 09:14
+   Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+ 09:18
+  It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 09:24
+   More information on this Mission is available at
+
+ 09:27
+  spoken hyphen tutorial dot org slash NMEICT hyphen Intro.
+
+  09:34
+  This is Ritwik Joshi from IIT Bombay.
+Thank you for joining. 

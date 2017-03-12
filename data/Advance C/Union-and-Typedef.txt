@@ -1,0 +1,219 @@
+00:01
+ Welcome to the Spoken Tutorial on Typedef and Union in C.
+
+ 00:07
+ In this tutorial, we will learn about:
+ typedef keyword
+ union keyword
+
+with the help of some examples.
+
+ 00:17
+ For this tutorial, I am using:
+ Ubuntu Operating System version 11.10. 
+ gcc compiler version 4.6.1 on Ubuntu.
+
+
+00:29
+ To follow this tutorial, you should be familiar with 'C' tutorials.
+
+ 00:36
+If not, for relevant tutorials, please visit our website which is as shown.
+
+ 00:43
+ I will start with an introduction to typedef keyword.
+
+ 00:49
+ Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
+
+ 00:58
+  It is a way to define alias to the commands.
+
+ 01:03
+  It helps to provide clarity to the code.
+
+ 01:07
+ It makes the code easier to understand and change.
+
+ 01:12
+ Syntax: typedef existing_name alias_name. Example: typedef unsigned int uint;
+
+ 01:24
+ Let us go through an example code.
+
+ 01:28
+ Note that our filename is "pallindrome.c".
+
+ 01:34
+ In this program, we will check whether the given number is a palindrome or not.
+
+ 01:41
+ We have given alias name as 'uint' to the unsigned int datatype , using typedef keyword.
+
+ 01:52
+ Here we are using 'uint' to declare the variables.
+
+ 01:59
+ This is the logic for palindrome.
+
+ 02:03
+ Now, let us execute the program.
+
+ 02:06
+ Open the terminal by pressing Ctrl+Alt+T keys simultaneously on your keyboard.
+
+ 02:16
+ Type:  gcc space pallindrome dot c  space hyphen o space pallindrome. Press Enter.
+
+ 02:29
+ Type: dot slash pallindrome
+
+02:34
+ We see: "Enter any three digit number:".
+
+ 02:38
+ I will enter  121.
+
+ 02:42
+ The output is: Given number is a palindrome number.
+
+ 02:47
+ Now we will learn about union datatype.
+
+ 02:52
+ union is a collection of different datatypes grouped together.
+
+ 02:57
+ union allocates one common storage-space for all its members.
+
+ 03:03
+ We can access only one member of union at a time.
+
+ 03:08
+ Syntax1:
+union union_name within curly brackets members; after curly brackets union_variable
+and a semicolon.
+
+ 03:21
+ We also have an alternate syntax.
+Syntax 2:
+union union_name within curly brackets members; after curly brackets semicolon union union_name union_variable;
+
+ 03:39
+ Let us see an example.
+
+ 03:41
+ I have a code file; let us go through it.
+
+ 03:47
+ Note that our filename is union dot c.
+
+ 03:52
+ We have declared union named student.
+
+ 03:56
+ Here, we have three variables- english, maths and science.
+
+04:02
+ In main() function, we have declared a union variable as stud.
+
+ 04:09
+ Here we can access the union members using a union variable:
+ stud dot english
+ stud dot maths
+ stud dot science
+
+
+04:21
+ Then we calculate the total marks and display it.
+
+ 04:26
+ Let us execute on the terminal. Type: gcc space union dot c space hyphen o space union
+Type: dot slash union
+
+04:44
+ The output is displayed as: Total is 228.
+
+ 04:50
+ Let us see the difference between structure and union.
+
+ 04:55
+ union allocates a common storage-space for all its members.
+
+ 05:01
+ structure allocates separate storage-space for all its members.
+
+ 05:07
+ union occupies lower memory space.
+
+ 05:11
+ structure occupies higher memory space.
+
+ 05:14
+ Example for union:
+union student{int marks;char name[6];double average;};
+
+ 05:27
+ Memory allocation for union variable will be 8 bytes as double datatype will occupy the maximum memory space.
+
+ 05:39
+ Example for structure:
+struct student{int mark;char name[6];double average;};
+
+ 05:48
+ Memory allocation for structure variable will be: 2bytes+6bytes+8bytes =16bytes.
+
+ 06:00
+ This brings us to the end of this tutorial.
+
+ 06:04
+ Let us summarize.
+
+ 06:06
+ In this tutorial, we learnt:
+ typedef 
+ union and 
+ Difference between union and structure.
+
+
+ 06:14
+ As an assignment,
+
+ 06:17
+ write a program to display records of an employee
+
+ 06:21
+ like name, address, salary.
+
+ 06:25
+ Define a union named employee.
+
+ 06:29
+ Give an alias name as "emp" using typedef.
+
+06:35
+ Watch the video available at the link shown below.
+
+ 06:39
+ It summarizes the Spoken Tutorial project.
+
+ 06:42
+ If you do not have good bandwidth, you can download and watch it.
+
+ 06:47
+ The Spoken Tutorial project team: * Conducts workshops using spoken tutorials.
+
+ 06:53
+* Gives certificates to those who pass an online test. For more details, please write to contact@spoken-tutorial.org
+
+ 07:04
+ Spoken Tutorial project is a part of the Talk to a Teacher project.
+
+ 07:08
+ It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+ 07:16
+ More information on this mission is available at the link shown below:http://spoken-tutorial.org\NMEICT-Intro
+
+ 07:22
+ This is Ashwini Patil from IIT Bombay, signing off.Thank you for joining.
