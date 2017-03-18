@@ -9,6 +9,7 @@ def get_questions(path):
 		reader = csv.reader(csvfile)
 		# dictionary of StackExchange with key=question id and value=question + answer text
 		reader.next()
+		reader.next()
 		for row in reader:
 			link = row[3]
 			if link:
