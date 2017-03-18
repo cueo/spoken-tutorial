@@ -20,26 +20,29 @@ def get_data(path):
 	with open(path, 'r') as csvfile:
 		reader = csv.reader(csvfile)
 		reader.next()
+		reader.next()
 		for row in reader:
 			script = row[2]
 			link = row[3]
-			# check if scripts are empty (because incomplete data)
-			if script:
-				# if a script has more than one matching forums, taking just the first one
-				if '\n' in link:
-					link = link.split('\n')[0]
-				details = link.split('/')
-				# check if the links are proper (because discrepancies in data)
-				if len(details) > 5:
-					site = details[2]
-					qid = details[-2]
-					try:
-						forum = forum_data[qid]
-						scripts.append(script)
-						forums.append(forum)
-					except Exception as e:
-						print "Couldn't find qid:", qid
-						print 'Reason:', e
+			relevance = row[4]
+			if relevance == 'R' or relevance == 'SR':
+				# check if scripts are empty (because incomplete data)
+				if script:
+					# if a script has more than one matching forums, taking just the first one
+					if '\n' in link:
+						link = link.split('\n')[0]
+					details = link.split('/')
+					# check if the links are proper (because discrepancies in data)
+					if len(details) > 5:
+						site = details[2]
+						qid = details[-2]
+						try:
+							forum = forum_data[qid]
+							scripts.append(script)
+							forums.append(forum)
+						except Exception as e:
+							print "Couldn't find qid:", qid
+							print 'Reason:', e
 
 	return scripts, forums
 
@@ -49,6 +52,7 @@ if __name__ == '__main__':
 	# get the transcript and the forum data
 	scripts, forums = get_data(path)
 	l = len(scripts)
+	evaluated_scripts = 0
 	sum_sim, sub_sim, max_sim, min_sim = [], [], [], []
 	lsa_sim = []
 	key_sim = []
@@ -60,6 +64,7 @@ if __name__ == '__main__':
 		# compare using cosine similarity
 		try:
 			similarity = get_pairwise_similarity(script, forum)
+			evaluated_scripts += 1
 		except Exception as e:
 			print 'Exception:', e
 			print 'Script:', script
@@ -75,9 +80,9 @@ if __name__ == '__main__':
 
 		# Keyword matching
 		script_keywords = extract_keywords(documents[0])
+		forum_keywords = extract_keywords(documents[1])
 		try:
 			sk = ' '.join([x[0] for x in script_keywords])
-			forum_keywords = extract_keywords(documents[1])
 			fk = ' '.join([x[0] for x in forum_keywords])
 			documents = [sk, fk]
 			keyword_similarity = calculate_similarity(documents)[0][1]
@@ -119,16 +124,17 @@ if __name__ == '__main__':
 		if ks > BASE_SIMILARITY:
 			key_accuracy += 1
 
-	ss_accuracy /= (l * 1.0)
-	ms_accuracy /= (l * 1.0)
-	lsa_accuracy /= (l * 1.0)
-	key_accuracy /= (l * 1.0)
+	ss_accuracy /= (evaluated_scripts * 1.0)
+	ms_accuracy /= (evaluated_scripts * 1.0)
+	lsa_accuracy /= (evaluated_scripts * 1.0)
+	key_accuracy /= (evaluated_scripts * 1.0)
 
 	x = np.arange(4)
 	y = np.array([ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy])
 	c = ['r', 'b', 'g', 'orange']
 	area = np.pi * (50 * y) ** 2
 
+	print evaluated_scripts
 	print '=' * 50
 	print '{:22}{}'.format('Sum cosine accuracy:', ss_accuracy)
 	print '{:22}{}'.format('Max cosine accuracy:', ms_accuracy)

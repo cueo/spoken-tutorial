@@ -54,7 +54,7 @@ if __name__ == "__main__":
 	with open(transcript_path, 'r') as f:
 		file = f.read()
 	transcript = simple_clean(file)
-	transcript = re.sub('\d+'," ",transcript)
+	transcript = re.sub('\d+', ' ', transcript)
 	documents.append(transcript)
 	
 	forum_id = 26188265 	# R
@@ -62,6 +62,7 @@ if __name__ == "__main__":
 	# forum_id = 9593798  	# IR
 
 	question, answers = get_answers(forum_id)
+	# an i for an i will make the whole world blind
 	answers = ' '.join(i for i in answers)
 	documents.append(answers)
 
