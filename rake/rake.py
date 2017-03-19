@@ -1,4 +1,4 @@
-from __future__ import absolute_import
+
 import re
 import operator
 import six
@@ -53,7 +53,7 @@ def split_sentences(text):
 	Utility function to return a list of sentences.
 	@param text The text that must be split in to sentences.
 	"""
-	sentence_delimiters = re.compile(u'[\\[\\]\n.!?,;:\t\\-\\"\\(\\)\\\'\u2019\u2013]')
+	sentence_delimiters = re.compile('[\\[\\]\n.!?,;:\t\\-\\"\\(\\)\\\'\u2019\u2013]')
 	sentences = sentence_delimiters.split(text)
 	return sentences
 
@@ -93,7 +93,7 @@ def is_acceptable(phrase, min_char_length, max_words_length):
 
 	digits = 0
 	alpha = 0
-	for i in xrange(0, len(phrase)):
+	for i in range(0, len(phrase)):
 		if phrase[i].isdigit():
 			digits += 1
 		elif phrase[i].isalpha():
@@ -195,14 +195,14 @@ def extract_keywords(text):
 
 	# generate candidate keyword scores
 	keywordcandidates = generate_candidate_keyword_scores(phraseList, wordscores)
-	if debug: print keywordcandidates
+	if debug: print(keywordcandidates)
 
 	sortedKeywords = sorted(six.iteritems(keywordcandidates), key=operator.itemgetter(1), reverse=True)
-	if debug: print sortedKeywords
+	if debug: print(sortedKeywords)
 
 	totalKeywords = len(sortedKeywords)
 	if debug:
-		print totalKeywords
+		print(totalKeywords)
 	# print sortedKeywords[0:(totalKeywords // 3)]
 
 	rake = Rake(stoppath)
@@ -222,8 +222,8 @@ if __name__ == '__main__':
 	for r, d, files in os.walk(path):
 		for f in files:
 			if f.endswith('.txt'):
-				print 'Processing file:', r + '/' + f
+				print('Processing file:', r + '/' + f)
 				file_path = os.path.join(r, f)
 				text = get_string(file_path)
 				keywords = extract_keywords(text)
-				print '=' * 50
+				print('=' * 50)

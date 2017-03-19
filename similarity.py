@@ -22,7 +22,7 @@ class Similarity:
 		self.tfidf = self.vectorizer.fit_transform(self.documents)
 
 	def clean(self):
-		for i in xrange(len(self.documents)):
+		for i in range(len(self.documents)):
 			document = self.documents[i]
 			document = re.sub('\n+', '\n', document)
 			document = re.sub('[#.,$%|~\-\/&\"\'`*+=!?;:()^“”]', '', document)
@@ -65,8 +65,8 @@ def calculate_similarity(documents):
 
 if __name__ == '__main__':
 	files = ['test/transcript.txt', 'test/forum.txt', 'test/forum_diff.txt']
-	documents = [open(f).read() for f in files]
+	documents = [open(f, 'r', encoding='utf-8').read() for f in files]
 	sim = calculate_similarity(documents)
-	print sim[0]
-	print sim[1]
-	print sim[2]
+	print(sim[0])
+	print(sim[1])
+	print(sim[2])

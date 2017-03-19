@@ -14,13 +14,13 @@ def get_data(path):
 	scripts = []
 	forums = []
 	forum_data = {}
-	with open('data/data.pkl', 'r') as pklfile:
+	with open('data/data.pkl', 'rb') as pklfile:
 		forum_data = pickle.load(pklfile)
 
-	with open(path, 'r') as csvfile:
+	with open(path, 'r', encoding='utf-8') as csvfile:
 		reader = csv.reader(csvfile)
-		reader.next()
-		reader.next()
+		next(reader)
+		next(reader)
 		for row in reader:
 			script = row[2]
 			link = row[3]
@@ -41,8 +41,8 @@ def get_data(path):
 							scripts.append(script)
 							forums.append(forum)
 						except Exception as e:
-							print "Couldn't find qid:", qid
-							print 'Reason:', e
+							print("Couldn't find qid:", qid)
+							print('Reason:', e)
 
 	return scripts, forums
 
@@ -56,8 +56,8 @@ if __name__ == '__main__':
 	sum_sim, sub_sim, max_sim, min_sim = [], [], [], []
 	lsa_sim = []
 	key_sim = []
-	for index in xrange(l):
-		print 'Evaluating: %d/%d' % (index, l)
+	for index in range(l):
+		print('Evaluating: %d/%d' % (index, l))
 		script = scripts[index]
 		forum = forums[index]
 
@@ -66,9 +66,9 @@ if __name__ == '__main__':
 			similarity = get_pairwise_similarity(script, forum)
 			evaluated_scripts += 1
 		except Exception as e:
-			print 'Exception:', e
-			print 'Script:', script
-			print 'Forum:', forum
+			print('Exception:', e)
+			print('Script:', script)
+			print('Forum:', forum)
 		sum_sim.append(similarity[0])
 		# sub_sim.append(similarity[1])
 		max_sim.append(similarity[2])
@@ -92,12 +92,12 @@ if __name__ == '__main__':
 
 	x = np.arange(l)
 
-	print '=' * 50
-	print '{:26}{}'.format('Sum cosine similarities:', sum_sim)
-	print '{:26}{}'.format('Max cosine similarities:', max_sim)
-	print '{:26}{}'.format('LSA similarities:', lsa_sim)
-	print '{:26}{}'.format('Keyword similarities:', key_sim)
-	print '=' * 50
+	print('=' * 50)
+	print('{:26}{}'.format('Sum cosine similarities:', sum_sim))
+	print('{:26}{}'.format('Max cosine similarities:', max_sim))
+	print('{:26}{}'.format('LSA similarities:', lsa_sim))
+	print('{:26}{}'.format('Keyword similarities:', key_sim))
+	print('=' * 50)
 
 	# plot
 	plt.figure(1)
@@ -113,7 +113,7 @@ if __name__ == '__main__':
 	BASE_SIMILARITY = 0.2
 	n = np.arange(3)
 	ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy = 0, 0, 0, 0
-	for i in xrange(l):
+	for i in range(l):
 		ss, ms, lsa, ks = sum_sim[i], max_sim[i], lsa_sim[i], key_sim[i]
 		if ss > BASE_SIMILARITY:
 			ss_accuracy += 1
@@ -134,13 +134,13 @@ if __name__ == '__main__':
 	c = ['r', 'b', 'g', 'orange']
 	area = np.pi * (50 * y) ** 2
 
-	print evaluated_scripts
-	print '=' * 50
-	print '{:22}{}'.format('Sum cosine accuracy:', ss_accuracy)
-	print '{:22}{}'.format('Max cosine accuracy:', ms_accuracy)
-	print '{:22}{}'.format('LSA accuracy:', lsa_accuracy)
-	print '{:22}{}'.format('Keyword accuracy:', key_accuracy)
-	print '=' * 50
+	print('Evaluated scripts: %d/%d' % (evaluated_scripts, l))
+	print('=' * 50)
+	print('{:22}{}'.format('Sum cosine accuracy:', ss_accuracy))
+	print('{:22}{}'.format('Max cosine accuracy:', ms_accuracy))
+	print('{:22}{}'.format('LSA accuracy:', lsa_accuracy))
+	print('{:22}{}'.format('Keyword accuracy:', key_accuracy))
+	print('=' * 50)
 
 	# accuracy plot
 	plt.figure(2)

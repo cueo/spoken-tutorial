@@ -40,7 +40,7 @@ def create_dataset():
 	bash = []
 	cpp = []
 	courses = [c, bash, cpp]
-	for i in xrange(len(paths)):
+	for i in range(len(paths)):
 		path = paths[i]
 		data = populate_courses(path)
 		courses[i] = data
@@ -117,8 +117,8 @@ def lda(data_samples):
 	return get_top_words(lda, tf_feature_names, n_top_words)
 
 if __name__ == '__main__':
-	path = 'scripts/Advance C/Command-line-arguments-in-C.txt'
+	path = 'data/Advance C/Command-line-arguments-in-C.txt'
 	with open(path, 'r') as f:
 		data_samples = clean(f.read())
 		data_samples = [x[0] for x in data_samples]
-	print lda(data_samples)
+	print(lda(data_samples))

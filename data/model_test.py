@@ -23,5 +23,5 @@ for word in link_text:
 		vecvalue = model[word].reshape(1, dimension)
 		link_vector = np.add(link_vector, vecvalue)
 	
-print link_vector.shape
-print cosine_similarity(snippet_vector, link_vector)
+print(link_vector.shape)
+print(cosine_similarity(snippet_vector, link_vector))

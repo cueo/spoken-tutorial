@@ -67,4 +67,4 @@ if __name__ == "__main__":
 	documents.append(answers)
 
 	similarity = lsa_similarity(documents)
-	print similarity
+	print(similarity)

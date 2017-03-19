@@ -16,10 +16,10 @@ def calculate_interval(path):
 	script = each line in the transcript (broken at the subtitle timing breaks)
 	times = timestamps in the video corresponding to each of the lines in the script
 	time_interval_index = a list where each element, i, is the index of the list times
-		such that scripts[i] and scripts[times[i]] are interval seconds apart
-		therefore, the window = snippet between scripts[i] and scripts[times[i]]
+		such that script[i] and script[times[i]] are interval seconds apart
+		therefore, the window = snippet between script[i] and script[times[i]]
 	"""
-	with open(path, 'r') as f:
+	with open(path, 'r', encoding='utf-8') as f:
 		text = clean(f.read())
 	script = [x[0] for x in text]
 	times = [x[1] for x in text]
@@ -27,8 +27,8 @@ def calculate_interval(path):
 	time_interval_index = []
 	l = len(times)
 	fmt = '%M:%S'
-	for i in xrange(l):
-		for j in xrange(i+1, l):
+	for i in range(l):
+		for j in range(i+1, l):
 			t1, t2 = times[i], times[j]
 			tdelta = datetime.strptime(t2, fmt) - datetime.strptime(t1, fmt)
 			if tdelta.total_seconds() >= 60:
@@ -67,7 +67,7 @@ if __name__ == '__main__':
 	path = 'data/C and Cpp/First-C-Program.txt'
 	script, time_intervals = calculate_interval(path)
 	snippets = []
-	for t in xrange(len(time_intervals)):
+	for t in range(len(time_intervals)):
 		snippet = ' '.join(script[t:time_intervals[t]])
 		snippets.append(snippet)
 	'''
@@ -83,15 +83,15 @@ if __name__ == '__main__':
 	qids = []
 	path = 'data/data.pkl'
 	if os.path.exists(path):
-		with open(path, 'r') as f:
+		with open(path, 'rb') as f:
 			stack_data = pickle.load(f)
-			qids = stack_data.keys()
+			qids = list(stack_data.keys())
 	forum_texts = []
 	for id_ in ids:
 		if id_ in qids:
 			forum_texts.append(stack_data[id_])
 		else:
-			print 'Fetching:', id_
+			print('Fetching:', id_)
 			question, answers = get_answers(id_)
 			"""
 			Model for vanilla comparison
@@ -104,23 +104,23 @@ if __name__ == '__main__':
 	"""
 	Pairwise similarity without learning weight of upvotes
 	"""
-	print 'Relevant id:', ids[-1]
-	print 'Irrelevant ids:', ids[:-1]
-	print '=' * 100
-	for index in xrange(len(forum_texts)):
+	print('Relevant id:', ids[-1])
+	print('Irrelevant ids:', ids[:-1])
+	print('=' * 100)
+	for index in range(len(forum_texts)):
 		forum = forum_texts[index]
-		print 'Comparing with id:', ids[index]
+		print('Comparing with id:', ids[index])
 		similarity = get_pairwise_similarity(snippets[73], forum)
 
-		print 'Snippet:', snippets[73]
-		print 'Forum text:', forum
-		print '-' * 50
-		print 'Similarity:'
-		print 'Sum similarity:', similarity[0]
-		print 'Sub similarity:', similarity[1]
-		print 'Max similarity:', similarity[2]
-		print 'Min similarity:', similarity[3]
-		print '=' * 50
+		print('Snippet:', snippets[73])
+		print('Forum text:', forum)
+		print('-' * 50)
+		print('Similarity:')
+		print('Sum similarity:', similarity[0])
+		print('Sub similarity:', similarity[1])
+		print('Max similarity:', similarity[2])
+		print('Min similarity:', similarity[3])
+		print('=' * 50)
 
 	"""
 	Compare data against relevant and irrelevant forums.

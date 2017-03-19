@@ -31,4 +31,4 @@ if __name__ == "__main__":
 		model.train(sentences)
 
 model.save('Doc2Vec.model')
-print model.most_similar('array')
+print(model.most_similar('array'))

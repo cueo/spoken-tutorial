@@ -51,18 +51,18 @@ def clean_all_scripts(path):
 	for r, d, files in os.walk(path):
 		for f in files:
 			if f.endswith('.txt'):
-				print 'Cleaning file:', f
+				print('Cleaning file:', f)
 				file_path = os.path.join(r, f)
 				with open(file_path, 'r') as fp:
 					try:
 						clean(fp.read())
 					except Exception as e:
-						print "Couldn't clean file:", f
-						print 'Reason:', e
+						print("Couldn't clean file:", f)
+						print('Reason:', e)
 
 
 if __name__ == '__main__':
 	# clean_all_scripts(path)
 	path = 'data'
-	with open('data/BASH/Advance-topics-in-a-function.txt', 'r') as f:
-		print clean(f.read())
+	with open('data/BASH/Advance-topics-in-a-function.txt', 'r', encoding='utf-8') as f:
+		print(clean(f.read()))

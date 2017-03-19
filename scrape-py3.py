@@ -11,7 +11,7 @@ course = ''
 R = 21
 
 def get_courses():
-	print('Looking up:', url)
+	print(('Looking up:', url))
 	page = urlopen(url)
 	soup = BeautifulSoup(page, 'lxml')
 	'''
@@ -46,7 +46,7 @@ def get_tutorials(course, pages, language):
 	tutorials = []
 	for p in range(pages):
 		new_url = course_url + '&page=' + str(p+1)
-		print('Querying:', new_url)
+		print(('Querying:', new_url))
 		page = urlopen(new_url)
 		soup = BeautifulSoup(page, 'lxml')
 		# Get the divs which contain the required results
@@ -56,7 +56,7 @@ def get_tutorials(course, pages, language):
 	return tutorials
 
 def get_scripts(tutorial):
-	print('Downloading script for tutorial:', tutorial)
+	print(('Downloading script for tutorial:', tutorial))
 	page = urlopen(tutorial)
 	soup = BeautifulSoup(page, 'lxml')
 	# Get the link for the timed script.
@@ -78,7 +78,7 @@ def get_scripts(tutorial):
 	if not os.path.exists(directory):
 		os.makedirs(directory)
 	file = os.path.join(directory, title + '.txt')
-	print('\tWriting to file:', file)
+	print(('\tWriting to file:', file))
 	if not os.path.exists(file):
 		content = soup.table.text
 		content = re.sub('\n\n', '\n', content)

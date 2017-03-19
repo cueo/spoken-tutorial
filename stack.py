@@ -32,5 +32,5 @@ def get_answers(qid, site='stackoverflow.com'):
 if __name__ == '__main__':
 	qid = '571076'
 	question, answers = get_answers(qid)
-	print question
-	print answers
+	print(question)
+	print(answers)

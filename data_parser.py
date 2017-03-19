@@ -5,11 +5,10 @@ import os
 
 
 def get_questions(path):
-	with open(path, 'r') as csvfile:
+	with open(path, 'r', encoding='utf-8') as csvfile:
 		reader = csv.reader(csvfile)
 		# dictionary of StackExchange with key=question id and value=question + answer text
-		reader.next()
-		reader.next()
+		next(reader)
 		for row in reader:
 			link = row[3]
 			if link:
@@ -23,13 +22,13 @@ def get_questions(path):
 					qid = details[-2]
 					if qid not in qids:
 						try:
-							print 'Fetching:', l
+							print('Fetching:', l)
 							question, answers = get_answers(qid, site)
 							qids[qid] = [question] + answers
 						except Exception as e:
-							print "Couldn't fetch, error:", e
+							print("Couldn't fetch, error:", e)
 					else:
-						print 'Already fetched question:', qid
+						print('Already fetched question:', qid)
 	return qids
 
 
@@ -38,10 +37,10 @@ if __name__ == '__main__':
 	pickle_path = 'data/data.pkl'
 	qids = {}
 	if os.path.exists(pickle_path):
-		with open(pickle_path, 'r') as f:
+		with open(pickle_path, 'rb') as f:
 			qids = pickle.load(f)
 	get_questions(path)
 	# for k, v in qids.items():
-	# 	print k, v
-	with open(pickle_path, 'w') as f:
+	# 	print(k, v)
+	with open(pickle_path, 'wb') as f:
 		pickle.dump(qids, f)
