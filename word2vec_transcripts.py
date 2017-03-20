@@ -21,6 +21,6 @@ class CleanSentences:
 if __name__ == '__main__':
 	sentences = CleanSentences('data')
 	print('Creating a word2vec model for the transcripts...')
-	model = Word2Vec(sentences)
+	model = Word2Vec(sentences, window=6, iter=100)
 	model.save('data/snippet.model')
 	print('Created a word2vec model for the transcripts.')
