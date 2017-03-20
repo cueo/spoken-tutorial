@@ -88,6 +88,7 @@ if __name__ == '__main__':
 			keyword_similarity = calculate_similarity(documents)[0][1]
 			key_sim.append(keyword_similarity)
 		except Exception as e:
+			print(e)
 			key_sim.append(0)
 
 	x = np.arange(l)
@@ -124,10 +125,10 @@ if __name__ == '__main__':
 		if ks > BASE_SIMILARITY:
 			key_accuracy += 1
 
-	ss_accuracy /= (evaluated_scripts * 1.0)
-	ms_accuracy /= (evaluated_scripts * 1.0)
-	lsa_accuracy /= (evaluated_scripts * 1.0)
-	key_accuracy /= (evaluated_scripts * 1.0)
+	ss_accuracy /= evaluated_scripts
+	ms_accuracy /= evaluated_scripts
+	lsa_accuracy /= evaluated_scripts
+	key_accuracy /= evaluated_scripts
 
 	x = np.arange(4)
 	y = np.array([ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy])
