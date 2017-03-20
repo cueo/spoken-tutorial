@@ -1,13 +1,9 @@
-
 import re
 import operator
 import six
 import os
 
 from preprocess import clean
-
-
-debug = False
 
 
 def is_number(s):
@@ -183,7 +179,7 @@ def get_string(path, from_file=True):
 def extract_keywords(text):
 	# Split text into sentences
 	sentenceList = split_sentences(text)
-	# stoppath = "FoxStoplist.txt" #Fox stoplist contains "numbers", so it will not find "natural numbers"
+	# stoppath = "FoxStoplist.txt" # Fox stoplist contains "numbers", so it will not find "natural numbers"
 	stoppath = "rake/SmartStoplist.txt"  # SMART stoplist misses some of the lower-scoring keywords
 	stopwordpattern = build_stop_word_regex(stoppath)
 
@@ -218,7 +214,8 @@ def extract_keywords(text):
 
 
 if __name__ == '__main__':
-	path = '../data'
+	debug = False
+	path = 'data'
 	for r, d, files in os.walk(path):
 		for f in files:
 			if f.endswith('.txt'):
@@ -226,4 +223,5 @@ if __name__ == '__main__':
 				file_path = os.path.join(r, f)
 				text = get_string(file_path)
 				keywords = extract_keywords(text)
+				print(keywords)
 				print('=' * 50)
