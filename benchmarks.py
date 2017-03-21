@@ -16,7 +16,6 @@ from word2vec_similarity import avg_feature_vector
 def get_data(path):
 	scripts = []
 	forums = []
-	forum_data = {}
 	with open('data/data.pkl', 'rb') as pklfile:
 		forum_data = pickle.load(pklfile)
 
@@ -28,7 +27,7 @@ def get_data(path):
 			script = row[2]
 			link = row[3]
 			relevance = row[4]
-			if relevance == 'R' or relevance == 'SR':
+			if relevance == 'IR':  # R, SR, IR
 				# check if scripts are empty (because incomplete data)
 				if script:
 					# if a script has more than one matching forums, taking just the first one
@@ -37,7 +36,6 @@ def get_data(path):
 					details = link.split('/')
 					# check if the links are proper (because discrepancies in data)
 					if len(details) > 5:
-						site = details[2]
 						qid = details[-2]
 						try:
 							forum = forum_data[qid]
@@ -61,7 +59,7 @@ if __name__ == '__main__':
 	key_sim = []
 	word2vec_sim = []
 	for index in range(l):
-		print('Evaluating: %d/%d' % (index, l))
+		print('Evaluating: %d/%d' % (index+1, l))
 		script = scripts[index]
 		forum = forums[index]
 
@@ -88,17 +86,13 @@ if __name__ == '__main__':
 		# keyword matching
 		script_keywords = extract_keywords(documents[0])
 		forum_keywords = extract_keywords(documents[1])
-		# print(documents[0], script_keywords, sep='\n')
-		# print(documents[1], forum_keywords, sep='\n')
-		# print()
 		try:
 			sk = ' '.join([x[0] for x in script_keywords])
 			fk = ' '.join([x[0] for x in forum_keywords])
 			documents = [sk, fk]
 			keyword_similarity = calculate_similarity(documents)[0][1]
 			key_sim.append(keyword_similarity)
-		except Exception as e:
-			# print(e)
+		except TypeError:
 			key_sim.append(0)
 
 		# word2vec similarity
@@ -163,7 +157,7 @@ if __name__ == '__main__':
 	print('{:22}{}'.format('Max cosine accuracy:', ms_accuracy))
 	print('{:22}{}'.format('LSA accuracy:', lsa_accuracy))
 	print('{:22}{}'.format('Keyword accuracy:', key_accuracy))
-	print('{:22}{}'.format('Keyword accuracy:', word2vec_accuracy))
+	print('{:22}{}'.format('Word2Vec accuracy:', word2vec_accuracy))
 	print('=' * 50)
 
 	# accuracy plot
