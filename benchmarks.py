@@ -1,6 +1,8 @@
 import csv
 import pickle
 import numpy as np
+from gensim.models import Word2Vec
+from scipy.spatial.distance import cosine
 import matplotlib.pyplot as plt
 
 from preprocess import simple_clean
@@ -8,6 +10,7 @@ from window import get_pairwise_similarity
 from lsa import lsa_similarity
 from rake.rake import extract_keywords
 from similarity import calculate_similarity
+from word2vec_similarity import avg_feature_vector
 
 
 def get_data(path):
@@ -56,10 +59,14 @@ if __name__ == '__main__':
 	sum_sim, sub_sim, max_sim, min_sim = [], [], [], []
 	lsa_sim = []
 	key_sim = []
+	word2vec_sim = []
 	for index in range(l):
 		print('Evaluating: %d/%d' % (index, l))
 		script = scripts[index]
 		forum = forums[index]
+
+		# clean script
+		script = simple_clean(script)
 
 		# compare using cosine similarity
 		try:
@@ -75,12 +82,15 @@ if __name__ == '__main__':
 		# min_sim.append(similarity[3])
 
 		# LSA
-		documents = [simple_clean(script), ' '.join(forum)]
+		documents = [script, ' '.join(forum)]
 		lsa_sim.append(lsa_similarity(documents))
 
-		# Keyword matching
+		# keyword matching
 		script_keywords = extract_keywords(documents[0])
 		forum_keywords = extract_keywords(documents[1])
+		# print(documents[0], script_keywords, sep='\n')
+		# print(documents[1], forum_keywords, sep='\n')
+		# print()
 		try:
 			sk = ' '.join([x[0] for x in script_keywords])
 			fk = ' '.join([x[0] for x in forum_keywords])
@@ -88,8 +98,16 @@ if __name__ == '__main__':
 			keyword_similarity = calculate_similarity(documents)[0][1]
 			key_sim.append(keyword_similarity)
 		except Exception as e:
-			print(e)
+			# print(e)
 			key_sim.append(0)
+
+		# word2vec similarity
+		model = Word2Vec.load('data/snippet.model')
+		word_index_set = set(model.index2word)
+		script_vector = avg_feature_vector(documents[0].split(), model, word_index_set)
+		forum_vector = avg_feature_vector(documents[1].split(), model, word_index_set)
+		word2vec_similarity = 1 - cosine(script_vector, forum_vector)
+		word2vec_sim.append(word2vec_similarity)
 
 	x = np.arange(l)
 
@@ -98,6 +116,7 @@ if __name__ == '__main__':
 	print('{:26}{}'.format('Max cosine similarities:', max_sim))
 	print('{:26}{}'.format('LSA similarities:', lsa_sim))
 	print('{:26}{}'.format('Keyword similarities:', key_sim))
+	print('{:26}{}'.format('Word2Vec similarities:', word2vec_sim))
 	print('=' * 50)
 
 	# plot
@@ -106,16 +125,16 @@ if __name__ == '__main__':
 	blue_dot, = plt.plot(x, max_sim, 'ro', color='blue')
 	green_dot, = plt.plot(x, lsa_sim, 'ro', color='green')
 	orange_dot, = plt.plot(x, key_sim, 'ro', color='orange')
+	magenta_dot, = plt.plot(x, word2vec_sim, 'ro', color='magenta')
 
-	plt.legend([red_dot, blue_dot, green_dot, orange_dot], ['cosine sum', 'cosine max', 'lsa', 'keyword matching'])
+	plt.legend([red_dot, blue_dot, green_dot, orange_dot, magenta_dot], ['cosine sum', 'cosine max', 'lsa', 'keyword matching', 'word2vec similarity'])
 	plt.show()
-	plt.close()
 
 	BASE_SIMILARITY = 0.2
 	n = np.arange(3)
-	ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy = 0, 0, 0, 0
+	ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy, word2vec_accuracy = 0, 0, 0, 0, 0
 	for i in range(l):
-		ss, ms, lsa, ks = sum_sim[i], max_sim[i], lsa_sim[i], key_sim[i]
+		ss, ms, lsa, ks, ws = sum_sim[i], max_sim[i], lsa_sim[i], key_sim[i], word2vec_sim[i]
 		if ss > BASE_SIMILARITY:
 			ss_accuracy += 1
 		if ms > BASE_SIMILARITY:
@@ -124,15 +143,18 @@ if __name__ == '__main__':
 			lsa_accuracy += 1
 		if ks > BASE_SIMILARITY:
 			key_accuracy += 1
+		if ws > BASE_SIMILARITY:
+			word2vec_accuracy += 1
 
 	ss_accuracy /= evaluated_scripts
 	ms_accuracy /= evaluated_scripts
 	lsa_accuracy /= evaluated_scripts
 	key_accuracy /= evaluated_scripts
+	word2vec_accuracy /= evaluated_scripts
 
-	x = np.arange(4)
-	y = np.array([ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy])
-	c = ['r', 'b', 'g', 'orange']
+	y = np.array([ss_accuracy, ms_accuracy, lsa_accuracy, key_accuracy, word2vec_accuracy])
+	x = np.arange(len(y))
+	c = ['r', 'b', 'g', 'orange', 'm']
 	area = np.pi * (50 * y) ** 2
 
 	print('Evaluated scripts: %d/%d' % (evaluated_scripts, l))
@@ -141,11 +163,12 @@ if __name__ == '__main__':
 	print('{:22}{}'.format('Max cosine accuracy:', ms_accuracy))
 	print('{:22}{}'.format('LSA accuracy:', lsa_accuracy))
 	print('{:22}{}'.format('Keyword accuracy:', key_accuracy))
+	print('{:22}{}'.format('Keyword accuracy:', word2vec_accuracy))
 	print('=' * 50)
 
 	# accuracy plot
 	plt.figure(2)
-	plt.scatter(x, y, s=area, c=c, alpha=0.7, label='Cosine')
+	plt.scatter(x, y, s=area, c=c, alpha=0.7)
 	plt.ylabel('accuracy')
 	plt.show()
 	plt.close()

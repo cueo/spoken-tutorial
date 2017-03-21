@@ -5,6 +5,8 @@ import os
 
 from preprocess import clean
 
+debug = False
+
 
 def is_number(s):
 	try:
@@ -214,7 +216,6 @@ def extract_keywords(text):
 
 
 if __name__ == '__main__':
-	debug = False
 	path = 'data'
 	for r, d, files in os.walk(path):
 		for f in files:
