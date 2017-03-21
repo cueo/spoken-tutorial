@@ -175,7 +175,7 @@ Now if we see the value of a here, it has been incremented by 1.
 We again initialize 'a' to 1 so as to reflect on the changes.
 We now come to the prefix increment operators.
 This printf statement prints 2 on the screen.
-This is because a prefix operation occurs before the operand is evaluated.
+This is because a prefix operation occurs before the operand is evaluated. 
 ",http://stackoverflow.com/questions/3891230/increment-and-decrement-operators,R,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
 ,,"Let's see how the postfix increment operator works.
 The output of this printf statement is 1.
@@ -187,7 +187,7 @@ Now if we see the value of a here, it has been incremented by 1.
 We again initialize 'a' to 1 so as to reflect on the changes.
 We now come to the prefix increment operators.
 This printf statement prints 2 on the screen.
-This is because a prefix operation occurs before the operand is evaluated.
+This is because a prefix operation occurs before the operand is evaluated. 
 ",http://stackoverflow.com/questions/16869020/pre-increment-vs-post-increment-in-array,R,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
 ,,"The ++ operator increases the existing value of the operand by one.
 a++ and ++a are equivalent to a = a + 1.
@@ -205,7 +205,7 @@ Now if we see the value of a here, it has been incremented by 1.
 We again initialize 'a' to 1 so as to reflect on the changes.
 We now come to the prefix increment operators.
 This printf statement prints 2 on the screen.
-This is because a prefix operation occurs before the operand is evaluated.
+This is because a prefix operation occurs before the operand is evaluated. 
 ",http://stackoverflow.com/questions/21905747/increment-and-decrement-operators-in-java,SR,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
 ,,"Let's see how the postfix increment operator works.
 The output of this printf statement is 1.
@@ -217,7 +217,7 @@ Now if we see the value of a here, it has been incremented by 1.
 We again initialize 'a' to 1 so as to reflect on the changes.
 We now come to the prefix increment operators.
 This printf statement prints 2 on the screen.
-This is because a prefix operation occurs before the operand is evaluated.
+This is because a prefix operation occurs before the operand is evaluated. 
 ",http://stackoverflow.com/questions/31421958/increment-decrement-operators-in-c,R,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
 ,,"We now come to the prefix increment operators.This printf statement prints 2 on the screen.
 This is because a prefix operation occurs before the operand is evaluated.We now have the prefix decrement operator.
@@ -269,7 +269,7 @@ If the above condition is false then it is skipped.
 The control then jumps to the next statement.
 We now have the less than (<) operator.
 This too compares the operands.
-It returns true when a is less than b.
+It returns true when a is less than b. 
 ",http://stackoverflow.com/questions/5112886/question-regarding-relational-operator-in-c,R,"01:32,01:35,01:38,01:43,01:47,01:50,01:53,01:56,01:57"
 ,,"We now have the equal to operator.
 It is denoted by double equal signs (==).This operator returns true when both operands are equal to one another. ",http://stackoverflow.com/questions/29495631/evaluating-relational-operator-in-c,R,"04:43,04:47,04:59"
@@ -802,7 +802,7 @@ So, ampersand num (&num) will give the memory address of num. ",http://stackover
 So, using asterisk will not give the memory address.
 Instead it will give the value. ",http://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean,R,"1:54,1:59,2:03"
 ,,"In the 'printf' statement, ampersand is used for retrieving memory address of the variable.
-So, ampersand num (&num) will give the memory address of num.
+So, ampersand num (&num) will give the memory address of num. 
 And here asterisk ptr will give the value at the address.
 So, using asterisk will not give the memory address.
 Instead it will give the value. ",http://stackoverflow.com/questions/2094666/pointers-in-c-when-to-use-the-ampersand-and-the-asterisk,R,"1:20,1:28,1:54,1:59,2:03"
@@ -845,11 +845,11 @@ It also gives value stored at that address. ",http://stackoverflow.com/questions
 ,,"Asterisk sign is used to declare a pointer.So, ampersand num (&num) will give the memory address of num.",http://stackoverflow.com/questions/34548762/void-f,IR,"1:12,1:28"
 ,,"Pointers store the memory address.
 It also gives value stored at that address.",http://stackoverflow.com/questions/655065/when-should-i-use-the-new-keyword-in-c,IR,"00:38,00:41"
-,,"So, ampersand num (&num) will give the memory address of num.
+,,"So, ampersand num (&num) will give the memory address of num. 
 And here asterisk ptr will give the value at the address.
 So, using asterisk will not give the memory address.
 Instead it will give the value. ",http://stackoverflow.com/questions/31231376/why-is-x0-x00-x000,SR,"1:28,1:54,1:59,2:03"
-,,"So, ampersand num (&num) will give the memory address of num.
+,,"So, ampersand num (&num) will give the memory address of num. 
 And here asterisk ptr will give the value at the address.
 So, using asterisk will not give the memory address.
 Instead it will give the value. ",http://stackoverflow.com/questions/645994/why-this-is-a-pointer-and-not-a-reference,IR,"1:28,1:54,1:59,2:03"
@@ -1068,8 +1068,6 @@ It makes the code easier to understand and change. ",http://stackoverflow.com/qu
 ,,Syntax: typedef existing_name alias_name. Example: typedef unsigned int uint;,http://stackoverflow.com/questions/31903594/typedef-struct-in-c-vs-c,SR,1:12
 ,,"Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
 It is a way to define alias to the commands. ",http://stackoverflow.com/questions/1666353/are-typedef-and-define-the-same-in-c,R,00:49-00:58
-,,"Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
-It is a way to define alias to the commands. ",http://meta.stackoverflow.com/questions/306907/typedef-type-alias-typedef,IR,00:49-00:58
 ,,"Type: gcc space pallindrome dot c space hyphen o space pallindrome. Press Enter.
 Type: dot slash pallindrome",http://stackoverflow.com/questions/16367190/how-to-run-a-c-program-using-command-prompt,R,02:16-02:29
 ,,"Type: gcc space pallindrome dot c space hyphen o space pallindrome. Press Enter.
@@ -1193,7 +1191,7 @@ These are stored in CPU memory. ",http://stackoverflow.com/questions/40356368/st
 register variables will be accessed faster than normal variables.
 They are stored in register memory rather than main memory.
 Limited number of variables can be used since register size is very low.
-16 bits, 32 bits or 64 bits.
+16 bits, 32 bits or 64 bits. 
 
 Let us start with auto keyword.
 auto keyword declares an automatic variable.
@@ -1214,14 +1212,14 @@ These are stored in CPU memory. ",http://stackoverflow.com/questions/35076280/wh
 register variables will be accessed faster than normal variables.
 They are stored in register memory rather than main memory.
 Limited number of variables can be used since register size is very low.
-16 bits, 32 bits or 64 bits.
+16 bits, 32 bits or 64 bits. 
 
 Now, let us see static variable.
 Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
 They do not lose their value between function calls. ",http://stackoverflow.com/questions/34680929/why-cant-the-static-and-register-storage-classes-be-used-together,R,
@@ -1238,7 +1236,7 @@ Although we have studied about static variable, in the previous tutorials, I wil
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
 They do not lose their value between function calls. ",http://stackoverflow.com/questions/31716936/runtime-entity-and-load-time-entity,SR,
@@ -1246,7 +1244,7 @@ They do not lose their value between function calls. ",http://stackoverflow.com/
 register variables will be accessed faster than normal variables.
 They are stored in register memory rather than main memory.
 Limited number of variables can be used since register size is very low.
-16 bits, 32 bits or 64 bits.
+16 bits, 32 bits or 64 bits. 
 ",http://stackoverflow.com/questions/31607507/do-the-c-language-standards-specify-support-for-global-register-variables,R,
 ,,"Now, let us learn about extern keyword.
 Scope of extern variable is throughout the main program.
@@ -1258,27 +1256,27 @@ These are stored in CPU memory. ",http://stackoverflow.com/questions/31019176/ex
 register variables will be accessed faster than normal variables.
 They are stored in register memory rather than main memory.
 Limited number of variables can be used since register size is very low.
-16 bits, 32 bits or 64 bits.
+16 bits, 32 bits or 64 bits. 
 ",http://stackoverflow.com/questions/30826065/why-cant-we-always-use-the-register-storage-class-in-c,R,
 ,,"Now, let us see static variable.
 Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
-They do not lose their value between function calls.
+They do not lose their value between function calls. 
 ",http://stackoverflow.com/questions/28686049/the-scope-of-static-function-in-c,R,
 ,,"Now, let us see static variable.
 Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
-They do not lose their value between function calls.
+They do not lose their value between function calls. 
 ",http://stackoverflow.com/questions/23905299/static-storage-class-in-c,R,
 ,,"Now, let us learn about extern keyword.
 Scope of extern variable is throughout the main program.
@@ -1297,33 +1295,33 @@ Although we have studied about static variable, in the previous tutorials, I wil
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
-They do not lose their value between function calls.
+They do not lose their value between function calls. 
 ",http://stackoverflow.com/questions/15808049/what-is-the-use-of-static-local-variable-when-we-can-get-a-global-variable-at-th,R,
 ,,"Now, let us move on to register keyword.
 register variables will be accessed faster than normal variables.
 They are stored in register memory rather than main memory.
 Limited number of variables can be used since register size is very low.
-16 bits, 32 bits or 64 bits.
+16 bits, 32 bits or 64 bits. 
 
 Now, let us see static variable.
 Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
-They do not lose their value between function calls.
+They do not lose their value between function calls. 
 
 Let us start with auto keyword.
 auto keyword declares an automatic variable.
 It has a local scope.
 Keywords are not initialized automatically.
 You should explicitly initialize keywords while declaring.
-Storage-space of keywords is CPU memory.
+Storage-space of keywords is CPU memory. 
 
 Now, let us learn about extern keyword.
 Scope of extern variable is throughout the main program.
@@ -1336,24 +1334,24 @@ Although we have studied about static variable, in the previous tutorials, I wil
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
-They do not lose their value between function calls.
+They do not lose their value between function calls. 
 
 Let us start with auto keyword.
 auto keyword declares an automatic variable.
 It has a local scope.
 Keywords are not initialized automatically.
 You should explicitly initialize keywords while declaring.
-Storage-space of keywords is CPU memory.
+Storage-space of keywords is CPU memory. 
 ",http://stackoverflow.com/questions/2661369/storage-classes,R,
 ,,"Now, let us see static variable.
 Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
 They do not lose their value between function calls. ",http://stackoverflow.com/questions/17182648/understanding-static-storage-class-in-c,R,
@@ -1368,7 +1366,7 @@ Although we have studied about static variable, in the previous tutorials, I wil
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
 They do not lose their value between function calls. ",http://stackoverflow.com/questions/13073952/where-in-a-declaration-may-a-storage-class-specifier-be-placed,SR,
@@ -1388,7 +1386,7 @@ Although we have studied about static variable, in the previous tutorials, I wil
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
 They do not lose their value between function calls. ",http://stackoverflow.com/questions/36056662/the-memory-location-of-static-and-extern-storage-class-in-c,R,
@@ -1415,10 +1413,10 @@ Although we have studied about static variable, in the previous tutorials, I wil
 'static' variables are initialized to zero.
 They are not destroyed even after program control exits from the block.
 Value of the variable persists between different function calls.
-Storage-space is CPU memory.
+Storage-space is CPU memory. 
 This is because static variables are global variables.
 The scope of static variable is local to the function, they are defined in.
-They do not lose their value between function calls.
+They do not lose their value between function calls. 
 Now, let us learn about extern keyword.
 Scope of extern variable is throughout the main program.
 Definition for extern variable might be anywhere in the C program.
@@ -1572,9 +1570,9 @@ It can also be used to assign an input value to a user defined variable.",http:/
 ",http://stackoverflow.com/questions/18318716/why-do-bash-command-line-arguments-after-9-require-curly-brackets,R,
 ,,$# (Dollar hash) gives the total number of arguments that have been passed to a program.,http://stackoverflow.com/questions/4423306/how-do-i-find-the-number-of-arguments-passed-to-a-bash-script,R,
 ,,$* (Dollar asterisk) will print all the arguments on a single line.,http://unix.stackexchange.com/questions/197792/joining-bash-arguments-into-single-string-with-spaces,R,
-,,"$@ (Dollar at) will also print all the arguments. However, this time each argument will be printed on separate line. This is another for loop which will print each argument in a separate line",http://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-a-bash-script/255913#255913,R,
+,,"$@ (Dollar at) will also print all the arguments. However, this time each argument will be printed on separate line. This is another for loop which will print each argument in a separate line",http://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-a-bash-script,R,
 ,,,http://stackoverflow.com/questions/3008695/what-is-the-difference-between-and-in-bash,R,
-,,"Double quote substitutes the value of variables and commands. Example echo “Username is $USER”. It displays the username  of the system. Switch to the Terminal. Let me clear the prompt. Now, type:  echo space within double quotes Username space  is dollar USER  in capitals. Press Enter. The username of the system is printed. The output will vary according to your system",http://stackoverflow.com/questions/35586627/how-to-escape-double-quotes-in-bash/35586661,R,
+,,"Double quote substitutes the value of variables and commands. Example echo “Username is $USER”. It displays the username  of the system. Switch to the Terminal. Let me clear the prompt. Now, type:  echo space within double quotes Username space  is dollar USER  in capitals. Press Enter. The username of the system is printed. The output will vary according to your system",http://stackoverflow.com/questions/35586627/how-to-escape-double-quotes-in-bash,R,
 ,,,http://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash,,
 ,,Single quotes preserves the literal meaning of each character of a given string. It is used to turn off special meaning of all characters.,http://stackoverflow.com/questions/1250079/how-to-escape-single-quotes-within-single-quoted-strings,R,
 ,,Backslash removes the special meaning from a single character. It is used as an escape character in BASH.,http://askubuntu.com/questions/20034/differences-between-doublequotes-singlequotes-and-backticks-%C2%B4-%C2%B4-on-comm,R,
@@ -1586,7 +1584,7 @@ We can see that s asterisk dot sh matches all the files starting with character 
 Now, type: ls space opening square bracket a hyphen c closing square bracket asterisk dot sh press Enter.
 This will match and display the files starting with letter 'a' or 'b' or 'c.'
 Observe the output.
-We see a list of all files starting with character 'a' or 'b' or 'c.'",http://stackoverflow.com/questions/10488395/finding-files-with-same-first-few-characters/10488462#10488462,R,
+We see a list of all files starting with character 'a' or 'b' or 'c.'",http://stackoverflow.com/questions/10488395/finding-files-with-same-first-few-characters/,R,
 ,,"Now, let's go ahead and type: ls space opening square bracket caret-sign a hyphen c closing square bracket asterisk dot sh press Enter.
 This will match all the file-names with extension ""sh""
 but will omit those starting with character as 'a' OR 'b' OR 'c'.",http://stackoverflow.com/questions/38152760/why-does-bash-documentation-suggest-quoting-wildcard-characters,R,
