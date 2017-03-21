@@ -4,6 +4,21 @@ from stack import get_answers
 import os
 
 
+def fetch_answer_from_link(link):
+	details = link.split('/')
+	site = details[2]
+	qid = details[-2]
+	if qid not in qids:
+		try:
+			print('Fetching:', link)
+			question, answers = get_answers(qid, site)
+			qids[qid] = [question] + answers
+		except Exception as e:
+			print("Couldn't fetch, error:", e)
+	else:
+		print('Already fetched question:', qid)
+
+
 def get_questions(path):
 	with open(path, 'r', encoding='utf-8') as csvfile:
 		reader = csv.reader(csvfile)
@@ -17,18 +32,7 @@ def get_questions(path):
 				else:
 					links = [link]
 				for l in links:
-					details = l.split('/')
-					site = details[2]
-					qid = details[-2]
-					if qid not in qids:
-						try:
-							print('Fetching:', l)
-							question, answers = get_answers(qid, site)
-							qids[qid] = [question] + answers
-						except Exception as e:
-							print("Couldn't fetch, error:", e)
-					else:
-						print('Already fetched question:', qid)
+					fetch_answer_from_link(l)
 	return qids
 
 
