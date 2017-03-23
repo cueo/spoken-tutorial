@@ -17,7 +17,7 @@ def calculate_interval(path):
 	times = timestamps in the video corresponding to each of the lines in the script
 	time_interval_index = a list where each element, i, is the index of the list times
 		such that script[i] and script[times[i]] are interval seconds apart
-		therefore, the window = snippet between script[i] and script[times[i]]
+		therefore, the window = snippet between script[i] and script[time_interval_index[i]]
 	"""
 	with open(path, 'r', encoding='utf-8') as f:
 		text = clean(f.read())
