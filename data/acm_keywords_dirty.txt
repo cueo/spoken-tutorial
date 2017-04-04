@@ -1,0 +1,833 @@
+Abstract data type.
+Access methods.
+Access time.
+Accounting system, computer.
+ACM.
+Activation record.
+Ada, Augusta.
+ADA.
+Adder.
+Addressing.
+Administrative applications.
+Agent.
+Aiken, Howard.
+Algol 68.
+Algol.
+Algorithm.
+Algorithmic problem solving.
+Algorithmics.
+Algorithms, analysis of.
+Algorithms, design and classification of.
+Algorithms, theory of.
+ALU.
+Analog computer.
+Analog-to-digital and digital-to-analog converters.
+Analysis of algorithms.
+Analytical engine.
+Animation.
+APL.
+Apple computer, Inc..
+Applications programming.
+Applicative programming.
+Approximation theory.
+Architecture, computer.
+Argument.
+Arithmetic, computer.
+Arithmetic-logic unit (ALU).
+Art, computer.
+Artificial intelligence (AI).
+Artificial life.
+ASCII.
+Assembler.
+Association for computing machinery (ACM).
+Associative memory.
+Asynchronous transfer mode (ATM).
+Atanasoff, John Vincent.
+Atanasoff-Berry computer.
+Atlas.
+ATM.
+Authentication.
+Automata theory.
+Automated planning.
+Automatic programming.
+Automation.
+Babbage, Charles.
+Backus-Naur form (BNF).
+Bandwidth.
+Bar code.
+Basic.
+Baud.
+Baudot code.
+BCD (binary-coded decimal).
+Bell labs relay computers.
+Benchmarks.
+Binary arithmetic.
+Binary search.
+Binary tree.
+Binary-coded decimal (BCD).
+Binding.
+Biocomputing.
+Bios.
+Bit slicing.
+Block and blocking factor.
+Block structure.
+BNF.
+Boole, George.
+Boolean algebra.
+Bootstrap.
+British computer society (BCS).
+Browser.
+Buffer.
+Bug.
+Bulletin board.
+Burroughs, William S..
+Bus.
+Bush, Vannevar.
+Business application.
+Byte ordering.
+C++.
+C.
+Cache coherency.
+Cache memory.
+CAD,CAM.
+CAI.
+Calculating machines.
+Calculators, electronic and programmable.
+Calling sequence.
+Capability-based addressing.
+Card, punched.
+Case-based reasoning.
+Cellular automata.
+Central processing unit (CPU).
+Channel.
+Character codes.
+Character set.
+Charles Babbage institute.
+Chebyshev approximation.
+Checkpoint.
+Chess, computer.
+Chief programmer team.
+Chip.
+Chomsky hierarchy.
+Church, Alonzo.
+Circuitry.
+Class.
+Client-server computing.
+Cluster computing.
+Cobol.
+Codes.
+Coercion.
+Cognitive science.
+Collating sequence.
+Colossus.
+Combinatorics.
+Communication control unit.
+Communications and computers.
+Communications.
+Compaction.
+Compatibility.
+Compile and run time.
+Compiler.
+Complement.
+Complexity.
+Component software.
+Compression, data.
+Computational complexity.
+Computational geometry.
+Computational linguistics.
+Computer algebra.
+Computer animation.
+Computer architecture.
+Computer arithmetic.
+Computer art.
+Computer chess.
+Computer circuitry.
+Computer conferencing.
+Computer crime.
+Computer engineering.
+Computer ethics.
+Computer games.
+Computer generations.
+Computer graphics.
+Computer industry.
+Computer language.
+Computer literacy.
+Computer museums.
+Computer music.
+Computer network.
+Computer performance.
+Computer professionals for social responsibility (CPSR).
+Computer science education.
+Computer science-Ph.d statistics.
+Computer science.
+Computer security.
+Computer societies.
+Computer society.
+Computer system.
+Computer virus.
+Computer vision.
+Computer-aided design,computer-aided manufacturing (CAD,CAM).
+Computer-aided engineering (CAE).
+Computer-aided manufacturing.
+Computer-aided software engineering (CASE).
+Computer-assisted learning and teaching.
+COMPUTER.
+Computers, history of.
+Computers, multiple address.
+Computers, personal.
+Computing conferences.
+Computing research association (CRA).
+Comrie, Leslie John.
+Concurrent programming.
+Conditioning.
+Conferencing, computer.
+Constant.
+Content addressable memory.
+Contention.
+Control applications.
+Control data corporation (CDC).
+Control structure.
+Cooperative computing.
+Coordination languages.
+Coroutine.
+CPU.
+Cray, Seymour.
+Crime, computer.
+Cross assemblers and compilers.
+CRT.
+Cryptography, computers in.
+Cybernetics.
+Cyberspace.
+Cycle stealing.
+Cycle time.
+Cyclic redundancy check.
+Cylinder.
+Data communications.
+Data compression.
+Data encryption.
+Data mining.
+Data models.
+Data processing.
+Data security.
+Data structures.
+Data type.
+Data visualization.
+Data warehousing.
+Database concurrency control.
+Database management system (DBMS).
+Database, relational.
+Dataflow.
+Debugging.
+DEC.
+Declaration.
+Declarative language.
+Deductive database.
+Default condition.
+Delimiter.
+Desk calculator.
+Desktop publishing.
+Device driver.
+Diagnostic.
+Difference engine.
+Differential analyzer.
+Digital computer.
+Digital computers, history of.
+Digital design automation.
+Digital equipment corporation (DEC).
+Digital libraries.
+Digital signature.
+Directory.
+Disabled, computers and the.
+Discrete mathematics.
+Disk.
+Diskette.
+Distributed systems.
+DNA computing.
+Documentation.
+Domain-specific languages.
+DPMA.
+Driver.
+DSU,CSU.
+Dump.
+DVD (Digital versatile disc).
+E-Commerce.
+E-mail or Email.
+Echoing.
+Eckert, J. Presper.
+Eckert, Wallace J..
+Editor.
+EDSAC.
+Education in computer engineering.
+Education in computer science.
+EDVAC.
+EFT.
+Electronic calculator.
+Electronic commerce.
+Electronic frontier foundation (EFF).
+Electronic funds transfer (EFT).
+Electronic mail.
+Electronic office.
+Electronic reference works.
+Embedded system.
+Emulation.
+Encapsulation.
+Encryption, data.
+Engineering applications.
+ENIAC.
+Entertainment industry, computers in the.
+Entrepreneurs.
+Ergonomics.
+Error analysis.
+Error correcting and detecting code.
+Errors.
+Ethernet.
+Ethics.
+Exception handling.
+Executable statement.
+Execution time.
+Executive.
+Expert systems.
+Expression.
+Extensible language.
+Factoring integers.
+Fast Fourier transform (FFT).
+Fault-tolerant computing.
+FFT.
+Fiber optics.
+Fiction, computers in.
+File server.
+File.
+Finite element method.
+Finite-state machine.
+Firewall.
+Firmware.
+Floating-point arithmetic.
+Floppy disk.
+Flowchart.
+Formal languages.
+Formal methods for computer systems.
+Forth.
+Fortran.
+Fractals.
+Free software foundation (FSF).
+Freeware and shareware.
+Front-end processor.
+Function.
+Functional programming.
+Fuzzy logic.
+Games.
+Garbage collection.
+Gateway.
+General register.
+Generations, computer.
+Genetic algorithms.
+Geographic information system (GIS).
+Geometry, computational.
+Global and local variables.
+GNU Software.
+Grammars.
+Graph theory.
+Graphical user interface.
+Graphics.
+Groupware.
+Guarded command.
+GUI (Graphical user interface).
+Guru.
+Hacker.
+Hamming, Richard W..
+Handshaking.
+Hard disk.
+Hardware description languages.
+Hardware reliability.
+Hardware verification.
+Hardware.
+Hartree, Douglas R..
+Heuristic.
+Hierarchy of operators.
+High level language.
+History of digital computers.
+Hollerith machine.
+Hollerith, Herman.
+Hopper, Grace Murray.
+Hospital information system (HIS).
+Host system.
+HTML.
+Human factors in computing.
+Humanities applications.
+Hypermedia.
+Hypertext.
+I,O bus.
+I,O channel.
+I,O port.
+IBM 1400 series.
+IBM corporation.
+IBM PC.
+IBM system 360,370,390 series.
+Icon (language).
+Icon (pictorial element).
+Identifier.
+Image compression.
+Image processing.
+Imperative languages.
+Index register.
+Informatics.
+Information access.
+Information hiding.
+Information processing.
+Information retrieval.
+Information science.
+Information systems.
+Information technology.
+Information theory.
+Information-based complexity.
+Input-output control system (IOCS).
+Input-output operations.
+Instant messaging.
+Institute for certification of computer professionals (ICCP).
+Institute of electrical and electronic engineers-computer society (IEEE-CS).
+Instruction decoding.
+Instruction set.
+Instruction-level parallelism.
+Instruction.
+Integer sequences, online encyclopedia of.
+Integrated circuitry.
+Integrated services digital network (ISDN).
+Interactive input devices.
+Interactive system.
+Interleaving.
+Interlock.
+Intermediate languages.
+International federation for information processing (IFIP).
+Internet.
+Interpreter.
+Interrupt.
+Interval arithmetic.
+Interval timer.
+Invariant.
+IOCS.
+ISDN.
+Iteration.
+Java.
+Job.
+Journalism, computers in.
+Journals, computing.
+Justification.
+Kernel.
+Kilburn, Tom.
+Kludge.
+Knowledge representation.
+Lambda calculus.
+Language processors.
+Language translation.
+Languages, natural.
+Languages, programming.
+Laptop computer.
+Larc.
+Laws, computer.
+Learning.
+Least-squares approximation.
+Legal applications.
+Legal aspects of computing.
+Legal issues of the internet.
+Legal protection of software.
+Leibniz, Gottfried Wilhelm.
+Leo.
+Library program.
+Library standards.
+Limits of computation.
+Linear programming.
+Linguistics.
+Linked list.
+Linkers and loaders.
+Linux.
+Lisp.
+List processing.
+Literacy, computer.
+Literate programming.
+Literature of computing.
+Loader.
+Local area network (LAN).
+Local store.
+Local variable.
+Logic design.
+Logic programming.
+Logic, computational.
+Logical and physical names.
+Logics of programs.
+Login file.
+Logo.
+Loop invariant.
+Lovelace, countess of.
+Machine language.
+Machine learning.
+Machine translation.
+Machine- and assembly-language programming.
+Machine-readable form.
+Macro.
+Magnetic disk.
+Magnetic storage media.
+Main memory.
+Mainframe.
+Maintenance of computers.
+Management information systems (MIS).
+Manchester university computers.
+Mark I, Harvard.
+Markup languages.
+Masking.
+Mass storage.
+Mathematical programming.
+Mathematical software.
+Mathematics, computers in.
+Matrix computations.
+Mauchly, John W..
+McDowell award winners.
+Medical applications.
+Medical imaging.
+Memory addressing.
+Memory allocation.
+Memory dump.
+Memory hierarchy.
+Memory management.
+Memory organization.
+Memory port.
+Memory protection.
+Memory, cache.
+Memory-mapped I,O.
+Memory.
+Merging.
+Metafont.
+Metalanguage.
+Metropolitan area network (MAN).
+Microcomputer chip.
+Microprocessors and microcomputers.
+Microprogramming.
+Microsoft.
+Millenium bug.
+Minicomputer.
+Minitel.
+MIS.
+Mobile computing.
+Model checking.
+Modem.
+Modular programming.
+Molecular computing.
+Monitor, display.
+Monitor, software.
+Monitor, synchronization.
+Monte Carlo method.
+Motherboard.
+Mouse.
+Multi-agent systems.
+Multimedia.
+Multiplexing.
+Multiprocessing.
+Multiprogramming.
+Multitasking.
+Museums, computer.
+Music, computer.
+Mutual exclusion.
+Napier, John.
+Natural language processing.
+Network architecture.
+Network protocols.
+Network, local area.
+Network, metropolitan area.
+Network, wide area.
+Networks for learning.
+Networks, computer.
+Neural networks.
+Nixdorf, Heinz.
+No-op.
+Nonmonotonic logic.
+Nonprocedural languages.
+NORC.
+Notebook computer.
+Noyce, Robert Norton.
+NP-complete problems.
+Number theoretic calculations.
+Numbers and number systems.
+Numerical analysis.
+Object program.
+Object-oriented analysis and design (OOAD).
+Object-oriented programming (OOP).
+OCR.
+Office automation.
+Online conversation.
+Online information services.
+Open and close a file.
+Open architecture.
+Open system interconnection (OSI).
+Operand.
+Operating systems.
+Operator overloading.
+Operator precedence.
+Optical character recognition (OCR).
+Optical computing.
+Optical storage.
+Optimization methods.
+Overhead.
+Package.
+Packages, software.
+Packet switching.
+Paged memory.
+Palmtop computer.
+Paper tape.
+Parallel I,O.
+Parallel processing.
+Parameter passing.
+Parity.
+Partial differential equations.
+Partial evaluation.
+Pascal, Blaise.
+Pascal.
+Password.
+Pattern recognition.
+PDA.
+Perceptron.
+Performance measurement and evaluation.
+Peripheral.
+Perlis, Alan J..
+Personal computing.
+Personal digital assistant.
+Personal finance.
+Personnel in the computer field.
+Petri net.
+Pipeline.
+Pointer.
+Pointing device.
+Polish notation.
+Political applications.
+Polling.
+Port, I,O.
+Port, memory.
+Portability.
+Portable computers.
+Postscript.
+Power user.
+Powers, James.
+Pragmatics.
+Precedence.
+Precision.
+Preprocessor.
+Pretty good privacy (PGP).
+Printers.
+Privacy, computers and.
+Privileged instruction.
+Probabilistic algorithms.
+Probabilistic automata.
+Problem-oriented languages.
+Problem-solving environments.
+Procedure-oriented languages.
+Procedure.
+Process.
+Product code.
+Production.
+Program correctness.
+Program counter.
+Program library.
+Program specification.
+Program verification.
+Program.
+Programmable calculator.
+Programmer.
+Programming language semantics.
+Programming language standards.
+Programming languages.
+Programming linguistics.
+Programming support environments.
+Programming.
+Prolog.
+Proof of program correctness.
+Proprietary program.
+Protection, memory.
+Protocol.
+Prototyping.
+Publishing.
+Punched card machinery.
+Punched card.
+Quantum computing.
+Queueing theory.
+RAID.
+Random number generation.
+Random-access memory (RAM).
+Read-only memory (ROM).
+Real-time clock.
+Real-time systems.
+Reboot.
+Record.
+Recursion.
+Reduced instruction set computer (RISC).
+Redundancy.
+Redundant array of inexpensive disks (RAID).
+Reentrant program.
+Register allocation.
+Register.
+Regular expression.
+Relational database.
+Reliability.
+Restart procedure.
+Reverse polish notation.
+RISC.
+Robotics.
+ROM.
+Roundoff error.
+Scanner, optical.
+Scheduling algorithms.
+Scientific applications.
+Scientific visualization.
+Scripting languages.
+Seac.
+Search engine.
+Searching.
+Sequential machine.
+Serial I,O.
+Server.
+Setl.
+Shannon, Claude E..
+Shell.
+Shifting.
+Side effect.
+Significant digit.
+Simon, Herbert A..
+Simula.
+Simulation.
+Smalltalk.
+SNOBOL.
+Social science applications.
+Societies, computer.
+Society, computers in.
+Software configuration management.
+Software design patterns.
+Software engineering institute (SEI).
+Software engineering.
+Software history.
+Software libraries, numerical and statistical.
+Software maintenance.
+Software metrics.
+Software monitor.
+Software portability.
+Software project management.
+Software prototyping.
+Software reliability.
+Software reusability.
+Software safety.
+Software testing.
+Software.
+Sorting.
+Source program.
+Specification.
+Speech recognition and synthesis.
+Spelling checker.
+Spline.
+Spreadsheet.
+Stack.
+Stamps, computing on.
+Standards.
+Statement.
+Statistical applications.
+Stibitz, George Robert.
+Storage allocation.
+Storage.
+Stored program concept.
+Strachey, Christopher.
+Stretch.
+String processing.
+Structured programming.
+Subprogram, calling A.
+Subprogram.
+Supercomputers.
+Supercomputing centers.
+Superconducting devices.
+Supervisor call.
+SWAC.
+Swapping.
+Switching theory.
+Symbol manipulation.
+Symbolic mathematics.
+Synchronous,asynchronous operation.
+Syntax, semantics, and pragmatics.
+Systems analyst.
+Systems programming.
+Systolic array.
+Task.
+TCP,IP.
+Telecommunications.
+Teleconferencing.
+Teleprocessing systems.
+Telerobotics.
+Telnet.
+Terminals.
+Testing.
+TEX.
+Text editing systems.
+Theorem proving.
+Theory of algorithms.
+Thrashing.
+Throughput.
+Time sharing.
+Time slice.
+Tomography, computerized.
+Torres Quevedo, Leonardo.
+Trace.
+Transaction processing.
+Transfer rate.
+Transistor.
+Translation language.
+Transparency.
+Trap.
+Tree.
+Trojan horse.
+Turing award winners.
+Turing machine.
+Turing test.
+Turing, Alan M..
+Typefont.
+Types, theory of.
+Ultrasonic memory.
+Undecidable problems.
+Unicode.
+Univac I.
+Universal product code.
+Unix operating system.
+User groups.
+User interface.
+Variable.
+VDT, VDU.
+Vector graphics.
+Vector processor.
+Verification.
+Videodisc.
+Videogames.
+Videotex.
+Vienna definition language.
+Virtual memory.
+Virtual reality.
+Virus, computer.
+Vision, computer.
+Visualization.
+VLIW (Very long instruction word) computer.
+VLSI (Very large scale integration).
+Voice recognition and synthesis.
+Von Neumann machine.
+Von Neumann, John.
+Wait state.
+Watson, Thomas J., Sr..
+Web.
+Well-formed formula (WFF).
+Whirlwind.
+Wiener, Norbert.
+Wilkes, Sir Maurice V..
+Wilkinson, James H..
+Williams tube memory.
+Williams, Sir Frederic C..
+Window environments.
+Wizard.
+Women and computing.
+Word processing.
+Working set.
+Workstation.
+World wide web.
+XML.
+Y2K problem.
+Zuse computers.
+Zuse, Konrad.
