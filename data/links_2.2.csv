@@ -1,0 +1,1703 @@
+TOPIC,SUB TOPIC,TRANSCRIPT,LINKS,RELEVANCE,TIMESTAMP
+C and Cpp,First C Program,Comments are used to understand the flow of program. It is useful for documentation. It gives us information about the program. The double slash is called as single line comment,http://stackoverflow.com/questions/8284940/single-line-comments-in-ansi-c?s=1|2.3347,R,
+,,Comments are used to understand the flow of program. It is useful for documentation. It gives us information about the program.,http://stackoverflow.com/questions/23314975/are-comments-in-c-removed-when-compiled,R,
+,,"Type (hash) ""#include"" space opening bracket , closing bracket. It is always a good practice to complete the brackets first, and then start writing inside it. Now Inside the bracket, type""stdio"" ""(dot)."" ""h""
+stdio.h is a header file.",http://stackoverflow.com/questions/24966585/c-header-file-format?s=37|2.2449,R,
+,,A program must contain this header file when it uses standard input/output functions,http://stackoverflow.com/questions/7109964/creating-your-own-header-file-in-c?s=12|2.6606,R,
+,,main is a special function. It denotes that the execution of the program begins from this line,http://stackoverflow.com/questions/18446686/main-function-in-c,R,
+,,"type ""int"" space ""main"" opening bracket, closing bracket",http://stackoverflow.com/questions/2892787/why-would-you-precede-the-main-function-in-c-with-a-data-type?s=7|0.9595,R,
+,,main is a special function. It denotes that the execution of the program begins from this line,http://stackoverflow.com/questions/9144927/who-calls-the-main-function-in-c,R,
+,,Every program should have one main() function. There should NOT be more than one main function. Otherwise the compiler cannot locate the beginning of the program,http://stackoverflow.com/questions/1990932/two-main-functions-in-c-c,R,
+,,"Backslash n ""\n"" signifies newline.
+As a result, after execution of the printf function, the cursor moves to the new line",http://stackoverflow.com/questions/18379848/what-is-the-newline-character-in-the-c-language-r-or-n,R,
+,,"And type ""return"" space ""0"" and a semicolon. This statement returns the integer zero. An integer has to be returned for this function because the function type is int. The return statement marks the end of executable statements","http://stackoverflow.com/questions/32972089/how-does-the-return-statement-work-in-c
+http://stackoverflow.com/questions/204476/what-should-main-return-in-c-and-c
+http://stackoverflow.com/questions/23774466/why-is-adding-a-return-statement-for-the-main-function-in-c-important",R,
+,,"Let us now compile the program, come back to a terminal. Type ""gcc"" space ""talk.c"" space hyphen ""-o"" space ""myoutput"",
+gcc is the compiler, talk.c is our filename. -o myoutput says that the executable should go to the file myoutput","http://stackoverflow.com/questions/571076/how-to-compile-a-c-program?s=16|2.0568
+
+http://stackoverflow.com/questions/3661251/how-do-you-compile-a-c-program",R,
+,First C++ Program,Let us start to write a program.,http://stackoverflow.com/questions/32315533/my-first-c-program,R,
+,,Here iostream is a header file. This file includes the declaration of standard input output functions in C++. Now press Enter.,http://stackoverflow.com/questions/333889/why-have-header-files-and-cpp-files-in-c,R,
+,,The using statement informs the compiler that you want to use the std namespace,http://stackoverflow.com/questions/2648112/include-and-using-namespace-in-c,R,
+,,The purpose of namespace is to avoid name collisions. It is done by localizing the names of identifiers,http://stackoverflow.com/questions/1452721/why-is-using-namespace-std-considered-bad-practice?s=1|3.0173,R,
+,,"The using statement informs the compiler that you want to use the std namespace.
+The purpose of namespace is to avoid name collisions. Anything defined within a namespace is in the SCOPE of that namespace.
+Here std is the namespace in which entire standard C++ library is declared",http://stackoverflow.com/questions/18914106/what-is-the-use-of-using-namespace-std,R,
+,,Here cout is a standard C++ function to print the output on the terminal,http://stackoverflow.com/questions/34384380/what-exactly-are-cout-cin,R,
+,,Here cout is a standard C++ function to print the output on the terminal,http://stackoverflow.com/questions/4901765/cout-what-it-stands-for,R,
+,,"That ""expected identifier before 'semicolon' "" and "" 'cout' was not declared in this scope"". As cout is the standard C++ library function. and the entire C++ library function is defined under std namespace. Hence it is giving an error",http://stackoverflow.com/questions/15185801/cout-was-not-declared-in-this-scope,R,
+,Tokens,"Token is a generic word for data types, variables, constants and identifiers",http://stackoverflow.com/questions/4448661/what-is-the-exact-definition-of-token,R,
+,,"int is a keyword.
+The compiler knows the meaning of keyword",http://stackoverflow.com/questions/2452365/why-does-a-programming-language-need-keywords,R,
+,,This is called as initialization. If a value is not assigned to a variable then it is called as declaration of the variable.,http://stackoverflow.com/questions/23345554/the-differences-between-initialize-define-declare-a-variable,R,
+,,Keywords have fixed meanings that cannot be changed. Keywords cannot be used as variable names,,,
+,,Constants: constants are fixed values. They do not change during the execution of a program.,http://stackoverflow.com/questions/6087729/const-in-c-vs-const-in-c?s=2|3.4834,R,
+,,Data type is a finite set of values along with a set of rules,,,
+,,"char and single quotes suggest that we are dealing with a character. As a result, d is a character variable storing the value A.",http://stackoverflow.com/questions/19795505/char-data-type-in-c,R,
+,,Identifiers are user defined names. An identifier consists of letters and digits. Both uppercase and lowercase letters are permitted. First character must be an alphabet or underscore.,http://stackoverflow.com/questions/19971886/can-an-underscore-be-used-anywhere-in-an-identifier-in-c,R,
+,,Identifiers are user defined names. An identifier consists of letters and digits. Both uppercase and lowercase letters are permitted. First character must be an alphabet or underscore.,http://stackoverflow.com/questions/5845558/identifier-and-variables-in-c,R,
+,,It denotes that we can print only two values after the decimal point. Suppose here I want an output with three decimal places. Let us replace % point 2f with % point 3f.,http://stackoverflow.com/questions/22877309/how-does-f-work-in-c,R,
+,,"""Assignment of read only variable 'b' "". Come back to our program. This is because 'b' is a constant. Constants are fixed values. They do not change during the execution of program",http://stackoverflow.com/questions/20598420/c-error-assignment-of-read-only-variable,R,
+,Functions,ret-type defines the type of data that the function returns,http://stackoverflow.com/questions/39034450/return-type-in-c,R,
+,,User-defined that is our add function and Pre-defined that is printf and main function,http://stackoverflow.com/questions/3549879/is-main-a-pre-defined-function-in-c,R,
+,,Then we pass the parameters as 5 and 4,http://stackoverflow.com/questions/1788923/parameter-vs-argument,R,
+,,"So, there is a mismatch in return type and return value",http://stackoverflow.com/questions/38085872/using-a-return-value-of-one-function-in-another-c,R,
+,,too few arguments to function. You can see here we have two parameters. And here we are passing only one parameter,http://stackoverflow.com/questions/29813663/error-too-few-arguments-to-function,R,
+,,too few arguments to function. You can see here we have two parameters. And here we are passing only one parameter,http://stackoverflow.com/questions/27339250/c-programming-error-too-few-arguments-to-function-whatevers-inside,R,
+,,too few arguments to function. You can see here we have two parameters. And here we are passing only one parameter,http://stackoverflow.com/questions/156767/whats-the-difference-between-an-argument-and-a-parameter,SR,
+,Scope of variables,Let us start with the introduction to the scope of variables. It is the region of code within which the variable can be accessed.,http://stackoverflow.com/questions/8454208/scope-rules-in-c,R,
+,,Depending on it's type and place of declaration it is divided into two categories: Global Variable & Local Variable.,http://stackoverflow.com/questions/28574670/difference-between-function-and-block-scope-in-c,R,
+,,"A global variable is available to all functions in your program. These are declared outside any functions, above main() function.These have a global scope.",http://stackoverflow.com/questions/18783482/what-is-global-variable-in-c,R,
+,,A local variable is available only to the function inside which it is declared. These variables are declared inside a block. These have local scope,http://stackoverflow.com/questions/14533134/where-is-local-variable-allocated-heap-or-stack,R,
+,,too few arguments to function. You can see here we have two parameters. And here we are passing only one parameter,http://stackoverflow.com/questions/22527846/scope-and-lifetime-of-local-variables-in-c,,
+,If and else if statement,"If both the above conditions are false then we print 'Sum is less than 10'. This is our else statement.
+",http://stackoverflow.com/questions/1439907/what-are-the-differences-between-if-else-and-else-if,R,
+,,We see an error:  'else' without a previous 'if' Come back to our program. It is a syntax error. if statement will never terminate with a semicolon. And the else if statement will never work without an if,http://stackoverflow.com/questions/28325228/else-without-a-previous-if,R,
+,,Type cin and two closing angle brackets >>. As we use cin >> function to read a line in C++.,http://stackoverflow.com/questions/34384380/what-exactly-are-cout-cin,R,
+,Nested if and switch statement,"We will see the comparison between switch and nested-if statements.
+ Switch statement is evaluated according to the result of the expression.
+ Netsed-if statement is run only if the result of the expression is true.
+ In switch, we treat various values of the variable as cases.
+ In nested-if we have to write the conditional statement for each value of the variable.
+ Switch statement can only check the integer values.
+ Nested if can check for both, integer and fractional values.",http://stackoverflow.com/questions/427760/when-to-use-if-else-if-else-over-switch-statments-and-vice-versa,R,
+,,"We will see the comparison between switch and nested-if statements.
+ Switch statement is evaluated according to the result of the expression.
+ Netsed-if statement is run only if the result of the expression is true.
+ In switch, we treat various values of the variable as cases.
+ In nested-if we have to write the conditional statement for each value of the variable.
+ Switch statement can only check the integer values.
+ Nested if can check for both, integer and fractional values.",http://stackoverflow.com/questions/449273/why-the-switch-statement-and-not-if-else,R,
+,,"We will see the comparison between switch and nested-if statements.
+ Switch statement is evaluated according to the result of the expression.
+ Netsed-if statement is run only if the result of the expression is true.
+ In switch, we treat various values of the variable as cases.
+ In nested-if we have to write the conditional statement for each value of the variable.
+ Switch statement can only check the integer values.
+ Nested if can check for both, integer and fractional values.",http://stackoverflow.com/questions/2158759/case-vs-if-else-if-which-is-more-efficient,R,
+,,"We will see the comparison between switch and nested-if statements.
+ Switch statement is evaluated according to the result of the expression.
+ Netsed-if statement is run only if the result of the expression is true.
+ In switch, we treat various values of the variable as cases.
+ In nested-if we have to write the conditional statement for each value of the variable.
+ Switch statement can only check the integer values.
+ Nested if can check for both, integer and fractional values.",http://stackoverflow.com/questions/767821/is-else-if-faster-than-switch-case,R,
+,,Switch statement can only check the integer values.,http://stackoverflow.com/questions/5179822/about-switch-case-in-c,R,
+,,"The conditional execution can also be done in another way.
+ By using switch statement.
+ Let’s see how it is done.
+ We will see the same program using switch.",http://stackoverflow.com/questions/12654315/c-program-switch-statement,SR,
+,,"By using switch statement.
+ Let’s see how it is done.
+ We will see the same program using switch.
+ I have already opened the program.
+ Let's switch back to our text editor.
+ I have explained this in the previous program.
+ So I will move on to the switch statements.
+ Here, we divide the inputs i.e y by 10 and the result is stored in the variable x.
+ That means the quotient will be stored in x.
+ With the help of the quotient we can identify the range of the number.
+ Here, we tell the switch command that the variable to be checked is x.
+ This is case 0 . If case 0 is satisfied
+ then we print you have entered the number in the range of 0-9.
+ We add break to come out of the loop if the case is satisfied.
+ We need to break the loop each time.",http://stackoverflow.com/questions/15784609/switch-case-in-c,R,
+,,"We add break to come out of the loop if the case is satisfied.
+ We need to break the loop each time.
+ It is because only one condition can be true at a time.",http://stackoverflow.com/questions/27029350/how-does-switch-statement-work-in-c,R,
+,,In nested-if we have to write the conditional statement for each value of the variable.,http://stackoverflow.com/questions/29022954/c-using-casecondition-instead-of-case-value,R,
+,,"We add break to come out of the loop if the case is satisfied.
+ We need to break the loop each time.
+ It is because only one condition can be true at a time.
+ This is “case 1”. “case 1” means “if the value of x is 1”.
+ We print you have entered a number in the range of 10-19.
+ This is “case 2” .
+ Here we print you have entered a number in the range of 20-29.
+ And this is case 3. Here we check whether the number is in the range of 30-39.
+ This is the default case. Default case specifies what needs to be done if none of the above cases are satisfied.",http://stackoverflow.com/questions/5776253/c-tricky-switch-case-working,R,
+,,"By using switch statement.
+ Let’s see how it is done.
+ We will see the same program using switch.
+ I have already opened the program.
+ Let's switch back to our text editor.
+ I have explained this in the previous program.
+ So I will move on to the switch statements.
+ Here, we divide the inputs i.e y by 10 and the result is stored in the variable x.
+ That means the quotient will be stored in x.
+ With the help of the quotient we can identify the range of the number.
+ Here, we tell the switch command that the variable to be checked is x.
+ This is case 0 . If case 0 is satisfied
+ then we print you have entered the number in the range of 0-9.
+ We add break to come out of the loop if the case is satisfied.
+ We need to break the loop each time.",http://stackoverflow.com/questions/9408984/how-does-switch-statement-work,R,
+,,"By using switch statement.
+ Let’s see how it is done.
+ We will see the same program using switch.
+ I have already opened the program.
+ Let's switch back to our text editor.
+ I have explained this in the previous program.
+ So I will move on to the switch statements.
+ Here, we divide the inputs i.e y by 10 and the result is stored in the variable x.
+ That means the quotient will be stored in x.
+ With the help of the quotient we can identify the range of the number.
+ Here, we tell the switch command that the variable to be checked is x.
+ This is case 0 . If case 0 is satisfied
+ then we print you have entered the number in the range of 0-9.
+ We add break to come out of the loop if the case is satisfied.
+ We need to break the loop each time.",http://stackoverflow.com/questions/17814926/java-switch-statement,SR,
+,,"By using switch statement.
+ Let’s see how it is done.
+ We will see the same program using switch.
+ I have already opened the program.
+ Let's switch back to our text editor.
+ I have explained this in the previous program.
+ So I will move on to the switch statements.
+ Here, we divide the inputs i.e y by 10 and the result is stored in the variable x.
+ That means the quotient will be stored in x.
+ With the help of the quotient we can identify the range of the number.
+ Here, we tell the switch command that the variable to be checked is x.
+ This is case 0 . If case 0 is satisfied
+ then we print you have entered the number in the range of 0-9.
+ We add break to come out of the loop if the case is satisfied.
+ We need to break the loop each time.",http://stackoverflow.com/questions/29634287/syntax-for-switch-case-in-java,SR,
+,Increment and decrement operators,"++' eg. a++ which is postfix increment operator.
+++a which is prefix increment operator. ",http://stackoverflow.com/questions/3939350/c-increment-operator,R,"00:12,00:18"
+,,"The ++ operator increases the existing value of the operand by one.
+a++ and ++a are equivalent to a = a + 1. ",http://stackoverflow.com/questions/2371118/how-do-the-post-increment-i-and-pre-increment-i-operators-work-in-java,SR,"00:48,00:54"
+,,"Let's see how the postfix increment operator works.
+The output of this printf statement is 1.
+The value won't change.
+This is because the postfix operation occurs after the operand is evaluated.
+If an operation is performed on a++, it is performed on the current value of a.
+After that the value of a is incremented.
+Now if we see the value of a here, it has been incremented by 1.
+We again initialize 'a' to 1 so as to reflect on the changes.
+We now come to the prefix increment operators.
+This printf statement prints 2 on the screen.
+This is because a prefix operation occurs before the operand is evaluated. 
+",http://stackoverflow.com/questions/3891230/increment-and-decrement-operators,R,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
+,,"Let's see how the postfix increment operator works.
+The output of this printf statement is 1.
+The value won't change.
+This is because the postfix operation occurs after the operand is evaluated.
+If an operation is performed on a++, it is performed on the current value of a.
+After that the value of a is incremented.
+Now if we see the value of a here, it has been incremented by 1.
+We again initialize 'a' to 1 so as to reflect on the changes.
+We now come to the prefix increment operators.
+This printf statement prints 2 on the screen.
+This is because a prefix operation occurs before the operand is evaluated. 
+",http://stackoverflow.com/questions/16869020/pre-increment-vs-post-increment-in-array,R,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
+,,"The ++ operator increases the existing value of the operand by one.
+a++ and ++a are equivalent to a = a + 1.
+The -- operator decreases the existing value of the operand by one.
+a-- and --a are equivalent to a = a - 1. ",http://stackoverflow.com/questions/12551576/pre-increment-and-post-increment,R,"00:48,00:54,01:00,01:06"
+,,"The ++ operator increases the existing value of the operand by one.
+a++ and ++a are equivalent to a = a + 1.",http://stackoverflow.com/questions/12319358/c-increment-operator-overloading,SR,"00:48,00:54"
+,,"Let's see how the postfix increment operator works.
+The output of this printf statement is 1.
+The value won't change.
+This is because the postfix operation occurs after the operand is evaluated.
+If an operation is performed on a++, it is performed on the current value of a.
+After that the value of a is incremented.
+Now if we see the value of a here, it has been incremented by 1.
+We again initialize 'a' to 1 so as to reflect on the changes.
+We now come to the prefix increment operators.
+This printf statement prints 2 on the screen.
+This is because a prefix operation occurs before the operand is evaluated. 
+",http://stackoverflow.com/questions/21905747/increment-and-decrement-operators-in-java,SR,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
+,,"Let's see how the postfix increment operator works.
+The output of this printf statement is 1.
+The value won't change.
+This is because the postfix operation occurs after the operand is evaluated.
+If an operation is performed on a++, it is performed on the current value of a.
+After that the value of a is incremented.
+Now if we see the value of a here, it has been incremented by 1.
+We again initialize 'a' to 1 so as to reflect on the changes.
+We now come to the prefix increment operators.
+This printf statement prints 2 on the screen.
+This is because a prefix operation occurs before the operand is evaluated. 
+",http://stackoverflow.com/questions/31421958/increment-decrement-operators-in-c,R,"01:47,01:51,01:55,01:57,02:04,02:10,02:17,02:27,02:35,02:38,02:42"
+,,"We now come to the prefix increment operators.This printf statement prints 2 on the screen.
+This is because a prefix operation occurs before the operand is evaluated.We now have the prefix decrement operator.
+Output of this printf statement would be 0.
+As it is a prefix operation.
+The prefix operation occurs before the operand is evaluated. ",http://stackoverflow.com/questions/1485841/behaviour-of-increment-and-decrement-operators-in-python,SR,"02:35,02:38,02:42,04:54,04:58,05:00,05:05"
+,,"The ++ operator increases the existing value of the operand by one.
+a++ and ++a are equivalent to a = a + 1.
+The -- operator decreases the existing value of the operand by one.
+a-- and --a are equivalent to a = a - 1. ",http://stackoverflow.com/questions/32578869/confusion-using-increment-and-decrement-operators-in-java,SR,"00:48,00:54,01:00,01:06"
+,,"a's value will be decremented after a-- is evaluated as it is a postfix expression.
+The next statement prints a's value as o.
+a's value has now being decremented by 1.
+We now have the prefix decrement operator.
+Output of this printf statement would be 0.
+As it is a prefix operation.
+The prefix operation occurs before the operand is evaluated. ",http://stackoverflow.com/questions/17949189/how-does-the-decrement-operator-work-in-a-while-statement,R,"04:40,04:47,04:51,04:54,04:58,05:00,05:05"
+,,"Typecasting is used to make a variable of one type, act like another type.
+Typecasting is done by enclosing the data type, you want, within parentheses.
+This cast is put in front of the variable you want to cast. ",http://stackoverflow.com/questions/7558837/what-exactly-is-a-type-cast-in-c-c,R,"07:22,07:27,07:33"
+,,"The fractional part has been truncated as both the operands a and b are integers.
+To perform real division, one of the operands will have to be typecast to float.
+Here we are typecasting a to float. c now holds the value of real division. ",http://stackoverflow.com/questions/4302190/typecasting-in-c,R,"08:25,08:31,08:35"
+,,"Typecasting is used to make a variable of one type, act like another type.
+Typecasting is done by enclosing the data type, you want, within parentheses.
+This cast is put in front of the variable you want to cast. ",http://stackoverflow.com/questions/4302190/typecasting-in-c,R,"07:22,07:27,07:33"
+,,"Typecasting is used to make a variable of one type, act like another type.
+Typecasting is done by enclosing the data type, you want, within parentheses.
+This cast is put in front of the variable you want to cast. ",http://stackoverflow.com/questions/25079788/typecasting-int-to-char-in-printf-in-c,SR,"07:22,07:27,07:33"
+,,"Typecasting is used to make a variable of one type, act like another type. Typecasting is done by enclosing the data type, you want, within parentheses. This cast is put in front of the variable you want to cast.",http://stackoverflow.com/questions/14373924/typecasting-of-pointers-in-c,SR,"07:22,07:27,07:33"
+,,"We now have the concept of typecasting.
+It is implemented the same way in both C and C++. ",http://stackoverflow.com/questions/3278441/c-type-casting,SR,"07:15,07:17"
+,,"The fractional part has been truncated as both the operands a and b are integers.
+To perform real division, one of the operands will have to be typecast to float.
+Here we are typecasting a to float. c now holds the value of real division. ",http://stackoverflow.com/questions/35190918/typecasting-in-c-and-use-of-parentheses,R,"08:25,08:31,08:35"
+,,"We now have the concept of typecasting.
+It is implemented the same way in both C and C++. Typecasting is done by enclosing the data type, you want, within parentheses. ",http://stackoverflow.com/questions/28235805/type-casting-in-c,R,"07:15,07:17,07:27"
+,,"Typecasting is used to make a variable of one type, act like another type.
+Typecasting is done by enclosing the data type, you want, within parentheses. ",http://stackoverflow.com/questions/605845/do-i-cast-the-result-of-malloc,SR,"07:22,07:27"
+,Arithmetic operators,"Here is the C program for arithmetic operators.
+In the first two statements, the variables are declared and defined.",http://stackoverflow.com/questions/24882427/arithmetic-operation-in-c,SR,"00:49,00:56"
+,Relational operators,"We now have the equal to operator.
+It is denoted by double equal signs (==).This operator returns true when both operands are equal to one another. ",http://stackoverflow.com/questions/18097922/return-value-of-operator-in-c,R,"04:43,04:47,04:59"
+,,"Now we have the greater than (>) operator.
+This operator compares the two operands on either side of the operator.
+It returns True if a is greater than b.
+This printf statement is executed if the above condition is true.
+If the above condition is false then it is skipped.
+The control then jumps to the next statement.
+We now have the less than (<) operator.
+This too compares the operands.
+It returns true when a is less than b. 
+",http://stackoverflow.com/questions/5112886/question-regarding-relational-operator-in-c,R,"01:32,01:35,01:38,01:43,01:47,01:50,01:53,01:56,01:57"
+,,"We now have the equal to operator.
+It is denoted by double equal signs (==).This operator returns true when both operands are equal to one another. ",http://stackoverflow.com/questions/29495631/evaluating-relational-operator-in-c,R,"04:43,04:47,04:59"
+,,We now have the equal to operator. It is denoted by double equal signs (==).This operator returns true when both operands are equal to one another.,http://stackoverflow.com/questions/20078170/double-structural-equality-operators-ifa-b-c,SR,"04:43,04:47,04:59"
+,,We now have the equal to operator. It is denoted by double equal signs (==).This operator returns true when both operands are equal to one another.,http://stackoverflow.com/questions/3933614/c-string-using-equality-operator-for-comparing-two-strings-for-equality,SR,"04:43,04:47,04:59"
+,,Next comes the greater than or equal to (>=) operator. ,http://stackoverflow.com/questions/13188186/operator-in-c-not-greater-and-equal-to,R,3:49
+,Logical operators,"In C and C++, true is any value other than 0.
+ Non zero means true
+ and zero means false.
+ Expressions using logical operators return 1 for true and 0 for false.",http://stackoverflow.com/questions/12332316/logical-operators-in-c,R,"00:43,00:48,00:50,00:53"
+,,"Here, all of the conditions have to be true for logical AND to return a true value.
+ The expression is not evaluated further on encountering a false condition.
+ So, the expression (a>c) is evaluated only if (a>b) is true.
+ If a is less than b, then the expression won't be evaluated further.
+ This statement is evaluated if the previous condition is true.
+ Next (b>c) is evaluated.
+ If the condition is true, then b is greatest is displayed on the screen.
+ Otherwise c is greatest is displayed on the screen.
+ We now come to the logical OR operator.
+ Here, any one of the conditions has to be true for logical OR to return a true value.
+ The expression is not evaluated further on encountering a true condition.
+ So, if a == zero, then the remaining two expressions won't be evaluated.
+ This printf statement is executed if either of a, b or c is 0.",http://stackoverflow.com/questions/6476361/or-and-and-operation-in-c,R,"01:38,01:43,01:49,01:56,02:02,02:07,02:10,02:16,02:21,02:24,02:30,02:35,02:43"
+,,"To compare simultaneously, we use the logical AND operator.
+ Here, all of the conditions have to be true for logical AND to return a true value.
+ The expression is not evaluated further on encountering a false condition.",http://stackoverflow.com/questions/26281447/logical-in-c,R,"01:33,01:38,01:43"
+,,"Here, all of the conditions have to be true for logical AND to return a true value.
+ The expression is not evaluated further on encountering a false condition.
+ So, the expression (a>c) is evaluated only if (a>b) is true.
+ If a is less than b, then the expression won't be evaluated further.
+ This statement is evaluated if the previous condition is true.
+ Next (b>c) is evaluated.
+ If the condition is true, then b is greatest is displayed on the screen.
+ Otherwise c is greatest is displayed on the screen.
+ We now come to the logical OR operator.
+ Here, any one of the conditions has to be true for logical OR to return a true value.
+ The expression is not evaluated further on encountering a true condition.
+ So, if a == zero, then the remaining two expressions won't be evaluated.
+ This printf statement is executed if either of a, b or c is 0.",http://stackoverflow.com/questions/7521607/precedence-of-logical-operators-in-c,R,"01:38,01:43,01:49,01:56,02:02,02:07,02:10,02:16,02:21,02:24,02:30,02:35,02:43"
+,,"We now come to the logical OR operator.
+ Here, any one of the conditions has to be true for logical OR to return a true value.
+ The expression is not evaluated further on encountering a true condition.
+ So, if a == zero, then the remaining two expressions won't be evaluated.",http://stackoverflow.com/questions/11600132/logical-and-and-or-in-c,R,"02:21,02:04,02:30,02:35"
+,,"In C and C++, true is any value other than 0.
+ Non zero means true
+ and zero means false.",http://stackoverflow.com/questions/35382271/multiple-logical-operators-in-one-line-of-code,R,"00:43,00:48,00:50"
+,,"We now come to the logical OR operator.
+ Here, any one of the conditions has to be true for logical OR to return a true value.
+ The expression is not evaluated further on encountering a true condition.",http://stackoverflow.com/questions/1596668/logical-xor-operator-in-c,SR,"02:21,02:24,02:30"
+,,"In C and C++, true is any value other than 0.
+ Non zero means true
+ and zero means false.
+ Expressions using logical operators return 1 for true and 0 for false.
+ Now I'll explain the logical operators with the help of an example.
+ Here is the program for logical operators in C.",http://stackoverflow.com/questions/32300522/whats-the-point-of-logical-operators-vs-bitwise-operators,SR,"00:43,00:48,00:50,00:53,00:58,01:03"
+,,"Here, all of the conditions have to be true for logical AND to return a true value.
+ The expression is not evaluated further on encountering a false condition.
+ So, the expression (a>c) is evaluated only if (a>b) is true.
+ If a is less than b, then the expression won't be evaluated further.
+ This statement is evaluated if the previous condition is true.
+ Next (b>c) is evaluated.
+ If the condition is true, then b is greatest is displayed on the screen.
+ Otherwise c is greatest is displayed on the screen.
+ We now come to the logical OR operator.
+ Here, any one of the conditions has to be true for logical OR to return a true value.
+ The expression is not evaluated further on encountering a true condition.
+ So, if a == zero, then the remaining two expressions won't be evaluated.
+ This printf statement is executed if either of a, b or c is 0.",http://stackoverflow.com/questions/3154132/what-is-the-difference-between-logical-and-conditional-and-or-in-c,SR,"01:38,01:43,01:49,01:56,02:02,02:07,02:10,02:16,02:21,02:24,02:30,02:35,02:43"
+,Loops,"A while loop tests the condition in the beginning.
+ The structure is:
+ while ( condition )
+ within the bracket statement block.",http://stackoverflow.com/questions/27894961/while-loop-in-c,SR,00:56-01:03
+,,"Now move on to do….while loop .
+  A do..while loop is executed at least once before the condition could be validated.
+ The structure is:
+ do (within the brackets) statement block,
+ after the bracket the while ( condition ).
+ You can see that the condition is checked at the end.",http://stackoverflow.com/questions/26762394/do-while-loop-in-c,SR,1:07-1:23
+,,"Depending on the purpose they are divided into three types:
+ while loop
+ do…..while loop and
+ for loop
+ Let us start with the while loop first.
+ A while loop tests the condition in the beginning.
+ The structure is:
+ while ( condition )
+ within the bracket statement block.
+ Now move on to do….while loop .
+  A do..while loop is executed at least once before the condition could be validated.
+ The structure is:
+ do (within the brackets) statement block,
+ after the bracket the while ( condition ).",http://stackoverflow.com/questions/2950931/for-vs-while-in-c-programming,R,00:44-1:20
+,,"The syntax of the for loop is
+ for (variable initialization; variable condition; and variable increment or decrement)",http://stackoverflow.com/questions/2950931/for-vs-while-in-c-programming,R,10:10-10:12
+,,"A do..while loop is executed at least once before the condition could be validated.
+ The structure is:
+ do (within the brackets) statement block,
+ after the bracket the while ( condition ).
+ You can see that the condition is checked at the end.",http://stackoverflow.com/questions/31255085/how-to-know-the-do-while-loop-in-c-programming,R,1:09-01:23
+,,"A while loop tests the condition in the beginning.
+ The structure is:
+ while ( condition )
+ within the bracket statement block.
+ Now move on to do….while loop .
+ A do..while loop is executed at least once before the condition could be validated.
+ The structure is:
+ do (within the brackets) statement block,
+ after the bracket the while ( condition ).You can see that the condition is checked at the end.",http://stackoverflow.com/questions/12868604/do-while-or-while,R,00:56-01:23
+,,"Suppose, here I will not increment the value of x.
+ Click on Save.
+ Let us see what happens.
+ Come back to the terminal.
+ Let me clear the prompt.
+ Lets us execute the program.
+ Press the up-arrow key twice.
+ Again press the up-arrow key.
+ The output is displayed.
+ We can see number of zeros, this is because the loop does not have the terminating condition .
+ It is known as infinite loop.
+ Infinite loop can cause the system to become unresponsive.
+ It causes the program to consume all the processors time but it can be terminated.",http://stackoverflow.com/questions/25538672/post-increment-in-while-loop-in-c,SR,08:35-09:14
+,,"A while loop tests the condition in the beginning.
+ The structure is:
+ while ( condition )
+ within the bracket statement block.
+ Now move on to do….while loop .",http://stackoverflow.com/questions/22033275/using-constant-in-a-while-loop-c,R,00:56-01:07
+,,"A do..while loop is executed at least once before the condition could be validated.
+ The structure is:
+ do (within the brackets) statement block,
+ after the bracket the while ( condition ).
+ You can see that the condition is checked at the end.",http://stackoverflow.com/questions/14934507/simple-do-while-loop-using-whiletrue,R,01:09-01:23
+,,"A while loop tests the condition in the beginning.
+ The structure is:
+ while ( condition )
+ within the bracket statement block.
+ Now move on to do….while loop .",http://stackoverflow.com/questions/16594148/while-loop-nested-in-a-while-loop,R,00:56-01:07
+,,"It is known as infinite loop.
+ Infinite loop can cause the system to become unresponsive.
+ It causes the program to consume all the processors time but it can be terminated.",http://stackoverflow.com/questions/20186809/endless-loop-in-c-c,R,09:07-09:14
+,,"It is known as infinite loop.
+ Infinite loop can cause the system to become unresponsive.
+ It causes the program to consume all the processors time but it can be terminated",http://stackoverflow.com/questions/1401159/for-or-while-true-which-is-the-correct-c-sharp-infinite-loop,R,09:07-09:14
+,,"The syntax of the for loop is
+ for (variable initialization; variable condition; and variable increment or decrement)",http://stackoverflow.com/questions/1287863/c-for-loop-int-initial-declaration,R,10:10-10:12
+,,"The syntax of the for loop is
+ for (variable initialization; variable condition; and variable increment or decrement)",http://stackoverflow.com/questions/42508869/explain-output-in-for-loop-c-program,R,10:10-10:12
+,,"The syntax of the for loop is
+ for (variable initialization; variable condition; and variable increment or decrement)",http://stackoverflow.com/questions/5140391/for-loop-in-objective-c,SR,10:10-10:12
+,,"The syntax of the for loop is
+ for (variable initialization; variable condition; and variable increment or decrement)",http://stackoverflow.com/questions/2330891/java-enhanced-for-loop,SR,10:10-10:12
+,,"Now move on to do….while loop .
+ A do..while loop is executed at least once before the condition could be validated.
+ The structure is:
+ do (within the brackets) statement block,
+ after the bracket the while ( condition ).
+ You can see that the condition is checked at the end.",http://stackoverflow.com/questions/33651357/a-very-simple-java-do-while-loop,SR,01:07-01:23
+,Arrays,"Let us see how to declare single dimensional array.
+The Syntax for this is:
+data-type name of the array and size",http://stackoverflow.com/questions/3137671/declaring-and-initializing-arrays-in-c,R,
+,,"Let us see how to declare single dimensional array.
+The Syntax for this is:
+data-type name of the array and size",http://stackoverflow.com/questions/42614538,IR,
+,,"data-type,( name of the array ), size is equal to elements
+example: here we have declared an 'integer array star' with size 3. The elements of the array are 1,2 and 3.
+Here the index will start from star 0 to star 2.",http://stackoverflow.com/questions/4810664/how-do-i-use-arrays-in-c,SR,
+,,"Here, we have declared and initialized an array star with size 3.",http://stackoverflow.com/questions/1335786/c-differences-between-char-pointer-and-array,SR,
+,,"Here, we have declared and initialized an array star with size 3.",http://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c,R,
+,,"In this program, we will calculate the sum of the elements stored in an array.",http://stackoverflow.com/questions/8300888/calculating-the-sum-of-integers-in-an-array,R,
+,,"Here, we have declared and initialized an array star with size 3.",http://stackoverflow.com/questions/16414622/array-initialization-c,R,
+,,"Here, we have declared and initialized an array star with size 3.",http://stackoverflow.com/questions/201101/how-to-initialize-all-members-of-an-array-to-the-same-value,R,
+,,"Now, we will see the initialization of an array.
+The Syntax for this is:
+data-type,( name of the array ), size is equal to elements
+",http://stackoverflow.com/questions/42613267,IR,
+,,"Let us see how to declare single dimensional array.
+The Syntax for this is:
+data-type name of the array and size",http://stackoverflow.com/questions/42613206,IR,
+,,"Now, we will see the initialization of an array.
+The Syntax for this is:
+data-type,( name of the array ), size is equal to elements
+",http://stackoverflow.com/questions/18688971/c-char-array-initialization,R,
+,,Let us see how to declare single dimensional array. The Syntax for this is: data-type name of the array and size,http://stackoverflow.com/questions/42609561,IR,
+,,"Now, we will see the initialization of an array. The Syntax for this is: data-type,( name of the array ), size is equal to elements",http://stackoverflow.com/questions/5678216/all-possible-c-sharp-array-initialization-syntaxes,SR,
+,,This is because array index starts from 0.,http://stackoverflow.com/questions/15646973/how-dangerous-is-it-to-access-an-array-out-of-bounds,SR,
+,,This is because array index starts from 0.,http://stackoverflow.com/questions/42611284,IR,
+,,"In this program, we will calculate the sum of the elements stored in an array.",http://stackoverflow.com/questions/15801957/recursive-sum-of-an-array-in-c,SR,
+,Working with 2D arrays,"Now, let us see how to declare 2 dimensional array.
+ The Syntax for this is:
+ data-type ,array name, row and column.",http://stackoverflow.com/questions/4409591/2d-array-initialisation-in-c,R,01:01-01:07
+,,"The elements are stored row-wise.
+ We have considered i for rows and j for columns.
+ This for loop will check the condition that i runs from 0 to 2.
+ This for loop will check the condition that j runs from 0 to 3.",http://stackoverflow.com/questions/28671723/c-how-to-add-elements-in-a-column-of-a-2d-array,R,02:13-02:28
+,,"Here we have declared variables i and j.
+ Then we have declared num1 with 3 rows and 4 columns.
+ And num2, again with 3 rows and 4 columns.
+ num1 and num2 are 2 dimensional arrays.
+ Here, we take elements of the matrix num1 as input from the user.
+ The elements are stored row-wise.
+ We have considered i for rows and j for columns.
+ This for loop will check the condition that i runs from 0 to 2.
+ This for loop will check the condition that j runs from 0 to 3.
+ Similarly, here we take elements of the matrix num2 as input from the user.
+ Here we display the matrix num1.
+ Here percent 3d is used to align the matrix on the terminal.
+ Now, here we display the matrix num2.
+ Then we add the num1 matrix and the num2 matrix and display the result.
+ This is our return statement.",http://stackoverflow.com/questions/40947629/how-to-increment-each-element-of-2-dimensional-array-by-2,R,01:49-02:59
+,,"Now, let us see how to declare 2 dimensional array.
+ The Syntax for this is:
+ data-type ,array name, row and column.",http://stackoverflow.com/questions/9446707/correct-way-of-passing-2-dimensional-array-into-a-function,SR,01:01-01:07
+,,"The elements are stored row-wise.
+ We have considered i for rows and j for columns.
+ This for loop will check the condition that i runs from 0 to 2.
+ This for loop will check the condition that j runs from 0 to 3.",http://stackoverflow.com/questions/39796524/inserting-2d-elements-into-a-static-2d-array-in-c,SR,02:13-02:28
+,Strings,"Let me tell you how to declare a string.
+ The syntax for this is
+ char, name of string and size.
+ char is the data type, name of the string is the string name, and we can give the size here.",http://stackoverflow.com/questions/8732325/how-to-declare-strings-in-c,R,00:49-00:59
+,,"Let me tell you how to declare a string.
+ The syntax for this is
+ char, name of string and size.
+ char is the data type, name of the string is the string name, and we can give the size here.",http://stackoverflow.com/questions/14467200/c-string-declaration,R,00:49-00:59
+,,"Let me tell you how to declare a string.
+ The syntax for this is
+ char, name of string and size.
+ char is the data type, name of the string is the string name, and we can give the size here",http://stackoverflow.com/questions/27644383/understanding-two-ways-of-declaring-a-c-string,R,00:49-00:59
+,,"Let me tell you how to declare a string.
+ The syntax for this is
+ char, name of string and size.
+ char is the data type, name of the string is the string name, and we can give the size her",http://stackoverflow.com/questions/19542170/string-array-declaration-in-c,SR,00:49-00:59
+,,"Now we are going to discuss how to initialize the string.
+ The syntax for this is,
+ char var_name[size] = “string”;",http://stackoverflow.com/questions/4083239/proper-way-to-initialize-a-string-in-c,R,03:10-03:16
+,,"Now we are going to discuss how to initialize the string.
+ The syntax for this is,
+ char var_name[size] = “string”;",http://stackoverflow.com/questions/4142745/initialize-a-string-in-c-to-empty-string,R,03:10-03:16
+,,"Suppose, here I will type int in place of char.
+ Now, click on Save .
+ Let us see what happens.
+ Come back to our terminal.
+ Let me clear the prompt.
+ Compile as before.
+ We see an error.
+ Wide character array initialized from non-wide string .
+ format %s expects argument of type 'char' but argument 2 has type 'int' .",http://stackoverflow.com/questions/16803479/error-wide-character-array-initialized-from-incompatible-wide-string,SR,06:02-06:24
+,,"Suppose, here I will type int in place of char.
+ Now, click on Save .
+ Let us see what happens.
+ Come back to our terminal.
+ Let me clear the prompt.
+ Compile as before.
+ We see an error.
+ Wide character array initialized from non-wide string .
+ format %s expects argument of type 'char' but argument 2 has type 'int' .",http://stackoverflow.com/questions/14536078/int-array-initialized-from-non-wide-string-when-trying-to-make-tchar,SR,06:02-06:24
+,,"Suppose, here I will type int in place of char.
+ Now, click on Save .
+ Let us see what happens.
+ Come back to our terminal.
+ Let me clear the prompt.
+ Compile as before.
+ We see an error.
+ Wide character array initialized from non-wide string .
+ format %s expects argument of type 'char' but argument 2 has type 'int' .",http://stackoverflow.com/questions/10732010/format-s-expects-argument-of-type-char,R,06:02-06:24
+,,"Suppose, here I will type int in place of char.
+ Now, click on Save .
+ Let us see what happens.
+ Come back to our terminal.
+ Let me clear the prompt.
+ Compile as before.
+ We see an error.
+ Wide character array initialized from non-wide string .
+ format %s expects argument of type 'char' but argument 2 has type 'int' .",http://stackoverflow.com/questions/16570716/c-warning-format-s-expects-type-char-but-argument-2-has-type-char,R,06:02-06:24
+,,"Suppose, here I will type int in place of char.
+ Now, click on Save .
+ Let us see what happens.
+ Come back to our terminal.
+ Let me clear the prompt.
+ Compile as before.
+ We see an error.
+ Wide character array initialized from non-wide string .
+ format %s expects argument of type 'char' but argument 2 has type 'int' .",http://stackoverflow.com/questions/19439525/format-s-expects-argument-of-type-char-but-argument-2-has-type-char,R,06:02-06:24
+,,"Suppose, here I will type int in place of char.
+ Now, click on Save .
+ Let us see what happens.
+ Come back to our terminal.
+ Let me clear the prompt.
+ Compile as before.
+ We see an error.
+ Wide character array initialized from non-wide string .
+ format %s expects argument of type 'char' but argument 2 has type 'int' .",http://stackoverflow.com/questions/30633410/c-format-s-expects-argument-of-type-char-in-funny-strings-program,R,06:02-06:24
+,,"And will declare a string variable.
+ Type string space strname and a semicolon.",http://stackoverflow.com/questions/10218714/c-string-declaring,R,07:50-07:53
+,,"Delete the scanf statement and type getline opening bracket closing bracket, within the brackets type (cin, strname) .
+ At the end, type a semicolon.
+ Now again, replace the printf statement with the cout statement.
+ Delete the format specifier and \n .
+ Now delete the comma.
+ Type two opening angle brackets, delete the bracket here.
+ Type two opening angle brackets and within the double quotes type \n .
+  And click on Save.
+ Here we have declared a string variable 'strname' .
+ Since we do not use the format specifier in C++, the compiler should know that 'strname' is a string variable.
+ Here we use getline to extract the characters from the input sequence.
+ It stores them as a string.",http://stackoverflow.com/questions/18786575/using-getline-in-c,SR,08:11-09:18
+,,"Delete the scanf statement and type getline opening bracket closing bracket, within the brackets type (cin, strname) .
+ At the end, type a semicolon.
+ Now again, replace the printf statement with the cout statement.
+ Delete the format specifier and \n .
+ Now delete the comma.
+ Type two opening angle brackets, delete the bracket here.
+ Type two opening angle brackets and within the double quotes type \n .
+  And click on Save.
+ Here we have declared a string variable 'strname' .
+ Since we do not use the format specifier in C++, the compiler should know that 'strname' is a string variable.
+ Here we use getline to extract the characters from the input sequence.
+ It stores them as a string.",http://stackoverflow.com/questions/1744665/need-help-with-getline,R,08:11-09:18
+,,"Delete the scanf statement and type getline opening bracket closing bracket, within the brackets type (cin, strname) .
+ At the end, type a semicolon.
+ Now again, replace the printf statement with the cout statement.
+ Delete the format specifier and \n .
+ Now delete the comma.
+ Type two opening angle brackets, delete the bracket here.
+ Type two opening angle brackets and within the double quotes type \n .
+  And click on Save.
+ Here we have declared a string variable 'strname' .
+ Since we do not use the format specifier in C++, the compiler should know that 'strname' is a string variable.
+ Here we use getline to extract the characters from the input sequence.
+ It stores them as a string.",http://stackoverflow.com/questions/20739453/using-getline-with-file-input-in-c,SR,08:11-09:18
+,String library functions,"Delete the scanf statement and type getline opening bracket closing bracket, within the brackets type (cin, strname) .
+ At the end, type a semicolon.
+ Now again, replace the printf statement with the cout statement.
+ Delete the format specifier and \n .
+ Now delete the comma.
+ Type two opening angle brackets, delete the bracket here.
+ Type two opening angle brackets and within the double quotes type \n .
+  And click on Save.
+ Here we have declared a string variable 'strname' .
+ Since we do not use the format specifier in C++, the compiler should know that 'strname' is a string variable.
+ Here we use getline to extract the characters from the input sequence.
+ It stores them as a string.",http://stackoverflow.com/questions/5739937/using-getlinecin-s-after-cin,SR,08:11-09:18
+,,"Let us start with an introduction to string library functions.
+ These are the group of functions implementing operations on strings.
+ Various operations such as copying, concatenation, searching etc are supported.",http://stackoverflow.com/questions/8465006/how-to-concatenate-2-strings-in-c,SR,00:27-00:36
+,,"In this, we will compare two strings. Here we have character variables as str1 and str2 .
+ str1 stores the value as 'Ice' and str2 stores the value as 'Cream'.
+ Here we have integer variables as i and j.
+ In this we will compare the string using the strcmp function.",http://stackoverflow.com/questions/14232990/comparing-two-strings-in-c,R,04:42-05:03
+,,"In this, we will compare two strings. Here we have character variables as str1 and str2 .
+ str1 stores the value as 'Ice' and str2 stores the value as 'Cream'.
+ Here we have integer variables as i and j.
+ In this we will compare the string using the strcmp function.",http://stackoverflow.com/questions/17026372/c-comparing-two-characters,R,04:42-05:03
+,,"In this, we will compare two strings. Here we have character variables as str1 and str2 .
+ str1 stores the value as 'Ice' and str2 stores the value as 'Cream'.
+ Here we have integer variables as i and j.
+ In this we will compare the string using the strcmp function.",http://stackoverflow.com/questions/22593253/how-to-compare-more-than-2-strings-in-c,R,04:42-05:03
+,,"In this, we will compare two strings. Here we have character variables as str1 and str2 .
+ str1 stores the value as 'Ice' and str2 stores the value as 'Cream'.
+ Here we have integer variables as i and j.
+ In this we will compare the string using the strcmp function.",http://stackoverflow.com/questions/42537038/simple-ways-to-compare-two-strings-without-strcmp-in-c,SR,04:42-05:03
+,,"Here we have the string copy function.
+ Note that our file name is strcpy.c .
+ In this, we will copy the source string into the target string.
+ Here we have 'Ice' in the source string, it will be copied to the target string.
+ This is our strcpy function
+ Here we will print the source string and the target string.",http://stackoverflow.com/questions/7523022/c-string-copy-with-strncpy,R,03:40-04:02
+,,"Here we have the string copy function.
+ Note that our file name is strcpy.c .
+ In this, we will copy the source string into the target string.
+ Here we have 'Ice' in the source string, it will be copied to the target string.
+ This is our strcpy function
+ Here we will print the source string and the target string.",http://stackoverflow.com/questions/16540270/copying-a-string-to-another-string-in-c,R,03:40-04:02
+,,"Here we have the string copy function.
+ Note that our file name is strcpy.c .
+ In this, we will copy the source string into the target string.
+ Here we have 'Ice' in the source string, it will be copied to the target string.
+ This is our strcpy function
+ Here we will print the source string and the target string.",http://stackoverflow.com/questions/9593798/proper-way-to-copy-c-strings,R,03:40-04:02
+,,"Here we have the string copy function.
+ Note that our file name is strcpy.c .
+ In this, we will copy the source string into the target string.
+ Here we have 'Ice' in the source string, it will be copied to the target string.
+ This is our strcpy function
+ Here we will print the source string and the target string.",http://stackoverflow.com/questions/9210528/split-string-with-delimiters-in-c,SR,03:40-04:02
+,,"Here we have the string copy function.
+ Note that our file name is strcpy.c .
+ In this, we will copy the source string into the target string.
+ Here we have 'Ice' in the source string, it will be copied to the target string.
+ This is our strcpy function
+ Here we will print the source string and the target string.",http://stackoverflow.com/questions/19937278/string-copy-in-c-with-and-without-pointer,SR,03:40-04:02
+,,"Here we have the string copy function.
+ Note that our file name is strcpy.c .
+ In this, we will copy the source string into the target string.
+ Here we have 'Ice' in the source string, it will be copied to the target string.
+ This is our strcpy function
+ Here we will print the source string and the target string.",http://stackoverflow.com/questions/12678819/how-to-copy-2-strings-of-string-data-type,R,03:40-04:02
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/2070566/how-to-calculate-the-length-of-a-string-in-c-efficiently,SR,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/15000544/how-to-get-the-string-size-in-bytes,R,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/8831323/find-length-of-string-in-c-without-using-strlen,SR,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/9937181/sizeof-vs-strlen,R,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/2701876/quick-strlen-question,R,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/33587981/how-to-create-array-of-fixed-length-strings-in-c,SR,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/905355/c-string-length,R,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/42519321/sort-strings-by-length-in-c,SR,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/15161774/how-to-create-an-array-of-strings-in-c,SR,02:20-02:52
+,,"In this, we will find the length of the string.
+ These are the header files as stdio.h and string.h.
+ This is our main() function.
+ Here we have a character variable 'arr'.
+ It stores a value 'Ashwini' .
+ Then we have an integer variable len1 .
+ Here we will find the length of the string using strlen function.
+ The result will be stored in 'len1'.
+ Then we print the string and the length of the string.",http://stackoverflow.com/questions/1088622/how-do-i-create-an-array-of-strings-in-c,SR,02:20-02:52
+,Working with structures,"Now we have declared a structure variable stud, stud is the variable of type student, it is used to access and modify the structure members.
+Here we have modified the members
+by assigning them values as 75, 70 and 65.",http://stackoverflow.com/questions/330793/how-to-initialize-a-struct-in-accordance-with-c-programming-language-standards,SR,
+,,"Structure is used to group different data into one object.
+It is called as compound data-type","http://stackoverflow.com/questions/2748995/c-struct-memory-layout
+",SR,
+,,"Now we will see the syntax to declare a structure.
+Here, the keyword struct tells the compiler that a structure is declared.
+strcut_name is the name of the structure.",http://stackoverflow.com/questions/4698600/whats-the-syntactically-proper-way-to-declare-a-c-struct,R,
+,,"Now we will see how to declare a structure variable.
+The syntax for this is:
+struct struct_name and struct_var;
+struct_var is the variable of type struc_name.",http://stackoverflow.com/questions/17250480/c-declaring-int-array-inside-struct,SR,
+,,Structure declaration in C++ is same as in C.,http://stackoverflow.com/questions/42610441,IR,
+,,"Now we will see the syntax to declare a structure.
+Here, the keyword struct tells the compiler that a structure is declared.
+strcut_name is the name of the structure.
+eg. struct employee;
+You can give any name.
+Now we will see how to declare a structure variable.
+The syntax for this is:
+struct struct_name and struct_var;
+struct_var is the variable of type struc_name.",http://stackoverflow.com/questions/26188265/c-declare-the-struct-before-definition,R,
+,,"Now we will see how to declare a structure variable.
+The syntax for this is:
+struct struct_name and struct_var;",http://stackoverflow.com/questions/32577808/how-to-create-a-new-instance-of-a-struct-in-c,R,
+,,"The syntax for this is:
+struct struct_name and struct_var;
+struct_var is the variable of type struc_name.",http://stackoverflow.com/questions/10468128/how-do-you-make-an-array-of-structs-in-c,R,
+,,Variables defined under the structure are called as members of the structure. ,http://stackoverflow.com/questions/42608576,IR,
+,,Variables defined under the structure are called as members of the structure. ,http://stackoverflow.com/questions/42602541,IR,
+,,"Now we will see how to declare a structure variable.
+The syntax for this is:
+struct struct_name and struct_var;
+",http://stackoverflow.com/questions/228684/how-to-declare-a-structure-in-a-header-that-is-to-be-used-by-multiple-files-in-c,SR,
+,,"Now we will see how to declare a structure variable.
+The syntax for this is:
+struct struct_name and struct_var;
+http://stackoverflow.com/questions/32577808/how-to-create-a-new-instance-of-a-struct-in-c",http://stackoverflow.com/questions/31380268/where-to-declare-structures-inside-main-or-outside-main,R,
+,,Structure declaration in C++ is same as in C.,http://stackoverflow.com/questions/9090098/how-to-define-a-struct-in-c,R,
+,Understanding pointers,"In the 'printf' statement, ampersand is used for retrieving memory address of the variable.
+So, ampersand num (&num) will give the memory address of num. ",http://stackoverflow.com/questions/10187510/understanding-pointers-in-c,R,"1:20,1:28"
+,,"And here asterisk ptr will give the value at the address.
+So, using asterisk will not give the memory address.
+Instead it will give the value. ",http://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean,R,"1:54,1:59,2:03"
+,,"In the 'printf' statement, ampersand is used for retrieving memory address of the variable.
+So, ampersand num (&num) will give the memory address of num. 
+And here asterisk ptr will give the value at the address.
+So, using asterisk will not give the memory address.
+Instead it will give the value. ",http://stackoverflow.com/questions/2094666/pointers-in-c-when-to-use-the-ampersand-and-the-asterisk,R,"1:20,1:28,1:54,1:59,2:03"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.
+It also gives value stored at that address. ",http://stackoverflow.com/questions/21604946/pointer-to-pointer-clarification,R,"0:34,0:38,0:41"
+,,sizeof() function will give the size of ptr.,http://stackoverflow.com/questions/6751749/size-of-a-pointer,R,1:45
+,,sizeof() function will give the size of ptr.,http://stackoverflow.com/questions/399003/is-the-sizeofsome-pointer-always-equal-to-four,R,1:45
+,,sizeof() function will give the size of ptr.Then the size of pointer is 8 bytes.,http://stackoverflow.com/questions/23185096/what-is-the-size-of-a-pointer-what-exactly-does-it-depend-on,SR,"1:45,2:53"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.
+It also gives value stored at that address.",http://stackoverflow.com/questions/15151377/what-exactly-is-a-c-pointer-if-not-a-memory-address,R,"00:38,00:41"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.
+It also gives value stored at that address.",http://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in,R,"00:38,00:41"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.
+It also gives value stored at that address.",http://stackoverflow.com/questions/897366/how-do-pointer-to-pointers-work-in-c,SR,"00:38,00:41"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.
+It also gives value stored at that address.",http://stackoverflow.com/questions/42605576,IR,"00:38,00:41"
+,,Pointers point to the locations in memory.And here asterisk ptr will give the value at the address.,http://stackoverflow.com/questions/5580761/why-use-double-pointer-or-why-use-pointers-to-pointers,SR,"00:38,1:54"
+,,"Let us start with an introduction to pointers.
+Pointers point to the locations in memory.
+Pointers store the memory address.
+It also gives value stored at that address.
+Now, let us see an example on pointers.",http://stackoverflow.com/questions/42601711,IR,"00:31,00:34,00:38,00:41,00:45"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.",http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work,SR,"00:34,00:38"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.",http://stackoverflow.com/questions/42599561,IR,"00:34,00:38"
+,,"We see that the num address and ptr value is same
+where as memory address of num and ptr are different.
+Then the size of pointer is 8 bytes.",http://stackoverflow.com/questions/42599101,IR,"2:42,2:48,2:53"
+,,"Let us start with an introduction to pointers.Now, let us see an example on pointers.",http://stackoverflow.com/questions/42586391,IR,"00:31,00:45"
+,,sizeof() function will give the size of ptr.,http://stackoverflow.com/questions/492384/how-to-find-the-sizeof-a-pointer-pointing-to-an-array,SR,1:45
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.
+It also gives value stored at that address. ",http://stackoverflow.com/questions/42597920,IR,"0:34,0:38,0:41"
+,,"Asterisk sign is used to declare a pointer.So, ampersand num (&num) will give the memory address of num.",http://stackoverflow.com/questions/42596881,IR,"1:12,1:28"
+,,"Pointers store the memory address.
+It also gives value stored at that address.",http://stackoverflow.com/questions/42594802,IR,"00:38,00:41"
+,,"So, ampersand num (&num) will give the memory address of num. 
+And here asterisk ptr will give the value at the address.
+So, using asterisk will not give the memory address.
+Instead it will give the value. ",http://stackoverflow.com/questions/31231376/why-is-x0-x00-x000,SR,"1:28,1:54,1:59,2:03"
+,,"So, ampersand num (&num) will give the memory address of num. 
+And here asterisk ptr will give the value at the address.
+So, using asterisk will not give the memory address.
+Instead it will give the value. ",http://stackoverflow.com/questions/42594237,IR,"1:28,1:54,1:59,2:03"
+,,"Pointers point to the locations in memory.
+Pointers store the memory address.",http://stackoverflow.com/questions/42594488,IR,"00:34,00:38"
+,Function call,"Let us start with the introduction to function call by value.
+It is a method of passing arguments to the function.
+When we pass a variable by value, it makes a copy of the variable
+before passing to the function.
+Changes made to the arguments, inside the function, will remain in the function.
+It will not be affected outside the function.It is another method of passing arguments to the function.
+This method copies the address of the argument instead of the value.
+Changes made to the arguments, inside a function, can affect them outside.                                                                                ",http://stackoverflow.com/questions/2278700/difference-between-call-by-reference-and-call-by-value,R,"00:31,00:35,00:40,00:45,00:48,00:54,2:29,2:33,2:39"
+,,"When we pass a variable by value, it makes a copy of the variable
+before passing to the function.This method copies the address of the argument instead of the value.",http://stackoverflow.com/questions/21165114/call-by-value-or-call-by-reference,R,"00:40,00:45,2:33"
+,,"When we pass a variable by value, it makes a copy of the variable
+before passing to the function.
+Changes made to the arguments, inside the function, will remain in the function.
+It will not be affected outside the function.",http://stackoverflow.com/questions/41778001/global-variable-as-an-argument-of-function-call-in-c,R,"00:40,00:45,00:48,00:54"
+,,"When we pass a variable by value, it makes a copy of the variable
+before passing to the function.
+This method copies the address of the argument instead of the value.",http://stackoverflow.com/questions/161788/are-there-any-downsides-to-passing-structs-by-value-in-c-rather-than-passing-a,R,"00:40,00:45,2:33"
+,,"It is a method of passing arguments to the function
+It is another method of passing arguments to the function.
+This method copies the address of the argument instead of the value.",http://stackoverflow.com/questions/21238896/call-by-value-vs-call-by-reference-revisited,SR,"00:35,2:29,2:33"
+,,"Now we will see 'function call by reference'.
+Let us go back to our slides.
+It is another method of passing arguments to the function.
+This method copies the address of the argument instead of the value.
+Changes made to the arguments, inside a function, can affect them outside.
+In this we need to declare the arguments as pointer type.",http://stackoverflow.com/questions/37136552/meaning-of-pass-by-reference-in-c-and-c,R,"02:23,02:26,02:29,02:33,02:39,02:45"
+,,"Let us start with the introduction to function call by value.
+It is a method of passing arguments to the function.
+Now we will see 'function call by reference'.
+It is another method of passing arguments to the function.",http://stackoverflow.com/questions/42594661,IR,"00:31,00:35,2:23,2:29"
+,,"Changes made to the arguments, inside the function, will remain in the function.
+It will not be affected outside the function.
+Changes made to the arguments, inside a function, can affect them outside.
+In this we need to declare the arguments as pointer type.",http://stackoverflow.com/questions/15823903/call-by-reference-value-and-name,R,"00:48,0054,2:39,2:45"
+,,"Let us start with the introduction to function call by value.
+It is a method of passing arguments to the function.
+Now we will see 'function call by reference'.
+It is another method of passing arguments to the function.",http://stackoverflow.com/questions/22734051/c-string-function-calls-pass-by-value-or-reference,R,"00:31,00:35,2:23,2:29"
+,,"In this tutorial, we will learn about type of function calls namely-
+call by value
+call by reference.",http://stackoverflow.com/questions/42591979,IR,"00:07,00:13,00:14"
+,,And this is our return statement.,http://stackoverflow.com/questions/42588102,IR,"1:49,4:10"
+,,Now we will see 'function call by reference'.,http://stackoverflow.com/questions/33622787/are-pointers-considered-a-method-of-calling-by-reference-in-c,SR,2:23
+,,"Let us start with the introduction to function call by value.
+It is a method of passing arguments to the function.
+Now we will see 'function call by reference'.
+It is another method of passing arguments to the function.",http://stackoverflow.com/questions/42587305,IR,"00:31,00:35,2:23,2:29"
+,,"Let us start with the introduction to function call by value.
+It is a method of passing arguments to the function.
+Now we will see 'function call by reference'.
+It is another method of passing arguments to the function.",http://stackoverflow.com/questions/42591999,IR,"00:31,00:35,2:23,2:29"
+,,"In this we need to declare the arguments as pointer type.
+You can see that the arguments passed in the function are pointer type.",http://stackoverflow.com/questions/2229498/passing-by-reference-in-c,R,"02:45,03:15"
+,,"In this tutorial, we will learn about type of function calls namely-
+call by value
+call by reference.",http://stackoverflow.com/questions/42589836,IR,"00:07,00:13,00:14"
+,,"In this tutorial, we will learn about type of function calls namely-
+call by value
+call by reference.",http://stackoverflow.com/questions/42588449,IR,"00:07,00:13,00:14"
+,,"Changes made to the arguments, inside the function, will remain in the function.
+It will not be affected outside the function.
+Changes made to the arguments, inside a function, can affect them outside.
+In this we need to declare the arguments as pointer type.",http://stackoverflow.com/questions/42588002,IR,"00:48,0054,2:39,2:45"
+,File handling in C,"Let us see the types of modes :
+""w"" - creates file for read and write.
+""r"" – opens file for reading.
+""a"" – writing at the end of the file.",http://stackoverflow.com/questions/16316823/confusion-about-different-file-modes,R,"01:59,02:02,02:06,02:09"
+,,,http://stackoverflow.com/questions/17003696/difference-between-file-open-modes-in-c,R,
+,,,http://stackoverflow.com/questions/3645123/opening-a-file-in-a-mode,SR,
+,,,http://stackoverflow.com/questions/42581873,IR,
+,,,http://stackoverflow.com/questions/19429138/append-to-the-end-of-a-file-in-c,SR,
+,,,http://stackoverflow.com/questions/5787867/file-read-write-to-same-file,SR,
+,,,http://stackoverflow.com/questions/21113919/difference-between-r-and-w-in-fopen,R,
+,,,http://stackoverflow.com/questions/42567522,IR,
+,,,http://stackoverflow.com/questions/42577478,IR,
+,,"The FILE variable is defined under the header stdio.h.
+*fp is a pointer to the FILE variable.
+It will store all the information about the file ,
+like its name, status and current information.",http://stackoverflow.com/questions/42573996,IR,"01:12,01:19,01:22,01:26"
+,,,http://stackoverflow.com/questions/42614379,IR,
+,,,http://stackoverflow.com/questions/15883743/read-from-a-file-and-store-it-in-a-variable-c,SR,
+,,,http://stackoverflow.com/questions/32049884/file-pointer-in-c,SR,
+,,,http://stackoverflow.com/questions/22823926/how-to-call-a-file-pointer-in-a-function,SR,
+,,,http://stackoverflow.com/questions/22186626/file-pointer-in-c-how-it-works,R,
+,,,http://stackoverflow.com/questions/42604180,IR,
+,,"Now we will see the syntax to open a file.
+Here, the fopen() function opens a stream.
+Then it links the file with the stream.
+file name is the name of the file that we want to open or create.
+We can give the path along with the file name.
+And We can also give the extension.
+Here we can give the mode of the file.",http://stackoverflow.com/questions/1746510/unable-to-open-a-file-with-fopen,R,"01:33,01:37,01:42,01:44,01:49,01:53,01:56"
+,,,http://stackoverflow.com/questions/5012126/simple-c-program-opening-a-file,R,
+,,,http://stackoverflow.com/questions/2395465/create-a-file-in-linux-using-c,SR,
+,,,http://stackoverflow.com/questions/7121752/opening-a-file-in-c-programming-in-xcode,SR,
+,,,http://stackoverflow.com/questions/42614501,IR,
+,,,http://stackoverflow.com/questions/42599039,IR,
+,,,http://stackoverflow.com/questions/42612751,IR,
+,,fprintf() writes output to the given output stream.,http://stackoverflow.com/questions/2018730/fprintf-with-string-argument,R,2:34
+,,,http://stackoverflow.com/questions/6074279/how-to-use-fprintf-for-writing-data-to-a-file,R,
+,,,http://stackoverflow.com/questions/4627330/difference-between-fprintf-printf-and-sprintf,SR,
+,,,http://stackoverflow.com/questions/5333160/problem-using-fprintf,SR,
+,,,http://stackoverflow.com/questions/12452018/fprintf-isnt-writing-to-file,SR,
+,,"Here, we open the file Sample.txt in read mode.
+The output is stored in fp.
+Then we check the condition-
+""If fp is equal to NULL "".
+If the condition is true then we print the message:
+""File doesn't exist.""
+Else, it will check for another condition-
+While c is not equal to EOF.
+Here, EOF is the end of file.
+It denotes the end of input.
+It is a condition where no more data can be read from a data source.
+If the condition is true then it will display the characters from Sample.txt file, on the console.",http://stackoverflow.com/questions/31147850/how-to-read-text-file-in-c,R,"04:19,04:24,04:27,04:29,04:32,04:36,04:38,04:41,04:46,04:49,04:52,04:57"
+,,,http://stackoverflow.com/questions/3351809/reading-file-using-fscanf-in-c,SR,
+,,,http://stackoverflow.com/questions/9434207/reading-from-file-using-fgets,SR,
+,,,http://stackoverflow.com/questions/19813949/how-to-read-a-line-from-a-file-in-c,R,
+,,,http://stackoverflow.com/questions/2372813/reading-one-line-at-a-time-in-c,R,
+,,,http://stackoverflow.com/questions/42611103,IR,
+,,,http://stackoverflow.com/questions/42612254,IR,
+,,"Here, getc returns a character from a specified file or stream.",http://stackoverflow.com/questions/2507082/getc-vs-getchar-vs-scanf-for-reading-a-character-from-stdin,R,5:06
+,,,http://stackoverflow.com/questions/10059142/reading-r-carriage-return-vs-n-newline-from-console-with-getc,R,
+,,,http://stackoverflow.com/questions/42595553,IR,
+,,,http://stackoverflow.com/questions/42611966,IR,
+,,putchar is used to display a character on the console.,http://stackoverflow.com/questions/28779640/understanding-getchar-and-putchar-in-c,R,5:17
+,,,http://stackoverflow.com/questions/25128640/why-is-putchar-printing-formatted-output,SR,
+,,,http://stackoverflow.com/questions/23359693/how-putchar-works,R,
+,,,http://stackoverflow.com/questions/42612023,IR,
+Advance C,Command line arguments in C,"For this tutorial, I am using Ubuntu Operating system version 11.10 and gcc Compiler version 4.6.1 on Ubuntu.",http://stackoverflow.com/questions/5691795/how-to-compile-c-programming-in-windows-7,SR,0:15
+,,"For this tutorial, I am using Ubuntu Operating system version 11.10 and gcc Compiler version 4.6.1 on Ubuntu.",http://stackoverflow.com/questions/24469866/how-do-i-run-a-c-program-from-my-windows-command-prompt,SR,0:15
+,,"These are the header files. stdio.h defines core input and output functions.
+stdlib.h header file defines-
+Numeric conversion function Pseudo-random numbers Generation function Memory allocation Process control functions.",http://stackoverflow.com/questions/6723266/why-to-include-stdlib-h,SR,00:53-01:01
+,,"These are the header files. stdio.h defines core input and output functions. stdlib.h header file defines-
+
+Numeric conversion function Pseudo-random numbers Generation function Memory allocation Process control functions. ",http://stackoverflow.com/questions/19088284/what-does-include-stdio-h-really-do-in-a-c-program,R,00:53-01:01
+,,"argc refers to the number of command line arguments passed to the program.
+This includes the actual name of the program.
+argv contains actual arguments starting from index 0.
+Index 0 is the name of the program.
+Index 1 will be the first argument passed to the program.
+Index 2 will be the second argument passed to the program and so on.
+This statement will display the total number of arguments passed to the program.
+This will display the first argument passed to the program.
+1 represents the argument at index 1.
+'while' condition will decrement the number of arguments.
+This statement will print all the arguments passed to the program. ",http://stackoverflow.com/questions/3371886/command-line-arguments-in-c,R,01:28-02:18
+,,"This is our main() function. Inside this, we have passed two arguments-
+
+int argc, char asterisk asterisk argv (**argv).
+argc refers to the number of command line arguments passed to the program.
+This includes the actual name of the program.
+argv contains actual arguments starting from index 0.
+Index 0 is the name of the program.
+Index 1 will be the first argument passed to the program.
+Index 2 will be the second argument passed to the program and so on. ",http://stackoverflow.com/questions/3898021/regarding-mainint-argc-char-argv,R,1:16-01:53
+,,"argc refers to the number of command line arguments passed to the program.
+This includes the actual name of the program.
+argv contains actual arguments starting from index 0.
+Index 0 is the name of the program.
+Index 1 will be the first argument passed to the program.
+Index 2 will be the second argument passed to the program and so on. ",http://stackoverflow.com/questions/15915869/problems-using-mainint-argc-char-argv,SR,1:28-01:53
+,,"This is our main() function. Inside this, we have passed two arguments-
+
+int argc, char asterisk asterisk argv (**argv).
+argc refers to the number of command line arguments passed to the program.
+This includes the actual name of the program.
+argv contains actual arguments starting from index 0.
+Index 0 is the name of the program.
+Index 1 will be the first argument passed to the program.
+Index 2 will be the second argument passed to the program and so on. ",http://stackoverflow.com/questions/19231612/how-to-write-a-argv-and-argc,R,1:28-01:53
+,,"This is our main() function. Inside this, we have passed two arguments-
+
+int argc, char asterisk asterisk argv (**argv).
+argc refers to the number of command line arguments passed to the program.
+This includes the actual name of the program.
+argv contains actual arguments starting from index 0.
+Index 0 is the name of the program.
+Index 1 will be the first argument passed to the program.
+Index 2 will be the second argument passed to the program and so on. ",http://stackoverflow.com/questions/779910/should-i-use-char-argv-or-char-argv-in-c,R,1:28-01:53
+,,"This is our main() function. Inside this, we have passed two arguments- int argc, char asterisk asterisk argv (**argv). argc refers to the number of command line arguments passed to the program. This includes the actual name of the program. argv contains actual arguments starting from index 0. Index 0 is the name of the program. Index 1 will be the first argument passed to the program. Index 2 will be the second argument passed to the program and so on.",http://stackoverflow.com/questions/35152305/how-to-assign-a-string-in-argc-and-argv,R,1:28-01:53
+,,"this is our main() function. Inside this, we have passed two arguments-
+
+int argc, char asterisk asterisk argv (**argv).
+argc refers to the number of command line arguments passed to the program.
+This includes the actual name of the program.
+argv contains actual arguments starting from index 0.
+Index 0 is the name of the program.
+Index 1 will be the first argument passed to the program.
+Index 2 will be the second argument passed to the program and so on. ",http://stackoverflow.com/questions/41981565/clarification-on-argc-and-argv,R,
+,Union and Typedef,"Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
+It is a way to define alias to the commands.
+It helps to provide clarity to the code.
+It makes the code easier to understand and change. ",http://stackoverflow.com/questions/2566027/what-is-the-use-of-typedef,R,00:49-01:07
+,,"Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
+It is a way to define alias to the commands.
+It helps to provide clarity to the code.
+It makes the code easier to understand and change. ",http://stackoverflow.com/questions/516237/when-should-i-use-typedef-in-c,SR,00:49-01:07
+,,"Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
+It is a way to define alias to the commands.
+It helps to provide clarity to the code.
+It makes the code easier to understand and change. ",http://stackoverflow.com/questions/1675351/typedef-struct-vs-struct-definitions,SR,00:49-01:07
+,,"Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
+It is a way to define alias to the commands.
+It helps to provide clarity to the code.
+It makes the code easier to understand and change. ",http://stackoverflow.com/questions/252780/why-should-we-typedef-a-struct-so-often-in-c,R,00:49-01:07
+,,Syntax: typedef existing_name alias_name. Example: typedef unsigned int uint;,http://stackoverflow.com/questions/18806392/typedef-struct-declarations,R,1:12
+,,Syntax: typedef existing_name alias_name. Example: typedef unsigned int uint;,http://stackoverflow.com/questions/10747810/what-is-the-difference-between-typedef-and-using-in-c11,SR,1:12
+,,Syntax: typedef existing_name alias_name. Example: typedef unsigned int uint;,http://stackoverflow.com/questions/42610007,IR,1:12
+,,Syntax: typedef existing_name alias_name. Example: typedef unsigned int uint;,http://stackoverflow.com/questions/31903594/typedef-struct-in-c-vs-c,SR,1:12
+,,"Typedef keyword is used to give symbolic name to an existing type or user-defined datatypes.
+It is a way to define alias to the commands. ",http://stackoverflow.com/questions/1666353/are-typedef-and-define-the-same-in-c,R,00:49-00:58
+,,"Type: gcc space pallindrome dot c space hyphen o space pallindrome. Press Enter.
+Type: dot slash pallindrome",http://stackoverflow.com/questions/16367190/how-to-run-a-c-program-using-command-prompt,R,02:16-02:29
+,,"Type: gcc space pallindrome dot c space hyphen o space pallindrome. Press Enter.
+Type: dot slash pallindrome",http://stackoverflow.com/questions/4635794/how-to-run-a-c-program-on-ubuntu,R,02:16-02:29
+,,"Type: gcc space pallindrome dot c space hyphen o space pallindrome. Press Enter.
+Type: dot slash pallindrome",http://stackoverflow.com/questions/42609245,IR,02:16-02:29
+,,"Type: gcc space pallindrome dot c space hyphen o space pallindrome. Press Enter.
+Type: dot slash pallindrome",http://stackoverflow.com/questions/9290819/executing-c-program-in-linux-terminal,R,02:16-02:29
+,,"union is a collection of different datatypes grouped together.
+union allocates one common storage-space for all its members.
+We can access only one member of union at a time. ",http://stackoverflow.com/questions/252552/why-do-we-need-c-unions,R,02:52-03:03
+,,"In main() function, we have declared a union variable as stud.
+Here we can access the union members using a union variable:
+
+stud dot english stud dot maths stud dot science
+Then we calculate the total marks and display it. ",http://stackoverflow.com/questions/724617/examples-of-union-in-c,R,04:02-04:21
+,,"union is a collection of different datatypes grouped together.
+union allocates one common storage-space for all its members.
+We can access only one member of union at a time. ",http://stackoverflow.com/questions/42593540,IR,02:52-03:03
+,," Let us see the difference between structure and union.
+union allocates a common storage-space for all its members.
+structure allocates separate storage-space for all its members.
+union occupies lower memory space.
+structure occupies higher memory space.
+Example for union:
+union student{int marks;char name[6];double average;};
+Memory allocation for union variable will be 8 bytes as double datatype will occupy the maximum memory space.
+Example for structure:
+struct student{int mark;char name[6];double average;};
+Memory allocation for structure variable will be: 2bytes+6bytes+8bytes =16bytes. ",http://stackoverflow.com/questions/346536/difference-between-a-structure-and-a-union-in-c,R,04:50-05:48
+,,"Let us see the difference between structure and union.
+union allocates a common storage-space for all its members.
+structure allocates separate storage-space for all its members.
+union occupies lower memory space.
+structure occupies higher memory space.
+Example for union:
+union student{int marks;char name[6];double average;};
+Memory allocation for union variable will be 8 bytes as double datatype will occupy the maximum memory space.
+Example for structure:
+struct student{int mark;char name[6];double average;};
+Memory allocation for structure variable will be: 2bytes+6bytes+8bytes =16bytes. ",http://stackoverflow.com/questions/740577/sizeof-a-union-in-c-c,R,04:50-05:48
+,,"Let us see the difference between structure and union.
+union allocates a common storage-space for all its members.
+structure allocates separate storage-space for all its members.
+union occupies lower memory space.
+structure occupies higher memory space.
+Example for union:
+union student{int marks;char name[6];double average;};
+Memory allocation for union variable will be 8 bytes as double datatype will occupy the maximum memory space.
+Example for structure:
+struct student{int mark;char name[6];double average;};
+Memory allocation for structure variable will be: 2bytes+6bytes+8bytes =16bytes. ",http://stackoverflow.com/questions/724261/unions-versus-structures-in-c,R,04:50-05:48
+,,"Let us see the difference between structure and union.
+union allocates a common storage-space for all its members.
+structure allocates separate storage-space for all its members.
+union occupies lower memory space.
+structure occupies higher memory space.
+Example for union:
+union student{int marks;char name[6];double average;};
+Memory allocation for union variable will be 8 bytes as double datatype will occupy the maximum memory space.
+Example for structure:
+struct student{int mark;char name[6];double average;};
+Memory allocation for structure variable will be: 2bytes+6bytes+8bytes =16bytes. ",http://stackoverflow.com/questions/4003087/whats-the-major-difference-between-union-and-struct-in-c,SR,04:50-05:48
+,,"Let us see the difference between structure and union.
+union allocates a common storage-space for all its members.
+structure allocates separate storage-space for all its members.
+union occupies lower memory space.
+structure occupies higher memory space.
+Example for union:
+union student{int marks;char name[6];double average;};
+Memory allocation for union variable will be 8 bytes as double datatype will occupy the maximum memory space.
+Example for structure:
+struct student{int mark;char name[6];double average;};
+Memory allocation for structure variable will be: 2bytes+6bytes+8bytes =16bytes. ",http://stackoverflow.com/questions/42604643,IR,04:50-05:48
+,,"Now we will learn about union datatype.
+union is a collection of different datatypes grouped together.
+union allocates one common storage-space for all its members.
+We can access only one member of union at a time.
+Syntax1:
+union union_name within curly brackets members; after curly brackets union_variableand a semicolon.
+We also have an alternate syntax.
+Syntax 2: union union_name within curly brackets members; after curly brackets semicolon union union_name union_variable; ",http://stackoverflow.com/questions/42608630,IR,02:47-03:21
+,,"Let us see the difference between structure and union.
+union allocates a common storage-space for all its members.
+structure allocates separate storage-space for all its members.
+union occupies lower memory space.
+structure occupies higher memory space.
+Example for union:
+union student{int marks;char name[6];double average;};
+Memory allocation for union variable will be 8 bytes as double datatype will occupy the maximum memory space.
+Example for structure:
+struct student{int mark;char name[6];double average;};
+Memory allocation for structure variable will be: 2bytes+6bytes+8bytes =16bytes. ",http://stackoverflow.com/questions/42605630,IR,04:50-05:48
+,Storage class specifiers,,http://stackoverflow.com/questions/42606144,IR,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory.
+Let us see an example. I will edit the same code file.
+Come back to our program.
+Press Ctrl + Shift + S keys simultaneously.
+Now, I will just change the filename as static. Click on Save.
+Now, I will change the initialization of the variable i to static int i equal to zero
+Click on Save.
+Let us see what happens. Execute the file on the terminal.
+Type: gcc space static.c space hyphen o space stat. Press Enter.
+Type: dot slash stat. Press Enter.
+The output is displayed as: 0, 1, 2, 3
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls.
+Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/40356368/storage-class-of-default-global-variable-gcc-compiler,SR,4:13-06:33
+,,"Now, let us move on to register keyword.
+register variables will be accessed faster than normal variables.
+They are stored in register memory rather than main memory.
+Limited number of variables can be used since register size is very low.
+16 bits, 32 bits or 64 bits. 
+
+Let us start with auto keyword.
+auto keyword declares an automatic variable.
+It has a local scope.
+Keywords are not initialized automatically.
+You should explicitly initialize keywords while declaring.
+Storage-space of keywords is CPU memory. ",http://stackoverflow.com/questions/38111073/register-vs-auto-storage-class,R,
+,,,http://stackoverflow.com/questions/42604823,IR,
+,,,http://stackoverflow.com/questions/42604502,IR,
+,,,http://stackoverflow.com/questions/42603802,IR,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/35076280/why-do-i-need-to-declare-this-function-extern-it-works-without-it,R,
+,,"Now, let us move on to register keyword.
+register variables will be accessed faster than normal variables.
+They are stored in register memory rather than main memory.
+Limited number of variables can be used since register size is very low.
+16 bits, 32 bits or 64 bits. 
+
+Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. ",http://stackoverflow.com/questions/34680929/why-cant-the-static-and-register-storage-classes-be-used-together,R,
+,,,http://stackoverflow.com/questions/42603730,IR,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/32535793/why-extern-storage-class-works-differently-in-functions,R,
+,,,http://stackoverflow.com/questions/42603277,IR,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. ",http://stackoverflow.com/questions/31716936/runtime-entity-and-load-time-entity,SR,
+,,"Now, let us move on to register keyword.
+register variables will be accessed faster than normal variables.
+They are stored in register memory rather than main memory.
+Limited number of variables can be used since register size is very low.
+16 bits, 32 bits or 64 bits. 
+",http://stackoverflow.com/questions/31607507/do-the-c-language-standards-specify-support-for-global-register-variables,R,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/31019176/extern-storage-class-variable-inside-main-function,R,
+,,"Now, let us move on to register keyword.
+register variables will be accessed faster than normal variables.
+They are stored in register memory rather than main memory.
+Limited number of variables can be used since register size is very low.
+16 bits, 32 bits or 64 bits. 
+",http://stackoverflow.com/questions/30826065/why-cant-we-always-use-the-register-storage-class-in-c,R,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. 
+",http://stackoverflow.com/questions/28686049/the-scope-of-static-function-in-c,R,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. 
+",http://stackoverflow.com/questions/23905299/static-storage-class-in-c,R,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/20824905/problems-compiling-program-with-extern-variable,R,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/17397677/extern-in-multiple-files-and-possible-double-definition,R,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. 
+",http://stackoverflow.com/questions/15808049/what-is-the-use-of-static-local-variable-when-we-can-get-a-global-variable-at-th,R,
+,,"Now, let us move on to register keyword.
+register variables will be accessed faster than normal variables.
+They are stored in register memory rather than main memory.
+Limited number of variables can be used since register size is very low.
+16 bits, 32 bits or 64 bits. 
+
+Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. 
+
+Let us start with auto keyword.
+auto keyword declares an automatic variable.
+It has a local scope.
+Keywords are not initialized automatically.
+You should explicitly initialize keywords while declaring.
+Storage-space of keywords is CPU memory. 
+
+Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/95890/what-is-a-variables-linkage-and-storage-specifier,R,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. 
+
+Let us start with auto keyword.
+auto keyword declares an automatic variable.
+It has a local scope.
+Keywords are not initialized automatically.
+You should explicitly initialize keywords while declaring.
+Storage-space of keywords is CPU memory. 
+",http://stackoverflow.com/questions/2661369/storage-classes,R,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. ",http://stackoverflow.com/questions/17182648/understanding-static-storage-class-in-c,R,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/38280895/understanding-extern-storage-class-specifier-in-c,R,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. ",http://stackoverflow.com/questions/13073952/where-in-a-declaration-may-a-storage-class-specifier-be-placed,SR,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/1787875/use-of-extern-storage-class-specifier-in-c,SR,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. ",http://stackoverflow.com/questions/36056662/the-memory-location-of-static-and-extern-storage-class-in-c,R,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/3993966/extern-storage-class-specifier,R,
+,,"Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/4603271/c-extern-storage-class-life-span,SR,
+,,"Let us start with auto keyword.
+auto keyword declares an automatic variable.
+It has a local scope.
+Keywords are not initialized automatically.
+You should explicitly initialize keywords while declaring.
+Storage-space of keywords is CPU memory. ",http://stackoverflow.com/questions/6087581/can-the-auto-keyword-be-used-as-a-storage-class-specifier-in-c11,R,
+,,"Now, let us see static variable.
+Although we have studied about static variable, in the previous tutorials, I will explain it here briefly.
+'static' variables are initialized to zero.
+They are not destroyed even after program control exits from the block.
+Value of the variable persists between different function calls.
+Storage-space is CPU memory. 
+This is because static variables are global variables.
+The scope of static variable is local to the function, they are defined in.
+They do not lose their value between function calls. 
+Now, let us learn about extern keyword.
+Scope of extern variable is throughout the main program.
+Definition for extern variable might be anywhere in the C program.
+extern variables are initialized to zero, by default.
+They can be accessed by all functions in the program.
+These are stored in CPU memory. ",http://stackoverflow.com/questions/14027317/what-is-the-difference-between-file-scope-and-program-scope,SR,
+,,,http://stackoverflow.com/questions/42603460,IR,
+,,"Let us start with auto keyword.
+auto keyword declares an automatic variable.
+It has a local scope.
+Keywords are not initialized automatically.
+You should explicitly initialize keywords while declaring.
+Storage-space of keywords is CPU memory. ",http://stackoverflow.com/questions/21359239/what-does-it-mean-to-declare-a-variable-with-a-storage-class-specifier-but-no-ty,SR,
+,,,http://stackoverflow.com/questions/42600135,IR,
+,,,http://stackoverflow.com/questions/42603340,IR,
+,,,http://stackoverflow.com/questions/42602681,IR,
+,,,http://stackoverflow.com/questions/42564415,IR,
+Bash,Introduction to Bash shell scripting,"We will see what a Bash Shell is.
+Bash Shell is a command language interpreter that executes commands.
+These commands are read from the standard input device.
+
+Now let us see what a Bash Shell script is.
+The Bash Shell script contains a series of Bash commands in plain text file.
+It tells the Shell to execute this text file instead of typing the commands.",http://stackoverflow.com/questions/5725296/difference-between-sh-and-bash,R,
+,,"We will see what a Bash Shell is.
+Bash Shell is a command language interpreter that executes commands.
+These commands are read from the standard input device.
+The input device can be-
+your keyboard
+or a simple text file.
+Let me show you what is a Bash Shell.
+Open the terminal window by pressing Ctrl+Alt+T keys simultaneously on your keyboard .
+This will open the Gnome terminal.
+To check which type of shell we are using, type: echo space dollar sign SHELL (in capital).
+Press Enter.
+You will see the output printed on the next line as: slash bin slash bash.
+This indicates that we are using the Bash Shell.",http://stackoverflow.com/questions/28693737/is-bash-a-programming-language,SR,
+,,"It provides features lacking in Bourne Shell
+It has features of both, B Shell and C Shell along with some additional features.
+It has many useful features of ksh, bash and tcsh.
+The Bash Shell script contains a series of Bash commands in plain text file.",http://stackoverflow.com/questions/42601289,IR,
+,,"Now let us see what a Bash Shell script is.
+The Bash Shell script contains a series of Bash commands in plain text file.
+It tells the Shell to execute this text file instead of typing the commands.
+Let us see how to write a simple Bash script.",http://stackoverflow.com/questions/42600396,IR,
+,,"Now, let us know different types of Shells available.
+Let us switch back to our slides. Bourne Shell-
+This was original UNIX shell written by Stephen Bourne.
+It lacked interactivity provided by most modern shells today.
+C Shell-
+It provides features lacking in Bourne Shell .
+K Shell-
+It was created by David Korn.
+It has features of both, B Shell and C Shell along with some additional features.
+Bash Shell-
+The Bash Shell was developed by GNU Project.
+It is based on B Shell language.
+It has features of C and K Shells.
+TC Shell-
+It is the default Shell of FreeBSD and its descendants.
+Z shell-
+It is a Shell designed for interactive use.
+It has many useful features of ksh, bash and tcsh.",http://stackoverflow.com/questions/199661/what-linux-shell-should-i-use,SR,
+,,"Now, let us know different types of Shells available.
+Let us switch back to our slides. Bourne Shell-
+This was original UNIX shell written by Stephen Bourne.
+It lacked interactivity provided by most modern shells today.
+C Shell-
+It provides features lacking in Bourne Shell .
+K Shell-
+It was created by David Korn.
+It has features of both, B Shell and C Shell along with some additional features.
+Bash Shell-
+The Bash Shell was developed by GNU Project.
+It is based on B Shell language.
+It has features of C and K Shells.
+TC Shell-
+It is the default Shell of FreeBSD and its descendants.
+Z shell-
+It is a Shell designed for interactive use.
+It has many useful features of ksh, bash and tcsh.",http://stackoverflow.com/questions/42591231,IR,
+,,"Now, let us know different types ofShellsavailable.",http://stackoverflow.com/questions/42892497,IR,
+,,"Now let us see what aBash Shell scriptis.
+TheBash Shell script
+contains a series ofBashcommands in plaintext file.tells theShellto execute thistext file,instead of typing the commands.",http://stackoverflow.com/questions/3266051/what-is-shell-scripting,SR,
+,,"Now, let us know different types ofShellsavailable.",http://unix.stackexchange.com/questions/57105/why-there-are-multiple-shells-in-a-unix-like-system,R,
+,,"Now, type: hash exclamation mark front slash bin front slash bash
+This is the first line of every bash script.
+It is called shebang or bang line.
+First, we have to make the file executable.
+For this, type: chmod space plus x space hello underscore world dot sh",http://unix.stackexchange.com/questions/182732/is-it-better-to-use-a-shebang-line-to-execute-a-script,R,
+,,"This is the first line of every bash script.
+It is called shebang or bang line.",http://unix.stackexchange.com/questions/87560/does-the-shebang-determine-the-shell-which-runs-the-script,R,
+,,"This is the first line of every bash script.
+It is called shebang or bang line.
+First, we have to make the file executable.
+For this, type: chmod space plus x space hello underscore world dot sh",http://unix.stackexchange.com/questions/159449/is-this-a-valid-shebang-line,SR,
+,,"This is the first line of every bash script.
+It is called shebang or bang line.",http://stackoverflow.com/questions/42908173,IR,
+,,Type: echo space backtick date backtick,http://unix.stackexchange.com/questions/98391/what-is-the-difference-between-echo-date-echo-date-and-echo-date,R,
+,,Type: echo space backtick date backtick,http://unix.stackexchange.com/questions/170911/how-do-you-print-the-current-month-day-and-year-using-awk-and-date,SR,
+,,Type: echo space backtick date backtick,http://stackoverflow.com/questions/42899829,IR,
+,,Type: echo space backtick date backtick,http://stackoverflow.com/questions/9105394/how-do-i-append-the-unix-command-date-to-an-echo-statement,R,
+,,"Go back to the terminal.
+Now, type: echo space within double quotes Hello world",http://unix.stackexchange.com/questions/129084/in-bash-how-can-i-echo-the-variable-name-not-the-variable-value,SR,
+,,"For this, type: chmod space plus x space hello underscore world dot sh",http://stackoverflow.com/questions/42895632,IR,
+,,"First, we have to make the file executable.
+For this, type: chmod space plus x space hello underscore world dot sh",http://unix.stackexchange.com/questions/183994/understanding-unix-permissions-and-their-attributes,SR,
+,Basics of shell scripting,Bash variables provide temporary storage for information.,http://stackoverflow.com/questions/42789784,IR,
+,,"Now, type: set and press Enter.
+This will display all the system variables.
+Alternately, you can type env or printenv to view all the system variables.",http://stackoverflow.com/questions/2477650/unix-get-environment-variable,R,
+,,"Now, type: echo space within double quotes dollar sign HOSTNAME
+now press Enter.
+The hostname of the system will be displayed.",http://unix.stackexchange.com/questions/218174/how-to-show-the-host-name-in-linux-commandline-prompt,SR,
+,,"Now, type: set and press Enter.
+This will display all the system variables.
+Alternately, you can type env or printenv to view all the system variables.",http://askubuntu.com/questions/275965/how-to-list-all-variables-names-and-their-current-values,R,
+,,"Now, type: echo space within double quotes dollar sign HOSTNAME
+now press Enter.
+The hostname of the system will be displayed.",http://stackoverflow.com/questions/42914920,IR,
+,,"Now let's find out the full path of homedirectory.
+type: echo space within double quotes dollar sign HOME(in capital).",http://superuser.com/questions/484277/get-home-directory-by-username,SR,
+,,"unset- the value of a variable can be unset by using the unset command.
+The syntax for this is- unset variable name",http://stackoverflow.com/questions/12262696/using-unset-vs-setting-a-variable-to-empty,R,
+,,"unset- the value of a variable can be unset by using the unset command.
+The syntax for this is- unset variable name",http://stackoverflow.com/questions/27870225/struggling-to-unset-an-environment-variable-in-bash,SR,
+,,"unset- the value of a variable can be unset by using the unset command.
+The syntax for this is- unset variable name",http://stackoverflow.com/questions/17397069/unset-readonly-variable-in-bash,SR,
+,,"unset- the value of a variable can be unset by using the unset command.
+The syntax for this is- unset variable name",http://unix.stackexchange.com/questions/103555/how-do-i-unset-a-variable-at-the-command-line,R,
+,,"unset- the value of a variable can be unset by using the unset command.
+The syntax for this is- unset variable name",http://stackoverflow.com/questions/41629592,IR,
+,,"unset- the value of a variable can be unset by using the unset command.
+The syntax for this is- unset variable name",http://stackoverflow.com/questions/41830339,IR,
+,,"Next, let us learn how to declare a variable locally.",http://stackoverflow.com/questions/42850797,IR,
+,,"By default, all variables are global.
+This means, their values remain the same inside and outside the function.",http://stackoverflow.com/questions/42896116,IR,
+,,"Now let us quickly see how to get user input via keyboard.
+The read command is used to accept input from the keyboard.
+It can also be used to assign an input value to a user defined variable.",http://stackoverflow.com/questions/13237279/bash-read-command,SR,
+,,"Now let us quickly see how to get user input via keyboard.
+The read command is used to accept input from the keyboard.
+It can also be used to assign an input value to a user defined variable.",http://stackoverflow.com/questions/7676045/how-to-use-the-read-command-in-bash,R,
+,,"Now let us quickly see how to get user input via keyboard.
+The read command is used to accept input from the keyboard.
+It can also be used to assign an input value to a user defined variable.",http://stackoverflow.com/questions/13202074/how-to-secure-read-with-the-bash-read-command,SR,
+,Command line arguments and quoting,This is the shebang line. This line will print the zeroth argument.,http://unix.stackexchange.com/questions/87560/does-the-shebang-determine-the-shell-which-runs-the-script,R,
+,,,http://askubuntu.com/questions/238002/is-bin-sh-read-by-the-interpreter,R,
+,,"To write an argument greater than 9, we need to use curly brackets. Else, bash will only take the argument of the integer in the ten's place and you will not get expected output.
+",http://stackoverflow.com/questions/18318716/why-do-bash-command-line-arguments-after-9-require-curly-brackets,R,
+,,$# (Dollar hash) gives the total number of arguments that have been passed to a program.,http://stackoverflow.com/questions/4423306/how-do-i-find-the-number-of-arguments-passed-to-a-bash-script,R,
+,,$* (Dollar asterisk) will print all the arguments on a single line.,http://unix.stackexchange.com/questions/197792/joining-bash-arguments-into-single-string-with-spaces,R,
+,,"$@ (Dollar at) will also print all the arguments. However, this time each argument will be printed on separate line. This is another for loop which will print each argument in a separate line",http://stackoverflow.com/questions/255898/how-to-iterate-over-arguments-in-a-bash-script,R,
+,,,http://stackoverflow.com/questions/3008695/what-is-the-difference-between-and-in-bash,R,
+,,"Double quote substitutes the value of variables and commands. Example echo “Username is $USER”. It displays the username  of the system. Switch to the Terminal. Let me clear the prompt. Now, type:  echo space within double quotes Username space  is dollar USER  in capitals. Press Enter. The username of the system is printed. The output will vary according to your system",http://stackoverflow.com/questions/35586627/how-to-escape-double-quotes-in-bash,R,
+,,,http://stackoverflow.com/questions/6697753/difference-between-single-and-double-quotes-in-bash,,
+,,Single quotes preserves the literal meaning of each character of a given string. It is used to turn off special meaning of all characters.,http://stackoverflow.com/questions/1250079/how-to-escape-single-quotes-within-single-quoted-strings,R,
+,,Backslash removes the special meaning from a single character. It is used as an escape character in BASH.,http://askubuntu.com/questions/20034/differences-between-doublequotes-singlequotes-and-backticks-%C2%B4-%C2%B4-on-comm,R,
+,,,http://unix.stackexchange.com/questions/27428/what-does-backquote-backtick-mean-in-commands,R,
+,Globbing and export statement,Filename or pathname expansion carried by BASH is known as Globbing. Globbing recognizes and expands wildcards. It also interprets standard wildcard characters like-  # *  (asterisk) and # ? (Question mark).,http://stackoverflow.com/questions/1586477/bash-globbing-autoexpand-for-a-few-specific-cases,R,
+,,,http://unix.stackexchange.com/questions/338498/bash-globbing-not-as-expected,R,
+,,"ls space s asterisk dot sh press Enter.
+We can see that s asterisk dot sh matches all the files starting with character s and having ""sh"" as  extension.
+Now, type: ls space opening square bracket a hyphen c closing square bracket asterisk dot sh press Enter.
+This will match and display the files starting with letter 'a' or 'b' or 'c.'
+Observe the output.
+We see a list of all files starting with character 'a' or 'b' or 'c.'",http://stackoverflow.com/questions/10488395/finding-files-with-same-first-few-characters/,R,
+,,"Now, let's go ahead and type: ls space opening square bracket caret-sign a hyphen c closing square bracket asterisk dot sh press Enter.
+This will match all the file-names with extension ""sh""
+but will omit those starting with character as 'a' OR 'b' OR 'c'.",http://stackoverflow.com/questions/38152760/why-does-bash-documentation-suggest-quoting-wildcard-characters,R,
+,,"Export command - exports a variable or a function to the environment of all child processes. Can also change a local variable to a global variable.
+",http://stackoverflow.com/questions/10108950/bash-export-command,R,
+,,,http://superuser.com/questions/153371/what-does-export-do-in-bash,R,
+,,"So, to declare variables globally, we have to use the export command. Let's learn how. Type: export space myvar equal to sign lion  press Enter. Now type: echo space dollar sign myvar press Enter. lion  is displayed. Let's navigate to another Shell.  Type: slash bin slash bash press  Enter. Let me clear the prompt. Now type: echo space dollar-sign myvar  This is because we have declared the variable myvar globally using the export command.
+",http://stackoverflow.com/questions/15765500/export-variable-from-bash,R,
+,Array operations in Bash,"The syntax to declare an array is-
+declare hyphen 'a' arrayname
+“declare” keyword is used to declare an array.
+It is a built-in command in Bash. ",http://stackoverflow.com/questions/1878882/arrays-in-unix-shell,R,01:21-01:31
+,,"The syntax to declare an array is-
+declare hyphen 'a' arrayname
+“declare” keyword is used to declare an array.
+It is a built-in command in Bash. ",http://stackoverflow.com/questions/18921350/shell-script-correct-way-to-declare-an-empty-array,R,01:21-01:31
+,,"We will now see how to declare and assign a value to an array.
+ The syntax to declare an array is-
+ declare hyphen 'a' arrayname
+ ?declare? keyword is used to declare an array.
+ It is a built-in command in Bash.",http://stackoverflow.com/questions/11087918/how-to-assign-a-value-to-an-array-in-bash,SR,1:16-01:31
+,,"We will now see how to declare and assign a value to an array.
+ The syntax to declare an array is-
+ declare hyphen 'a' arrayname
+ ?declare? keyword is used to declare an array.
+ It is a built-in command in Bash.",http://stackoverflow.com/questions/5785668/how-to-use-declare-x-in-bash,SR,1:16-01:31
+,,"We will now see how to declare and assign a value to an array.
+ The syntax to declare an array is-
+ declare hyphen 'a' arrayname
+ ?declare? keyword is used to declare an array.
+ It is a built-in command in Bash.",http://stackoverflow.com/questions/41234147/what-does-declare-a-do-in-linux-shell,R,1:16-01:31
+,,"We will now see how to declare and assign a value to an array.
+ The syntax to declare an array is-
+ declare hyphen 'a' arrayname
+ ?declare? keyword is used to declare an array.
+ It is a built-in command in Bash.",http://stackoverflow.com/questions/30289988/declare-not-a-valid-identifier-bash,SR,1:16-01:31
+,,"The syntax to assign a value to an array is-
+ Name within square brackets index equals to within single quotes value.",http://unix.stackexchange.com/questions/320483/assigning-array-values-to-variable,R,01:35-01:38
+,,"The length of an array can be obtained by this syntax:
+ Dollar sign ($) opening curly bracket hash arrayname within square brackets ""At"" sign (@) and closing curly bracket.
+ The length of the nth element can be obtained by this syntax:
+ Dollar sign opening curly bracket hash arrayname within square brackets 'n' and closing curly bracket.
+ Here 'n' is the element number whose length is to be found.
+ All the elements of the array can be printed using this syntax.
+ Dollar sign opening curly bracket arrayname within square brackets 'At' sign (@) and closing curly bracket.",http://stackoverflow.com/questions/18185920/bash-associative-array-size,R,03:07-03:48
+,,"The length of an array can be obtained by this syntax:
+ Dollar sign ($) opening curly bracket hash arrayname within square brackets ""At"" sign (@) and closing curly bracket.
+ The length of the nth element can be obtained by this syntax:
+ Dollar sign opening curly bracket hash arrayname within square brackets 'n' and closing curly bracket.
+ Here 'n' is the element number whose length is to be found.
+ All the elements of the array can be printed using this syntax.
+ Dollar sign opening curly bracket arrayname within square brackets 'At' sign (@) and closing curly bracket.",http://unix.stackexchange.com/questions/198787/is-there-a-way-of-reading-the-last-element-of-an-array-with-bash,R,03:07-03:48
+,More on arrays,"The elements in an  array can be extracted from any position.
+Here, position is the index number.
+Note that  index number always starts from zero.
+The syntax is as follows:
+ArrayName within square bracket ""At"" sign colon position colon Number of elements to be extracted from the position mentioned.",http://stackoverflow.com/questions/15685736/how-to-extract-a-particular-element-from-an-array-in-bash,R,
+,,,http://superuser.com/questions/121627/how-to-get-elements-from-list-in-bash,R,
+,,"An existing element in an array can be replaced using the following syntax.
+ArrayName within square brackets 'n' equals to within single quote NewWord.
+Here 'n' is the index number or element number.",http://stackoverflow.com/questions/5167422/bash-change-value-in-array,R,
+,,"ArrayName equal to opening round bracket within double quotes dollar sign opening curly bracket ArrayName opening square bracket ""At"" sign closing square bracket closing curly bracket
+space within double quotes New_Word_1 space within double quotes New_Word_2 and closing round bracket.
+Let us understand this with the help of one example.
+Switch to the code file.The highlighted command will append  a new element ""Suse""  to the array Linux. Then we will echo all the elements after appending ""Suse""",http://stackoverflow.com/questions/22691436/unable-to-add-element-to-array-in-bash,R,
+,,,http://unix.stackexchange.com/questions/211395/in-a-loop-over-an-array-add-an-element-to-the-array,R,
+,,,http://stackoverflow.com/questions/38305993/add-element-into-array,R,
+,,"An element can be removed from an  array by using the following syntax -
+unset space ArrayName opening square bracket index number closing square bracket.
+Let us switch to the code file.
+Here, we are using the unset command.
+And we will remove the third element Mandriva from the array Linux.
+Then we will echo all the elements again after the removal of Mandriva.",http://unix.stackexchange.com/questions/68322/how-can-i-remove-an-element-from-an-array-completely,R,
+,,,http://stackoverflow.com/questions/16860877/remove-element-from-array-shell,R,
+,Conditional execution,"test is a built-in command which returns the exit status.
+It returns 0 (zero) for True and 1 (one) for False.
+Return value depends on the evaluation of the expression.",http://stackoverflow.com/questions/33853060/test-linux-command,R,
+,,One can get the return status by typing Dollar and question mark sign ($?).,http://stackoverflow.com/questions/7248031/meaning-of-in-shell-scripts,R,
+,,"Now we will see the syntax for if statement-
+if space opening square bracket space expression space closing square bracket semicolon space then
+On the next line, type: commands or  statements that you want to execute",http://stackoverflow.com/questions/10646465/bash-simple-if-statement,R,
+,,This Bash script displays the message “count is 100” when the count equals to 100,http://stackoverflow.com/questions/4277665/how-do-i-compare-two-string-variables-in-an-if-statement-in-bash,R,
+,,"We will see  if-else condition.
+The general syntax is: if space opening square bracket space condition space closing square bracket space semicolon space then
+",http://stackoverflow.com/questions/16034749/bash-script-if-elif-else-statement-issues,R,
+,,,http://stackoverflow.com/questions/34274802/how-to-use-if-else-in-shell-scripting,R,
+,,,http://stackoverflow.com/questions/12641031/how-to-if-else-statement-in-shell-script,R,
+,Nested and multilevel if else statements,,,,
+,,,,,
+,,,,,
+,Logical operators,"Opening square-bracket space dollar symbol condition1 space closing square-bracket space ampersand ampersand space opening square-bracket space dollar symbol condition2 space closing square-bracket.
+Or we can use this syntax-Opening square-bracket space dollar symbol condition1 space hyphen-a space dollar symbol condition2 space closing square-bracket.
+Logical AND returns True when both condition1 and condition2 are True.",http://stackoverflow.com/questions/6270440/simple-logical-operators-in-bash,R,
+,,"Let us see the syntax of Logical OR.
+Opening square-bracket space dollar symbol condition1 space closing square-bracket space vertical bar again vertical bar space opening square-bracket space dollar symbol condition2 space closing square-bracket.
+Or we can use this syntax-
+Opening square-bracket space dollar symbol condition1 space hyphen-o space dollar symbol condition2 space closing square-bracket.
+Logical OR returns  True when either condition1 or condition2 is True.",http://stackoverflow.com/questions/24419280/bash-if-statement-with-logical-or,R,
+,,"Let's have a look at logical NOT operator.
+It inverts the Boolean value of an expression which means, it returns True if the expression is False and returns False if the expression is True",http://stackoverflow.com/questions/10552711/how-to-make-if-not-true-condition,R,
+,,,http://stackoverflow.com/questions/26475358/negate-if-condition-in-bash-script,R,
+,,,,,
+,Arithmetic comparison,,,,
+,String and file attributes,,,,
+,Conditional loops,,,,
+,More on loops,,,,
+,Case statement,,,,
+,Using file descriptions,,,,
+,Basics of functions,,,,
+,More on functions,,,,
+,Arrays and functions,,,,
+,Advance topics in functions,,,,
+,Recursive functions,,,,
+,Basics of redirection,,,,
+,More on redirection,,,,
+,Here document and Here string,,,,
