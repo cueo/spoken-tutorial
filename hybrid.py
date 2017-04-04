@@ -5,6 +5,7 @@ from similarity import calculate_similarity
 from rake.rake import extract_keywords
 from benchmarks import calculate_word2vec_similarity
 from window import get_pairwise_similarity
+from preprocess import simple_clean
 
 
 def get_data(path):
@@ -55,6 +56,19 @@ def calculate_keyword_similarity(sentences):
 	return similarity
 
 
+def pairwise_word2vec(script, forum):
+	sum_word2vec, max_word2vec = 0, -1
+	l = len(forum)
+	for post in forum:
+		sentences = [script, post]
+		sim = calculate_word2vec_similarity(sentences)
+		sum_word2vec += sim
+		if sim > max_word2vec:
+			max_word2vec = sim
+	sum_word2vec /= l
+	return sum_word2vec, max_word2vec
+
+
 def approach_one():
 	"""
 	Hybrid approach:
@@ -71,7 +85,7 @@ def approach_one():
 	hits = 0
 	for i in range(l):
 		print('%d/%d:' % (i, l), end=' ')
-		script, forum, relevance = scripts[i], forums[i], dataset[i]
+		script, forum, relevance = simple_clean(scripts[i]), simple_clean(forums[i]), dataset[i]
 		sentences = [script, ' '.join(forum)]
 
 		# Step 1: keyword matching (cosine)
@@ -163,21 +177,25 @@ def approach_three():
 	"""
 
 	# comparison param
-	high = 0.65
+	high = 0.5
 	low = 0.1
 
 	hits = 0
 	for i in range(l):
-		print('%d/%d:' % (i, l), end=' ')
+		print('%d/%d:' % (i, l))
 		script, forum, relevance = scripts[i], forums[i], dataset[i]
 		sentences = [script, ' '.join(forum)]
 
 		# Step 1: keyword matching (cosine)
 		similarity = calculate_keyword_similarity(sentences)
+		print('Keyword cosine:', similarity)
+
 		if similarity < low:
 			predicted_relevance = 'IR'
 		else:
-			similarity = calculate_word2vec_similarity(sentences)
+			# max word2vec
+			similarity = pairwise_word2vec(script, forum)[1]
+			print('word2vec:', similarity)
 			if similarity > high:
 				predicted_relevance = 'R'
 			else:
@@ -187,6 +205,7 @@ def approach_three():
 			hits += 1
 
 		print('Actual: %s\tPredicted: %s' % (relevance, predicted_relevance))
+		print()
 
 	print('Accuracy:', hits * 100 / l)
 
@@ -202,12 +221,13 @@ def approach_four():
 
 	hits = 0
 	for i in range(l):
-		print('%d/%d:' % (i, l), end=' ')
+		print('%d/%d:' % (i, l))
 		script, forum, relevance = scripts[i], forums[i], dataset[i]
 		sentences = [script, ' '.join(forum)]
 
 		# Step 1: keyword matching (cosine)
 		similarity = calculate_word2vec_similarity(sentences)
+		print('word2vec:', similarity)
 
 		if similarity > high:
 			predicted_relevance = 'R'
@@ -220,31 +240,29 @@ def approach_four():
 			hits += 1
 
 		print('Actual: %s\tPredicted: %s' % (relevance, predicted_relevance))
+		print()
 
 	print('Accuracy:', hits * 100 / l)
 
 
+def printer(n):
+	print('=' * 50)
+	print('Approach', n, ':')
+	print('-' * 50)
+
+
 if __name__ == '__main__':
-	path = 'data/Links to topics v2.1 - Sheet1.csv'
+	path = 'data/links_2.2.csv'
 	# get the transcript and the forum data
 	scripts, forums, dataset = get_data(path)
 	l = len(dataset)
-	print('=' * 50)
-	print('Approach 1:')
-	print('-' * 50)
-	approach_one()
-	print('=' * 50)
-	print('Approach 2:')
-	print('-' * 50)
-	approach_two()
-	print('=' * 50)
-	print('=' * 50)
-	print('Approach 3:')
-	print('-' * 50)
+	# printer('1')
+	# approach_one()
+	# printer('2')
+	# approach_two()
+	printer('3')
 	approach_three()
-	print('=' * 50)
-	print('=' * 50)
-	print('Approach 4:')
-	print('-' * 50)
-	approach_four()
-	print('=' * 50)
+	# printer('4')
+	# approach_four()
+	# printer('5')
+	# approach_five()
