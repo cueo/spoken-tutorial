@@ -1,0 +1,3 @@
+<__main__.CleanSentences instance at 0x00000000065B28C8>
+Creating a word2vec model for the transcripts...
+Created a word2vec model for the transcripts.

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spoken Tutorial</title>
+	<link rel="shortcut icon" href="http://localhost/FYP-UI/templates/favicon.ico" />
+	<link rel="stylesheet" href="http://localhost/FYP-UI/templates/video.css" />
+	<link rel="stylesheet" href="http://localhost/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	<script src="http://localhost/jquery-2.2.4.js"></script>
+	<script type="text/javascript">
+		function init()
+		{
+			current_time_sec = 20;
+			current_time = 0;
+			vid = document.getElementById("video");
+			vid.ontimeupdate = function() {getLinks()};
+			f = vid.src.split('/');
+			file_name = f[f.length - 1].split('.')[0] + '.txt';
+		}
+
+		function createElement(element)
+		{
+			hr = document.createElement('a');
+			url_ = 'http://stackoverflow.com/questions/' + element;
+			hr.href = url_;
+			hr.innerHTML = url_;
+			div_ = document.createElement('div');
+			div_.innerHTML = hr;
+			links.push(div_);
+			$('#links').append($('<div>', {
+				html: hr
+			}));
+			/*$.ajax({
+				type: "GET",
+				url: "http://localhost/FYP-UI/templates/geturl.php?url=" + url_,
+				success: function(data) {
+					alert(data);
+					hr.innerHTML = data;
+				}	
+			});*/
+		}
+		
+		function getLinks() 
+		{
+	 		links = new Array();
+	 		if(vid.currentTime > current_time)
+	 		{
+	 			$('#links').empty();
+	 			//fetch results for the 20s interval from the database
+	 			$.getJSON('http://localhost:5000/fetch?time=' + current_time + '&file=' + file_name, function(data){
+					if(data)
+					{
+						relevant_links = data.Relevant.split(' ');
+						$.each(relevant_links, function(index, element) {
+							if(element != '')
+							{
+								createElement(element);
+							}
+						});
+
+						slightly_relevant_links = data.Slightly.split(' ');
+						$.each(slightly_relevant_links, function(index, element) {
+							if(element != '')
+							{
+								createElement(element);
+							}
+						});
+
+						irrelevant_links = data.Irrelevant.split(' ');
+						$.each(irrelevant_links, function(index, element) {
+							if(element != '')
+							{
+								createElement(element);
+							}
+						});
+	 				}
+	 			});
+	 			current_time += 20;
+	 			/*for(i=0; i<links.length; i++) {
+	 				links[i].style = "padding:1em;font-size:1em;align-self:center;";
+	 				$("#links").append(links[i]);
+	 			}*/
+	 		}
+		}
+	</script>
+</head>
+<body onload="init()">
+	<div>
+		<div id="videoContainer">
+			<video id="video" width="600px" height="600px" src="http://localhost/FYP-UI/templates/Functions.ogg" type="video/ogg" controls>
+			 
+			</video>
+		</div>
+		<div id="links">
+			
+		</div>
+	</div>	
+</body>
+</html>
