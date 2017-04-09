@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spoken Tutorial</title>
+	<link rel="shortcut icon" href="http://localhost/FYP-UI/templates/favicon.ico" />
+	<link rel="stylesheet" href="http://localhost/FYP-UI/templates/video.css" />
+	<link rel="stylesheet" href="http://localhost/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	<script src="http://localhost/jquery-2.2.4.js"></script>
+	<script type="text/javascript">
+		function init()
+		{
+			current_time_sec = 20;
+			current_time = 0;
+			vid = document.getElementById("video");
+			vid.ontimeupdate = getLinks;
+			f = vid.src.split('/');
+			file_name = f[f.length - 1].split('.')[0] + '.txt';
+			links = null;
+		}
+
+		function getLinks() 
+		{
+	 		if(vid.currentTime > current_time)
+	 		{
+	 			links = new Array();
+	 			titles = new Array();
+	 			$('#links').empty();
+	 			//fetch results for the 20s interval from the database
+	 			$.getJSON('http://localhost:5000/fetch?time=' + current_time + '&file=' + file_name, function(data){
+					if(data)
+					{
+						$.each(data.Links.split(' '), function(index, element) {
+							if(element != '')
+							{
+								url_ = 'http://stackoverflow.com/questions/' + element
+								if(links.indexOf(url_) == -1)
+									links.push(url_);
+							}
+						});
+	 				}
+	 				for(i=0; i<links.length; i++)
+	 				{
+	 					$.getJSON("http://localhost:5000/gettitle?url=" + links[i], function(data) {
+							titles.push(data.title);
+							hr = document.createElement('a');
+							hr.href = links[i];
+							hr.innerHTML = data.title;
+							$('#links').append($('<div>', {
+								html: hr
+							}));
+						});
+	 				}
+	 			});
+	 			current_time += 20;
+	 		}
+	 	}
+	</script>
+</head>
+<body onload="init()">
+	<div>
+		<div id="videoContainer">
+			<video id="video" width="600px" height="600px" src="http://localhost/FYP-UI/templates/Functions.ogg" type="video/ogg" controls>
+			 
+			</video>
+		</div>
+		<div id="links">
+			
+		</div>
+	</div>	
+</body>
+</html>

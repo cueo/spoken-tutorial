@@ -1,0 +1,32 @@
+body, html {
+	margin: 0;
+	height: 100%;
+	position: relative;
+}
+
+#videoContainer {
+	padding: 20px;
+	float: left;
+}
+
+#links {
+	height: 100%;
+	padding: 5em;
+	background: yellow;
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	float: right;
+}
+
+#links > div {
+	padding: 1em;
+	font-size: 1em;
+	align-self: center;
+}
+
+#links > div > a {
+	text-decoration: none;
+}

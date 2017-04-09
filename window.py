@@ -6,8 +6,8 @@ from datetime import datetime
 from stack import get_answers
 from similarity import calculate_similarity
 
-# window of 60 seconds
-interval = 60
+# window of n seconds
+interval = 20
 
 
 def calculate_interval(path):
@@ -17,7 +17,7 @@ def calculate_interval(path):
 	times = timestamps in the video corresponding to each of the lines in the script
 	time_interval_index = a list where each element, i, is the index of the list times
 		such that script[i] and script[times[i]] are interval seconds apart
-		therefore, the window = snippet between script[i] and script[times[i]]
+		therefore, the window = snippet between script[i] and script[time_interval_index[i]]
 	"""
 	with open(path, 'r', encoding='utf-8') as f:
 		text = clean(f.read())
@@ -31,12 +31,12 @@ def calculate_interval(path):
 		for j in range(i+1, l):
 			t1, t2 = times[i], times[j]
 			tdelta = datetime.strptime(t2, fmt) - datetime.strptime(t1, fmt)
-			if tdelta.total_seconds() >= 60:
+			if tdelta.total_seconds() >= interval:
 				time_interval_index.append(j)
 				break
 		else:
 			time_interval_index.append(l-1)
-	return script, time_interval_index
+	return script, time_interval_index, times
 
 
 def get_pairwise_similarity(snippet, forum_texts):
@@ -65,11 +65,12 @@ def get_pairwise_similarity(snippet, forum_texts):
 
 if __name__ == '__main__':
 	path = 'data/C and Cpp/First-C-Program.txt'
-	script, time_intervals = calculate_interval(path)
+	script, time_intervals, times = calculate_interval(path)
 	snippets = []
 	for t in range(len(time_intervals)):
 		snippet = ' '.join(script[t:time_intervals[t]])
 		snippets.append(snippet)
+
 	'''
 	for index, snippet in enumerate(snippets):
 		print index, snippet, '\n'
