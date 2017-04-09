@@ -8,6 +8,7 @@ from window import calculate_interval
 from stack import get_answers
 from word2vec_similarity import avg_feature_vector
 
+
 def populate_db(snippets, times, file_name):
 	qids = []
 	stack_data = None
@@ -18,9 +19,9 @@ def populate_db(snippets, times, file_name):
 	forum_texts = []
 	for id_ in qids:
 		forum_texts.append(stack_data[id_])
-	#print(len(forum_texts[0]), forum_texts[0])
+	# print(len(forum_texts[0]), forum_texts[0])
 
-	#word2vec
+	# word2vec
 	model = Word2Vec.load('data/snippet.model')
 	word_index_set = set(model.wv.index2word)
 	for i in range(len(snippets)):
@@ -38,7 +39,7 @@ def populate_db(snippets, times, file_name):
 					min_index = relevant_links.index(min(relevant_links))
 					relevant_links[min_index] = abs(word2vec_similarity)
 					relevant_data[min_index] = (forum_text, id_, abs(word2vec_similarity), 'Relevant')
-				elif abs(word2vec_similarity) <= 0.4 and abs(word2vec_similarity) > 0.2 and abs(word2vec_similarity) < slightly_relevant_data[0][2]:
+				elif 0.2 < abs(word2vec_similarity) <= 0.4 and abs(word2vec_similarity) < slightly_relevant_data[0][2]:
 					slightly_relevant_data[0] = (forum_text, id_, abs(word2vec_similarity), 'Slightly relevant')
 				elif abs(word2vec_similarity) <= 0.2 and abs(word2vec_similarity) < irrelevant_data[0][2]:
 					irrelevant_data[0] = (forum_text, id_, abs(word2vec_similarity), 'Irrelevant')
@@ -82,6 +83,7 @@ def create_db(path):
 				populate_db(snippets, times, f)
 	conn.commit()
 	conn.close()
+
 
 if __name__ == '__main__':
 	conn = sqlite3.connect('test.db')
