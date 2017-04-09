@@ -1,10 +1,12 @@
 from flask import Flask
 from flask_cors import CORS, cross_origin
-from flask import Flask, flash, redirect, render_template, request, session, abort, jsonify
+from flask import Flask, flash, redirect, render_template, request, session, abort, jsonify, send_from_directory
 import os
 import sqlite3
+import urllib.request
+from bs4 import BeautifulSoup
  
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app, resources={r"/fetch": {"origins": "http://localhost"}})
 
@@ -54,10 +56,16 @@ def fetch():
 	if rows_IR[0] != None:
 		IR = rows_IR[0]['LINK']
 
-	response = jsonify({'Relevant': R, 'Slightly': SR, 'Irrelevant': IR})
-	#print(request)
+	#response = jsonify({'Relevant': R, 'Slightly': SR, 'Irrelevant': IR})
+	all_ = R + ' ' + SR + ' ' + IR
+	response = jsonify({'Links': all_})
 	return response
-	#return 'hi'
+
+@app.route('/gettitle')
+def getTitle():
+	soup = BeautifulSoup(urllib.request.urlopen(request.args['url']), "lxml")
+	response = jsonify({'title': soup.title.string})
+	return response
 
 if __name__ == "__main__":
 	app.secret_key = os.urandom(12)

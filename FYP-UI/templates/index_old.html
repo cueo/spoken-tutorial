@@ -12,48 +12,67 @@
 			current_time_sec = 20;
 			current_time = 0;
 			vid = document.getElementById("video");
-			vid.ontimeupdate = getLinks;
+			vid.ontimeupdate = function() {getLinks()};
 			f = vid.src.split('/');
 			file_name = f[f.length - 1].split('.')[0] + '.txt';
 			links = null;
 		}
 
+		function createElement(element)
+		{
+			//hr = document.createElement('a');
+			url_ = 'http://stackoverflow.com/questions/' + element;
+			//hr.href = url_;
+			$.getJSON("http://localhost:5000/gettitle?url=" + url_, function(data) {
+				//hr.innerHTML = data.title;
+				links.push(data.title);
+				console.log(links);
+			});
+			/*div_ = document.createElement('div');
+			div_.innerHTML = hr;
+			links.push(hr);*/
+			/*$('#links').append($('<div>', {
+				html: hr
+			}));*/
+			//console.log(links);
+		}
+		
 		function getLinks() 
 		{
 	 		if(vid.currentTime > current_time)
 	 		{
 	 			links = new Array();
-	 			titles = new Array();
 	 			$('#links').empty();
 	 			//fetch results for the 20s interval from the database
 	 			$.getJSON('http://localhost:5000/fetch?time=' + current_time + '&file=' + file_name, function(data){
 					if(data)
 					{
-						$.each(data.Links.split(' '), function(index, element) {
+						$.each(data.Relevant.split(' '), function(index, element) {
 							if(element != '')
-							{
-								url_ = 'http://stackoverflow.com/questions/' + element
-								if(links.indexOf(url_) == -1)
-									links.push(url_);
-							}
+								createElement(element, links);
 						});
-	 				}
-	 				for(i=0; i<links.length; i++)
-	 				{
-	 					$.getJSON("http://localhost:5000/gettitle?url=" + links[i], function(data) {
-							titles.push(data.title);
-							hr = document.createElement('a');
-							hr.href = links[i];
-							hr.innerHTML = data.title;
-							$('#links').append($('<div>', {
-								html: hr
-							}));
+
+						$.each(data.Slightly.split(' '), function(index, element) {
+							if(element != '')
+								createElement(element, links);
+						});
+
+						$.each(data.Irrelevant.split(' '), function(index, element) {
+							if(element != '')
+								createElement(element, links);
 						});
 	 				}
 	 			});
 	 			current_time += 20;
+	 			console.log(links);
+	 			for(i=0; i<links.length; i++) {
+	 				links[i].style = "padding:1em;font-size:1em;align-self:center;";
+	 				$('#links').append($('<div>', {
+						html: links[i]
+					}));
+	 			}
 	 		}
-	 	}
+		}
 	</script>
 </head>
 <body onload="init()">
