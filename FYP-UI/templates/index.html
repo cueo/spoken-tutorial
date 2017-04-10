@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Spoken Tutorial</title>
-	<link rel="shortcut icon" href="http://localhost/FYP-UI/templates/favicon.ico" />
-	<link rel="stylesheet" href="http://localhost/FYP-UI/templates/video.css" />
-	<link rel="stylesheet" href="http://localhost/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-	<script src="http://localhost/jquery-2.2.4.js"></script>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='video.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-3.3.7-dist/css/bootstrap.min.css') }}" />
+	<script src="{{ url_for('static', filename='jquery-3.2.0.min.js') }}"></script>
 	<script type="text/javascript">
 		function init()
 		{
@@ -26,7 +26,7 @@
 	 			titles = new Array();
 	 			$('#links').empty();
 	 			//fetch results for the 20s interval from the database
-	 			$.getJSON('http://localhost:5000/fetch?time=' + current_time + '&file=' + file_name, function(data){
+	 			$.getJSON('http://localhost:5000/fetch?time=' + current_time + '&file=' + file_name, function(data) {
 					if(data)
 					{
 						$.each(data.Links.split(' '), function(index, element) {
@@ -38,16 +38,32 @@
 							}
 						});
 	 				}
-	 				for(i=0; i<links.length; i++)
+
+	 				$('#links').append($('<table>', {
+	 				    class: 'table table-hover table-bordered'
+					}));
+					$('table').append('<tbody>');
+					for(let i = 0; i < links.length; i++)
 	 				{
-	 					$.getJSON("http://localhost:5000/gettitle?url=" + links[i], function(data) {
+	 				    $.getJSON("http://localhost:5000/gettitle?url=" + links[i], function(data) {
 							titles.push(data.title);
 							hr = document.createElement('a');
 							hr.href = links[i];
 							hr.innerHTML = data.title;
-							$('#links').append($('<div>', {
-								html: hr
+							$('tbody').append($('<tr>', {
+							    id: 'row' + i,
+								class: 'bg-success'
 							}));
+							$('#row' + i).append($('<td>', {
+							    html: hr
+							}));
+							$('#links-table').append('</tr>');
+							/*
+							$('#links').append($('<div>', {
+								html: hr,
+								class: 'bg-success'
+							}));
+							*/
 						});
 	 				}
 	 			});
@@ -57,15 +73,29 @@
 	</script>
 </head>
 <body onload="init()">
-	<div>
-		<div id="videoContainer">
-			<video id="video" width="600px" height="600px" src="http://localhost/FYP-UI/templates/Functions.ogg" type="video/ogg" controls>
-			 
-			</video>
+	<div class="container">
+		<div class="row">
+			<!--Container for video-->
+			<div class="col-md-8">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h3>Video</h3>
+					</div>
+					<div id="videoContainer" class="panel panel-body">
+						<video id="video" src="{{ url_for('static', filename='Functions.ogg') }}" type="video/ogg" controls />
+					</div>
+				</div>
+			</div>
+			<!--Container for forum links-->
+			<div class="col-md-4">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3>Links</h3>
+					</div>
+					<div id="links" class="panel panel-body" />
+				</div>
+			</div>
 		</div>
-		<div id="links">
-			
-		</div>
-	</div>	
+	</div>
 </body>
 </html>
