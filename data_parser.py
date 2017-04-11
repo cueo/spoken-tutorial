@@ -3,6 +3,7 @@ import pickle
 from stack import get_answers
 import os
 
+
 def fetch_answer_from_link(link):
 	details = link.split('/')
 	site = details[2]
