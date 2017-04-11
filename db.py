@@ -11,7 +11,7 @@ LINKS = 10
 def push(stack, qid, relevance, similarity):
 	l = len(stack)
 	if stack and l < LINKS:
-		if similarity > stack[-1][1]:
+		if similarity > stack[-1][-1]:
 			for i in range(l):
 				entry = stack[i]
 				entry_sim = entry[2]
@@ -28,7 +28,11 @@ def populate_db(file, snippets, times):
 		stack_data = pickle.load(f)
 	with open('data/title.pkl', 'rb') as f:
 		title_data = pickle.load(f)
-	for index in range(len(snippets)):
+	relevant_link_stack = []
+	l = len(snippets)
+	print('Processing %d snippets against %d forums:' % (l, len(stack_data)))
+	for index in range(l):
+		print('Processing snippet:', index)
 		snippet = snippets[index]
 		for qid, forum in stack_data.items():
 			relevance, similarity = hybrid_similarity(snippet, forum)
@@ -52,7 +56,6 @@ def create_db(path):
 			titles TEXT);
 			''')
 	print('Table created successfully!')
-
 	for r, d, files in os.walk(path):
 		for f in files:
 			if f.endswith('.txt'):
@@ -64,6 +67,8 @@ def create_db(path):
 					snippets.append(snippet)
 				print('Retrieving results for', f, '----------------->')
 				populate_db(f, snippets, times)
+				break
+			break
 	conn.commit()
 	conn.close()
 
