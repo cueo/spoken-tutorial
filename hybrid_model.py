@@ -23,7 +23,6 @@ def hybrid_similarity(script, forum):
 	else:
 		# max word2vec
 		similarity = pairwise_word2vec(script, forum)[1]
-		print('word2vec:', similarity)
 		if similarity > high:
 			relevance = 'R'
 		else:
