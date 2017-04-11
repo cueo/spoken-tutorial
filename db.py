@@ -24,9 +24,9 @@ def push(stack, qid, relevance, similarity):
 
 
 def populate_db(file, snippets, times):
-	with open('../data/data.pkl', 'rb') as f:
+	with open('data/data.pkl', 'rb') as f:
 		stack_data = pickle.load(f)
-	with open('../data/title.pkl', 'rb') as f:
+	with open('data/title.pkl', 'rb') as f:
 		title_data = pickle.load(f)
 	for index in range(len(snippets)):
 		snippet = snippets[index]
@@ -71,5 +71,5 @@ def create_db(path):
 if __name__ == '__main__':
 	conn = sqlite3.connect('ui.db')
 	print('Connected successfully!')
-	path = '../data'
+	path = 'data'
 	create_db(path)

@@ -93,4 +93,4 @@ def create_db(path):
 if __name__ == '__main__':
 	conn = sqlite3.connect('test.db')
 	print('Connected successfully!')
-	create_db('../data')
+	create_db('data')
