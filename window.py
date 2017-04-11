@@ -16,7 +16,7 @@ def calculate_interval(path):
 	script = each line in the transcript (broken at the subtitle timing breaks)
 	times = timestamps in the video corresponding to each of the lines in the script
 	time_interval_index = a list where each element, i, is the index of the list times
-		such that script[i] and script[times[i]] are interval seconds apart
+		such that script[i] and script[times[i]] are >=interval seconds apart
 		therefore, the window = snippet between script[i] and script[time_interval_index[i]]
 	"""
 	with open(path, 'r', encoding='utf-8') as f:
@@ -40,7 +40,6 @@ def calculate_interval(path):
 
 
 def get_pairwise_similarity(snippet, forum_texts):
-	sum_similarity, sub_similarity, max_similarity, min_similarity = [], [], [], []
 	sum_sim, sub_sim, max_sim, min_sim = 0, 1, 0, 999
 	l = len(forum_texts)
 
@@ -66,15 +65,14 @@ def get_pairwise_similarity(snippet, forum_texts):
 if __name__ == '__main__':
 	path = 'data/C and Cpp/First-C-Program.txt'
 	script, time_intervals, times = calculate_interval(path)
+	print(script)
+	print(time_intervals)
+	print(times)
+	exit()
 	snippets = []
 	for t in range(len(time_intervals)):
 		snippet = ' '.join(script[t:time_intervals[t]])
 		snippets.append(snippet)
-
-	'''
-	for index, snippet in enumerate(snippets):
-		print index, snippet, '\n'
-	'''
 
 	"""
 	Compare snippet against forum text
@@ -122,8 +120,3 @@ if __name__ == '__main__':
 		print('Max similarity:', similarity[2])
 		print('Min similarity:', similarity[3])
 		print('=' * 50)
-
-	"""
-	Compare data against relevant and irrelevant forums.
-	"""
-

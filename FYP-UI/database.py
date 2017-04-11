@@ -55,8 +55,8 @@ def populate_db(snippets, times, file_name):
 			conn.executemany("INSERT INTO SPOKEN_TUTORIAL (FILE_NAME, TIME, SNIPPET_TEXT, FORUM_TEXT, LINK, SIMILARITY, RELEVANCE) VALUES (?, ?, ?, ?, ?, ?, ?);", list((file_name, time, snippets[i]) + data for data in irrelevant_data))
 		except Exception as e:
 			print(e, '------------>', 'Could not find irrelevant data')
-		#exit()
-	
+
+
 def create_db(path):
 	conn.execute("""CREATE TABLE IF NOT EXISTS SPOKEN_TUTORIAL
 	       (ID INTEGER PRIMARY KEY AUTOINCREMENT,
