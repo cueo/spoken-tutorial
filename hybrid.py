@@ -51,7 +51,6 @@ def calculate_keyword_similarity(sentences):
 		similarity = calculate_similarity(documents)[0][1]  # using cosine
 		# similarity = calculate_word2vec_similarity(documents)  # using word2vec
 	except TypeError:
-		print('Error: no matching keywords!')
 		similarity = 0
 	return similarity
 
