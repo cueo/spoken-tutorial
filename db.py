@@ -3,7 +3,7 @@ import os
 import pickle
 
 from window import calculate_interval
-from .hybrid_model import hybrid_similarity
+from hybrid_model import hybrid_similarity
 
 LINKS = 10
 
@@ -30,7 +30,7 @@ def populate_db(file, snippets, times):
 		title_data = pickle.load(f)
 	for index in range(len(snippets)):
 		snippet = snippets[index]
-		for qid, forum in stack_data:
+		for qid, forum in stack_data.items():
 			relevance, similarity = hybrid_similarity(snippet, forum)
 			relevant_link_stack = push(relevant_link_stack, qid, relevance, similarity)
 		links = [i[0] for i in relevant_link_stack]
