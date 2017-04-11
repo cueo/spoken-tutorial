@@ -1,3 +1,4 @@
+lxml
 nltk
 gensim
 html2text
