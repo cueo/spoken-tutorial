@@ -32,7 +32,7 @@ def populate_db(file, snippets, times):
 	l = len(snippets)
 	print('Processing %d snippets against %d forums:' % (l, len(stack_data)))
 	for index in range(l):
-		print('Processing snippet:', index)
+		print('Processing file:', file, '\tProcessing snippet:', index)
 		snippet = snippets[index]
 		for qid, forum in stack_data.items():
 			relevance, similarity = hybrid_similarity(snippet, forum)
@@ -67,8 +67,6 @@ def create_db(path):
 					snippets.append(snippet)
 				print('Retrieving results for', f, '----------------->')
 				populate_db(f, snippets, times)
-				break
-			break
 	conn.commit()
 	conn.close()
 
