@@ -77,6 +77,20 @@ def get_title():
 	return response
 
 
+@app.route('/gettopics')
+def get_topics():
+	file_list = []
+	for dir_ in os.listdir("../data"):
+		if dir_ == request.args['course']:
+			for file in os.listdir(os.path.join("../data", dir_)):
+				f = file.split('.')[0].split('-')
+				file_name = ' '.join(f)
+				file_list.append(file_name)
+			break
+	response = jsonify({'files': file_list})
+	return response
+
+
 if __name__ == "__main__":
 	app.secret_key = os.urandom(12)
 	app.run(debug=True)

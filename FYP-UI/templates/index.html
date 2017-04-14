@@ -1,99 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Spoken Tutorial</title>
-	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon_st.ico') }}" />
-	<link rel="stylesheet" href="{{ url_for('static', filename='video.css') }}" />
-	<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-3.3.7-dist/css/bootstrap.min.css') }}" />
-	<script src="{{ url_for('static', filename='jquery-3.2.0.min.js') }}"></script>
-	<script type="text/javascript">
-		function init()
-		{
-			current_time_sec = 20;
-			current_time = 0;
-			vid = document.getElementById("video");
-			vid.ontimeupdate = getLinks;
-			vid.seeked = getLinks;
-			vid.seeking = function () {
-				$('#links').empty();
-            };
-			f = vid.src.split('/');
-			file_name = f[f.length - 1].split('.')[0] + '.txt';
-			links = null;
-		}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Spoken Tutorial</title>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon_st.ico') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/linecons.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" type="text/css">
 
-		function getLinks() 
-		{
-	 		if(vid.currentTime > current_time)
-	 		{
-	 			links = new Array();
-	 			titles = new Array();
-	 			$('#links').empty();
-	 			//fetch results for the 20s interval from the database
-	 			$.getJSON('http://localhost:5000/fetch?time=' + current_time + '&file=' + file_name, function(data) {
-					if(data)
-					{
-						$.each(data.Links.split(' '), function(index, element) {
-							if(element != '')
-							{
-								url_ = 'http://stackoverflow.com/questions/' + element
-								if(links.indexOf(url_) == -1)
-									links.push(url_);
-							}
-						});
-	 				}
+<link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
 
-	 				$('#links').append($('<table>', {
-	 				    class: 'table table-hover table-bordered'
-					}));
-					$('table').append('<tbody>');
-					for(let i = 0; i < links.length; i++)
-	 				{
-	 				    $.getJSON("http://localhost:5000/gettitle?url=" + links[i], function(data) {
-							titles.push(data.title);
-							hr = document.createElement('a');
-							hr.href = links[i];
-							hr.innerHTML = data.title;
-							$('tbody').append($('<tr>', {
-							    id: 'row' + i,
-								class: 'success'
-							}));
-							$('#row' + i).append($('<td>', {
-							    html: hr
-							}));
-							$('#links-table').append('</tr>');
-						});
-	 				}
-	 			});
-	 			current_time += 20;
-	 		}
-	 	}
-	</script>
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.1.8.3.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-scrolltofixed.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.isotope.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/wow.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/classie.js') }}"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$('.res-nav_click').click(function(){
+		$('ul.toggle').slideToggle(600)	
+			});	
+			
+	$(document).ready(function() {
+$(window).bind('scroll', function() {
+		 if ($(window).scrollTop() > 0) {
+			 $('#header_outer').addClass('fixed');
+		 }
+		 else {
+			 $('#header_outer').removeClass('fixed');
+		 }
+	});
+	
+		});
+		
+
+			});	
+function resizeText() {
+	var preferredWidth = 767;
+	var displayWidth = window.innerWidth;
+	var percentage = displayWidth / preferredWidth;
+	var fontsizetitle = 25;
+	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+	$(".divclass").css("font-size", newFontSizeTitle)
+}
+</script>
 </head>
-<body onload="init()">
-	<div class="container-fluid">
+<body>
+
+<!--Header_section-->
+<header id="header_outer">
+	<div class="container">
+	<div class="header_section">
+		<div class="logo"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></div>
+		<nav class="nav" id="nav">
+		<ul class="toggle">
+			<li><a href="#top_content">Home</a></li>
+			<li><a href="#work_outer">Tutorial Search</a></li>
+			<li><a href="#contact">Post your Questions</a></li>
+		</ul>
+		<ul class="">
+			<li><a href="#top_content">Home</a></li>
+			<li><a href="#work_outer">Tutorial Search</a></li>
+			<li><a href="#contact">Post your Questions</a></li>
+		</ul>
+		</nav>
+		<a class="res-nav_click animated wobble wow"	href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
+	</div>
+</header>
+<!--Header_section--> 
+
+<!--Top_content-->
+<section id="top_content" class="top_cont_outer">
+	<div class="top_cont_inner">
+	<div class="container">
+		<div class="top_content">
 		<div class="row">
-			<!--Container for video-->
-			<div class="col-md-8">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3>Video</h3>
-					</div>
-					<div id="videoContainer" class="panel panel-body">
-						<video id="video" src="{{ url_for('static', filename='Functions.ogg') }}" type="video/ogg" controls />
+			<div class="col-lg-5 col-sm-7">
+			<div class="top_left_cont flipInY wow animated">
+				<h3>Welcome to Spoken Tutorial!</h3>
+				<h2>Promoting IT literacy
+				through videos</h2>
+				<p> Spoken Tutorial is an initiative to help students across the country learn about various free and open source software through audio-video tutorials. The students can refer from various forums that discuss the content being taught in the videos through the links that are provided while the student is watching the video. This helps the student in gathering more information in the topic he/she is learning.</p>
+				<a href="#work_outer" class="learn_more2">Go To Tutorial</a> </div>
+			</div>
+			<div class="col-lg-7 col-sm-5"> 
+			 <div class="flipInX wow animated">
+				<img class="img-responsive" src="{{ url_for('static', filename='img/side-bg.jpg') }}" alt="">
+			 </div>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+</section>
+<!--Top_content--> 
+
+<section id="work_outer"><!--main-section-start-->
+<div class="top_cont_latest">
+	<div class="container">
+		<h2>Tutorial Search</h2>
+		<div class="work_section">
+			 <div class="row margin-bottom-20">
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
+					<div class="btn-group">
+						<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Select a Course<span class="caret"></span></a>
+						<ul class="dropdown-menu course">
+							<li>Advance C</li>
+							<li class="divider"></li>
+							<li>BASH</li>
+							<li class="divider"></li>
+							<li>C and Cpp</li>							
+						</ul>
 					</div>
 				</div>
-			</div>
-			<!--Container for forum links-->
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<h3>Links</h3>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
+					<div class="btn-group">
+						<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Select a Topic<span class="caret"></span></a>
+						<ul class="dropdown-menu topic" style="z-index:3000">
+						 							
+						</ul>
 					</div>
-					<div id="links" class="panel panel-body" />
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top:20px">
+			<div class="row">
+				<!--Container for video-->
+				<div class="col-md-8">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3>Video</h3>
+						</div>
+						<div id="videoContainer" class="panel panel-body">
+							<video id="video" type="video/ogg" controls />
+						</div>
+					</div>
+				</div>
+				<!--Container for forum links-->
+				<div class="col-md-4">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3>Links</h3>
+						</div>
+						<div id="links" class="panel panel-body" />
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+<!--main-section-end--> 
+
+<footer class="footer_section" id="contact">
+	<div class="container">
+	<section class="main-section contact" id="contact">
+		<div class="contact_section">
+		<h2>Post your Questions</h2>
+		
+		</div>
+		<div class="row">
+		<div class="col-lg-6 wow fadeInLeft">
+			<div class="contact-info-box address clearfix">
+			<h3>Don’t hesitate. Ask away!</h3>
+			<p>Ask your questions. It might help other students too. </p>
+			</div>
+		</div>
+		<div class="col-lg-6 wow fadeInUp delay-06s">
+			<div class="form">
+			<input class="input-text animated wow flipInY delay-02s" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+			<textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+			<input class="input-btn animated wow flipInY delay-08s" type="submit" value="Post">
+			</div>
+		</div>
+		</div>
+	</section>
+	</div>
+	<div class="container">
+	<div class="footer_bottom"> 
+		<div class="row">
+			<div class="col-lg-2">
+			
+			</div>
+			<div class="col-lg-7">
+			<div class="contact_block">
+				<div class="col-lg-5 contact_block_icon icon3 rollIn animated wow"><span class="span_contact" style="height:57px"><i class="contact fa-pencil" style="top:13px"></i></span></div>
+				<div class="col-lg-2"><span> <a href="queries@spoke_tutorial.com">queries@spoke_tutorial.com</a> </span> </div>
+			</div>
+			</div>
+			<div class="col-lg-3">
+			
+			</div>
+		</div>
+	</div>
+	</div>
+</footer>
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		$('#header_outer').scrollToFixed();
+		$('.res-nav_click').click(function(){
+			$('.main-nav').slideToggle();
+			return false	
+			
+		});
+		
+	});
+</script> 
+<script>
+	wow = new WOW(
+		{
+		animateClass: 'animated',
+		offset:		 100
+		}
+	);
+	wow.init();
+	document.getElementById('').onclick = function() {
+		var section = document.createElement('section');
+		section.className = 'wow fadeInDown';
+		section.className = 'wow shake';
+		section.className = 'wow zoomIn';
+		section.className = 'wow lightSpeedIn';
+		this.parentNode.insertBefore(section, this);
+	};
+</script>	
+<script type="text/javascript">
+	$( window ).load(function() {
+	jQuery('#all').click();
+	return false;
+});
+</script>
+<script type="text/javascript">
+	$( window ).load(function() {
+	$(".course li").click(function(){
+		chosen_course = $(this).text();
+		$(this).parents('.btn-group').find('.dropdown-toggle').html(chosen_course + ' <span class="caret"></span>');
+
+		$.getJSON("http://localhost:5000/gettopics?course=" + chosen_course, function(data) {
+				if(data)
+			{
+				$.each(data.files, function(index, element) {
+					if(element != '')
+					{
+						$('.topic').append($('<li>', {
+	 					text: element
+					}));
+					}
+				});
+			}
+		});
+	});
+
+	$("topic li").click(function() {
+		chosen_topic = $(this).text();
+		$(this).parents('.btn-group').find('.dropdown-toggle').html(chosen_topic + ' <span class="caret"></span>');
+
+		$("#video").attr("src", "{{ url_for('static', filename='videos/" + chosen_course + "/" + chosen_topic + ".ogg') }}")
+	});
+
+});
+</script>
+
 </body>
 </html>
