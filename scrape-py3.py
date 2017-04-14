@@ -10,6 +10,7 @@ course = ''
 # R => maximum number of results per page + 1
 R = 21
 
+
 def get_courses():
 	print(('Looking up:', url))
 	page = urlopen(url)
@@ -29,17 +30,19 @@ def get_courses():
 		if 'Libre' in value:
 			courses.append(value)
 		'''
-		# courses = Advanced C, C and CPP, Bash
-		condition = (value == 'Advance C' or value == 'BASH' or value == 'C and Cpp')
-		if condition:
+		search_courses = ['Advance C', 'C and Cpp', 'BASH']
+		# condition = (value == 'Advance C' or value == 'BASH' or value == 'C and Cpp')
+		if value in search_courses:
 			courses.append(text)
+	print(courses)
 	return courses
+
 
 def get_tutorials(course, pages, language):
 	course_url = 'http://spoken-tutorial.org/tutorial-search/?search_foss=' + course.replace(' ', '+') + '&search_language=' + language
 	'''
 	# Extract the names of the tutorials available for the queried course.
-	# Note: the tutorials might span more than one page. (handled in this release!)
+	# Note: the tutorials might span more than one page.
 	# Also, search might return 0 results.
 	# Need to handle these, not doing it right now.
 	'''
@@ -52,8 +55,9 @@ def get_tutorials(course, pages, language):
 		# Get the divs which contain the required results
 		results = soup.find_all('div', {'class': 'result-record'})
 		for div in results:
-			tutorials.append('http://spoken-tutorial.org/' + div.a['href'])
+			tutorials.append('http://spoken-tutorial.org' + div.a['href'])
 	return tutorials
+
 
 def get_scripts(tutorial):
 	print(('Downloading script for tutorial:', tutorial))
@@ -85,11 +89,12 @@ def get_scripts(tutorial):
 		with open(file, 'w', encoding='utf-8') as f:
 			f.write(content[content.index('0'):])
 
+
 if __name__ == '__main__':
 	courses = get_courses()
 	languages = ['English']
-	for _course in courses:
-		re_match = re.search('(.*) \((\d+)\)', _course)
+	for course_ in courses:
+		re_match = re.search('(.*) \((\d+)\)', course_)
 		course = re_match.group(1)
 		pages = int(re_match.group(2)) // R + 1
 		tutorials = get_tutorials(course, pages, languages[0])
