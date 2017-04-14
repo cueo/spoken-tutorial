@@ -1,9 +1,8 @@
-# from lxml import html
-# import requests
+import os
+import re
+
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import os
-import re 
 
 url = 'http://spoken-tutorial.org/tutorial-search/'
 course = ''
@@ -59,38 +58,24 @@ def get_tutorials(course, pages, language):
 	return tutorials
 
 
-def get_scripts(tutorial):
-	print(('Downloading script for tutorial:', tutorial))
+def get_videos(tutorial):
 	page = urlopen(tutorial)
 	soup = BeautifulSoup(page, 'lxml')
-	# Get the link for the timed script.
-	divs = soup.find_all('div', {'class': 'list-group-item-container'})
-	script_url = 'empty'
-	for div in divs:
-		if div.h4.text[1] == 'T':
-			script_url = div.a['href']
-			break
-	'''
-	# Save the content of the timed script to a file.
-	# The source has some keywords in bold, which is not reflected here.
-	# Figure out a way around this.
-	'''
-	page = urlopen(script_url)
-	soup = BeautifulSoup(page, 'lxml')
-	title = str(soup.title).split('/')[2]
-	directory = os.path.join('scripts', course)
-	if not os.path.exists(directory):
-		os.makedirs(directory)
-	file = os.path.join(directory, title + '.txt')
-	print(('\tWriting to file:', file))
-	if not os.path.exists(file):
-		content = soup.table.text
-		content = re.sub('\n\n', '\n', content)
-		with open(file, 'w', encoding='utf-8') as f:
-			f.write(content[content.index('0'):])
+	video = soup.find(name='source')
+	src = 'http://spoken-tutorial.org' + video['src']
+	directory = tutorial.split('/')[-3].replace('+', ' ')
+	video_file = urlopen(src)
+	file_path = os.path.join(path, directory, src.split('/')[-1])
+	if not os.path.exists(file_path):
+		print('Downloading video for tutorial:', tutorial)
+		with open(file_path, 'wb') as f:
+			f.write(video_file.read())
 
 
 if __name__ == '__main__':
+	path = 'data/videos'
+	if not os.path.exists(path):
+		os.mkdir(path)
 	courses = get_courses()
 	languages = ['English']
 	for course_ in courses:
@@ -99,4 +84,4 @@ if __name__ == '__main__':
 		pages = int(re_match.group(2)) // R + 1
 		tutorials = get_tutorials(course, pages, languages[0])
 		for tutorial in tutorials:
-			script = get_scripts(tutorial)
+			get_videos(tutorial)

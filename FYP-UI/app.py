@@ -1,13 +1,13 @@
-from flask import Flask
-from flask_cors import CORS, cross_origin
-from flask import Flask, flash, redirect, render_template, request, session, abort, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify
 import os
 import sqlite3
-import urllib.request
-from bs4 import BeautifulSoup
+import pickle
 
 app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.config['CORS_HEADERS'] = 'Content-Type'
+
+with open('../data/title.pkl', 'rb') as f:
+	titles = pickle.load(f)
 
 
 @app.route('/')
@@ -72,8 +72,8 @@ def fetch():
 
 @app.route('/gettitle')
 def get_title():
-	soup = BeautifulSoup(urllib.request.urlopen(request.args['url']), "lxml")
-	response = jsonify({'title': soup.title.string})
+	qid = str(request.args['url']).split('/')[-1]
+	response = jsonify(({'title': titles[qid]}))
 	return response
 
 
