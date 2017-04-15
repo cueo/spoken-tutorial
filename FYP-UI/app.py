@@ -12,8 +12,11 @@ with open('../data/title.pkl', 'rb') as f:
 
 @app.route('/')
 def home():
-	return render_template("index.html")
+	return render_template("index_new.html")
 
+@app.route('/tutorial')
+def tutorial():
+	return render_template("index_new.html")
 
 @app.route('/list')
 def url_list():
@@ -25,8 +28,6 @@ def url_list():
 				('Functions.txt', 0, 100))
 
 	rows = cur.fetchall()
-	# for i in range(len(rows)):
-	# time = rows['TIME'] +
 	return render_template("list.html", rows=rows)
 
 

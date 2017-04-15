@@ -259,15 +259,14 @@ function resizeText() {
 			}
 		});
 	});
-
 	$(".topic").on("click", "li", function() {		
 		chosen_topic = $(this).text();
 		$(this).parents('.btn-group').find('.dropdown-toggle').html(chosen_topic + ' <span class="caret"></span>');
 		chosen_topic = chosen_topic.split(" ").join("-");				
 		video_name = "videos/" + chosen_course + "/" + chosen_topic + ".ogg";
 		video_name = "A:\\8th sem\\SpokenTutorial\\FYP-UI\\static\\videos\\" + chosen_course + "\\" + chosen_topic + ".ogg";
-		console.log(video_name);				
-		//$("#video").attr("src", "{{ url_for('static', filename={{video_name}}) }}");
+		console.log(video_name);
+		$("#video").attr("src", "{{ url_for('static', filename={{video_name}}) }}");
 	});
 });
 </script>
