@@ -12,7 +12,7 @@ with open('../data/title.pkl', 'rb') as f:
 
 @app.route('/')
 def home():
-	return render_template("index_new.html")
+	return render_template("index.html")
 
 @app.route('/tutorial')
 def tutorial():
