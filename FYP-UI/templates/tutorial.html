@@ -3,97 +3,167 @@
 <head>
 	<title>Spoken Tutorial</title>
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon_st.ico') }}" />
-	<link rel="stylesheet" href="{{ url_for('static', filename='video.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/video.css') }}" />
 	<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-3.3.7-dist/css/bootstrap.min.css') }}" />
 	<script src="{{ url_for('static', filename='jquery-3.2.0.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='bootstrap-3.3.7-dist/js/bootstrap.min.js') }}"></script>
 	<script type="text/javascript">
 		function init()
 		{
-			current_time_sec = 20;
-			current_time = 0;
+			interval = 20;
+			currentTime = 0;
 			vid = document.getElementById("video");
+			links = null;
+
+			$('.course li').click(populateTopic);
+		}
+
+		function getLinks()
+		{
+			console.log(filename, currentTime, vid.currentTime);
+			if(vid.currentTime >= currentTime)
+			{
+				//fetch results for the 20s interval from the database
+				var links = [];
+				var titles = [];
+				$('#links').empty();
+				$.getJSON('http://localhost:5000/fetch?time=' + currentTime + '&file=' + filename, function(data) {
+					if(data)
+					{
+						$.each(data.links.split(' '), function(index, element) {
+							if(element != '')
+							{
+								var url = 'http://stackoverflow.com/questions/' + element;
+								if(links.indexOf(url) == -1)
+									links.push(url);
+							}
+						});
+					}
+
+					$('#links').append($('<table>', {
+						class: 'table table-hover table-bordered'
+					}));
+					$('table').append('<tbody>');
+					for(let i = 0; i < links.length; i++)
+					{
+						$.getJSON("http://localhost:5000/getTitle?url=" + links[i], function(data) {
+							titles.push(data.title);
+							var hr = document.createElement('a');
+							hr.href = links[i];
+							hr.innerHTML = data.title;
+							$('tbody').append($('<tr>', {
+								id: 'row' + i,
+								class: 'success'
+							}));
+							$('#row' + i).append($('<td>', {
+								html: hr
+							}));
+							$('#links-table').append('</tr>');
+						});
+					}
+				});
+				currentTime += interval;
+			}
+		}
+
+		function populateTopic()
+		{
+			course = $(this).text();
+			$('#course-btn').text(course);
+			var topicButton = $('#topic-btn');
+			topicButton.removeClass('btn-basic');
+			topicButton.addClass('btn-primary');
+			topicButton.removeAttr('disabled');
+			$('.topic').empty();
+			$.getJSON('getTopics?course=' + course, function (data)
+			{
+				if (data)
+				{
+					$.each(data.files, function (index, element)
+					{
+						if (element)
+						{
+							$('<li><a></a></li>').find('a').attr('href', '#').html(element).end().appendTo($('.topic'));
+							$('.topic').append($('<li>', {
+								class: 'divider'
+							}));
+						}
+					});
+				}
+			});
+			$('.topic').on('click', 'li', showVideo);
+		}
+
+		function showVideo()
+		{
+			topic = $(this).text();
+			$('#topic-btn').text(topic);
+			topic = topic.split(' ').join('-');
+			var videoName = '/' + course + '/' + topic + '-English.ogv';
+			$("#video").attr('src', "{{ url_for('static', filename='videos') }}" + videoName);
+			linkSetup();
+		}
+
+		function linkSetup()
+		{
+			filename = topic + '.txt';
 			vid.ontimeupdate = getLinks;
 			vid.seeked = getLinks;
 			vid.seeking = function () {
 				$('#links').empty();
-            };
-			f = vid.src.split('/');
-			file_name = f[f.length - 1].split('.')[0] + '.txt';
-			links = null;
+			};
 		}
-
-		function getLinks() 
-		{
-	 		if(vid.currentTime > current_time)
-	 		{
-	 			links = new Array();
-	 			titles = new Array();
-	 			$('#links').empty();
-	 			//fetch results for the 20s interval from the database
-	 			$.getJSON('http://localhost:5000/fetch?time=' + current_time + '&file=' + file_name, function(data) {
-					if(data)
-					{
-						$.each(data.Links.split(' '), function(index, element) {
-							if(element != '')
-							{
-								url_ = 'http://stackoverflow.com/questions/' + element
-								if(links.indexOf(url_) == -1)
-									links.push(url_);
-							}
-						});
-	 				}
-
-	 				$('#links').append($('<table>', {
-	 				    class: 'table table-hover table-bordered'
-					}));
-					$('table').append('<tbody>');
-					for(let i = 0; i < links.length; i++)
-	 				{
-	 				    $.getJSON("http://localhost:5000/gettitle?url=" + links[i], function(data) {
-							titles.push(data.title);
-							hr = document.createElement('a');
-							hr.href = links[i];
-							hr.innerHTML = data.title;
-							$('tbody').append($('<tr>', {
-							    id: 'row' + i,
-								class: 'success'
-							}));
-							$('#row' + i).append($('<td>', {
-							    html: hr
-							}));
-							$('#links-table').append('</tr>');
-						});
-	 				}
-	 			});
-	 			current_time += 20;
-	 		}
-	 	}
 	</script>
 </head>
 <body onload="init()">
-	<div class="container-fluid">
-		<div class="row">
-			<!--Container for video-->
-			<div class="col-md-8">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3>Video</h3>
-					</div>
-					<div id="videoContainer" class="panel panel-body">
-						<video id="video" src="{{ url_for('static', filename='Functions.ogg') }}" type="video/ogg" controls />
+<section id="work_outer"><!--main-section-start-->
+	<div class="top_cont_latest">
+		<div class="container">
+			<h2>Tutorial Search</h2>
+			<div class="dropdown col-sm-8">
+				<button class="btn btn-primary dropdown-toggle" type="button" id="course-btn" data-toggle="dropdown">Courses
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu course" role="menu" aria-labelledby="menu1">
+					<li><a href="#">Advance C</a></li>
+					<li class="divider"></li>
+					<li><a href="#">C and Cpp</a></li>
+					<li class="divider"></li>
+					<li><a href="#">BASH</a></li>
+				</ul>
+			</div>
+			<div class="dropdown col-sm-4 right">
+				<button class="btn btn-basic dropdown-toggle" type="button" id="topic-btn" data-toggle="dropdown" disabled>Topic
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu topic right" role="menu" aria-labelledby="menu1" id="topic">
+				</ul>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top: 20px">
+			<div class="row">
+				<!--Container for video-->
+				<div class="col-md-8">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3>Video</h3>
+						</div>
+						<div id="videoContainer" class="panel panel-body">
+							<video id="video" type="video/ogg" controls />
+						</div>
 					</div>
 				</div>
-			</div>
-			<!--Container for forum links-->
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<h3>Links</h3>
+				<!--Container for forum links-->
+				<div class="col-md-4">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3>Links</h3>
+						</div>
+						<div id="links" class="panel panel-body" />
 					</div>
-					<div id="links" class="panel panel-body" />
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+<!--main-section-end-->
 </body>
 </html>
