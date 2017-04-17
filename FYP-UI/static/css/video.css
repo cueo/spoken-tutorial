@@ -4,6 +4,11 @@
 	max-height: 80%;
 }
 
+.right
+{
+	text-align: right;
+}
+
 #videoContainer
 {
 	text-align: center;
