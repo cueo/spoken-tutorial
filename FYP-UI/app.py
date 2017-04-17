@@ -14,9 +14,11 @@ with open('../data/title.pkl', 'rb') as f:
 def home():
 	return render_template("index.html")
 
+
 @app.route('/tutorial')
 def tutorial():
-	return render_template("index_new.html")
+	return render_template("tutorial.html")
+
 
 @app.route('/list')
 def url_list():
@@ -67,18 +69,18 @@ def fetch():
 
 	# response = jsonify({'Relevant': R, 'Slightly': SR, 'Irrelevant': IR})
 	all_ = r + ' ' + sr + ' ' + ir
-	response = jsonify({'Links': all_})
+	response = jsonify({'links': all_})
 	return response
 
 
-@app.route('/gettitle')
+@app.route('/getTitle')
 def get_title():
 	qid = str(request.args['url']).split('/')[-1]
 	response = jsonify(({'title': titles[qid]}))
 	return response
 
 
-@app.route('/gettopics')
+@app.route('/getTopics')
 def get_topics():
 	file_list = []
 	for dir_ in os.listdir("../data"):
