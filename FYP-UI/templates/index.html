@@ -62,18 +62,11 @@ function resizeText() {
 	<div class="container">
 	<div class="header_section">
 		<div class="logo"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></div>
-		<nav class="nav" id="nav">
-		<ul class="toggle">
-			<li><a href="#top_content">Home</a></li>
-			<li><a href="#work_outer">Tutorial Search</a></li>
-			<li><a href="#contact">Post your Questions</a></li>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="tutorial">Tutorials</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
-		<ul class="">
-			<li><a href="#top_content">Home</a></li>
-			<li><a href="#work_outer">Tutorial Search</a></li>
-			<li><a href="#contact">Post your Questions</a></li>
-		</ul>
-		</nav>
 		<a class="res-nav_click animated wobble wow"	href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
 	</div>
 </header>
@@ -91,7 +84,7 @@ function resizeText() {
 				<h2>Promoting IT literacy
 				through videos</h2>
 				<p> Spoken Tutorial is an initiative to help students across the country learn about various free and open source software through audio-video tutorials. The students can refer from various forums that discuss the content being taught in the videos through the links that are provided while the student is watching the video. This helps the student in gathering more information in the topic he/she is learning.</p>
-				<a href="#work_outer" class="learn_more2">Go To Tutorial</a> </div>
+				<a href="tutorial" class="learn_more2">Go To Tutorial</a> </div>
 			</div>
 			<div class="col-lg-7 col-sm-5">
 			 <div class="flipInX wow animated">
@@ -103,68 +96,10 @@ function resizeText() {
 	</div>
 	</div>
 </section>
-<!--Top_content-->
-
-<section id="work_outer"><!--main-section-start-->
-<div class="top_cont_latest">
-	<div class="container">
-		<h2>Tutorial Search</h2>
-		<div class="work_section">
-			 <div class="row margin-bottom-20" style="height:150px">
-				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
-					<div class="btn-group">
-						<a class="btn btn-primary dropdown-toggle" style="font-size:1.5em;width: 180px" data-toggle="dropdown" href="#">Select a Course<span class="caret"></span></a>
-						<ul class="dropdown-menu course">
-							<li>Advance C</li>
-							<li class="divider"></li>
-							<li>BASH</li>
-							<li class="divider"></li>
-							<li>C and Cpp</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
-					<div class="btn-group">
-						<a class="btn btn-primary dropdown-toggle" style="font-size:1.5em;width: 180px" data-toggle="dropdown" href="#">Select a Topic<span class="caret"></span></a>
-						<ul class="dropdown-menu topic" style="width:250px;z-index:3000">
-
-						</ul>
-					</div>
-				</div>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid" style="margin-top:20px">
-			<div class="row">
-				<!--Container for video-->
-				<div class="col-md-8">
-					<div class="panel panel-info">
-						<div class="panel-heading">
-							<h3>Video</h3>
-						</div>
-						<div id="videoContainer" class="panel panel-body">
-							<video id="video" type="video/ogg" controls />
-						</div>
-					</div>
-				</div>
-				<!--Container for forum links-->
-				<div class="col-md-4">
-					<div class="panel panel-warning">
-						<div class="panel-heading">
-							<h3>Links</h3>
-						</div>
-						<div id="links" class="panel panel-body" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--main-section-end-->
 
 <footer class="footer_section" id="contact">
 	<div class="container">
-	<section class="main-section contact" id="contact">
+	<section class="main-section contact">
 		<div class="contact_section">
 		<h2>Post your Questions</h2>
 
@@ -240,36 +175,5 @@ function resizeText() {
 	return false;
 });
 </script>
-<script type="text/javascript">
-	$( window ).load(function() {
-	$(".course li").click(function() {
-		chosenCourse = $(this).text();
-		$(this).parents('.btn-group').find('.dropdown-toggle').html(chosenCourse + ' <span class="caret"></span>');
-
-		$.getJSON("http://localhost:5000/gettopics?course=" + chosenCourse, function(data) {
-				if(data)
-			{
-				$.each(data.files, function(index, element) {
-					if(element != '')
-					{
-						$('.topic').append($('<li>', {
-	 					text: element
-					}));
-					}
-				});
-			}
-		});
-	});
-
-	$(".topic").on("click", "li", function() {
-		var chosenTopic = $(this).text();
-		$(this).parents('.btn-group').find('.dropdown-toggle').html(chosenTopic + ' <span class="caret"></span>');
-		chosenTopic = chosenTopic.split(' ').join('-');
-		var videoName = '/' + chosenCourse + '/' + chosenTopic + '-English.ogv';
-		 $("#video").attr('src', "{{ url_for('static', filename='videos') }}" + videoName);
-	});
-});
-</script>
-
 </body>
 </html>
