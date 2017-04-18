@@ -20,48 +20,51 @@
 
 		function getLinks()
 		{
-			console.log(filename, currentTime, vid.currentTime);
 			if(vid.currentTime >= currentTime)
 			{
-				//fetch results for the 20s interval from the database
+				console.log('Updating links...')
 				var links = [];
 				var titles = [];
 				$('#links').empty();
-				$.getJSON('http://localhost:5000/fetch?time=' + currentTime + '&file=' + filename, function(data) {
-					if(data)
-					{
-						$.each(data.links.split(' '), function(index, element) {
-							if(element != '')
-							{
-								var url = 'http://stackoverflow.com/questions/' + element;
-								if(links.indexOf(url) == -1)
-									links.push(url);
-							}
-						});
-					}
 
-					$('#links').append($('<table>', {
-						class: 'table table-hover table-bordered'
-					}));
-					$('table').append('<tbody>');
-					for(let i = 0; i < links.length; i++)
+				for (var i = 0; i < prefetchData.length; ++i)
+				{
+					var data = prefetchData[i];
+
+					if (currentTime < data.time && currentTime + interval > data.time)
 					{
-						$.getJSON("http://localhost:5000/getTitle?url=" + links[i], function(data) {
-							titles.push(data.title);
-							var hr = document.createElement('a');
-							hr.href = links[i];
-							hr.innerHTML = data.title;
-							$('tbody').append($('<tr>', {
-								id: 'row' + i,
-								class: 'success'
-							}));
-							$('#row' + i).append($('<td>', {
-								html: hr
-							}));
-							$('#links-table').append('</tr>');
+						$.each(data.links, function (index, element) {
+							var url = 'http://stackoverflow.com/questions/' + element;
+							if(links.indexOf(url) == -1)
+								links.push(url);
 						});
 					}
-				});
+				}
+
+				$('#links').append($('<table>', {
+					class: 'table table-hover table-bordered'
+				}));
+
+				console.log(links.length);
+
+				$('table').append('<tbody>');
+				for(let i = 0; i < links.length; i++)
+				{
+					$.getJSON("getTitle?url=" + links[i], function(data) {
+						titles.push(data.title);
+						var hr = document.createElement('a');
+						hr.href = links[i];
+						hr.innerHTML = data.title;
+						$('tbody').append($('<tr>', {
+							id: 'row' + i,
+							class: 'success'
+						}));
+						$('#row' + i).append($('<td>', {
+							html: hr
+						}));
+						$('#links-table').append('</tr>');
+					});
+				}
 				currentTime += interval;
 			}
 		}
@@ -102,6 +105,7 @@
 			var videoName = '/' + course + '/' + topic + '-English.ogv';
 			$("#video").attr('src', "{{ url_for('static', filename='videos') }}" + videoName);
 			linkSetup();
+			prefetch();
 		}
 
 		function linkSetup()
@@ -112,6 +116,15 @@
 			vid.seeking = function () {
 				$('#links').empty();
 			};
+		}
+
+		function prefetch()
+		{
+			prefetchData = {};
+			$.getJSON('prefetch?file=' + filename, function (data) {
+				prefetchData = data;
+				console.log('Prefetching done.')
+			})
 		}
 	</script>
 </head>
