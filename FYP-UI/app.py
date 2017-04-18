@@ -94,6 +94,48 @@ def get_topics():
 	return response
 
 
+def populate_data(row, data):
+	for d in data:
+		if d['time'] == row['TIME'] and row['LINK'] not in d['links']:
+			d['links'].append(row['LINK'])
+			break
+	else:
+		d = {'time': row['TIME'], 'links': [row['LINK']]}
+		data.append(d)
+
+	return data
+
+
+@app.route('/prefetch')
+def get_links():
+	conn = sqlite3.connect("test.db")
+	conn.row_factory = sqlite3.Row
+
+	cur = conn.cursor()
+	cur.execute(
+		"SELECT * FROM SPOKEN_TUTORIAL WHERE FILE_NAME=? AND RELEVANCE=? ORDER BY SIMILARITY DESC",
+		(request.args['file'], 'Relevant'))
+	rows_r = cur.fetchall()
+	cur.execute(
+		"SELECT * FROM SPOKEN_TUTORIAL WHERE FILE_NAME=? AND RELEVANCE=? ORDER BY SIMILARITY DESC",
+		(request.args['file'], 'Slightly relevant'))
+	rows_sr = cur.fetchall()
+
+	cur.execute(
+		"SELECT * FROM SPOKEN_TUTORIAL WHERE FILE_NAME=? AND RELEVANCE=? ORDER BY SIMILARITY DESC",
+		(request.args['file'], 'Irrelevant'))
+	rows_ir = cur.fetchall()
+
+	data = []
+	for row in rows_r:
+		data = populate_data(row, data)
+
+	row = rows_sr[0]
+	data = populate_data(row, data)
+
+	return jsonify(data)
+
+
 if __name__ == "__main__":
 	app.secret_key = os.urandom(12)
 	app.run(debug=True)
