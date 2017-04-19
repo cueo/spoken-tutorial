@@ -80,6 +80,12 @@ def get_title():
 	return response
 
 
+@app.route('/titles')
+def get_titles():
+	print(titles)
+	return jsonify(titles)
+
+
 @app.route('/getTopics')
 def get_topics():
 	file_list = []
