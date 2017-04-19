@@ -16,6 +16,12 @@
 			links = null;
 
 			$('.course li').click(populateTopic);
+
+			titlesJson = {};
+			$.getJSON('titles', function (data) {
+				titlesJson = data;
+				console.log('Prefetched titles.')
+			});
 		}
 
 		function getLinks()
@@ -45,25 +51,26 @@
 					class: 'table table-hover table-bordered'
 				}));
 
-				console.log(links.length);
-
 				$('table').append('<tbody>');
+
 				for(let i = 0; i < links.length; i++)
 				{
-					$.getJSON("getTitle?url=" + links[i], function(data) {
-						titles.push(data.title);
-						var hr = document.createElement('a');
-						hr.href = links[i];
-						hr.innerHTML = data.title;
-						$('tbody').append($('<tr>', {
-							id: 'row' + i,
-							class: 'success'
-						}));
-						$('#row' + i).append($('<td>', {
-							html: hr
-						}));
-						$('#links-table').append('</tr>');
-					});
+					var link = links[i];
+					var qid = link.split('/')[4];
+					var title = titlesJson[qid];
+					console.log(qid, title);
+					titles.push(title);
+					var hr = document.createElement('a');
+					hr.href = links[i];
+					hr.innerHTML = title;
+					$('tbody').append($('<tr>', {
+						id: 'row' + i,
+						class: 'success'
+					}));
+					$('#row' + i).append($('<td>', {
+						html: hr
+					}));
+					$('#links-table').append('</tr>');
 				}
 				currentTime += interval;
 			}
@@ -124,7 +131,7 @@
 			$.getJSON('prefetch?file=' + filename, function (data) {
 				prefetchData = data;
 				console.log('Prefetching done.')
-			})
+			});
 		}
 	</script>
 </head>
