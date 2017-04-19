@@ -20,7 +20,7 @@
 			titlesJson = {};
 			$.getJSON('titles', function (data) {
 				titlesJson = data;
-				console.log('Prefetched titles.')
+				console.log('Prefetched titles!')
 			});
 		}
 
@@ -28,7 +28,6 @@
 		{
 			if(vid.currentTime >= currentTime)
 			{
-				console.log('Updating links...')
 				var links = [];
 				var titles = [];
 				$('#links').empty();
@@ -58,7 +57,6 @@
 					var link = links[i];
 					var qid = link.split('/')[4];
 					var title = titlesJson[qid];
-					console.log(qid, title);
 					titles.push(title);
 					var hr = document.createElement('a');
 					hr.href = links[i];
@@ -130,7 +128,7 @@
 			prefetchData = {};
 			$.getJSON('prefetch?file=' + filename, function (data) {
 				prefetchData = data;
-				console.log('Prefetching done.')
+				console.log('Prefetched links!')
 			});
 		}
 	</script>

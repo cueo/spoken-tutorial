@@ -82,7 +82,6 @@ def get_title():
 
 @app.route('/titles')
 def get_titles():
-	print(titles)
 	return jsonify(titles)
 
 
